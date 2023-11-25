@@ -7,7 +7,7 @@
     }
     .header-menu-area {
       padding: 0 50px;
-      background-color: $black-50;
+      background-color: $white;
       border-bottom: 1px solid #CDB09126;
 
 
@@ -318,11 +318,22 @@
     }
 
     .standard-logo {
-      //@media only screen and (max-width: 1199px) {
-      //  display: none;
-      //}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      gap: 10px;
+
       img {
         @include transition;
+        height: 30px;
+      }
+      .logo-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: capitalize;
+        margin-bottom: 0;
       }
     }
 
@@ -361,7 +372,7 @@
       &.current-menu-ancestor {
         position: relative;
         > a {
-          color: $primary-color;
+          color: $black;
         }
       }
       &.dropdown {
@@ -392,7 +403,7 @@
                 position: relative;
                 z-index: 2;
                 background-color: $primary-color;
-                color: $white !important;
+                color: $black !important;
                 &:after {
                   display: none;
                 }
@@ -419,7 +430,7 @@
         text-transform: capitalize;
         @include transition;
         position: relative;
-        color: $white;
+        color: $black;
         font-family: $body-font;
         font-size: 18px;
         font-weight: 500;

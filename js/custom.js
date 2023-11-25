@@ -352,46 +352,46 @@
         /*
        Client Logo Slider
        ============================*/
-        $(".client-logo-slider-wrapper").slick({
-            slidesToShow: 6,
+        $(".portfolio-slider").slick({
+            slidesToShow: 3,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: false,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             loop: true,
-            dots: false,
+            dots: true,
             speed: 1500,
             rtl: false,
             responsive: [
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 3,
                     },
                 },
                 {
                     breakpoint: 992,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                     },
                 },
                 {
                     breakpoint: 991,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                     },
                 },
                 {
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
                 {
                     breakpoint: 460,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
             ],
