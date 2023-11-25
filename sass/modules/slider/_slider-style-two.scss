@@ -1,0 +1,193 @@
+.slider-area {
+  &.style-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+      .slider-overlay {
+        background-image: linear-gradient( 0deg, rgb(255,254,255) 0%, rgb(215,255,254) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+    .slider-user-main-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .slider-nav-btn-wrapper {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 70px;
+      flex-direction: column;
+
+      @include rmaxwd(991) {
+        display: none;
+      }
+      @include rmaxwd(1500) {
+        right: 20px;
+      }
+    }
+      .slider-wrapper {
+        .slick-dots {
+          @include rmaxwd(991) {
+            display: block !important;
+          }
+        }
+        .single-slider-wrapper {
+          .single-slider {
+            border-bottom: 0;
+            padding-top: 287px;
+            padding-bottom: 189px;
+
+            @include md {
+              padding-top: 180px;
+            }
+            @include sm {
+              padding-top: 150px;
+              padding-bottom: 50px;
+            }
+            @include lg {
+              padding-top: 200px;
+              padding-bottom: 120px;
+            }
+            @include xl {
+              padding-top: 200px;
+              padding-bottom: 120px;
+            }
+            .slider-content-wrapper {
+              @include sm {
+                padding-top: 60px;
+                padding-bottom: 0;
+              }
+              .slider-content {
+                gap: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+
+                @include sm {
+                  text-align: center;
+                  align-items: center;
+                }
+                .short-title {
+                  font-size: 24px;
+                  color: $blue-color;
+                  font-weight: 500;
+                  margin-bottom: 10px;
+                }
+                .slider-title {
+                  font-size: 96px;
+                  line-height: 108px;
+                  color: $black;
+                  margin-bottom: 25px;
+
+                  @include sm {
+                    font-size: 38px;
+                    line-height: 54px;
+                  }
+                  @include md {
+                    font-size: 40px;
+                    line-height: 54px;
+                  }
+                  @include lg {
+                    font-size: 56px;
+                    line-height: 74px;
+                  }
+                }
+                .slider-short-desc {
+                  font-size: 24px;
+                  font-family: $roboto-font;
+                  color: $text-color;
+
+                  br {
+                    @include sm {
+                      display: none;
+                    }
+                    @include md {
+                      display: none;
+                    }
+                    @include lg {
+                      display: none;
+                    }
+                  }
+                }
+                .slider-btn-wrapper {
+                  display: flex;
+                  gap: 18px;
+                  margin-top: 65px;
+
+                  .play-btn {
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 100%;
+                    border: 2px solid $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    color: $black;
+                    font-weight: 500;
+                    animation: ripple 4s infinite;
+                    box-shadow: 0 0 0 0 rgba(33, 173, 224, 0.8);
+                  }
+                }
+              }
+            }
+            .slider-image {
+              text-align: right;
+              position: relative;
+
+              img {
+                display: inline-block;
+              }
+
+              .company-award {
+                position: absolute;
+                bottom: 0;
+                left: 100%;
+                transform: translate(-50%, -50%);
+
+                @include lg {
+                  left: 90%;
+                }
+                @include md {
+                  transform: translate(-94%, -0%);
+                }
+                @include rmaxwd(720) {
+                  transform: translate(-120%, -50%);
+                }
+                .icon {
+                  width: 150px;
+                  height: 150px;
+                  box-shadow: 0 5px 90px 0 rgba(2, 24, 93, 0.12);
+                  background-color: $blue-color;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                .circle-rotate-wrapper {
+                  .circle-rotate-inner {
+                    width: 140px;
+                    height: 140px;
+
+                    .circle-rotate-text {
+                      span {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+  }
+}

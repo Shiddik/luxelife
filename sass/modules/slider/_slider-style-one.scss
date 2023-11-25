@@ -1,0 +1,246 @@
+.slider-area {
+  overflow: hidden;
+  position: relative;
+
+  &.style-1 {
+    background-color: $black-50;
+    padding-top: 2px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #CDB09126;
+      top: 2px;
+      left: 0;
+    }
+  }
+
+  .slider-wrapper {
+    .slick-arrow {
+      display: none !important;
+    }
+    // Active Slider Animate
+    .slick-active .slider-short-title,
+    .slick-active .slider-title,
+    .slick-active .slider-short-desc,
+    .slick-active .slider-btn-wrapper {
+      -webkit-animation-name: MovefadeUp;
+      animation-name: MovefadeUp;
+      -webkit-animation-fill-mode: both;
+    }
+
+
+    .slick-active .slider-short-title {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+    }
+    .slick-active .slider-title {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+    }
+
+    .slick-active .slider-short-desc {
+      -webkit-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+      -webkit-animation-duration: 0.7s;
+      animation-duration: 0.7s;
+    }
+
+    .slick-active .slider-btn-wrapper {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      -webkit-animation-duration: 0.9s;
+      animation-duration: 0.9s;
+    }
+    // Slick Dots
+    .slick-dots {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      bottom: 80px;
+      padding: 0;
+      margin-bottom: 0;
+      display: none !important;
+      text-align: center;
+      @include sm {
+        position: unset;
+        padding-bottom: 80px;
+      }
+      li {
+        list-style: none;
+        line-height: 0;
+        display: inline-block;
+        margin: 0 5px;
+
+        button {
+          font-size: 0;
+          padding: 0;
+          width: 11px;
+          height: 11px;
+          background-color: $primary-color;
+          border-radius: 50px;
+          position: relative;
+          @include transition;
+
+          &:hover {
+            background-color: $blue-color;
+            @include transition;
+          }
+        }
+        &.slick-active {
+
+          button {
+            background-color: $blue-color;
+            @include transition;
+          }
+        }
+      }
+    }
+  }
+
+
+  .single-slider {
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+
+
+    .slider-title-wrapper {
+      .slider-sub-title {
+        display: inline-flex;
+        gap: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 7px;
+        margin-bottom: 0;
+        color: $white;
+        align-items: center;
+      }
+      .slider-title {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 80px;
+        color: $white;
+        line-height: initial;
+        margin-bottom: 0;
+
+        @media only screen and (min-width: 992px) and (max-width: 1400px){
+          font-size: 60px;
+          line-height: 64px;
+        }
+
+        @include lg {
+          font-size: 48px;
+          line-height: 56px;
+        }
+        @include md {
+          font-size: 42px;
+          line-height: 52px;
+        }
+        @include sm {
+          font-size: 38px;
+          line-height: 44px;
+        }
+
+        .single-title-item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+
+    // Slider Feature Image
+    .slider-feature-image {
+      margin-left: -220px;
+    }
+
+    // Slider Content
+    .slider-content {
+      margin-right: -120px;
+      transform: translateX(90px);
+      margin-top: 90px;
+
+      .slider-short-desc {
+        font-size: 18px;
+        color: $white;
+        font-weight: 400;
+        line-height: initial;
+        margin-bottom: 0;
+      }
+
+      .divider-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+
+        .divider {
+          height: 2px;
+          background-color: $white;
+          border-radius: 50px 0 0 50px;
+
+          &.one {
+            width: 86px;
+          }
+          &.two {
+            width: 22px;
+          }
+          &.three {
+            width: 14px;
+          }
+          &.four {
+            width: 9px;
+          }
+        }
+      }
+    }
+
+    // Slider Image
+    .slider-image-wrapper {
+      position: relative;
+      margin-left: -190px;
+      margin-right: -225px;
+
+      // Image
+      .slider-image {
+        margin-top: 125px;
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
+
+        @include rmaxwd(767) {
+          margin-top: unset;
+        }
+
+
+      }
+    }
+  }
+}
+
+// Slider Award
+.company-award {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    color: $white;
+    font-size: 14px;
+    line-height: initial;
+    margin-bottom: 20px;
+  }
+
+  .award-wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+}

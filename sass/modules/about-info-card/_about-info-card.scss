@@ -1,0 +1,59 @@
+.about-info-card {
+  &.style-1 {
+    margin-top: 40px;
+  }
+  //&.style-1 {
+  //  .about-info-content {
+  //    display: flex;
+  //    flex-direction: column;
+  //    gap: 32px;
+  //
+  //  }
+  //}
+
+  .about-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .section-title {
+      margin-bottom: 16px;
+
+      .shape {
+        position: relative;
+        padding: 30px;
+        color: $white;
+
+        img {
+          position: absolute;
+          bottom: 20px;
+          left: 7px
+        }
+      }
+    }
+
+    .quote {
+      font-family: $heading-font;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: initial;
+      color: $white;
+      position: relative;
+      gap: 40px;
+      display: flex;
+      padding: 12px 0 12px 41px;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 3px;
+        border-radius: 50px;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+}

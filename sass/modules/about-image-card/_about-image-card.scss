@@ -1,0 +1,53 @@
+.about-image-card {
+  .main-img-wrapper {
+    .main-img-inner {
+      position: relative;
+      display: inline-block;
+
+      > img {
+
+        @include rmaxwd(767) {
+          width: 100%;
+        }
+      }
+
+      .image-two {
+        transform: translateX(-50%);
+        margin-top: -90px;
+        position: relative;
+      }
+
+      .image-shape {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+      }
+    }
+    .company-label {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      transform: translate(-67%, 34%);
+
+      @include xl {
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+      @include rmaxwd(1199) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: unset;
+      }
+      .icon {
+        width: 170px;
+        height: 170px;
+        box-shadow: 0px 5px 90px 0px rgba(2, 24, 93, 0.12);
+        background-color: $primary-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

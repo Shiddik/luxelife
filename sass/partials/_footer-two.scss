@@ -1,0 +1,90 @@
+.footer {
+  &.style-2 {
+    .footer-sec {
+      padding-top: 100px;
+    }
+
+    .footer-widget-title {
+      color: $black;
+    }
+    .footer-widget-info p,
+    .footer-widget.widget_nav_menu li a,
+    .footer-bottom-menu ul li a,
+    .footer-bottom-area .copyright-text p {
+      color: #8f939b;
+    }
+    .footer-widget.widget_nav_menu li a,
+    .footer-bottom-menu ul li a{
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .footer-bottom-area .copyright-text p a {
+      color: #8f939b;
+      font-weight: 700;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .footer-bottom-menu {
+      display: flex;
+      flex-grow: 1;
+      justify-content: end;
+
+      @include rmaxwd(991) {
+        justify-content: start;
+      }
+    }
+    .copyright-text {
+      @include rmaxwd(991) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    // Social Share
+    .footer-widget {
+      .social-profile {
+        a {
+          color: unset;
+          i {
+            &.fa-facebook-f{
+              color: #1877f2;
+            }
+            &.fa-twitter{
+              color: #1da1f2;
+            }
+            &.fa-linkedin-in{
+              color: #0077b5;
+            }
+            &.fa-youtube{
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+    // Subscribe Form
+    .subscribe-form-wrapper {
+      p {
+        color: #8f939b;
+        margin-bottom: 30px;
+        margin-top: -8px;
+      }
+      .subscribe-form-widget {
+
+        .mc4wp-form-fields {
+          border-color: rgb(199, 199, 225);
+        }
+        .submit-btn {
+          color: $black;
+        }
+
+        .single-field {
+          input {
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}

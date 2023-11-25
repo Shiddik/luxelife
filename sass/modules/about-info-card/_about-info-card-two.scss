@@ -1,0 +1,9 @@
+.about-info-card {
+  &.style-2 {
+    .about-info-content {
+      display: flex;
+      flex-direction: column;
+      gap: 53px;
+    }
+  }
+}

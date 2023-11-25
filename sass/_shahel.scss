@@ -1,0 +1,436 @@
+$pricing-bg: #1C1D20;
+$pricing-border-color: #3C3E43;
+
+
+.price-area {
+    background-color: $pricing-bg;
+    position: relative;
+}
+
+.pricing-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+// team member area style
+
+.team-page-area {
+    padding: 140px 0;
+}
+.team-member-wrapper {
+    padding: 40px 0 0 0;
+
+    .single-team-member {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 74px;
+        padding: 100px 0;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .team-member-thumb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+
+            .image {
+                flex-shrink: 0;
+            }
+            .user-meta {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 76px 44px 76px;
+                gap: 18px;
+
+                .title {
+                    font-size: 35px;
+                    font-weight: 600;
+                    line-height: initial;
+                    color: $black;
+                }
+                .desc {
+                    font-size: 20px;
+                    font-weight: 600;
+                    
+                }
+                .member-social-site {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    flex-shrink: 0;
+    
+                    i {
+                        font-size: 20px;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .team-member-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-start;
+
+            .content {
+                .title {
+                    font-size: 45px;
+                    font-weight: 600;
+                    color: $black;
+                    line-height: initial;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 29px;
+                    margin-top: 20px;
+                    text-transform: capitalize;
+                }
+            }
+
+
+            .team-tab {
+                margin-top: 9.5px;
+                ul {
+                    display: flex;
+                    margin: 0;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                    list-style: none;
+                    padding: 0;
+                    
+                    li {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        color: $text-color;
+                        position: relative;
+                        padding: 15px 37px;
+                        cursor: pointer;
+                        &:first-child {
+                            padding-left: 0;
+                        }
+
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            content: "";
+                            width: 0;
+                            height: 1px;
+                            background-color: $primary-color;
+                            @include transition;
+                           
+                        }
+
+                        &.active {
+                            color: $primary-color;
+
+                            &:before {
+                               width: 100%;
+                              @include transition;
+                            }
+                        }
+                    }
+                }
+               
+                .title-wrapper {
+                    margin-top: 20px;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-shrink: 0;
+                        gap: 10px;
+
+                        .title {
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 29px;
+                            font-family: $roboto-font;
+                            text-transform: capitalize;
+                            color: $text-color;
+                        }
+                    }
+                    .desc {
+                        font-size: 16px;
+                        line-height: 29px;
+                        text-transform: capitalize;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .member-court {
+                padding: 27px 0 27px 44px;
+                border-left: 3px solid $primary-color;
+                margin-bottom: 14px;
+
+                .desc {
+                    font-family: $heading-font;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $black;
+                }
+            }
+            .member-social-site {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                flex-shrink: 0;
+
+                i {
+                    font-size: 20px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+
+//Carrier Page Style
+.carrier-page {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.carrier-page-area {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .carrier-info {
+        position: relative;
+        z-index: 2;
+        padding-right: 100px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 9999px;
+            z-index: -1;
+            background-color: $white;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: initial;
+            color: #808080;
+            text-transform: capitalize;
+        }
+        .title {
+            font-size: 45px;
+            font-weight: 400;
+            line-height: initial;
+            color: $black;
+            text-transform: capitalize;
+        }
+        .desc {
+            margin-top: 20px;
+            color: $black;
+            font-size: 18px;
+            line-height: initial;
+        }
+        .submit-btn {
+            color: $white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: initial;
+            padding: 10px 25px;
+            background-color: $primary-color;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            display: inline-flex;
+        }
+
+    }
+}
+
+//contact us page style
+.contact-page {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top left;
+
+    .contact-info-card {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 0;
+
+            li {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 29px;
+                color: $black;
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 29px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+// practice page style
+
+.practice-area {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 229px 0;
+}
+
+
+
+
+
+// full width background img
+.full-width-bg {
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+//latest post area
+
+.latest-posts-area {
+    &.style-2 {
+        background-color: #FAF8F7;
+        padding-top: 120px;
+        padding-bottom: 130px;
+
+        .section-title {
+            margin-bottom: 192px;
+
+        }
+    }
+}
+
+
+// service name style
+.service-list {
+    padding-top: 140px;
+    padding-bottom: 100px;
+
+    .service-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 38px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: flex-end;
+
+                a {
+                    margin-bottom: 0;
+                    font-family: $heading-font;
+                    font-size: 35px;
+                    font-weight: 500;
+                    line-height: initial;
+                    color: $black;
+                }
+
+                .number {
+                    font-family: $body-font;
+                    font-size: 16px;
+                    line-height: 29px;
+                    color: $primary-color;
+                }
+               
+            }
+        }
+    }
+    .service-btn {
+        margin-top: 50px;
+    }
+}
+
+
+//case project style
+.project-area {
+    padding: 120px 0;
+    background-color: #FAF8F7;
+
+    .section-title {
+        margin-bottom: 104px;
+
+        .title {
+            font-size: 60px;
+            line-height: initial;
+            font-weight: 600;
+            color: $black;
+        }
+    }
+
+    .project-case {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
