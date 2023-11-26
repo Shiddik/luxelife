@@ -1,8 +1,14 @@
+
+
 .counter-card {
+  &.style-1 {
+    border: 1px dashed $primary-color;
+    padding: 20px;
+    margin-top: 55px;
+  }
   display: inline-flex;
   align-items: center;
-  gap: 25px;
-  background-color: $primary-color;
+  gap: 5px;
   padding: 50px 47px;
   text-align: left;
   position: relative;
@@ -15,20 +21,11 @@
   }
   .number {
     font-family: $heading-font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: initial;
-    text-align: center;
-    color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: $black;
     margin: 0;
-    background-color: $black-100;
-    border-radius: 5px;
-    width: 173px;
-    padding: 25px 5px;
     flex-shrink: 0;
 
     @include sm {

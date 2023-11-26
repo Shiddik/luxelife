@@ -1,0 +1,25 @@
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 10px;
+
+
+    .short-title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px; 
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 60px;
+      text-transform: capitalize;
+      color: $black;
+    }
+}

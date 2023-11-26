@@ -16,21 +16,21 @@
     flex-direction: column;
     gap: 40px;
 
-    .section-title {
-      margin-bottom: 16px;
+    // .section-title {
+    //   margin-bottom: 16px;
 
-      .shape {
-        position: relative;
-        padding: 30px;
-        color: $white;
+    //   .shape {
+    //     position: relative;
+    //     padding: 30px;
+    //     color: $white;
 
-        img {
-          position: absolute;
-          bottom: 20px;
-          left: 7px
-        }
-      }
-    }
+    //     img {
+    //       position: absolute;
+    //       bottom: 20px;
+    //       left: 7px
+    //     }
+    //   }
+    // }
 
     .quote {
       font-family: $heading-font;

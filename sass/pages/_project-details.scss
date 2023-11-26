@@ -1,86 +1,20 @@
 .portfolio-area {
   position: relative;
   background-color: $white-50;
-  padding-bottom: 120px;
+  
   
   .portfolio-heading {
     background-color: $black;
     padding: 120px 312px 320px 312px;
-  }
 
-  .section-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 60px;
-    gap: 10px;
-
-
-    .short-title {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px; 
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: $primary-color;
-    }
     .title {
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 60px;
-      text-transform: capitalize;
       color: $white;
     }
   }
 
-  // &.style-4 {
-  //   padding-top: 120px;
-  //   padding-bottom: 96px;
 
-  //   @include sm {
-  //     padding-top: 80px;
-  //     padding-bottom: 56px;
-  //   }
-  //   @include md {
-  //     padding-top: 100px;
-  //     padding-bottom: 76px;
-  //   }
-  //   .portfolio-filter {
-  //     padding-left: 0;
-  //     display: flex;
-  //     align-items: center;
-  //     gap: 20px 50px;
-  //     justify-content: center;
-  //     margin-bottom: 70px;
-  //     flex-wrap: wrap;
-  //     margin-top: -8px;
-
-  //     @include rmaxwd(991) {
-  //       margin-bottom: 50px;
-  //     }
-
-  //     li {
-  //       list-style: none;
-  //       font-size: 18px;
-  //       font-weight: 500;
-  //       color: $black;
-  //       text-transform: capitalize;
-  //       cursor: pointer;
-  //       @include transition;
-
-  //       &.active {
-  //         color: $blue-color;
-  //         @include transition;
-  //       }
-  //     }
-  //   }
-  //   .basic-pagination {
-  //     margin-bottom: 0;
-  //     margin-top: 50px;
-  //   }
-  // }
 }
+
 
 // Project Details
 .project-page-wrapper {

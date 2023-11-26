@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 36px;
-  padding-right: 20px;
+  gap: 18px;
 }
 .skill-progressbar {
   .progress-inner-item {
@@ -40,13 +39,14 @@
   }
   .progress-content-outter {
     height: 8px;
-    background-color: $gray-400;
+    background-color: $gray-700;
     border-radius: 50px;
   }
   .progress-content {
     height: 8px;
-    background-color: $blue-color;
+    width: 436px;
+    background-color: $primary-color;
     width: 0%;
-    border-radius: 50px;
+    border-radius: 20px;
   }
 }
