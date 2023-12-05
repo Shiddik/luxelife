@@ -1,0 +1,178 @@
+
+.hero-section-1{
+
+}
+
+.hero-content-area{
+    background-image: url(../images/hero-section/hero-content-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 200px 0 200px 124px;
+
+    .bg-dark-effect{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(91deg, #000 0.47%, rgba(0, 0, 0, 0.00) 99.58%);
+    }
+}
+
+.hero-content{
+    position: relative;
+    z-index: 5;
+
+    h1{
+        font-size: 86px;
+        line-height: 115%;
+        font-weight: 700;
+        font-family: Rajdhani;
+        color: #FFFFFF;
+        width: 75%;
+    }
+    p{
+        font-size: 16px;
+        line-height: 30px;
+        font-family: Rubik;
+        margin: 20px 0 42px;
+        width: 75%;
+        color: #FFFFFF;
+    }
+
+    .hero-content-bottom{
+        display: flex;
+        align-items: center;
+
+        button{
+            padding: 14px 25px;
+            background-color: #D9A14C;
+            color: #FFFFFF;
+            font-family: Rajdhani;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1.28px;
+            line-height: 32px;
+
+            span{
+                margin-left: 15px;
+                font-size: 16px;
+                font-weight: 900;
+                font-family: Font Awesome 6 Free;
+            }
+        }
+
+        .trusted-clients{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 68px;
+
+            img{
+                width: 54px;
+                height: 54px;
+                border: 2px solid #FFFFFF;
+                border-radius: 50%;
+                margin-left: -15px;
+            }
+        }
+
+        .member-count{
+                margin-left: 18px;
+                h4{
+                    font-size: 32px;
+                    font-family: Rajdhani;
+                    font-weight: 700;
+                    line-height: 130%;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-family: Rubik;
+                    color: #FFFFFF;
+                }
+        }
+    }
+}
+
+.hero-gallery-area{
+    padding: 60px 0 46px 80px;
+
+    h4{
+        font-size: 24px;
+        font-family: Rajdhani;
+        font-weight: 700;
+        line-height: 30px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    .tag-btns{
+        button{
+            padding: 10px 20px;
+            font-family: Rubik;
+            font-size: 16px;
+            line-height: 30px;
+            margin-right: 21px;
+            background: none;
+            border: 1px solid #D9A14C;
+            color: #23262D;
+        }
+        .active{
+            background: #D9A14C;
+            border: 1px solid #D9A14C;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.hero-gallery-slider{
+    padding: 30px 0 60px;
+    position: relative;
+
+    .slick-arrow{
+        position: absolute;
+        bottom: 0;
+        width: 44px;
+        height: 44px;
+        background: none;
+        border: 1px solid #E3E3E3;
+        transition: all 0.5s;
+        &:hover{
+            border: 1px solid #D9A14C;
+            transition: all 0.8s ease-out;
+        }
+
+        i{
+            color: #23262D;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: Font Awesome 6 Free;
+        }
+    }
+    .slick-arrow.btn-next{
+        margin-left: 59px;
+    }
+
+    .slick-track{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .gallery-slide.slick-slide{
+            margin-right: 30px;
+            width: 300px;
+            height: 470px;
+    
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

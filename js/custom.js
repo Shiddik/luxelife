@@ -584,3 +584,53 @@ new simpleParallax(image, {
 	transition: 'cubic-bezier(0,0,0,1)'
 });
 
+
+// Hero Gallery Slider //
+
+$(".hero-gallery-slider").slick({
+    slidesToShow: 3,
+    infinite: true,
+    autoplay: true,
+    draggable: true,
+    arrows: true,
+    prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-chevron-right"></i></button>',
+    slidesToScroll: 1,
+    loop: true,
+    dots: false,
+    speed: 1500,
+    rtl: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+        {
+            breakpoint: 460,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ],
+});
+
