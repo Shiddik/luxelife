@@ -585,7 +585,8 @@ new simpleParallax(image, {
 });
 
 
-// Hero Gallery Slider //
+
+// Hero Gallery Slider by mehedi //
 
 $(".hero-gallery-slider").slick({
     slidesToShow: 3,
