@@ -11,12 +11,12 @@
         padding: 5px;
         text-align: center;
 
-        img{
+        .card-icon{
             width: 65px;
             height: 65px;
             margin-bottom: 30px;
         }
-        h4{
+        .card-title{
             font-size: 24px;
             font-family: Rajdhani;
             font-weight: 700;
@@ -24,7 +24,7 @@
             color: #FFFFFF;
             margin-bottom: 20px;
         }
-        p{
+        .card-description{
             font-family: Rubik;
             font-size: 16px;
             line-height: 30px;
@@ -33,7 +33,7 @@
             font-weight: 400;
             opacity: 0.72;
         }
-        a{
+        .card-btn{
             font-family: Rajdhani;
             font-size: 16px;
             font-weight: 700;

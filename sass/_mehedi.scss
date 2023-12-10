@@ -1,7 +1,7 @@
 
-.hero-section-1{
+// .hero-section-1{
 
-}
+// }
 
 .hero-content-area{
     background-image: url(../images/hero-section/hero-content-bg.png);
@@ -185,6 +185,7 @@
     background-color: #F4F4F4;
     padding: 120px 0;
     max-width: 1900px;
+    margin: 0 auto;
 
     .about-container{
         width: 75%;
@@ -192,9 +193,9 @@
     }
 }
 
-// modules/mehedi scss file
 @import "modules/mehedi/about-image-card/about-image-card";
 @import "modules/mehedi/about-info-card/about-info-card";
+
 
 
 // Our Services section
@@ -203,6 +204,7 @@
     padding: 120px 0;
     position: relative;
     max-width: 1900px;
+    margin: 0 auto;
 
     .bg-dark{
         background-image: url(../images/mehedi/our-services-section-bg.png);
@@ -223,30 +225,14 @@
     position: relative;
     z-index: 10;
 
-    .our-services-heading{
-        width: 45%;
-        margin: 0 auto;
-        text-align: center;
+    .section-title{
 
-        h5{
+        .short-title{
             font-family: Rajdhani;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 27px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
             margin-bottom: 10px;
             color: #D9A14C;
             position: relative;
 
-            span{
-                content: "";
-                width: 20px;
-                height: 1px;
-                background-color: #D9A14C;
-                position: absolute;
-                top: 50%;
-            }
             .left-dash{
                 margin-left: -30px;
             }
@@ -254,17 +240,73 @@
                 margin-left: 5px;
             }
         }
-        h2{
+        .title{
             font-family: Rajdhani;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 60px;
-            text-transform: capitalize;
             color: #FFFFFF;
+            width: 45%;
+            text-align: center
         }
     }
 }
 
-
-
 @import "modules/mehedi/services-card/services-card";
+
+
+
+// Our Portfolio Section
+.our-portfolio-section{
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 120px 0;
+
+    .portfolio-container{
+        width: 75%;
+        margin: 0 auto;
+
+        .section-content{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 52px;
+        }
+
+        .section-title{
+            align-items: start;
+            margin: 0;
+
+            .short-title{
+                color: #D9A14C;
+                .right-dash{
+                    margin-left: 5px;
+                }
+            }
+            .title{
+                width: 70%;
+            }
+        }
+
+        .section-btn{
+            height: 60px;
+            padding: 14px 25px;
+            align-self: end;
+            background-color: #D9A14C;
+            color: #FFFFFF;
+            font-family: Rajdhani;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;
+
+            i{
+                width: 14px;
+                height: 16px;
+                font-weight: 900;
+                font-family: Font Awesome 6 Free;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+@import "modules/mehedi/portfolio-gallery-card/portfolio-gallery-card";
+

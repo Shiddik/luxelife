@@ -4076,6 +4076,15 @@ body.admin-bar .header-menu-area.sticky_menu {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #D9A14C;
+  position: relative;
+}
+.section-title .short-title span {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #D9A14C;
+  position: absolute;
+  top: 50%;
 }
 .section-title .title {
   font-size: 48px;
@@ -10816,6 +10825,7 @@ ul.children {
   background-color: #F4F4F4;
   padding: 120px 0;
   max-width: 1900px;
+  margin: 0 auto;
 }
 .about-section-one .about-container {
   width: 75%;
@@ -10918,45 +10928,43 @@ ul.children {
   line-height: 30px;
   color: #616670;
 }
-.about-info-section .info-card-group {
+
+.timeline-card-group {
   border-left: 1px solid #D9A14C;
   padding-left: 45px;
   position: relative;
   margin: 40px 0 0 40px;
 }
-.about-info-section .info-card-group .top-dot {
+.timeline-card-group span {
   content: "";
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #D9A14C;
   position: absolute;
+}
+.timeline-card-group .top-dot {
   top: 0;
   left: -5px;
 }
-.about-info-section .info-card-group .bottom-dot {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #D9A14C;
-  position: absolute;
+.timeline-card-group .bottom-dot {
   bottom: 0;
   left: -5px;
 }
-.about-info-section .info-card-group .info-card {
+.timeline-card-group .single-card {
   margin-bottom: 30px;
   background: none;
   padding: 0;
 }
-.about-info-section .info-card-group .info-card h4 {
+.timeline-card-group .single-card .card-title {
   font-family: Rajdhani;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 30px;
   color: #23262D;
+  margin-bottom: 10px;
 }
-.about-info-section .info-card-group .info-card p {
+.timeline-card-group .single-card .card-article {
   font-family: Rubik;
   font-size: 16px;
   line-height: 30px;
@@ -10968,6 +10976,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
   max-width: 1900px;
+  margin: 0 auto;
 }
 .our-services-section-one .bg-dark {
   background-image: url(../images/mehedi/our-services-section-bg.png);
@@ -10987,43 +10996,23 @@ ul.children {
   position: relative;
   z-index: 10;
 }
-.services-container .our-services-heading {
-  width: 45%;
-  margin: 0 auto;
-  text-align: center;
-}
-.services-container .our-services-heading h5 {
+.services-container .section-title .short-title {
   font-family: Rajdhani;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 27px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
   margin-bottom: 10px;
   color: #D9A14C;
   position: relative;
 }
-.services-container .our-services-heading h5 span {
-  content: "";
-  width: 20px;
-  height: 1px;
-  background-color: #D9A14C;
-  position: absolute;
-  top: 50%;
-}
-.services-container .our-services-heading h5 .left-dash {
+.services-container .section-title .short-title .left-dash {
   margin-left: -30px;
 }
-.services-container .our-services-heading h5 .right-dash {
+.services-container .section-title .short-title .right-dash {
   margin-left: 5px;
 }
-.services-container .our-services-heading h2 {
+.services-container .section-title .title {
   font-family: Rajdhani;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 60px;
-  text-transform: capitalize;
   color: #FFFFFF;
+  width: 45%;
+  text-align: center;
 }
 
 .services-card-group {
@@ -11037,12 +11026,12 @@ ul.children {
   padding: 5px;
   text-align: center;
 }
-.services-card-group .service-card img {
+.services-card-group .service-card .card-icon {
   width: 65px;
   height: 65px;
   margin-bottom: 30px;
 }
-.services-card-group .service-card h4 {
+.services-card-group .service-card .card-title {
   font-size: 24px;
   font-family: Rajdhani;
   font-weight: 700;
@@ -11050,7 +11039,7 @@ ul.children {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-.services-card-group .service-card p {
+.services-card-group .service-card .card-description {
   font-family: Rubik;
   font-size: 16px;
   line-height: 30px;
@@ -11059,7 +11048,7 @@ ul.children {
   font-weight: 400;
   opacity: 0.72;
 }
-.services-card-group .service-card a {
+.services-card-group .service-card .card-btn {
   font-family: Rajdhani;
   font-size: 16px;
   font-weight: 700;
@@ -11068,14 +11057,96 @@ ul.children {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.services-card-group .service-card a:hover i {
+.services-card-group .service-card .card-btn:hover i {
   color: #FF9205;
   transition: all 0.5s ease-out;
 }
-.services-card-group .service-card a i {
+.services-card-group .service-card .card-btn i {
   margin-left: 6px;
   font-weight: 900;
   color: #FFFFFF;
+  transition: all 0.5s ease-out;
+}
+
+.our-portfolio-section {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.our-portfolio-section .portfolio-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.our-portfolio-section .portfolio-container .section-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+.our-portfolio-section .portfolio-container .section-title {
+  align-items: start;
+  margin: 0;
+}
+.our-portfolio-section .portfolio-container .section-title .short-title {
+  color: #D9A14C;
+}
+.our-portfolio-section .portfolio-container .section-title .short-title .right-dash {
+  margin-left: 5px;
+}
+.our-portfolio-section .portfolio-container .section-title .title {
+  width: 70%;
+}
+.our-portfolio-section .portfolio-container .section-btn {
+  height: 60px;
+  padding: 14px 25px;
+  align-self: end;
+  background-color: #D9A14C;
+  color: #FFFFFF;
+  font-family: Rajdhani;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+.our-portfolio-section .portfolio-container .section-btn i {
+  width: 14px;
+  height: 16px;
+  font-weight: 900;
+  font-family: Font Awesome 6 Free;
+  margin-left: 8px;
+}
+
+.portfolio-gallery-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "a a b c" "d e e e";
+  grid-gap: 30px;
+}
+.portfolio-gallery-card .img-card.a {
+  grid-area: a;
+}
+.portfolio-gallery-card .img-card.b {
+  grid-area: b;
+}
+.portfolio-gallery-card .img-card.c {
+  grid-area: c;
+}
+.portfolio-gallery-card .img-card.d {
+  grid-area: d;
+}
+.portfolio-gallery-card .img-card.e {
+  grid-area: e;
+}
+.portfolio-gallery-card .img-card {
+  overflow: hidden;
+}
+.portfolio-gallery-card .img-card img {
+  width: 100%;
+  height: 390px;
+  transition: all 0.5s ease-out;
+}
+.portfolio-gallery-card .img-card img:hover {
+  transform: scale(1.03);
   transition: all 0.5s ease-out;
 }
 

@@ -1,0 +1,48 @@
+@import "../../../mixin";
+
+
+.timeline-card-group{
+    border-left: 1px solid #D9A14C;
+    padding-left: 45px;
+    position: relative;
+    margin: 40px 0 0 40px;
+
+
+    span{
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #D9A14C;
+        position: absolute;
+    }
+    .top-dot{
+        top: 0;
+        left: -5px;
+    }
+    .bottom-dot{
+        bottom: 0;
+        left: -5px;
+    }
+
+    .single-card{
+        margin-bottom: 30px;
+        background: none;
+        padding: 0;
+
+        .card-title{
+            font-family: Rajdhani;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 30px;
+            color: #23262D;
+            margin-bottom: 10px;
+        }
+        .card-article{
+            font-family: Rubik;
+            font-size: 16px;
+            line-height: 30px;
+            color: #616670;
+        }
+    }
+}
