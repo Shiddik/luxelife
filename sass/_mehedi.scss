@@ -259,54 +259,59 @@
     margin: 0 auto;
     padding: 120px 0;
 
-    .portfolio-container{
+    .section-content{
+        display: flex;
+        justify-content: space-between;
         width: 75%;
-        margin: 0 auto;
+        margin: 0 auto 52px;
+    }
 
-        .section-content{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 52px;
-        }
+    .section-title{
+        align-items: start;
+        margin: 0;
 
-        .section-title{
-            align-items: start;
-            margin: 0;
-
-            .short-title{
-                color: #D9A14C;
-                .right-dash{
-                    margin-left: 5px;
-                }
-            }
-            .title{
-                width: 70%;
+        .short-title{
+            color: #D9A14C;
+            .right-dash{
+                margin-left: 5px;
             }
         }
-
-        .section-btn{
-            height: 60px;
-            padding: 14px 25px;
-            align-self: end;
-            background-color: #D9A14C;
-            color: #FFFFFF;
-            font-family: Rajdhani;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 32px;
-            letter-spacing: 1.28px;
-            text-transform: uppercase;
-
-            i{
-                width: 14px;
-                height: 16px;
-                font-weight: 900;
-                font-family: Font Awesome 6 Free;
-                margin-left: 8px;
-            }
+        .title{
+            width: 70%;
         }
+    }
+
+    .section-btn{
+        height: 60px;
+        padding: 14px 25px;
+        align-self: end;
+        background-color: #D9A14C;
+        color: #FFFFFF;
+        font-family: Rajdhani;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+
+        i{
+            width: 14px;
+            height: 16px;
+            font-weight: 900;
+            font-family: Font Awesome 6 Free;
+            margin-left: 8px;
+        }
+    }
+
+    .product-container{
+        // width: 75%;
+        margin: 120px auto 0;
+        max-width: 1900px;
     }
 }
 
-@import "modules/mehedi/portfolio-gallery-card/portfolio-gallery-card";
+@import "modules/mehedi/img-gallery-card/img-gallery-card";
+@import "modules/mehedi/counter-up/counter-up";
+@import "modules/mehedi/video-card/video-card";
+@import "modules/mehedi/product-card/product-card";
 
