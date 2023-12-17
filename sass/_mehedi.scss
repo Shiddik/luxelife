@@ -160,10 +160,7 @@
     }
 
     .slick-track{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
+        display: block;
 
         .gallery-slide.slick-slide{
             margin-right: 30px;
@@ -173,6 +170,7 @@
             img{
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -228,7 +226,7 @@
     .section-title{
 
         .short-title{
-            font-family: Rajdhani;
+            font-family: $heading-font;
             margin-bottom: 10px;
             color: #D9A14C;
             position: relative;
@@ -241,10 +239,10 @@
             }
         }
         .title{
-            font-family: Rajdhani;
+            font-family: $heading-font;
             color: #FFFFFF;
             width: 45%;
-            text-align: center
+            text-align: center;
         }
     }
 }
@@ -315,3 +313,70 @@
 @import "modules/mehedi/video-card/video-card";
 @import "modules/mehedi/product-card/product-card";
 
+
+
+// Testimonial Section
+.testimonial-section{
+    background-color: #F4F4F4;
+    padding: 100px 0;
+
+    .testimonial-container{
+        margin: 20px -125px 20px 315px;
+
+        .section-content{
+            max-width: 350px;
+
+            .section-title{
+                align-items: start;
+                margin-bottom: 50px;
+
+                .right-dash{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.testimonial-brand-logo-area{
+    margin-top: 100px
+}
+
+@import "modules/mehedi/slider-btn/slider-btn";
+@import "modules/mehedi/testimonial-slider/testimonial-slider";
+@import "modules/mehedi/brand-logo-slider/brand-logo-slider";
+
+
+// Blog and News section
+.blog-section{
+
+    .blog-container{
+        width: 75%;
+        padding: 120px 0;
+        margin: 0 auto;
+
+        .section-content{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+
+            .section-title{
+                align-items: start;
+                margin: 0;
+
+                .right-dash{
+                    margin-left: 5px;
+                }
+                .title{
+                    width: 60%;
+                }
+            }
+            .slider-btn{
+                align-self: self-end;
+            }
+        }
+    }
+}
+
+
+@import "modules/mehedi/blog-card/blog-card";

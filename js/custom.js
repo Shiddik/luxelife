@@ -597,6 +597,7 @@ $(".hero-gallery-slider").slick({
     prevArrow: '<button class="slick-arrow btn-prev"><i class="fa-solid fa-chevron-left"></i></button>',
     nextArrow: '<button class="slick-arrow btn-next"><i class="fa-solid fa-chevron-right"></i></button>',
     slidesToScroll: 1,
+    variableWidth: true,
     loop: true,
     dots: false,
     speed: 1500,
@@ -635,3 +636,164 @@ $(".hero-gallery-slider").slick({
     ],
 });
 
+
+// Testimonial slider by mehedi
+
+$(".testimonial-slider").slick({
+    slidesToShow: 3,
+    infinite: true,
+    autoplay: true,
+    draggable: true,
+    arrows: true,
+    slidesToScroll: 1,
+    variableWidth: true,
+    loop: true,
+    dots: false,
+    speed: 1500,
+    rtl: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+        {
+            breakpoint: 460,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ],
+});
+
+$('.testimonial-slaider-area .prev-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.slick-prev').trigger('click');
+});
+$('.testimonial-slaider-area .next-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.slick-next').trigger('click');
+});
+
+// brand logo slider
+$(".brand-logo-slider").slick({
+    slidesToShow: 5,
+    infinite: true,
+    autoplay: true,
+    draggable: true,
+    arrows: false,
+    slidesToScroll: 1,
+    variableHeight: true,
+    variableWidth: true,
+    loop: true,
+    dots: false,
+    speed: 1500,
+    rtl: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+            },
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 5,
+            },
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 4,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 460,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+    ],
+});
+
+
+// Blog card slider by mehedi
+
+$(".blog-card-slider").slick({
+    slidesToShow: 3,
+    infinite: true,
+    autoplay: true,
+    arrows: true,
+    slidesToScroll: 1,
+    loop: true,
+    dots: false,
+    speed: 1500,
+    rtl: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+        {
+            breakpoint: 460,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ],
+});
+
+$('.blog-section .prev-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.slick-prev').trigger('click');
+});
+$('.blog-section .next-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.slick-next').trigger('click');
+});
