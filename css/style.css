@@ -3254,6 +3254,22 @@ body.admin-bar .header-menu-area.sticky_menu {
             transform: rotate(359deg);
   }
 }
+@-webkit-keyframes borderAnimation {
+  from {
+    background-position: 0 0, -33.13px 0, 100% -33.13px, 0 100%;
+  }
+  to {
+    background-position: 0 -33.13px, 0 0, 100% 0, -33.13px 100%;
+  }
+}
+@keyframes borderAnimation {
+  from {
+    background-position: 0 0, -33.13px 0, 100% -33.13px, 0 100%;
+  }
+  to {
+    background-position: 0 -33.13px, 0 0, 100% 0, -33.13px 100%;
+  }
+}
 #preloader {
   position: fixed;
   top: 0;
@@ -4431,18 +4447,22 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   position: relative;
 }
-.slider-area.style-1 {
-  background-color: #1C1D20;
-  padding-top: 2px;
-}
-.slider-area.style-1:before {
+.slider-area .slider-bg {
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: rgba(205, 176, 145, 0.1490196078);
-  top: 2px;
-  left: 0;
+  top: 0;
+  right: 0;
+  height: 725px;
+  width: 867px;
+  background-color: #23262D;
+}
+.slider-area .slider-bg img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
 }
 .slider-area .slider-wrapper .slick-arrow {
   display: none !important;
@@ -5965,9 +5985,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
 }
 .counter-card.style-1 {
-  border: 1px dashed #D9A14C;
   padding: 20px;
   margin-top: 55px;
+  background-image: repeating-linear-gradient(165deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(255deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(-15deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(75deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px);
+  background-size: 2px calc(100% + 33.13px), calc(100% + 33.13px) 2px, 2px calc(100% + 33.13px), calc(100% + 33.13px) 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  animation: borderAnimation 1s infinite linear reverse;
 }
 .counter-card .counter-shape {
   position: absolute;

@@ -197,3 +197,8 @@
     transform: rotate(359deg);
   }
 }
+
+@keyframes borderAnimation {
+  from { background-position: 0 0, -33.13px 0, 100% -33.13px, 0 100%; }
+  to { background-position: 0 -33.13px, 0 0, 100% 0, -33.13px 100%; }
+}

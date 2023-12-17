@@ -2,9 +2,15 @@
 
 .counter-card {
   &.style-1 {
-    border: 1px dashed $primary-color;
     padding: 20px;
     margin-top: 55px;
+    background-image: repeating-linear-gradient(165deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(255deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(-15deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(75deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px);
+      background-size: 2px calc(100% + 33.13px), calc(100% + 33.13px) 2px, 2px calc(100% + 33.13px) , calc(100% + 33.13px) 2px;
+      background-position: 0 0, 0 0, 100% 0, 0 100%;
+      background-repeat: no-repeat;
+      animation: borderAnimation 1s infinite linear reverse;
+      
+      
   }
   display: inline-flex;
   align-items: center;
