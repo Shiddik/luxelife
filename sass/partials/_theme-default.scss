@@ -244,18 +244,18 @@ input.theme-btn {
     color: #fff;
     font-size: 16px;
   }
-  &:before {
-    position: absolute;
-    left: -20%;
-    top: 0;
-    height: 100%;
-    width: 0;
-    content: "";
-    background-color: $blue-color;
-    z-index: -1;
-    transform: skew(45deg);
-    @include transition;
-  }
+  // &:before {
+  //   position: absolute;
+  //   left: -20%;
+  //   top: 0;
+  //   height: 100%;
+  //   width: 0;
+  //   content: "";
+  //   background-color: $blue-color;
+  //   z-index: -1;
+  //   transform: skew(45deg);
+  //   @include transition;
+  // }
   &:hover {
     color: #fff;
     border-color: $blue-color;
