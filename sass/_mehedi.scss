@@ -378,5 +378,51 @@
     }
 }
 
-
 @import "modules/mehedi/blog-card/blog-card";
+
+
+
+// Contact section
+.contact-section{
+    max-width: 1900px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+    .contact-container{
+        width: 75%;
+        margin: 0 auto;
+
+        .section-title{
+            align-items: start;
+            margin-bottom: 30px;
+
+            .title{
+                margin-bottom: 20px;
+            }
+
+            .description{
+                font-family: $body-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #616670;
+            }
+        }
+
+        .contact-img{
+            width: 100%;
+            height: 100%;
+            padding-left: 12px;
+
+             img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+             }
+        }
+    }
+}
+
+@import "modules/mehedi/comment-form/comment-form";
+
+

@@ -687,11 +687,11 @@ $(".testimonial-slider").slick({
 
 $('.testimonial-slaider-area .prev-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-prev').trigger('click');
+    $('.testimonial-slaider-area .slick-prev').trigger('click');
 });
 $('.testimonial-slaider-area .next-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-next').trigger('click');
+    $('.testimonial-slaider-area .slick-next').trigger('click');
 });
 
 // brand logo slider
@@ -791,9 +791,9 @@ $(".blog-card-slider").slick({
 
 $('.blog-section .prev-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-prev').trigger('click');
+    $('.blog-section .slick-prev').trigger('click');
 });
 $('.blog-section .next-btn').on('click', function (e) {
     e.preventDefault();
-    $('.slick-next').trigger('click');
+    $('.blog-section .slick-next').trigger('click');
 });

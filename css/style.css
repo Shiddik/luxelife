@@ -8805,7 +8805,7 @@ ul.children {
 .comment-respond .contacts-name,
 .comment-respond .single-input-field,
 .comment-respond .contacts-message {
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   position: relative;
 }
 .comment-respond .contacts-email label,
@@ -8920,14 +8920,13 @@ ul.children {
 .comment-respond.style-2 .contacts-name,
 .comment-respond.style-2 .single-input-field,
 .comment-respond.style-2 .contacts-message {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
-.comment-respond.style-2 .contacts-email label,
-.comment-respond.style-2 .contacts-name label,
-.comment-respond.style-2 .single-input-field label,
-.comment-respond.style-2 .contacts-message label {
-  background-color: #1F2732;
-  color: #ffffff;
+.comment-respond.style-2 .contacts-email input,
+.comment-respond.style-2 .contacts-name input,
+.comment-respond.style-2 .single-input-field input,
+.comment-respond.style-2 .contacts-message input {
+  width: 100%;
 }
 .comment-respond.style-2 .comment-respond-wrapper {
   margin-left: 335px;
@@ -8968,8 +8967,25 @@ ul.children {
 .comment-respond.style-2 input,
 .comment-respond.style-2 select,
 .comment-respond.style-2 textarea {
-  border-color: #2C353E !important;
+  border-color: #E3E3E3 !important;
   margin-bottom: 0;
+}
+.comment-respond.style-2 .form-btn {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #D9A14C;
+  color: #FFFFFF;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+.comment-respond.style-2 .form-btn i {
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  margin-left: 5px;
 }
 
 .team-member-area {
@@ -11574,6 +11590,119 @@ ul.children {
   font-size: 16px;
   font-weight: 900;
   margin-left: 8px;
+}
+
+.contact-section {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.contact-section .contact-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.contact-section .contact-container .section-title {
+  align-items: start;
+  margin-bottom: 30px;
+}
+.contact-section .contact-container .section-title .title {
+  margin-bottom: 20px;
+}
+.contact-section .contact-container .section-title .description {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+}
+.contact-section .contact-container .contact-img {
+  width: 100%;
+  height: 100%;
+  padding-left: 12px;
+}
+.contact-section .contact-container .contact-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comment-area {
+  position: relative;
+}
+.comment-area .contacts-email,
+.comment-area .contacts-name,
+.comment-area .single-input-field,
+.comment-area .contacts-message {
+  margin-bottom: 20px;
+}
+.comment-area .contacts-email input,
+.comment-area .contacts-name input,
+.comment-area .single-input-field input,
+.comment-area .contacts-message input {
+  width: 100%;
+}
+.comment-area input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.comment-area input,
+.comment-area select {
+  padding: 15px 20px;
+  height: 60px;
+  width: 100%;
+  color: #778196;
+  opacity: 1;
+  border: 1px solid rgba(44, 53, 62, 0.1490196078) !important;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  font-family: "Rubik", sans-serif !important;
+}
+.comment-area input[type=submit] {
+  height: 60px;
+  background-color: #D9A14C;
+  border-color: #D9A14C;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.comment-area textarea {
+  resize: vertical;
+  padding: 15px 20px;
+  width: 100%;
+  color: #778196;
+  border: 1px solid rgba(44, 53, 62, 0.1490196078) !important;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  font-family: "Rubik", sans-serif !important;
+  height: 147px;
+}
+.comment-area input:focus,
+.comment-area textarea:focus,
+.comment-area .form-select:focus {
+  outline: none !important;
+  box-shadow: none;
+  border-color: #D9A14C !important;
+  transition: all 0.4s ease 0s;
+}
+.comment-area .form-btn {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #D9A14C;
+  color: #FFFFFF;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+.comment-area .form-btn i {
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  margin-left: 5px;
 }
 
 .price-area {
