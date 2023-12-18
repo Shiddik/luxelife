@@ -1,25 +1,42 @@
 .section-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 60px;
-    gap: 10px;
-
-
+    
     .short-title {
+      font-family: $heading-font;
       font-size: 18px;
       font-weight: 700;
       line-height: 27px; 
       letter-spacing: 4px;
       text-transform: uppercase;
       color: $primary-color;
+      margin-bottom: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .only-divider { 
+      &::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        border-bottom: 1px solid $primary-color;
+        flex: 1 1;
+      }
     }
     .title {
+      font-family: $heading-font;
       font-size: 48px;
       font-weight: 700;
       line-height: 60px;
       text-transform: capitalize;
       color: $black;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-family: $body-font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      color: $gray-800;
+      margin-bottom: 0px;
     }
 }

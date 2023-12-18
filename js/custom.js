@@ -142,7 +142,13 @@
             loop: true,
             dots: true,
             speed: 1500,
+            vertical: true,
             rtl: false,
+            prevArrow:
+                "<button type='button' class='prev-btn'><i class='fa-solid fa-arrow-left-long'></i></button>",
+            nextArrow:
+                "<button type='button' class='next-btn'><i class='fa-solid fa-arrow-right-long'></i></button>",
+           
             responsive: [
                 {
                     breakpoint: 767,
