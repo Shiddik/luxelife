@@ -5745,102 +5745,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   white-space: nowrap;
 }
 
-.testimonial-card.style-2 {
-  padding: 60px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 60px 0px rgba(2, 24, 93, 0.06);
-          box-shadow: 0px 5px 60px 0px rgba(2, 24, 93, 0.06);
-  border-radius: 12px;
-}
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .testimonial-card.style-2 {
-    padding: 40px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-2 {
-    width: 100% !important;
-  }
-}
-.testimonial-card.style-2 .icon-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .testimonial-card.style-2 .icon-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-.testimonial-card.style-2 .icon-wrapper .review-rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1px;
-}
-.testimonial-card.style-2 .icon-wrapper .review-rating i {
-  color: #ffc000;
-  font-size: 21px;
-}
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .testimonial-card.style-2 .content-wrapper {
-    gap: 40px;
-  }
-}
-.testimonial-card.style-2 .content-wrapper .content .text {
-  font-size: 24px;
-  color: #8f939b;
-  font-family: "Jost", sans-serif;
-  line-height: 42px;
-}
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .testimonial-card.style-2 .content-wrapper .content .text {
-    font-size: 18px;
-    line-height: 34px;
-  }
-}
-
 .testimonial-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  position: relative;
-}
-.testimonial-card.style-1 .content .text {
-  color: #ffffff;
-}
-.testimonial-card.style-1 .meta-user {
-  width: unset;
-}
-.testimonial-card.style-1 .meta-user .user-info .info .name {
-  color: #ffffff;
-}
-.testimonial-card .content-wrapper {
+  padding: 40px;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5848,136 +5755,99 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
-}
-.testimonial-card .content-wrapper .quote-icon {
-  width: 84px;
-  height: 63px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card .content-wrapper .quote-icon {
-    height: 30px;
-    width: 60px;
-  }
-}
-.testimonial-card .content .text {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
-  color: #23262D;
-  font-family: "Rubik", sans-serif;
-  font-style: italic;
-}
-.testimonial-card .meta-user {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.testimonial-card .meta-user .user-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 20px;
 }
-.testimonial-card .meta-user .user-info .image {
+.testimonial-card .user-info-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-shadow: 0px 18px 24px 0px rgba(2, 24, 93, 0.12);
-          box-shadow: 0px 18px 24px 0px rgba(2, 24, 93, 0.12);
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
-  overflow: hidden;
-}
-.testimonial-card .meta-user .user-info .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
-  gap: 4px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-.testimonial-card .meta-user .user-info .info .name {
-  margin: 0;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 600;
-  color: #26262c;
+.testimonial-card .user-info-wrapper .user-img {
+  width: 76px;
+  height: 76px;
+  position: relative;
 }
-.testimonial-card .meta-user .user-info .info .designation {
-  margin: 0;
-  font-size: 18px;
+.testimonial-card .user-info-wrapper .user-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonial-card .user-info-wrapper .user-meta .name {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 30px;
-  font-weight: 400;
-  color: #ffffff;
+  margin-bottom: 0;
+}
+.testimonial-card .user-info-wrapper .user-meta .designation {
   font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+  margin-bottom: 0;
+}
+.testimonial-card .user-info-wrapper .user-meta .rating-icon {
+  font-family: "Font Awesome 6 Pro";
+  font-size: 14px;
+  font-weight: 900;
+  color: #FF9205;
+  margin-bottom: 0;
+}
+.testimonial-card .content .description {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+  margin-bottom: 0;
 }
 
-.testimonial-slider-wrapper {
-  position: relative;
+.testimonial-card.style-2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 110px;
+  padding-left: 80px;
 }
-.testimonial-slider-wrapper .slick-dots {
-  z-index: 3;
-  padding-right: 0;
-  margin-bottom: 0;
-  margin-top: 26px;
-  position: relative;
+
+.testimonial-card.style-3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  line-height: 0;
-  gap: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  gap: 50px;
 }
-.testimonial-slider-wrapper .slick-dots li {
-  display: inline-block;
-  line-height: 0;
-  margin: 0;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+.testimonial-card.style-3 .user-info-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.testimonial-slider-wrapper .slick-dots li button {
-  font-size: 0;
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #ffffff;
-  border-radius: 50px;
-  position: relative;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+.testimonial-card.style-3 .user-info-wrapper .user-img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
 }
-.testimonial-slider-wrapper .slick-dots li.slick-active {
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.testimonial-slider-wrapper .slick-dots li.slick-active button {
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  background-color: #D9A14C;
+.testimonial-card.style-3 .user-info-wrapper .user-meta {
+  text-align: right;
 }
 
 .accordion-wrapper .accordion-list-item .accordion-head {
