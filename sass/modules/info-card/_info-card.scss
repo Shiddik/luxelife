@@ -4,6 +4,9 @@
 .info-card {
 
     &.style-1 {
+        .icon-wrapper {
+            justify-content: center;
+        }
         .title-wrapper {
             align-items: center;
 
@@ -88,6 +91,12 @@
             left: 0;
             opacity: 0.6;
         }
+    }
+    .icon-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
     .icon {
         display: flex;
