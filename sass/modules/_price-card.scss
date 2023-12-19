@@ -1,11 +1,9 @@
-
-@import "shahel";
 .price-card {
     padding: 68px 51px 82px 51px;
     z-index: 2;
     position: relative;
     border-radius: 10px;
-    border: 1px solid $pricing-border-color;
+    border: 1px solid $gray-200;
     top: 0;
     @include transition;
 
