@@ -2,19 +2,29 @@
   .main-img-wrapper {
     .main-img-inner {
       position: relative;
-      display: inline-block;
 
-      > img {
-
-        @include rmaxwd(767) {
-          width: 100%;
-        }
+      img {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
       }
 
-      .image-two {
-        transform: translateX(-50%);
-        margin-top: -90px;
-        position: relative;
+      .top-image {
+        position: absolute;
+        top: 294px;
+        left: 155px;
+        background:rgba(217, 161, 76, 0.15);
+        overflow: hidden;
+        
+
+        img {
+          position: relative;
+          margin-top: 35px;
+          margin-left: 31px;
+          z-index: 2;
+          
+        }
       }
 
       .image-shape {
@@ -23,31 +33,43 @@
         bottom: 20px;
       }
     }
-    .company-label {
-      position: absolute;
-      bottom: 0;
-      left: 100%;
-      transform: translate(-67%, 34%);
+    .review-card {
+      width: 307px;
+      height: 135px;
+      background-color: $primary-color;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 30px;
+      margin-top: 60px;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 24px;
 
-      @include xl {
-        left: 50%;
-        transform: translate(-50%, 50%);
-      }
-      @include rmaxwd(1199) {
-        left: 50%;
-        transform: translate(-50%, -50%);
-        bottom: unset;
-      }
       .icon {
-        width: 170px;
-        height: 170px;
-        box-shadow: 0px 5px 90px 0px rgba(2, 24, 93, 0.12);
-        background-color: $primary-color;
-        border-radius: 50%;
+        width: 65px;
+        height: 65px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
+      }
+      .card-text {
+        h2 {
+          color: $white;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 60px;
+          text-transform: capitalize;
+        }
+        span {
+          color: $white;
+          text-transform: capitalize;
+        }
       }
     }
+    
+     
   }
 }
+

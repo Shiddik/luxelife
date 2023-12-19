@@ -11,6 +11,8 @@
     gap: 20px;
     position: relative;
     .image {
+        width: 65px;
+        height: 65px;
         flex-shrink: 0;
     }
     .info-content {
@@ -24,6 +26,7 @@
             line-height: 30px;
             color: $black;
             margin-bottom: 0;
+            text-transform: capitalize;
         }
         .desc {
             font-size: 16px;
