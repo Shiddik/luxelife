@@ -1,0 +1,23 @@
+.testimonial-card {
+  &.style-3 {
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+
+    .user-info-wrapper {
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+
+      .user-img{
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .user-meta {
+        text-align: left;
+      }
+    }
+  }
+}
