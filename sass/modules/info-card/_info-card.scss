@@ -3,6 +3,29 @@
 }
 .info-card {
 
+    &.style-1 {
+        .title-wrapper {
+            align-items: center;
+
+            .title {
+                color: $white;
+            }
+        }
+        .content {
+            align-items: center;
+            text-align: center;
+
+            .desc {
+                color: $white-50;
+            }
+            .read-more {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
     &:hover {
         .image-wrapper {
             .overlay {
@@ -85,12 +108,13 @@
     }
     .title-wrapper {
         display: flex;
-        gap: 50px;
-        padding-bottom: 30px;
+        gap: 30px;
+        padding-bottom: 15px;
         border-bottom: none;
         transition: all 0.6s ease;
         flex-direction: column;
         align-items: start;
+
         .icon {
             display: flex;
             align-items: center;
@@ -99,12 +123,11 @@
             width: 74px;
             height: 74px;
             background: transparent;
-            border-radius: 10px;
         }
         .title {
             font-size: 24px;
-            line-height: 32px;
-            font-weight: 500;
+            line-height: 30px;
+            font-weight: 700;
             margin: 0;
             color: $secondary-color;
             transition: all 0.6s ease;
@@ -116,8 +139,8 @@
         gap: 30px;
         .desc {
             transition: all 0.6s ease;
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 16px;
+            line-height: 30px;
             font-weight: 400;
             margin: 0;
             color: $text-color;
@@ -135,55 +158,12 @@
                 text-transform: capitalize;
                 margin-bottom: 0;
                 color: $secondary-color;
-                .icon {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: $primary-color;
-                    flex-shrink: 0;
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 50px;
-                    color: $primary-color;
-                    z-index: 2;
-                    &:before {
-                        position: absolute;
-                        z-index: -1;
-                        content: "";
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: 2px solid transparent;
-                        border-radius: 50px;
-                        background-image: linear-gradient(white, white), linear-gradient(65deg, #E30008FF 0%, #FAAE00FF 100%);
-                        background-origin: border-box;
-                        background-clip: content-box, border-box;
-                        transform: scale(1);
-                        @include transition;
 
-                    }
-
-                    i {
-                        color: $primary-color;
-                        font-size: 16px;
-                    }
-                }
                 &:hover {
                     margin-left: 5px;
                     color: $primary-color;
                     @include transition;
 
-                    .icon {
-                        &:before {
-                            transform: scale(0);
-                            @include transition;
-                        }
-                        i {
-                            color: $white;
-                        }
-                    }
                 }
             }
         }

@@ -213,7 +213,7 @@ input:focus {
 }
 
 .background-black {
-  background-color: #1C1D20;
+  background-color: #23262D;
 }
 
 .background-black-light {
@@ -504,6 +504,30 @@ input.theme-btn {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
+}
+
+.gx-6 {
+  --bs-gutter-x: 7.55rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .gx-6 {
+    --bs-gutter-x: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gx-6 {
+    --bs-gutter-x: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gx-6 {
+    --bs-gutter-x: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .gx-6 {
+    --bs-gutter-x: 2rem;
+  }
 }
 
 /* Deafult Margin & Padding */
@@ -4272,7 +4296,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-1 {
   position: relative;
-  background-color: #F4F4F4;
+  background-color: rgba(255, 255, 255, 0.7176470588);
   padding-top: 90px;
   padding-bottom: 105px;
 }
@@ -4482,14 +4506,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 .slider-area.style-1 .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .simple-btn:hover {
-  background-color: #F4F4F4;
+  background-color: rgba(255, 255, 255, 0.7176470588);
   color: #23262D;
   border: 1px solid #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .slider-area.style-1 .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .theme-btn {
-  background-color: #F4F4F4;
+  background-color: rgba(255, 255, 255, 0.7176470588);
   color: #23262D;
   color: #23262D;
   -webkit-transition: all 0.5s ease-out;
@@ -4597,7 +4621,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .slider-area .slider-wrapper .next-btn i, .slider-area .slider-wrapper .prev-btn i {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: #F4F4F4;
+  color: rgba(255, 255, 255, 0.7176470588);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -4689,6 +4713,26 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
 }
 
+.info-card.style-1 .title-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info-card.style-1 .title-wrapper .title {
+  color: #ffffff;
+}
+.info-card.style-1 .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.info-card.style-1 .content .desc {
+  color: rgba(255, 255, 255, 0.7176470588);
+}
+.info-card.style-1 .content .read-more a {
+  color: #ffffff;
+}
 .info-card:hover .image-wrapper .overlay {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -4788,8 +4832,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
-  padding-bottom: 30px;
+  gap: 30px;
+  padding-bottom: 15px;
   border-bottom: none;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -4816,12 +4860,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 74px;
   height: 74px;
   background: transparent;
-  border-radius: 10px;
 }
 .info-card .title-wrapper .title {
   font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
+  line-height: 30px;
+  font-weight: 700;
   margin: 0;
   color: #26262c;
   -webkit-transition: all 0.6s ease;
@@ -4840,8 +4883,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 .info-card .content .desc {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 400;
   margin: 0;
   color: #616670;
@@ -4869,62 +4912,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
   color: #26262c;
 }
-.info-card .content .read-more a .icon {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #D9A14C;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50px;
-  color: #D9A14C;
-  z-index: 2;
-}
-.info-card .content .read-more a .icon:before {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  background-image: linear-gradient(white, white), linear-gradient(65deg, #e30008 0%, #faae00 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.info-card .content .read-more a .icon i {
-  color: #D9A14C;
-  font-size: 16px;
-}
 .info-card .content .read-more a:hover {
   margin-left: 5px;
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-}
-.info-card .content .read-more a:hover .icon:before {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.info-card .content .read-more a:hover .icon i {
-  color: #ffffff;
 }
 
 .info-card.style-two {
@@ -8619,7 +8611,7 @@ body.single-post .page-heading .page-title {
 
 .portfolio-area {
   position: relative;
-  background-color: #F4F4F4;
+  background-color: rgba(255, 255, 255, 0.7176470588);
 }
 .portfolio-area .portfolio-heading {
   background-color: #23262D;
@@ -9324,7 +9316,7 @@ body.single-post .page-heading .page-title {
   border-radius: 6px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  border: 1px solid #F4F4F4;
+  border: 1px solid rgba(255, 255, 255, 0.7176470588);
 }
 .widget .tagcloud a:hover,
 .widget .wp-block-tag-cloud a:hover {
@@ -10506,7 +10498,7 @@ ul.children {
 
 .team-member-area {
   padding-top: 120px;
-  background-color: #F4F4F4;
+  background-color: rgba(255, 255, 255, 0.7176470588);
 }
 .team-member-area .team-member-card .image {
   -ms-flex-negative: 0;

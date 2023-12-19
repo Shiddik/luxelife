@@ -147,7 +147,7 @@ input:focus {
 }
 
 .background-black {
-  background-color: $black-50;
+  background-color: $black;
 }
 .background-black-light {
   background-color: $black-100;
@@ -496,3 +496,19 @@ input.theme-btn {
 //  to { transform: rotate(-360deg); }
 //}
 
+.gx-6 {
+  --bs-gutter-x: 7.55rem;
+
+  @include sm {
+    --bs-gutter-x: 1rem;
+  }
+  @include md {
+    --bs-gutter-x: 1rem;
+  }
+  @include lg {
+    --bs-gutter-x: 1rem;
+  }
+  @include xl {
+    --bs-gutter-x: 2rem;
+  }
+}
