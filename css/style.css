@@ -4938,39 +4938,31 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .info-card.style-3 {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  border-radius: 0;
+  padding: 0 40px 40px 40px;
+  border: 1px solid #E3E3E3;
 }
 .info-card.style-3 .title-wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 27px;
 }
 .info-card.style-3 .title-wrapper .icon {
-  width: auto;
-  height: auto;
+  background-color: #D9A14C;
+  width: 80px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -1px;
 }
-.info-card.style-3 .title-wrapper .title {
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 33px;
-}
-@media (max-width: 991px) {
-  .info-card.style-3 .title-wrapper .title br {
-    display: none;
-  }
-}
-.info-card.style-3 .content .desc {
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  color: rgb(187, 197, 214);
+.info-card.style-3 .content {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icon-card-wrapper {

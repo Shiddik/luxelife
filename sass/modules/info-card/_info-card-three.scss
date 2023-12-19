@@ -1,36 +1,24 @@
 .info-card {
     &.style-3 {
-        padding: 0;
-        border: 0;
-        background-color: transparent;
-        border-radius: 0;
+        padding: 0 40px 40px 40px;
+        border: 1px solid $gray-200;
 
         .title-wrapper {
-            flex-direction: row;
             align-items: center;
-            gap: 27px;
-            .icon {
-                width: auto;
-                height: auto;
-            }
-            .title {
-                color: $white;
-                font-size: 21px;
-                line-height: 33px;
 
-                br {
-                    @include rmaxwd(991) {
-                        display: none;
-                    }
-                }
+            .icon {
+                background-color: $primary-color;
+                width: 80px;
+                height: 80px;
+                align-items: center;
+                justify-content: center;
+                margin-top: -1px;
             }
         }
+
         .content {
-            .desc {
-                font-size: 18px;
-                font-family: $roboto-font;
-                color: rgb(187, 197, 214);
-            }
+            text-align: center;
+            justify-content: center;
         }
     }
 }
