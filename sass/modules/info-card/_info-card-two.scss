@@ -3,5 +3,39 @@
         padding: 40px;
         border: 1px solid $gray-200;
 
+        .title-wrapper {
+            gap: 12px;
+            padding-bottom: 20px;
+            .icon {
+                width: 65px;
+                height: 65px;
+            }
+        }
+        .counter-number-wrapper {
+
+            .counter-number{
+                font-size: 68px;
+                font-weight: 700;
+                line-height: 78.2px;
+                color: $white;
+                -webkit-text-stroke: 2px black;
+                -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                opacity: 0.3;
+            }
+        }
+
+        .content {
+            gap: 20px;
+            .read-more {
+                a {
+                    gap: 10px;
+                    font-family: $heading-font;
+                    line-height: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1.28px;
+                }
+            }
+        }
     }
 }
