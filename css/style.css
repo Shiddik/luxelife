@@ -4965,6 +4965,39 @@ body.admin-bar .header-menu-area.sticky_menu {
           justify-content: center;
 }
 
+.info-card.style-4 {
+  padding: 40px;
+  background-color: #ffffff;
+}
+.info-card.style-4 .content .read-more {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.info-card.style-4 .content .read-more a {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 23px 0 0 1px #000;
+          box-shadow: 23px 0 0 1px #000;
+}
+
+.info-card.style-5 {
+  padding: 0 40px 40px 40px;
+  border: 1px solid #E3E3E3;
+}
+.info-card.style-5 .title-wrapper .icon {
+  background-color: #D9A14C;
+  width: 80px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -1px;
+}
+
 .icon-card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,0 +1,18 @@
+.info-card {
+  &.style-4 {
+    padding: 40px;
+    background-color: $white;
+
+    .content {
+      .read-more {
+        justify-content: space-between;
+
+        a {
+          padding: 10px 20px;
+          background-color: $white;
+          box-shadow: 23px 0 0 1px #000;
+        }
+      }
+    }
+  }
+}
