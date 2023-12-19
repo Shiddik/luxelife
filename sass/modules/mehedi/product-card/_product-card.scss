@@ -35,24 +35,8 @@
                 height: auto;
                 visibility: visible;
                 padding: 14px 25px;
-            background-color: #D9A14C;
-            color: #FFFFFF;
-            font-family: Rajdhani;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 32px;
-            letter-spacing: 1.28px;
-            text-transform: uppercase;
-            border: none;
-            margin-top: 25px;
+                margin-top: 25px;
                 @include transition;
-
-                i{
-                    font-family: Font Awesome 6 Free;
-                    font-size: 16px;
-                    font-weight: 900;
-                    margin-left: 8px;
-                }
             }
         }
     }
@@ -96,8 +80,24 @@
             height: 0;
             visibility: hidden;
             overflow: hidden;
-            border: 0;
+            background-color: #D9A14C;
+            color: #FFFFFF;
+            font-family: Rajdhani;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;
+            padding: 0;
+            border: none;
             @include transition;
+
+            i{
+                font-family: Font Awesome 6 Free;
+                font-size: 16px;
+                font-weight: 900;
+                margin-left: 8px;
+            }
         }
     }
 }
