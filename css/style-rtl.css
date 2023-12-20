@@ -4749,10 +4749,15 @@ body.admin-bar .header-menu-area.sticky_menu {
   text-transform: uppercase;
   line-height: 32px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
-.info-card.style-1 .read-more a:hover {
-  margin-right: 5px;
+.info-card.style-1 .read-more a:hover i {
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -4967,9 +4972,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 700;
   gap: 10px;
   color: #23262D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.info-card.style-2 .content .read-more a:hover {
-  margin-right: 5px;
+.info-card.style-2 .content .read-more a:hover i {
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -5027,12 +5037,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .info-card.style-4 .content .read-more a {
   padding: 20px 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   font-family: "Rajdhani", sans-serif;
   font-size: 16px;
