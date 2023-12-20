@@ -1,9 +1,14 @@
 .testimonial-card{
+  //width: 410px;
   padding: 40px;
   background-color: $white;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  &.style-1 {
+    width: 410px;
+  }
 
   .user-info-wrapper {
     display: flex;
@@ -60,12 +65,5 @@
       color: #616670;
       margin-bottom: 0;
     }
-  }
-}
-
-// Style-1
-.testimonial-card{
-  &.style-1{
-    width: 410px;
   }
 }

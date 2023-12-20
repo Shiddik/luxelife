@@ -1,25 +1,11 @@
 .price-card {
-    padding: 68px 51px 82px 51px;
+    padding: 40px;
     z-index: 2;
     position: relative;
-    border-radius: 10px;
-    border: 1px solid $gray-200;
     top: 0;
+    background-color: $white;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
     @include transition;
-
-        &:hover {
-        top: -14px;
-        @include transition;
-        background-color: #1C2126;
-        border-color: #3C3E43;
-        }
-        .price-bg-frame {
-            position: absolute;
-            top: 14px;
-            right: 15px;
-            flex-shrink: 0;
-            z-index: 1;
-        }
 
         .trend-badge {
             position: absolute;
@@ -36,165 +22,102 @@
                 border-top: 35px solid $primary-color;
             }
         }
-    
-  
-
-    // @include xs {
-    //     padding: 40px 30px;
-    // }
-    // @include lg {
-    //     padding: 40px 30px;
-    // }
-    // @include xl {
-    //     padding: 55px 40px;
-    // }
-    // @include rmaxwd(991) {
-    //     margin-bottom: 24px;
-    //     padding: 40px;
-    // }
-    //&.active {
-    //    .price-btn {
-    //        background-color: $primary-color;
-    //        color: $white;
-    //        border-color: $primary-color;
-    //    }
-    //}
     .price-btn {
-        display: inline-block;
-        font-size: 18px;
-        font-weight: 400;
+        background-color: $primary-color;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $heading-font;
+        font-size: 16px;
+        font-weight: 700;
         color: $white;
-        margin-top: 70px;
+        margin-top: 40px;
         text-align: center;
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+        line-height: 32px;
 
         i {
-            margin-left: 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
         }
 
         &:hover {
-            color: $primary-color;
-
+            color: $black;
         }
     }
 
     .card-title {
-        // display: flex;
-        // margin-bottom: 30px;
-        // flex-direction: column;
-        // gap: 30px;
-        // border-bottom: 1px solid rgb(199, 199, 225);
-        // padding-bottom: 35px;
 
-        // .sub-title {
-        //     font-family: $roboto-font;
-        //     font-weight: 400;
-        //     font-size: 18px;
-        //     line-height: 36px;
-        //     margin: 0;
-        //     color: $text-color;
-        // }
         .title {
-            font-weight: 300;
-            font-size: 20px;
+            font-weight: 700;
+            font-size: 24px;
             line-height: 30px;
-            color: $white;
+            color: $black;
             font-family: $heading-font;
-            margin-bottom: 23px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-
-            // span {
-            //     font-size: 12px;
-            //     color: $white;
-            //     background-color: $primary-color;
-            //     font-family: $roboto-font;
-            //     border-radius: 3px;
-            //     padding: 0 7px;
-            //     display: inline-block;
-            //     line-height: 18px;
-            // }
+            margin-bottom: 50px;
+            text-transform: capitalize;
         }
     }
     .price {
         display: flex;
-        gap: 8px;
-        position: relative;
-        z-index: 2;
-
-        //&:before {
-        //    position: absolute;
-        //    width: 200%;
-        //    height: 0%;
-        //    left: 50%;
-        //    top: 50%;
-        //    background: linear-gradient(135deg, rgb(30,174,152) 0%, rgb(0,91,172) 100%);
-        //    transform: translate(-50%, -50%) rotate(-45deg);
-        //    content: "";
-        //    z-index: -1;
-        //    @include transition;
-        //}
+        flex-direction: column;
+        gap: 20px;
 
         .price-heading {
-            font-family: $heading-font;
-            font-weight: 600;
-            font-size: 60px;
-            line-height: initial;
-            color: $primary-color;
-            display: flex;
-            align-items: center;
-            gap: 2px;
-            margin-bottom: 0;
+            font-size: 55px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -0.935px;
+            text-transform: capitalize;
+            color: $black;
 
-            .currency {
+            .price-time {
                 font-family: $heading-font;
-                font-weight: 300;
-                font-size: 30px;
-                line-height: initial;
-                color: $primary-color;
-                text-align: start;
-                align-self: flex-end;
-                position: relative;
-                top:-12px;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                margin-left: 6px;
             }
         }
         .price-desc {
-            font-family: $body-font;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: initial;
-            text-transform: capitalize;
-            color: $white;
             margin-bottom: 0;
         }
     }
     .list-wrapper {
         display: flex;
+        margin-top: 30px;
     }
     .list {
-        margin-top: 0;
-        padding-top: 20px;
+        width: 100%;
+       
         ul {
             padding-left: 0;
             margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            gap: 20px;
+            gap: 10px;
             width: 100%;
             li {
                 list-style: none;
-                font-family: $body-font;
-                font-weight: 400;
+                font-family: $heading-font;
+                font-weight: 700;
                 font-size: 18px;
-                color: $white;
+                color: $black;
                 margin: 0;
                 display: flex;
+                justify-content: space-between;
                 flex-direction: row;
                 align-items: center;
-                gap: 12px;
+
+                i {
+                    color: $primary-color;
+                    font-size: 16px;
+                }
 
                 @include lg {
                     font-size: 17px;
@@ -206,10 +129,6 @@
                     color: #bbc7cf;
                 }
 
-                img {
-                    width: 18px;
-                    height: 18px;
-                }
             }
         }
     }

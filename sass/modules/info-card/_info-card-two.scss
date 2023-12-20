@@ -39,12 +39,16 @@
                     font-weight: 700;
                     gap: 10px;
                     color: $black;
+                    display: flex;
+                    align-items: center;
+                    
                  
                 
                     &:hover {
-                        margin-left: 5px;
-                        color: $primary-color;
-                        @include transition;
+                        i {
+                            color: $primary-color;
+                            @include transition;
+                        }
     
                     }
                 }

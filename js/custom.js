@@ -196,21 +196,18 @@
         /*
        Testimonial Slider
        ============================*/
-        $("#testimonial_one").slick({
-            slidesToShow: 1,
+        $("#testimonial_style_one").slick({
+            slidesToShow: 3,
             infinite: true,
             autoplay: false,
             draggable: true,
-            arrows: false,
+            arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
+            dots: false,
+            variableWidth: true,
             speed: 800,
             rtl: false,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 1023,
