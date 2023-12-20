@@ -6752,6 +6752,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .post-card.style-2:hover .post-meta .single-post-meta i {
   color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .post-card.style-2 .image {
@@ -6776,6 +6777,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .post-card.style-2 .post-meta .single-post-meta i {
   color: #616670;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
