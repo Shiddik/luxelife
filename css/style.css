@@ -4973,7 +4973,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .info-card.style-3 .title-wrapper .icon {
   background-color: #D9A14C;
@@ -5008,7 +5008,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #ffffff;
 }
 .info-card.style-4 .title-wrapper {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .info-card.style-4 .content .read-more {
   -webkit-box-pack: justify;
@@ -5029,6 +5029,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   text-transform: uppercase;
   color: #23262D;
 }
+.info-card.style-4 .content .read-more a i {
+  color: #D9A14C;
+  font-size: 14px;
+}
 .info-card.style-4 .content .read-more .counter-number {
   font-family: "Rajdhani", sans-serif;
   font-size: 68px;
@@ -5043,6 +5047,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 0 40px 40px 40px;
   border: 1px solid #E3E3E3;
 }
+.info-card.style-5 .title-wrapper {
+  padding-bottom: 20px;
+}
 .info-card.style-5 .title-wrapper .icon {
   background-color: #D9A14C;
   width: 80px;
@@ -5054,6 +5061,20 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -1px;
+  padding: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.info-card.style-5 .title-wrapper .counter-number {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #23262D;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  opacity: 0.1;
 }
 
 .icon-card-wrapper {
