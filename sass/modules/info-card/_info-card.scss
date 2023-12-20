@@ -12,6 +12,7 @@
 
             .title {
                 color: $white;
+                
             }
         }
         .content {
@@ -24,6 +25,28 @@
             .read-more {
                 a {
                     color: $white;
+                }
+            }
+        }
+        .read-more {
+            display: flex;
+            justify-content: start;
+            a {
+               
+                font-family: $heading-font;
+                font-size: 16px;
+                letter-spacing: 1.28px;
+                text-transform: uppercase;
+                line-height: 32px;
+                font-weight: 700;
+                gap: 10px;
+             
+            
+                &:hover {
+                    margin-left: 5px;
+                    color: $primary-color;
+                    @include transition;
+
                 }
             }
         }
@@ -154,27 +177,6 @@
             margin: 0;
             color: $text-color;
         }
-        .read-more {
-            display: flex;
-            justify-content: start;
-            a {
-                display: flex;
-                align-items: center;
-                gap: 18px;
-                font-size: 16px;
-                line-height: 36px;
-                font-weight: 500;
-                text-transform: capitalize;
-                margin-bottom: 0;
-                color: $secondary-color;
-
-                &:hover {
-                    margin-left: 5px;
-                    color: $primary-color;
-                    @include transition;
-
-                }
-            }
-        }
+        
     }
 }
