@@ -5894,7 +5894,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   line-height: 30px;
   color: #616670;
-  margin-bottom: 0;
+  margin: 4px 0;
 }
 .testimonial-card .user-info-wrapper .user-meta .rating-icon {
   font-family: "Font Awesome 6 Pro";
@@ -5903,7 +5903,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #FF9205;
   margin-bottom: 0;
 }
-.testimonial-card .content .description {
+.testimonial-card .content-wrapper .description {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -5919,6 +5919,10 @@ body.admin-bar .header-menu-area.sticky_menu {
           flex-direction: row;
   gap: 110px;
   padding-right: 80px;
+}
+.testimonial-card.style-2 .content-wrapper .description {
+  font-size: 22px;
+  line-height: 40px;
 }
 
 .testimonial-card.style-3 {
@@ -5947,9 +5951,25 @@ body.admin-bar .header-menu-area.sticky_menu {
 .testimonial-card.style-3 .user-info-wrapper .user-meta {
   text-align: left;
 }
+.testimonial-card.style-3 .user-info-wrapper .user-meta .rating-icon {
+  margin-bottom: 20px;
+}
+.testimonial-card.style-3 .user-info-wrapper .user-meta .designation {
+  margin: 10px 0 0;
+}
+.testimonial-card.style-3 .content-wrapper .description {
+  font-size: 22px;
+  line-height: 33px;
+}
 
 .slider-area-wrapper.style-1 {
   margin-right: -9999px;
+}
+.slider-area-wrapper.style-1 .testimonial-slider-wrapper .slick-arrow {
+  display: none !important;
+}
+.slider-area-wrapper.style-1 .testimonial-slider-wrapper .slick-item {
+  margin-right: 30px;
 }
 
 .accordion-wrapper .accordion-list-item .accordion-head {
