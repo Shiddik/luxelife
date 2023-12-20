@@ -7246,29 +7246,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .price-card {
-  padding: 68px 51px 82px 51px;
+  padding: 40px;
   z-index: 2;
   position: relative;
-  border-radius: 10px;
-  border: 1px solid #E3E3E3;
   top: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-}
-.price-card:hover {
-  top: -14px;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  background-color: #1C2126;
-  border-color: #3C3E43;
-}
-.price-card .price-bg-frame {
-  position: absolute;
-  top: 14px;
-  left: 15px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  z-index: 1;
 }
 .price-card .trend-badge {
   position: absolute;
@@ -7285,88 +7271,81 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-top: 35px solid #D9A14C;
 }
 .price-card .price-btn {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  margin-top: 70px;
-  text-align: center;
-}
-.price-card .price-btn i {
-  margin-right: 20px;
-}
-.price-card .price-btn:hover {
-  color: #D9A14C;
-}
-.price-card .card-title .title {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-  font-family: "Rajdhani", sans-serif;
-  margin-bottom: 23px;
+  background-color: #D9A14C;
+  padding: 20px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: 1.28px;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  line-height: 32px;
+}
+.price-card .price-btn i {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.price-card .price-btn:hover {
+  color: #23262D;
+}
+.price-card .card-title .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #23262D;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 50px;
+  text-transform: capitalize;
 }
 .price-card .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
-  position: relative;
-  z-index: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 .price-card .price .price-heading {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: initial;
-  color: #D9A14C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2px;
-  margin-bottom: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.935px;
+  text-transform: capitalize;
+  color: #23262D;
 }
-.price-card .price .price-heading .currency {
+.price-card .price .price-heading .price-time {
   font-family: "Rajdhani", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: initial;
-  color: #D9A14C;
-  text-align: start;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  position: relative;
-  top: -12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 6px;
 }
 .price-card .price .price-desc {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: initial;
-  text-transform: capitalize;
-  color: #ffffff;
   margin-bottom: 0;
 }
 .price-card .list-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 30px;
 }
 .price-card .list {
-  margin-top: 0;
-  padding-top: 20px;
+  width: 100%;
 }
 .price-card .list ul {
   padding-right: 0;
@@ -7381,19 +7360,22 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 .price-card .list ul li {
   list-style: none;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
   font-size: 18px;
-  color: #ffffff;
+  color: #23262D;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -7401,7 +7383,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
+}
+.price-card .list ul li i {
+  color: #D9A14C;
+  font-size: 16px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .price-card .list ul li {
@@ -7413,10 +7398,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .price-card .list ul li .fa-x {
   color: #bbc7cf;
-}
-.price-card .list ul li img {
-  width: 18px;
-  height: 18px;
 }
 .price-card .theme-btn {
   padding: 5px 26px 5px 6px;
