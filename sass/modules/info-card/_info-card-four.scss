@@ -11,11 +11,14 @@
       .read-more {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         a {
           padding: 20px 30px;
           background-color: $white;
           box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+          display: flex;
+          align-items: center;
           gap: 10px;
           font-family: $heading-font;
           font-size: 16px;

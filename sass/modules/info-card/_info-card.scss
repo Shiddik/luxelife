@@ -39,13 +39,15 @@
                 text-transform: uppercase;
                 line-height: 32px;
                 font-weight: 700;
+                display: flex;
+                align-items: center;
                 gap: 10px;
-             
             
                 &:hover {
-                    margin-left: 5px;
+                   i {
                     color: $primary-color;
                     @include transition;
+                   }
 
                 }
             }
