@@ -29,6 +29,7 @@
   .image {
     overflow: hidden;
     position: relative;
+    height: 236px;
 
     img {
       transform: scale(1);
@@ -96,11 +97,12 @@
     flex-direction: column;
     padding: 40px;
     border: 1px solid $gray-200;
-    gap: 20px;
+    gap: 40px;
 
       .title {
         height: 60px;
         overflow: hidden;
+        font-family: $heading-font;
         font-size: 24px;
         font-weight: 700;
         line-height: 30px;
@@ -122,29 +124,37 @@
       }
       .post-content {
         p {
+          font-family: $body-font;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px;
+          color: $gray-800;
           margin-bottom: 0;
         }
       }
   }
   .post-meta {
     display: inline-flex;
-    gap: 5px 20px;
+    gap: 20px 30px;
     align-items: center;
     flex-wrap: wrap;
 
     .single-post-meta {
       color: #8f939b;
       font-size: 16px;
-      line-height: 28px;
+      line-height: 30px;
       font-weight: 400;
-      font-family: $roboto-font;
+      font-family: $body-font;
       margin: 0;
       display: flex;
-      gap: 7px;
+      gap: 10px;
       align-items: center;
       flex-shrink: 0;
 
       i {
+        font-family: $font-awesome;
+        font-size: 14px;
+        font-weight: 900;
         color: $primary-color;
         @include transition;
 
@@ -175,10 +185,10 @@
       left: 0;
       bottom: 0;
       background-color: $primary-color;
-      padding: 10px;
 
       .single-post-meta {
         color: $white;
+        padding: 9px 20px;
 
         i {
           color: $white;
