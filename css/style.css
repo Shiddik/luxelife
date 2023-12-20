@@ -10286,6 +10286,10 @@ ul.children {
 .project-card .image {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 100%;
+}
+.project-card .image img {
+  width: 100%;
 }
 .project-card .main-content {
   position: absolute;
@@ -10309,11 +10313,13 @@ ul.children {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.project-card .main-content .main-content-wrapper .arrow-btn {
+.project-card .main-content .main-content-wrapper .angle-btn {
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -10326,8 +10332,28 @@ ul.children {
       -ms-flex-align: center;
           align-items: center;
   background-color: #D9A14C;
-  font-size: 16px;
+  font-size: 24px;
   color: #ffffff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.project-card .main-content .main-content-wrapper .arrow-btn {
+  width: 88px;
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D9A14C;
+  font-size: 24px;
+  color: #ffffff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .project-card .main-content .main-content-wrapper .title {
   font-size: 24px;
@@ -10347,16 +10373,31 @@ ul.children {
 
 .project-card.style-2 .main-content {
   height: 100%;
+  padding: 50px;
 }
 .project-card.style-2 .main-content .main-content-wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 40px 50px 50px;
+}
+.project-card.style-2 .main-content .main-content-wrapper .content-inner {
+  padding-right: 120px;
+}
+.project-card.style-2 .main-content .main-content-wrapper .content-inner .desc {
+  margin-top: 20px;
 }
 .project-card.style-2 .main-content .main-content-wrapper .btn-wrapper {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+.project-card.style-2 .main-content .main-content-wrapper .btn-wrapper i {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .about-us-area {

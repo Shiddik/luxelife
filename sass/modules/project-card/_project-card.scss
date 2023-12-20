@@ -4,7 +4,11 @@
 
     .image {
         flex-shrink: 0;
+        width: 100%;
 
+        img {
+            width: 100%;
+        }
     }
     .main-content {
         position: absolute;
@@ -28,23 +32,32 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            gap: 40px;
+            align-items: center;
             @include transition;
 
-            .arrow-btn {
+            .angle-btn {
                 width: 60px;
                 height: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background-color: $primary-color;
-                font-size: 16px;
-                //position: absolute;
-                //top: 40px;
-                //right: 40px;
+                font-size: 24px;
                 color: $white;
-                //cursor: pointer;
+                flex-shrink: 0;
+                
 
+            }
+            .arrow-btn {
+                width: 88px;
+                height: 88px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primary-color;
+                font-size: 24px;
+                color: $white;
+                flex-shrink: 0;
             }
             .title {
                 font-size: 24px;
