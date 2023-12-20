@@ -1,0 +1,23 @@
+.post-card {
+    &.style-5 {
+        .post-meta{
+            .single-post-meta{
+                color: $white;
+            }
+        }
+        .content{
+            background-color: $black;
+            gap: 20px;
+            padding: 30px;
+            border: none;
+
+            .image{
+                height: 272px;
+            }
+
+            .title{
+                color: $white;
+            }
+        }
+    }
+}
