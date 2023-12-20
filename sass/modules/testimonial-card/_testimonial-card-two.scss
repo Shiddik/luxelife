@@ -3,5 +3,12 @@
     flex-direction: row;
     gap: 110px;
     padding-right: 80px;
+
+    .content-wrapper{
+      .description{
+        font-size: 22px;
+        line-height: 40px;
+      }
+    }
   }
 }

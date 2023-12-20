@@ -1,0 +1,15 @@
+.project-card {
+  &.style-2 {
+    .main-content {
+      height: 100%;
+
+      .main-content-wrapper {
+        flex-direction: column-reverse;
+
+        .btn-wrapper {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

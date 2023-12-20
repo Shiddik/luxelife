@@ -17,6 +17,20 @@
       }
       .user-meta {
         text-align: left;
+
+        .rating-icon{
+          margin-bottom: 20px;
+        }
+        .designation{
+          margin: 10px 0 0;
+        }
+      }
+    }
+
+    .content-wrapper{
+      .description{
+        font-size: 22px;
+        line-height: 33px;
       }
     }
   }
