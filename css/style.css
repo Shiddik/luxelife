@@ -262,7 +262,7 @@ input:focus {
 }
 
 .text-white-100 {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 
 code {
@@ -5770,7 +5770,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 30px;
   font-weight: 400;
   color: #ffffff;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .brand-marquee-area {
@@ -7017,7 +7017,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 16px;
   font-style: italic;
   color: #8f939b;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   text-transform: capitalize;
 }
 .author-info .author-text p {
@@ -7025,7 +7025,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
   color: #8f939b;
   font-size: 18px;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .author-info .author-social-profiles {
   margin-top: 20px;
@@ -7734,7 +7734,7 @@ body.single-post .page-heading .page-title {
 .breadcrumb-list ul li:before {
   content: "\f054";
   font-size: 12px;
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   font-family: "Font Awesome 6 Pro";
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8642,7 +8642,7 @@ body.single-post .page-heading .page-title {
   color: #616670;
   display: inline-block;
   font-size: 18px;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
   padding: 12px 18px;
@@ -8700,7 +8700,7 @@ body.single-post .page-heading .page-title {
   display: inline-block;
   text-transform: capitalize;
   font-size: 18px;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -9243,7 +9243,7 @@ body.single-post .page-heading .page-title {
 .widget_service_promotion .promotion-card .short-desc {
   font-size: 18px;
   line-height: 30px;
-  font-weight: "Jost", sans-serif;
+  font-weight: "Rubik", sans-serif;
 }
 .widget_service_promotion .promotion-card h4 {
   color: #ffffff;
@@ -9510,7 +9510,7 @@ body.single-post .page-heading .page-title {
   line-height: 30px;
   margin-bottom: 20px;
   color: #616670;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .latest-comments li .comments-box .comments-text .avatar-name {
   margin-bottom: 10px;
@@ -9535,7 +9535,7 @@ body.single-post .page-heading .page-title {
   color: #abb0ba;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: italic;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -11138,9 +11138,9 @@ ul.children {
   }
 }
 .footer-widget .footer-widget-info p {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   margin-bottom: 30px;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .footer-widget .footer-widget-info .footer-logo {
   margin-bottom: 30px;
@@ -11197,13 +11197,13 @@ ul.children {
   padding-bottom: 0;
 }
 .footer-widget.widget_nav_menu li a {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   text-transform: capitalize;
   font-size: 18px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   position: relative;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .footer-widget.widget_nav_menu li a:hover {
   -webkit-transition: all 0.5s ease-out;
@@ -11226,8 +11226,8 @@ ul.children {
   }
 }
 .footer-widget .footer-widget-contact p {
-  color: #bbbfc7;
-  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-family: "Rubik", sans-serif;
 }
 .footer-widget .footer-widget-contact .footer-contact ul {
   list-style: none;
@@ -11255,7 +11255,7 @@ ul.children {
   margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   border-radius: 50px;
   float: left;
   display: -webkit-box;
@@ -11268,11 +11268,11 @@ ul.children {
       flex-shrink: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   font-size: 18px;
   line-height: 30px;
   overflow: hidden;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a:hover span {
   color: #D9A14C;
@@ -11282,13 +11282,13 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text p,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   font-size: 18px;
   line-height: 30px;
   display: inline-block;
   width: 100%;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -11302,7 +11302,7 @@ ul.children {
   line-height: 22px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title a {
   font-size: 16px;
@@ -11311,7 +11311,7 @@ ul.children {
   position: relative;
   text-transform: capitalize;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -11330,8 +11330,8 @@ ul.children {
           align-items: center;
   font-weight: 400;
   gap: 8px;
-  color: #bbbfc7;
-  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-family: "Rubik", sans-serif;
 }
 
 .footer-bottom-menu ul {
@@ -11361,8 +11361,8 @@ ul.children {
 .footer-bottom-menu ul li a {
   font-size: 18px;
   text-transform: capitalize;
-  color: #bbbfc7;
-  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-family: "Rubik", sans-serif;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -11417,22 +11417,22 @@ ul.children {
   }
 }
 .footer-bottom-area .copyright-text p {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
 .footer-bottom-area .copyright-text p a {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
 .footer-bottom-area .copyright-text p a:hover {
   color: #D9A14C;
 }
 .footer-bottom-area .credit-text p {
-  color: #bbbfc7;
+  color: rgba(255, 255, 255, 0.7019607843);
   margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11444,11 +11444,11 @@ ul.children {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: 10px;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .footer-bottom-area .credit-text a {
   color: #D9A14C;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .footer-bottom-area .social-profile {
   gap: 25px;
@@ -11456,8 +11456,8 @@ ul.children {
 
 .subscribe-form-wrapper {
   font-size: 18px;
-  color: #bbbfc7;
-  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-family: "Rubik", sans-serif;
 }
 
 .subscribe-form-widget {
