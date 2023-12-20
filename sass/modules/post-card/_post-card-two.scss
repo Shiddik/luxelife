@@ -3,6 +3,17 @@
         flex-direction: column;
         gap: 26px;
 
+        &:hover{
+            .post-meta {
+                .single-post-meta{
+                    i{
+                        color: $primary-color;
+                        @include transition;
+                    }
+                }
+            }
+        }
+
         .image {
             height: 433px;
 
@@ -22,6 +33,13 @@
         }
         .post-meta {
             margin-top: 5px;
+
+            .single-post-meta{
+                i{
+                    color: $gray-800;
+                    @include transition;
+                }
+            }
         }
     }
 }
