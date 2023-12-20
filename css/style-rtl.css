@@ -11085,12 +11085,12 @@ ul.children {
 
 .footer-widget-title {
   font-family: "Rajdhani", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 30px;
   color: #ffffff;
   position: relative;
   margin-bottom: 43px;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .footer-widget-title {
@@ -11204,6 +11204,19 @@ ul.children {
   transition: all 0.5s ease-out;
   position: relative;
   font-family: "Rubik", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.footer-widget.widget_nav_menu li a:before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  color: #ffffff;
 }
 .footer-widget.widget_nav_menu li a:hover {
   -webkit-transition: all 0.5s ease-out;
