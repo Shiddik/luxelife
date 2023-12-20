@@ -4738,6 +4738,29 @@ body.admin-bar .header-menu-area.sticky_menu {
 .info-card.style-1 .content .read-more a {
   color: #ffffff;
 }
+.info-card.style-1 .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.info-card.style-1 .read-more a {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-weight: 700;
+  gap: 10px;
+}
+.info-card.style-1 .read-more a:hover {
+  margin-right: 5px;
+  color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 .info-card:hover .image-wrapper .overlay {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -4906,35 +4929,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin: 0;
   color: #616670;
 }
-.info-card .content .read-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-.info-card .content .read-more a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 18px;
-  font-size: 16px;
-  line-height: 36px;
-  font-weight: 500;
-  text-transform: capitalize;
-  margin-bottom: 0;
-  color: #26262c;
-}
-.info-card .content .read-more a:hover {
-  margin-right: 5px;
-  color: #D9A14C;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
 
 .info-card.style-2 {
   padding: 40px;
@@ -4960,13 +4954,29 @@ body.admin-bar .header-menu-area.sticky_menu {
 .info-card.style-2 .content {
   gap: 20px;
 }
+.info-card.style-2 .content .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .info-card.style-2 .content .read-more a {
-  gap: 10px;
   font-family: "Rajdhani", sans-serif;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 16px;
   letter-spacing: 1.28px;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-weight: 700;
+  gap: 10px;
+  color: #23262D;
+}
+.info-card.style-2 .content .read-more a:hover {
+  margin-right: 5px;
+  color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .info-card.style-3 {
@@ -5015,6 +5025,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding-bottom: 20px;
 }
 .info-card.style-4 .content .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -10418,6 +10431,7 @@ ul.children {
   right: 10px;
   width: 100px;
   height: 100px;
+  padding: 17px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10443,7 +10457,7 @@ ul.children {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 .image-card .content-wrapper .title {
   font-size: 24px;
