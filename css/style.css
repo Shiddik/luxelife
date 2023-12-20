@@ -11048,12 +11048,7 @@ ul.children {
   background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
 }
 .footer .footer-sec {
-  padding-top: 116px;
-}
-@media (max-width: 991px) {
-  .footer .footer-sec {
-    padding-top: 100px;
-  }
+  padding-top: 80px;
 }
 .footer .widget-menu-wrapper {
   padding: 0 100px;
@@ -11402,6 +11397,9 @@ ul.children {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-bottom-area {
@@ -11560,9 +11558,6 @@ ul.children {
   border-radius: 12px;
 }
 
-.footer.style-2 .footer-sec {
-  padding-top: 100px;
-}
 .footer.style-2 .footer-widget-title {
   color: #23262D;
 }

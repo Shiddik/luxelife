@@ -19,11 +19,8 @@
     background: linear-gradient(180deg, rgba(35, 38, 45, 0.90) 0%, #23262D 100%);
   }
   .footer-sec {
-    padding-top: 116px;
+    padding-top: 80px;
 
-    @include rmaxwd(991) {
-      padding-top: 100px;
-    }
   }
   .widget-menu-wrapper {
     padding: 0 100px;
@@ -349,6 +346,7 @@
   gap: 10px 40px;
   flex-wrap: wrap-reverse;
   flex-grow: 1;
+  justify-content: space-between;
 }
 .footer-bottom-area {
   padding: 57px 0;
