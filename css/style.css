@@ -5852,6 +5852,9 @@ body.admin-bar .header-menu-area.sticky_menu {
           flex-direction: column;
   gap: 20px;
 }
+.testimonial-card.style-1 {
+  width: 410px;
+}
 .testimonial-card .user-info-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5943,6 +5946,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .testimonial-card.style-3 .user-info-wrapper .user-meta {
   text-align: left;
+}
+
+.slider-area-wrapper.style-1 {
+  margin-right: -9999px;
 }
 
 .accordion-wrapper .accordion-list-item .accordion-head {

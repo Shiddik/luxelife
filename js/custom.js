@@ -205,6 +205,7 @@
             slidesToScroll: 1,
             loop: true,
             dots: false,
+            variableWidth: true,
             speed: 800,
             rtl: false,
             responsive: [
