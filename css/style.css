@@ -4973,6 +4973,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 .info-card.style-3 .title-wrapper .icon {
   background-color: #D9A14C;
@@ -4985,6 +4986,15 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -1px;
+  padding: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.info-card.style-3 .title-wrapper .counter-number {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #23262D;
 }
 .info-card.style-3 .content {
   text-align: center;
@@ -4997,16 +5007,36 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 40px;
   background-color: #ffffff;
 }
+.info-card.style-4 .title-wrapper {
+  margin-bottom: 20px;
+}
 .info-card.style-4 .content .read-more {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .info-card.style-4 .content .read-more a {
-  padding: 10px 20px;
+  padding: 20px 30px;
   background-color: #ffffff;
-  -webkit-box-shadow: 23px 0 0 1px #000;
-          box-shadow: 23px 0 0 1px #000;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  gap: 10px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  color: #23262D;
+}
+.info-card.style-4 .content .read-more .counter-number {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 78.2px;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  opacity: 0.05;
 }
 
 .info-card.style-5 {
