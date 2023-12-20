@@ -220,6 +220,10 @@ input:focus {
   background-color: #F4F4F4;
 }
 
+.background-orange {
+  background-color: #D9A14C;
+}
+
 .page-bg {
   background-color: #23262D;
 }
@@ -5620,55 +5624,35 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 5px;
-  padding: 50px 47px;
-  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-}
-.counter-card.style-1 {
-  padding: 20px;
-  margin-top: 55px;
-  background-image: repeating-linear-gradient(165deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(255deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(-15deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px), repeating-linear-gradient(75deg, #ae8a29, #ae8a29 17px, transparent 17px, transparent 32px, #ae8a29 32px);
-  background-size: 2px calc(100% + 33.13px), calc(100% + 33.13px) 2px, 2px calc(100% + 33.13px), calc(100% + 33.13px) 2px;
-  background-position: 0 0, 0 0, 100% 0, 0 100%;
-  background-repeat: no-repeat;
-  animation: borderAnimation 1s infinite linear reverse;
-}
-.counter-card .counter-shape {
-  position: absolute;
-  right: 0;
-  top: 0;
-  opacity: 0.2;
 }
 .counter-card .number {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 68px;
+  line-height: 78px;
   color: #23262D;
   margin: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card .number {
-    font-size: 48px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card .number {
-    font-size: 48px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .counter-card .title {
   margin: 0;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: initial;
   color: #1F2732;
 }
@@ -6590,6 +6574,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .post-card .image {
   overflow: hidden;
   position: relative;
+  height: 236px;
 }
 .post-card .image img {
   -webkit-transform: scale(1);
@@ -6679,11 +6664,12 @@ body.admin-bar .header-menu-area.sticky_menu {
           flex-direction: column;
   padding: 40px;
   border: 1px solid #E3E3E3;
-  gap: 20px;
+  gap: 40px;
 }
 .post-card .content .title {
   height: 60px;
   overflow: hidden;
+  font-family: "Rajdhani", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -6703,13 +6689,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 .post-card .content .post-content p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
   margin-bottom: 0;
 }
 .post-card .post-meta {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 5px 20px;
+  gap: 20px 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -6719,14 +6710,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 .post-card .post-meta .single-post-meta {
   color: #8f939b;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 30px;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Rubik", sans-serif;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7px;
+  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -6734,6 +6725,9 @@ body.admin-bar .header-menu-area.sticky_menu {
       flex-shrink: 0;
 }
 .post-card .post-meta .single-post-meta i {
+  font-family: "Font Awesome 6 Pro";
+  font-size: 14px;
+  font-weight: 900;
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -6759,10 +6753,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   left: 0;
   bottom: 0;
   background-color: #D9A14C;
-  padding: 10px;
 }
 .post-card.style-1 .post-meta .single-post-meta {
   color: #ffffff;
+  padding: 9px 20px;
 }
 .post-card.style-1 .post-meta .single-post-meta i {
   color: #ffffff;
@@ -6776,17 +6770,29 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 26px;
 }
 .post-card.style-2 .image {
-  height: 440px;
+  height: 433px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .post-card.style-2 .image {
     height: 300px;
   }
 }
+.post-card.style-2 .content {
+  padding: 20px 40px 40px;
+  gap: 20px;
+  border: none;
+  background-color: #ffffff;
+}
+.post-card.style-2 .content .title {
+  margin-bottom: 20px;
+}
 .post-card.style-2 .post-meta {
   margin-top: 5px;
 }
 
+.post-card.style-3 .image {
+  height: 299px;
+}
 .post-card.style-3 .content-wrapper {
   padding-right: 30px;
   margin-top: -65px;
@@ -6795,6 +6801,38 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .post-card.style-3 .content-wrapper .content {
   background-color: #ffffff;
+  padding: 20px 30px 40px;
+  gap: 20px;
+}
+.post-card.style-3 .content-wrapper .content .post-content {
+  margin-bottom: 10px;
+}
+
+.post-card.style-4 .post-meta .single-post-meta {
+  color: #616670;
+}
+.post-card.style-4 .post-meta .single-post-meta i {
+  color: #616670;
+}
+.post-card.style-4 .content {
+  gap: 20px;
+  padding: 30px 30px 20px;
+}
+
+.post-card.style-5 .post-meta .single-post-meta {
+  color: #ffffff;
+}
+.post-card.style-5 .content {
+  background-color: #23262D;
+  gap: 20px;
+  padding: 30px;
+  border: none;
+}
+.post-card.style-5 .content .image {
+  height: 272px;
+}
+.post-card.style-5 .content .title {
+  color: #ffffff;
 }
 
 .blog-details-wrapper .comment-respond {

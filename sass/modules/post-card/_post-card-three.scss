@@ -1,5 +1,8 @@
 .post-card {
   &.style-3 {
+    .image{
+      height: 299px;
+    }
     .content-wrapper {
       padding-right: 30px;
       margin-top: -65px;
@@ -8,6 +11,12 @@
 
       .content {
         background-color: $white;
+        padding: 20px 30px 40px;
+        gap: 20px;
+
+        .post-content{
+          margin-bottom: 10px;
+        }
       }
     }
   }
