@@ -1,6 +1,5 @@
 .image-card {
   background-color: $white;
-
   .image {
     position: relative;
 
@@ -13,6 +12,7 @@
       left: 10px;
       width: 100px;
       height: 100px;
+      padding: 17px;
       background-color: $white;
       display: flex;
       align-items: center;
@@ -28,7 +28,9 @@
     padding: 30px 40px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+
+    
 
     .title {
       font-size: 24px;
@@ -42,6 +44,7 @@
       p {
         margin-bottom: 0;
       }
+      
     }
   }
 }
