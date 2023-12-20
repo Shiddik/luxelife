@@ -1,6 +1,16 @@
 .slider-area-wrapper {
   &.style-1 {
     margin-right: -9999px;
+
+    .testimonial-slider-wrapper{
+
+      .slick-arrow{
+        display: none !important;
+      }
+      .slick-item{
+        margin-right: 30px;
+      }
+    }
   }
 }
 

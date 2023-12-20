@@ -1,5 +1,4 @@
 .testimonial-card{
-  //width: 410px;
   padding: 40px;
   background-color: $white;
   display: flex;
@@ -32,6 +31,7 @@
       }
     }
     .user-meta {
+
       .name{
         font-family: $heading-font;
         font-size: 24px;
@@ -44,8 +44,8 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
-        color: #616670;
-        margin-bottom: 0;
+        color: $gray-800;
+        margin: 4px 0;
       }
       .rating-icon{
         font-family: $font-awesome;
@@ -56,13 +56,14 @@
       }
     }
   }
-  .content {
+  .content-wrapper {
+
     .description{
       font-family: $body-font;
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      color: #616670;
+      color: $gray-800;
       margin-bottom: 0;
     }
   }
