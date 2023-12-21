@@ -1,6 +1,21 @@
 .about-info-card {
+
+  .btn-wrapper {
+    margin-top: 40px;
+  }
   &.style-1 {
     margin-top: 70px;
+  }
+  &.style-3 {
+    margin-top: 117px;
+  }
+  &.style-4 {
+    margin-top: 103px;
+    margin-right: 80px;
+
+    .btn-wrapper {
+      margin-top: 28px;
+    }
   }
   .about-info-content {
     display: flex;
