@@ -1,72 +1,99 @@
 
-//.header-area {
-//  &.style-2 {
-//    // Start Header Nav
-//    .header-menu-area {
-//      &.sticky_menu {
-//        .main-menu {
-//          ul {
-//            li {
-//              a {
-//                color: $black;
-//                @include transition;
-//
-//                &:hover {
-//                  color: $primary-color;
-//                }
-//              }
-//              ul {
-//                li {
-//                  a {
-//                    &:hover {
-//                      color: $white;
-//                    }
-//                  }
-//                }
-//              }
-//            }
-//          }
-//        }
-//      }
-//      .main-menu {
-//        ul {
-//          li {
-//            a {
-//              color: $black;
-//              @include transition;
-//
-//              &:hover {
-//                color: $primary-color;
-//              }
-//            }
-//            ul {
-//              li {
-//                a {
-//                  &:hover {
-//                    color: $white;
-//                  }
-//                }
-//              }
-//            }
-//          }
-//        }
-//      }
-//      .search-btn-with-btn {
-//        margin-left: 34px;
-//
-//        @include rmaxwd(1399) {
-//          display: none;
-//        }
-//        .btn-wrapper {
-//          flex-shrink: 0;
-//        }
-//        .theme-btn {
-//          padding: 11px 38px;
-//        }
-//        .search-btn {
-//          color: $black;
-//        }
-//      }
-//    }
-//  }
-//}
+.header-area {
+  &.style-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .logo-wrapper {
+      position: absolute;
+      z-index: 9999;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 110px;
+      padding-right: 130px;
+      background-color: $black;
+      clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+
+      //
+      //&:before {
+      //  position: absolute;
+      //  content: "";
+      //  top: 0;
+      //  right: -70px;
+      //  z-index: -1;
+      //  height: 100%;
+      //  border-left: 70px solid $black;
+      //  border-bottom: 120px solid transparent;
+      //}
+    }
+    // Start Header Nav
+    .header-menu-area {
+      &.sticky_menu {
+        .main-menu {
+          ul {
+            li {
+              a {
+                color: $black;
+                @include transition;
+
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+              ul {
+                li {
+                  a {
+                    &:hover {
+                      color: $white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .main-menu {
+        ul {
+          li {
+            a {
+              color: $black;
+              @include transition;
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+            ul {
+              li {
+                a {
+                  &:hover {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //.search-btn-with-btn {
+      //  margin-left: 34px;
+      //
+      //  @include rmaxwd(1399) {
+      //    display: none;
+      //  }
+      //  .btn-wrapper {
+      //    flex-shrink: 0;
+      //  }
+      //  .theme-btn {
+      //    padding: 11px 38px;
+      //  }
+      //  .search-btn {
+      //    color: $black;
+      //  }
+      //}
+    }
+  }
+}
