@@ -1,0 +1,24 @@
+.counter-card {
+    &.style-3{
+        padding: 20px 120px;
+        border-right: 1px solid $white;
+    
+        &.first{
+          padding: 20px 120px 20px 0;
+        }
+        &.last{
+          padding: 20px 0 20px 120px;
+          border: none;
+        }
+        .content{
+            gap: 0;
+
+          .number{
+            -webkit-text-stroke: 1px $white;
+          }
+          .title{
+            color: $white;
+          }
+        }
+      }
+}
