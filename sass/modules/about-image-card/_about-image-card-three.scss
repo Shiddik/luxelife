@@ -1,0 +1,13 @@
+.about-image-card {
+    &.style-3 {
+        .main-img-inner {
+            position: relative;
+
+            .top-image {
+                position: absolute;
+                right: 38px;
+                bottom: -60px;
+            }
+        }
+    }
+}
