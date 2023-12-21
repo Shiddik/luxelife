@@ -6084,6 +6084,43 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 33px;
 }
 
+.testimonial-card.style-3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.testimonial-card.style-3 .user-info-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonial-card.style-3 .user-info-wrapper .user-img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.testimonial-card.style-3 .user-info-wrapper .user-meta {
+  text-align: left;
+}
+.testimonial-card.style-3 .user-info-wrapper .user-meta .rating-icon {
+  margin-bottom: 20px;
+}
+.testimonial-card.style-3 .user-info-wrapper .user-meta .designation {
+  margin: 10px 0 0;
+}
+.testimonial-card.style-3 .content-wrapper .description {
+  font-size: 22px;
+  line-height: 33px;
+}
+
 .slider-area-wrapper.style-1 {
   margin-right: -9999px;
 }
