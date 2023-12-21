@@ -268,22 +268,32 @@ code {
 input.theme-btn {
   display: inline-flex;
   background-color: #D9A14C;
-  border: 2px solid #D9A14C;
-  color: #fff;
-  padding: 18px 45px;
+  border: 1px solid #D9A14C;
+  color: #ffffff;
+  padding: 14px 24px;
   text-align: center;
-  font-weight: 500;
-  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
   text-transform: capitalize;
   position: relative;
   transition: all 0.5s ease-out;
+<<<<<<< HEAD
   font-size: 18px;
   align-items: center;
   gap: 10px;
+=======
+  font-size: 16px;
+  letter-spacing: 1.28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+>>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
   overflow: hidden;
   z-index: 2;
   white-space: nowrap;
 }
+<<<<<<< HEAD
 .theme-btn i,
 .wp-block-loginout a i,
 input.theme-btn i {
@@ -294,6 +304,8 @@ input.theme-btn i {
   color: #fff;
   font-size: 16px;
 }
+=======
+>>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 .theme-btn:hover,
 .wp-block-loginout a:hover,
 input.theme-btn:hover {
@@ -3172,21 +3184,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: block;
 }
 
-.header-area.style-1 .search-btn-with-btn .theme-btn {
-  padding: 11px 40px;
-}
-.header-area.style-1 .header-menu-area {
-  padding: 0 50px;
-}
-@media only screen and (min-width: 1400px) and (max-width: 1459px) {
-  .header-area.style-1 .header-menu-area {
-    padding: 0 10px;
-  }
-}
-@media (max-width: 1399px) {
-  .header-area.style-1 .header-menu-area {
-    padding: 0;
-  }
+.header-area.style-1 {
+  background-color: #F4F4F4;
 }
 
 .header-top {
@@ -3313,10 +3312,26 @@ body.admin-bar .header-menu-area.sticky_menu {
   left: 0;
 }
 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn {
-  color: #ffffff;
+  color: #23262D;
+  background-color: #F4F4F4;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  width: 60px;
+  font-size: 16px;
 }
 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn:hover {
-  color: #D9A14C;
+  background-color: #23262D;
+  color: #ffffff;
 }
 .header-menu-area.sticky-header {
   width: 100%;
@@ -3434,6 +3449,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .main-menu ul li.active > a, .main-menu ul li.current-menu-ancestor > a {
   color: #D9A14C;
 }
+<<<<<<< HEAD
 .main-menu ul li.active > a:after, .main-menu ul li.current-menu-ancestor > a:after {
   position: absolute;
   content: "...";
@@ -3443,6 +3459,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   transform: translateX(-50%);
   font-size: 24px;
 }
+=======
+>>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 .main-menu ul li.dropdown > a {
   padding-right: 30px !important;
 }
@@ -3466,14 +3484,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .main-menu ul li a {
   display: block;
-  padding: 55px 24px;
+  padding: 45px 24px;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
   position: relative;
-  color: #ffffff;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
+  color: #23262D;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
   font-weight: 500;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3583,8 +3601,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .search-btn-with-btn {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   gap: 24px;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+>>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 }
 .search-btn-with-btn .search-btn {
   font-size: 24px;
@@ -3702,6 +3727,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-grow: 1;
 }
 
+<<<<<<< HEAD
 .header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li a {
   color: #23262D;
   transition: all 0.5s ease-out;
@@ -3740,6 +3766,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #23262D;
 }
 
+=======
+>>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 .mean-container a.meanmenu-reveal {
   display: none;
 }
