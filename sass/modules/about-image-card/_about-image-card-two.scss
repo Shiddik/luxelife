@@ -1,0 +1,74 @@
+.about-image-card {
+    &.style-4 {
+        .main-img-wrapper {
+            position: relative;
+
+            .img-shape {
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+                flex-shrink: 0;
+                z-index: 1;
+            }
+        }
+
+        .main-img-inner {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 50px;
+            position: relative;
+            z-index: 2;
+        }
+        .top-img-wrapper {
+            padding: 22px 20px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            z-index: 3;
+
+            &.box {
+                background-image: repeating-linear-gradient(178deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(268deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(-2deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(88deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px);
+                background-size: 4px calc(100% + 21.01px), calc(100% + 21.01px) 4px, 4px calc(100% + 21.01px) , calc(100% + 21.01px) 4px;
+                background-position: 0 0, 0 0, 100% 0, 0 100%;
+                background-repeat: no-repeat;
+                animation: borderAnimation 1s infinite linear reverse;
+            }
+
+
+            .review-card {
+                background-color: rgba(255, 255, 255, 1);
+                padding: 30px 70px 20px 70px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+                
+
+                .icon-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .icon {
+                        background-color: $primary-color;
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        padding: 13px;
+                        flex-shrink: 0;
+                    }
+                    h2 {
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 60px;
+                        color: $black;
+                        text-transform: capitalize;
+                    }
+                }
+                .card-text {
+                    margin-top: 10px;
+                }
+            }
+            .top-image {
+                margin-top: 40px;
+            }
+        }
+    }
+}

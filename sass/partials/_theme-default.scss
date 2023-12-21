@@ -232,7 +232,7 @@ input.theme-btn {
   text-align: center;
   font-weight: 700;
   font-family: $heading-font;
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: relative;
   @include transition;
   font-size: 16px;

@@ -282,7 +282,7 @@ input.theme-btn {
   text-align: center;
   font-weight: 700;
   font-family: "Rajdhani", sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: relative;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -3249,18 +3249,18 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @-webkit-keyframes borderAnimation {
   from {
-    background-position: 100% 0, -33.13px 0, 0% -33.13px, 100% 100%;
+    background-position: 100% 0, -21.01px 0, 0% -21.01px, 100% 100%;
   }
   to {
-    background-position: 100% -33.13px, 100% 0, 0% 0, -33.13px 100%;
+    background-position: 100% -21.01px, 100% 0, 0% 0, -21.01px 100%;
   }
 }
 @keyframes borderAnimation {
   from {
-    background-position: 100% 0, -33.13px 0, 0% -33.13px, 100% 100%;
+    background-position: 100% 0, -21.01px 0, 0% -21.01px, 100% 100%;
   }
   to {
-    background-position: 100% -33.13px, 100% 0, 0% 0, -33.13px 100%;
+    background-position: 100% -21.01px, 100% 0, 0% 0, -21.01px 100%;
   }
 }
 #preloader {
@@ -5329,6 +5329,89 @@ body.admin-bar .header-menu-area.sticky_menu {
   text-transform: capitalize;
 }
 
+.about-image-card.style-4 .main-img-wrapper {
+  position: relative;
+}
+.about-image-card.style-4 .main-img-wrapper .img-shape {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: 1;
+}
+.about-image-card.style-4 .main-img-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 50px;
+  position: relative;
+  z-index: 2;
+}
+.about-image-card.style-4 .top-img-wrapper {
+  padding: 22px 20px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 3;
+}
+.about-image-card.style-4 .top-img-wrapper.box {
+  background-image: repeating-linear-gradient(-178deg, #D9A14C, #D9A14C 13px, transparent 13px, transparent 21px, #D9A14C 21px), repeating-linear-gradient(-268deg, #D9A14C, #D9A14C 13px, transparent 13px, transparent 21px, #D9A14C 21px), repeating-linear-gradient(2deg, #D9A14C, #D9A14C 13px, transparent 13px, transparent 21px, #D9A14C 21px), repeating-linear-gradient(-88deg, #D9A14C, #D9A14C 13px, transparent 13px, transparent 21px, #D9A14C 21px);
+  background-size: 4px calc(100% + 21.01px), calc(100% + 21.01px) 4px, 4px calc(100% + 21.01px), calc(100% + 21.01px) 4px;
+  background-position: 100% 0, 100% 0, 0% 0, 100% 100%;
+  background-repeat: no-repeat;
+  animation: borderAnimation 1s infinite linear reverse;
+}
+.about-image-card.style-4 .top-img-wrapper .review-card {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 70px 20px 70px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+.about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper .icon {
+  background-color: #D9A14C;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 13px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #23262D;
+  text-transform: capitalize;
+}
+.about-image-card.style-4 .top-img-wrapper .review-card .card-text {
+  margin-top: 10px;
+}
+.about-image-card.style-4 .top-img-wrapper .top-image {
+  margin-top: 40px;
+}
+
+.about-image-card.style-3 .main-img-inner {
+  position: relative;
+}
+.about-image-card.style-3 .main-img-inner .top-image {
+  position: absolute;
+  left: 38px;
+  bottom: -60px;
+}
+
 .timeline-card {
   position: relative;
   overflow: hidden;
@@ -5590,8 +5673,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 
+.about-info-card .btn-wrapper {
+  margin-top: 40px;
+}
 .about-info-card.style-1 {
   margin-top: 70px;
+}
+.about-info-card.style-3 {
+  margin-top: 117px;
+}
+.about-info-card.style-4 {
+  margin-top: 103px;
+  margin-left: 80px;
+}
+.about-info-card.style-4 .btn-wrapper {
+  margin-top: 28px;
 }
 .about-info-card .about-info-content {
   display: -webkit-box;
@@ -8430,7 +8526,7 @@ body.single-post .page-heading .page-title {
           align-items: center;
 }
 .list-item-wrapper .list-item .icon {
-  font-size: 15px;
+  font-size: 20px;
   color: #D9A14C;
   display: -webkit-box;
   display: -ms-flexbox;
