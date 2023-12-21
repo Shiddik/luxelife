@@ -1,6 +1,33 @@
 
 .header-area {
   &.style-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .logo-wrapper {
+      position: absolute;
+      z-index: 9999;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 110px;
+      padding-right: 130px;
+      background-color: $black;
+      clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+
+      //
+      //&:before {
+      //  position: absolute;
+      //  content: "";
+      //  top: 0;
+      //  right: -70px;
+      //  z-index: -1;
+      //  height: 100%;
+      //  border-left: 70px solid $black;
+      //  border-bottom: 120px solid transparent;
+      //}
+    }
     // Start Header Nav
     .header-menu-area {
       &.sticky_menu {
