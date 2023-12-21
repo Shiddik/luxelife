@@ -277,35 +277,14 @@ input.theme-btn {
   text-transform: capitalize;
   position: relative;
   transition: all 0.5s ease-out;
-<<<<<<< HEAD
-  font-size: 18px;
-  align-items: center;
-  gap: 10px;
-=======
   font-size: 16px;
   letter-spacing: 1.28px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 15px;
->>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
   overflow: hidden;
   z-index: 2;
   white-space: nowrap;
 }
-<<<<<<< HEAD
-.theme-btn i,
-.wp-block-loginout a i,
-input.theme-btn i {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  color: #fff;
-  font-size: 16px;
-}
-=======
->>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 .theme-btn:hover,
 .wp-block-loginout a:hover,
 input.theme-btn:hover {
@@ -3314,17 +3293,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn {
   color: #23262D;
   background-color: #F4F4F4;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: stretch;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 60px;
   width: 60px;
   font-size: 16px;
@@ -3449,18 +3421,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .main-menu ul li.active > a, .main-menu ul li.current-menu-ancestor > a {
   color: #D9A14C;
 }
-<<<<<<< HEAD
-.main-menu ul li.active > a:after, .main-menu ul li.current-menu-ancestor > a:after {
-  position: absolute;
-  content: "...";
-  height: 0;
-  bottom: 75px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-}
-=======
->>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 .main-menu ul li.dropdown > a {
   padding-right: 30px !important;
 }
@@ -3601,15 +3561,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .search-btn-with-btn {
   display: flex;
-<<<<<<< HEAD
   align-items: center;
-  gap: 24px;
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
->>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 }
 .search-btn-with-btn .search-btn {
   font-size: 24px;
@@ -3727,47 +3680,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-grow: 1;
 }
 
-<<<<<<< HEAD
-.header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li a {
-  color: #23262D;
-  transition: all 0.5s ease-out;
-}
-.header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li a:hover {
-  color: #D9A14C;
-}
-.header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li ul li a:hover {
-  color: #ffffff;
-}
-.header-area.style-2 .header-menu-area .main-menu ul li a {
-  color: #23262D;
-  transition: all 0.5s ease-out;
-}
-.header-area.style-2 .header-menu-area .main-menu ul li a:hover {
-  color: #D9A14C;
-}
-.header-area.style-2 .header-menu-area .main-menu ul li ul li a:hover {
-  color: #ffffff;
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn {
-  margin-left: 34px;
-}
-@media (max-width: 1399px) {
-  .header-area.style-2 .header-menu-area .search-btn-with-btn {
-    display: none;
-  }
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn .btn-wrapper {
-  flex-shrink: 0;
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn .theme-btn {
-  padding: 11px 38px;
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn .search-btn {
-  color: #23262D;
-}
-
-=======
->>>>>>> bf0627ec1c65db59b465727f5db0176a8876847b
 .mean-container a.meanmenu-reveal {
   display: none;
 }
@@ -5112,6 +5024,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 80px 0 80px 125px;
   border: none;
 }
+.counter-card.style-1 .content .number {
+  color: #ffffff;
+}
+.counter-card.style-1 .content .title {
+  color: #ffffff;
+}
 .counter-card .content {
   display: inline-flex;
   gap: 10px;
@@ -5123,7 +5041,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 700;
   font-size: 68px;
   line-height: 78px;
-  color: #ffffff;
+  color: #23262D;
   margin: 0;
   flex-shrink: 0;
   display: flex;
@@ -5136,7 +5054,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
+  color: #23262D;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .counter-card .content .title {
