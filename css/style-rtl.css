@@ -11225,24 +11225,6 @@ ul.children {
 .footer .footer-sec {
   padding-top: 80px;
 }
-.footer .widget-menu-wrapper {
-  padding: 0 100px;
-}
-@media (max-width: 991px) {
-  .footer .widget-menu-wrapper {
-    padding: 0;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .footer .widget-menu-wrapper {
-    padding: 0 50px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .footer .widget-menu-wrapper {
-    padding: 0 60px;
-  }
-}
 .footer .footer-bg {
   position: absolute;
   bottom: 30px;
@@ -11724,7 +11706,7 @@ ul.children {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 11px;
+  gap: 10px;
 }
 .social-profile a {
   color: #ffffff;
@@ -11738,6 +11720,9 @@ ul.children {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(244, 244, 244, 0.1);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }

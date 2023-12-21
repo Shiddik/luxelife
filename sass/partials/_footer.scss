@@ -22,20 +22,20 @@
     padding-top: 80px;
 
   }
-  .widget-menu-wrapper {
-    padding: 0 100px;
-
-
-    @include rmaxwd(991) {
-      padding: 0;
-    }
-    @include lg {
-      padding: 0 50px;
-    }
-    @include xl {
-      padding: 0 60px;
-    }
-  }
+  //.widget-menu-wrapper {
+  //  padding: 0 100px;
+  //
+  //
+  //  @include rmaxwd(991) {
+  //    padding: 0;
+  //  }
+  //  @include lg {
+  //    padding: 0 50px;
+  //  }
+  //  @include xl {
+  //    padding: 0 60px;
+  //  }
+  //}
 
   //footer Background
   .footer-bg {
@@ -490,7 +490,7 @@
 .social-profile {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
 
   a {
     color: $white;
@@ -498,6 +498,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(244, 244, 244, 0.10);
+
     @include transition;
 
     &:hover {
