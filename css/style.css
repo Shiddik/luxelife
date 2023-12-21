@@ -5821,21 +5821,19 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 50px;
+  gap: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.brand-marquee-area .single-brand-marquee:nth-child(even) .brand-marquee-title {
+  -webkit-text-stroke: 2px #23262D;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 .brand-marquee-area .single-brand-marquee .brand-marquee-title {
   font-family: "Rajdhani", sans-serif;
   font-size: 68px;
-  color: #23262D;
   font-weight: 700;
-  text-transform: capitalize;
-  line-height: initial;
-  white-space: nowrap;
-  letter-spacing: 7px;
-}
-.brand-marquee-area .single-brand-marquee .brand-marquee-star {
-  font-size: 28px;
-  font-weight: 800;
+  line-height: 78.2px;
   color: #23262D;
   white-space: nowrap;
 }
@@ -7283,7 +7281,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .price-card {
-  padding: 40px;
+  padding: 40px 43px 40px 40px;
   z-index: 2;
   position: relative;
   top: 0;
@@ -10254,12 +10252,44 @@ ul.children {
   animation: none;
 }
 
+.video-popup-card.style-2 .video-popup-btn {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+}
+.video-popup-card.style-2 .video-popup-btn a {
+  border: 1px solid #D9A14C;
+  background-color: #ffffff;
+}
+.video-popup-card.style-2 .video-popup-btn a i {
+  color: #D9A14C;
+}
+
+.video-popup-card.style-3 .video-popup-btn {
+  background-color: initial;
+  border-radius: 50%;
+  padding: 15px;
+}
+.video-popup-card.style-3 .video-popup-btn a {
+  border: 1px solid #ffffff;
+  background-color: initial;
+  width: 130px;
+  height: 130px;
+}
+.video-popup-card.style-3 .video-popup-btn a i {
+  color: #D9A14C;
+}
+
 .project-card {
   position: relative;
 }
 .project-card .image {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 100%;
+}
+.project-card .image img {
+  width: 100%;
 }
 .project-card .main-content {
   position: absolute;
@@ -10283,11 +10313,13 @@ ul.children {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.project-card .main-content .main-content-wrapper .arrow-btn {
+.project-card .main-content .main-content-wrapper .angle-btn {
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -10300,8 +10332,28 @@ ul.children {
       -ms-flex-align: center;
           align-items: center;
   background-color: #D9A14C;
-  font-size: 16px;
+  font-size: 24px;
   color: #ffffff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.project-card .main-content .main-content-wrapper .arrow-btn {
+  width: 88px;
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D9A14C;
+  font-size: 24px;
+  color: #ffffff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .project-card .main-content .main-content-wrapper .title {
   font-size: 24px;
@@ -10321,16 +10373,31 @@ ul.children {
 
 .project-card.style-2 .main-content {
   height: 100%;
+  padding: 50px;
 }
 .project-card.style-2 .main-content .main-content-wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 40px 50px 50px;
+}
+.project-card.style-2 .main-content .main-content-wrapper .content-inner {
+  padding-right: 120px;
+}
+.project-card.style-2 .main-content .main-content-wrapper .content-inner .desc {
+  margin-top: 20px;
 }
 .project-card.style-2 .main-content .main-content-wrapper .btn-wrapper {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+.project-card.style-2 .main-content .main-content-wrapper .btn-wrapper i {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .about-us-area {

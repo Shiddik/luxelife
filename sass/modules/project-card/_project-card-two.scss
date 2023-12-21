@@ -2,12 +2,27 @@
   &.style-2 {
     .main-content {
       height: 100%;
+      padding: 50px;
 
       .main-content-wrapper {
         flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 40px 40px 50px 50px;
+
+        .content-inner {
+          padding-right: 120px;
+
+          .desc {
+            margin-top: 20px;
+          }
+        }
 
         .btn-wrapper {
           align-self: flex-end;
+
+          i {
+            transform: rotate(-45deg);
+          }
         }
       }
     }

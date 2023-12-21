@@ -1,0 +1,20 @@
+.video-popup-card {
+    &.style-3 {
+        .video-popup-btn {
+            background-color: initial;
+            border-radius: 50%;
+            padding: 15px;
+            a {
+                border: 1px solid $white;
+                background-color: initial;
+                width: 130px;
+                height: 130px;
+
+                i {
+                    color: $primary-color;
+                }
+
+            }
+        }
+    }
+}
