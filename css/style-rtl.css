@@ -5622,23 +5622,34 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
 }
 
-.counter-card {
+.counter-card.style-1 {
+  padding: 80px 125px;
+  border-left: 1px solid #ffffff;
+}
+.counter-card.style-1.first {
+  padding: 80px 0 80px 125px;
+}
+.counter-card.style-1.last {
+  padding: 80px 125px 80px 0;
+  border: none;
+}
+.counter-card .content {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 5px;
+  gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
 }
-.counter-card .number {
+.counter-card .content .number {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-size: 68px;
   line-height: 78px;
-  color: #23262D;
+  color: #ffffff;
   margin: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -5649,36 +5660,36 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-align: center;
           align-items: center;
 }
-.counter-card .title {
+.counter-card .content .title {
   margin: 0;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: initial;
-  color: #1F2732;
+  line-height: 30px;
+  color: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card .title {
+  .counter-card .content .title {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card .title {
+  .counter-card .content .title {
     font-size: 20px;
     line-height: 30px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .counter-card .title {
+  .counter-card .content .title {
     font-size: 24px;
     line-height: 38px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card .title br {
+  .counter-card .content .title br {
     display: none;
   }
 }
