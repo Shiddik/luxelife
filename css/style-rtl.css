@@ -282,7 +282,7 @@ input.theme-btn {
   text-align: center;
   font-weight: 700;
   font-family: "Rajdhani", sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: relative;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -5279,6 +5279,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .about-image-card.style-1 .main-img-wrapper .review-card .card-text span {
   color: #ffffff;
   text-transform: capitalize;
+}
+
+.about-image-card.style-3 .main-img-inner {
+  position: relative;
+}
+.about-image-card.style-3 .main-img-inner .top-image {
+  position: absolute;
+  left: 38px;
+  bottom: -60px;
 }
 
 .timeline-card {
