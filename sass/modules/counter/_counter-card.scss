@@ -1,47 +1,62 @@
 .counter-card {
-  display: inline-flex;
-  gap: 5px;
-  flex-direction: column;
-  position: relative;
+  &.style-1{
+    padding: 80px 125px;
+    border-right: 1px solid $white;
 
-  .number {
-    font-family: $heading-font;
-    font-weight: 700;
-    font-size: 68px;
-    line-height: 78px;
-    color: $black;
-    margin: 0;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    &.first{
+      padding: 80px 125px 80px 0;
+    }
+    &.last{
+      padding: 80px 0 80px 125px;
+      border: none;
+    }
   }
 
-  .title {
-    margin: 0;
-    font-family: $body-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: initial;
-    color: $black-100;
+  .content{
+    display: inline-flex;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
 
-    @include sm {
-      font-size: 20px;
+    .number {
+      font-family: $heading-font;
+      font-weight: 700;
+      font-size: 68px;
+      line-height: 78px;
+      color: $white;
+      margin: 0;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .title {
+      margin: 0;
+      font-family: $body-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
       line-height: 30px;
-      text-align: center;
-    }
-    @include md {
-      font-size: 20px;
-      line-height: 30px;
-    }
-    @include lg {
-      font-size: 24px;
-      line-height: 38px;
-    }
-
-    br {
+      color: $white;
+  
       @include sm {
-        display: none;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+      }
+      @include md {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include lg {
+        font-size: 24px;
+        line-height: 38px;
+      }
+  
+      br {
+        @include sm {
+          display: none;
+        }
       }
     }
   }
