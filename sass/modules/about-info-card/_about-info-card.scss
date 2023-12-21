@@ -1,4 +1,7 @@
 .about-info-card {
+  &.style-1 {
+    margin-top: 70px;
+  }
   .about-info-content {
     display: flex;
     flex-direction: column;

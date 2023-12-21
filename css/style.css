@@ -5211,34 +5211,34 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 
-.about-image-card .main-img-wrapper .main-img-inner {
+.about-image-card.style-2 .main-img-wrapper .main-img-inner {
   position: relative;
 }
-.about-image-card .main-img-wrapper .main-img-inner img {
+.about-image-card.style-2 .main-img-wrapper .main-img-inner img {
   position: relative;
   top: 0;
   left: 0;
   z-index: 1;
 }
-.about-image-card .main-img-wrapper .main-img-inner .top-image {
+.about-image-card.style-2 .main-img-wrapper .main-img-inner .top-image {
   position: absolute;
   top: 294px;
   left: 155px;
   background: rgba(217, 161, 76, 0.15);
   overflow: hidden;
 }
-.about-image-card .main-img-wrapper .main-img-inner .top-image img {
+.about-image-card.style-2 .main-img-wrapper .main-img-inner .top-image img {
   position: relative;
   margin-top: 35px;
   margin-left: 31px;
   z-index: 2;
 }
-.about-image-card .main-img-wrapper .main-img-inner .image-shape {
+.about-image-card.style-2 .main-img-wrapper .main-img-inner .image-shape {
   position: absolute;
   right: 50px;
   bottom: 20px;
 }
-.about-image-card .main-img-wrapper .review-card {
+.about-image-card.style-2 .main-img-wrapper .review-card {
   width: 307px;
   height: 135px;
   background-color: #D9A14C;
@@ -5255,7 +5255,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   z-index: 2;
   margin-bottom: 24px;
 }
-.about-image-card .main-img-wrapper .review-card .icon {
+.about-image-card.style-2 .main-img-wrapper .review-card .icon {
   width: 65px;
   height: 65px;
   display: -webkit-box;
@@ -5270,14 +5270,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.about-image-card .main-img-wrapper .review-card .card-text h2 {
+.about-image-card.style-2 .main-img-wrapper .review-card .card-text h2 {
   color: #ffffff;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
   text-transform: capitalize;
 }
-.about-image-card .main-img-wrapper .review-card .card-text span {
+.about-image-card.style-2 .main-img-wrapper .review-card .card-text span {
   color: #ffffff;
   text-transform: capitalize;
 }
@@ -5543,6 +5543,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 
+.about-info-card.style-1 {
+  margin-top: 70px;
+}
 .about-info-card .about-info-content {
   display: -webkit-box;
   display: -ms-flexbox;
