@@ -1,21 +1,21 @@
 .header-area {
-  &.style-1 {
-    .search-btn-with-btn {
-      .theme-btn {
-        padding: 11px 40px;
-      }
-    }
-    .header-menu-area {
-      padding: 0 50px;
-
-      @media only screen and (min-width: 1400px) and (max-width: 1459px) {
-        padding: 0 10px;
-      }
-      @include rmaxwd(1399) {
-        padding: 0;
-      }
-    }
-  }
+  //&.style-1 {
+  //  .search-btn-with-btn {
+  //    .theme-btn {
+  //      padding: 11px 40px;
+  //    }
+  //  }
+  //  .header-menu-area {
+  //    padding: 0 50px;
+  //
+  //    @media only screen and (min-width: 1400px) and (max-width: 1459px) {
+  //      padding: 0 10px;
+  //    }
+  //    @include rmaxwd(1399) {
+  //      padding: 0;
+  //    }
+  //  }
+  //}
 }
 .header-top {
   background-color: $primary-color;
@@ -156,11 +156,22 @@
     //  }
     //}
     .search-btn-wrapper {
+
+
       .search-btn {
-        color: $white;
+        color: $black;
+        background-color: $gray-100;
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        width: 60px;
+        font-size: 16px;
 
         &:hover {
-          color: $primary-color;
+          background-color: $black;
+          color: $white;
         }
       }
     }
@@ -332,15 +343,15 @@
         > a {
           color: $primary-color;
 
-          &:after {
-            position: absolute;
-            content: "...";
-            height: 0;
-            bottom: 75px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 24px;
-          }
+          //&:after {
+          //  position: absolute;
+          //  content: "...";
+          //  height: 0;
+          //  bottom: 75px;
+          //  left: 50%;
+          //  transform: translateX(-50%);
+          //  font-size: 24px;
+          //}
         }
       }
       &.dropdown {
@@ -393,14 +404,14 @@
       }
       a {
         display: block;
-        padding: 55px 24px;
+        padding: 45px 24px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
         position: relative;
-        color: $white;
-        font-family: $heading-font;
-        font-size: 18px;
+        color: $black;
+        font-family: $body-font;
+        font-size: 16px;
         font-weight: 500;
 
         @include lg {
@@ -533,7 +544,7 @@
 .search-btn-with-btn {
   display: flex;
   align-items: center;
-  gap: 24px;
+  margin-left: auto;
 
   .search-btn {
     font-size: 24px;
