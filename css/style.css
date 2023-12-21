@@ -276,40 +276,25 @@ input.theme-btn {
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: #D9A14C;
-  border: 2px solid #D9A14C;
-  color: #fff;
-  padding: 18px 45px;
+  border: 1px solid #D9A14C;
+  color: #ffffff;
+  padding: 14px 24px;
   text-align: center;
-  font-weight: 500;
-  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
   text-transform: capitalize;
   position: relative;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 1.28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 15px;
   overflow: hidden;
   z-index: 2;
   white-space: nowrap;
-}
-.theme-btn i,
-.wp-block-loginout a i,
-input.theme-btn i {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 6px;
-  color: #fff;
-  font-size: 16px;
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover,
@@ -3334,21 +3319,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: block;
 }
 
-.header-area.style-1 .search-btn-with-btn .theme-btn {
-  padding: 11px 40px;
-}
-.header-area.style-1 .header-menu-area {
-  padding: 0 50px;
-}
-@media only screen and (min-width: 1400px) and (max-width: 1459px) {
-  .header-area.style-1 .header-menu-area {
-    padding: 0 10px;
-  }
-}
-@media (max-width: 1399px) {
-  .header-area.style-1 .header-menu-area {
-    padding: 0;
-  }
+.header-area.style-1 {
+  background-color: #F4F4F4;
 }
 
 .header-top {
@@ -3507,10 +3479,26 @@ body.admin-bar .header-menu-area.sticky_menu {
   left: 0;
 }
 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn {
-  color: #ffffff;
+  color: #23262D;
+  background-color: #F4F4F4;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  width: 60px;
+  font-size: 16px;
 }
 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn:hover {
-  color: #D9A14C;
+  background-color: #23262D;
+  color: #ffffff;
 }
 .header-menu-area.sticky-header {
   width: 100%;
@@ -3639,16 +3627,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .main-menu ul li.active > a, .main-menu ul li.current-menu-ancestor > a {
   color: #D9A14C;
 }
-.main-menu ul li.active > a:after, .main-menu ul li.current-menu-ancestor > a:after {
-  position: absolute;
-  content: "...";
-  height: 0;
-  bottom: 75px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  font-size: 24px;
-}
 .main-menu ul li.dropdown > a {
   padding-right: 30px !important;
 }
@@ -3673,15 +3651,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .main-menu ul li a {
   display: block;
-  padding: 55px 24px;
+  padding: 45px 24px;
   text-decoration: none;
   text-transform: capitalize;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   position: relative;
-  color: #ffffff;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
+  color: #23262D;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
   font-weight: 500;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3805,7 +3783,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 24px;
+  margin-left: auto;
 }
 .search-btn-with-btn .search-btn {
   font-size: 24px;
@@ -3955,47 +3933,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-.header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li a {
-  color: #23262D;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li a:hover {
-  color: #D9A14C;
-}
-.header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li ul li a:hover {
-  color: #ffffff;
-}
-.header-area.style-2 .header-menu-area .main-menu ul li a {
-  color: #23262D;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.header-area.style-2 .header-menu-area .main-menu ul li a:hover {
-  color: #D9A14C;
-}
-.header-area.style-2 .header-menu-area .main-menu ul li ul li a:hover {
-  color: #ffffff;
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn {
-  margin-left: 34px;
-}
-@media (max-width: 1399px) {
-  .header-area.style-2 .header-menu-area .search-btn-with-btn {
-    display: none;
-  }
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn .btn-wrapper {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn .theme-btn {
-  padding: 11px 38px;
-}
-.header-area.style-2 .header-menu-area .search-btn-with-btn .search-btn {
-  color: #23262D;
 }
 
 .mean-container a.meanmenu-reveal {
@@ -11155,12 +11092,12 @@ ul.children {
 
 .footer-widget-title {
   font-family: "Rajdhani", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 30px;
   color: #ffffff;
   position: relative;
   margin-bottom: 43px;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .footer-widget-title {
@@ -11274,6 +11211,19 @@ ul.children {
   transition: all 0.5s ease-out;
   position: relative;
   font-family: "Rubik", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.footer-widget.widget_nav_menu li a:before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  color: #ffffff;
 }
 .footer-widget.widget_nav_menu li a:hover {
   -webkit-transition: all 0.5s ease-out;

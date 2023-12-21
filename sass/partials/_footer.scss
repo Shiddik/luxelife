@@ -48,12 +48,12 @@
 }
 .footer-widget-title {
   font-family: $heading-font;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 30px;
   color: $white;
   position: relative;
   margin-bottom: 43px;
-  font-weight: 500;
+  font-weight: 700;
 
   @include sm {
     margin-bottom: 20px;
@@ -166,6 +166,16 @@
         @include transition;
         position: relative;
         font-family: $roboto-font;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:before {
+          content: "\f105";
+          font-family: $font-awesome;
+          font-size: 16px;
+          color: $white;
+        }
 
         &:hover {
           @include transition;
