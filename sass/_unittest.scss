@@ -512,11 +512,11 @@ nav.wp-calendar-nav {
       //background-color: $white;
       //border: 1px solid $border-color;
       padding: 0 25px;
-      height: 66px;
+      height: 60px;
       width: 100%;
       color: #abb0ba;
       font-size: 18px;
-      border-radius: 6px 0 0 6px;
+      //border-radius: 6px 0 0 6px;
     }
     button {
       color: $white;
@@ -526,7 +526,7 @@ nav.wp-calendar-nav {
       background-color: $primary-color;
       top: 0;
       height: auto;
-      border-radius: 0 6px 6px 0;
+      //border-radius: 0 6px 6px 0;
       line-height: 0;
       border: 0;
       margin-left: 0 !important;
