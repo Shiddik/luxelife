@@ -6,21 +6,29 @@
 
         .icon-divider {
             content: "";
-            height: 212px;
             width: 1px;
             background-color: $primary-color;
+            position: relative;
+            display: flex;
+            align-self: stretch;
 
             &::before {
                 content: "";
-                height: 2px;
-                width: 2px;
+                position: absolute;
+                top: -8px;
+                left: -5px;
+                height: 11px;
+                width: 11px;
                 border-radius: 50%;
                 background-color: $primary-color;
             }
             &::after {
                 content: "";
-                height: 2px;
-                width: 2px;
+                position: absolute;
+                bottom: -8px;
+                left: -5px;
+                height: 11px;
+                width: 11px;
                 border-radius: 50%;
                 background-color: $primary-color;
             }
@@ -28,7 +36,7 @@
         .icon-card-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 30px;
         }
     }
    
