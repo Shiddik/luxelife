@@ -3103,20 +3103,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @keyframes spin {
   100% {
-<<<<<<< HEAD
     transform: rotate(359deg);
-=======
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes borderAnimation {
-  from {
-    background-position: 0 0, -21.01px 0, 100% -21.01px, 0 100%;
-  }
-  to {
-    background-position: 0 -21.01px, 0 0, 100% 0, -21.01px 100%;
->>>>>>> ecc74d8bbce963899d82bf0af48010e2f74a5bbb
   }
 }
 @keyframes borderAnimation {
@@ -4849,17 +4836,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: absolute;
   right: 0;
   bottom: -30px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   z-index: 1;
 }
 .about-image-card.style-4 .main-img-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 50px;
   position: relative;
   z-index: 2;
@@ -4881,16 +4863,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .about-image-card.style-4 .top-img-wrapper .review-card {
   background-color: rgb(255, 255, 255);
   padding: 30px 70px 20px 70px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 .about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
 }
 .about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper .icon {
@@ -4899,8 +4876,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 55px;
   border-radius: 50%;
   padding: 13px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper h2 {
   font-size: 48px;
@@ -10387,35 +10363,18 @@ ul.children {
 
 .social-profile {
   display: flex;
-<<<<<<< HEAD
   align-items: center;
-  gap: 11px;
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10px;
->>>>>>> ecc74d8bbce963899d82bf0af48010e2f74a5bbb
 }
 .social-profile a {
   color: #ffffff;
   font-size: 18px;
   display: flex;
-<<<<<<< HEAD
   align-items: center;
   justify-content: center;
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 30px;
   height: 30px;
   background-color: rgba(244, 244, 244, 0.1);
-  -webkit-transition: all 0.5s ease-out;
->>>>>>> ecc74d8bbce963899d82bf0af48010e2f74a5bbb
   transition: all 0.5s ease-out;
 }
 .social-profile a:hover {
