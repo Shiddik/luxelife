@@ -254,25 +254,25 @@
   .wp-block-tag-cloud {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 10px;
     align-items: center;
 
     a {
-      color: $text-color;
+      color: $gray-800;
       display: inline-block;
-      font-size: 18px;
-      font-family: $roboto-font;
+      font-size: 16px;
+      font-family: $body-font;
       font-weight: 400;
       line-height: 1;
-      padding: 12px 18px;
-      border-radius: 6px;
+      padding: 12px 14px;
       @include transition;
-      border: 1px solid $white-50;
+      //border: 1px solid $white-50;
+      background-color: $white;
 
       &:hover {
         color: $white;
         background: $primary-color;
-        border-color: $primary-color;
+        //border-color: $primary-color;
         @include transition;
       }
     }
@@ -317,12 +317,12 @@
         }
       }
       a {
-        color: $text-color;
+        color: $gray-800;
         position: relative;
         display: inline-block;
         text-transform: capitalize;
-        font-size: 18px;
-        font-family: $roboto-font;
+        font-size: 16px;
+        font-family: $body-font;
         font-weight: 400;
         @include transition;
 
@@ -551,8 +551,16 @@
         overflow: hidden;
         width: 90px;
         height: 90px;
-        border-radius: 6px;
+        border-radius: 50%;
+        position: relative;
+
         img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+          top: 0;
+          left: 0;
           transform: scale(1);
           @include transition;
         }
@@ -560,29 +568,30 @@
       .latest-post-desc {
         .latest-post-title {
           margin-bottom: 8px;
-          font-size: 21px;
-          line-height: 30px;
-          color: $secondary-color;
+          font-size: 18px;
+          line-height: 27px;
+          color: $black;
           font-family: $heading-font;
-          font-weight: 500;
+          font-weight: 700;
+
           @include lg {
-            font-size: 19px;
+            font-size: 16px;
             height: 60px;
             overflow: hidden;
           }
 
           a {
-            font-size: 21px;
-            line-height: 30px;
-            color: $secondary-color;
-            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: $black;
+            font-weight: 700;
             position: relative;
             text-transform: capitalize;
             @include transition;
             font-family: $heading-font;
 
             @include lg {
-              font-size: 19px;
+              font-size: 16px;
             }
             &:hover {
               color: $primary-color;
@@ -596,7 +605,12 @@
           align-items: center;
           font-weight: 400;
           gap: 8px;
-          color: #5e6f92;
+          color: $gray-800;
+          font-family: $body-font;
+
+          i {
+            color: $primary-color;
+          }
         }
       }
     }
