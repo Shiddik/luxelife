@@ -1,13 +1,14 @@
 .about-us-area {
     padding: 120px 0;
-    background-color: $white;
 }
 
 .feature-area {
     &.style-2 {
         .section-title {
+            align-items: center;
             margin-bottom: 60px;
             text-align: center;
+            flex-direction: column;
 
             .short-title {
                 &::before {
@@ -16,7 +17,14 @@
                     height: 1px;
                     border-bottom: 1px solid $primary-color;
                     flex: 1 1;
-                  }
+                }
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 1px;
+                    border-bottom: 1px solid $primary-color;
+                    flex: 1 1;
+                }
             }
         }
     }
