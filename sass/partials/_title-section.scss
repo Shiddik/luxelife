@@ -1,42 +1,122 @@
 .section-title {
-    
-    .short-title {
-      font-family: $heading-font;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px; 
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: $primary-color;
-      margin-bottom: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 74px;
+  gap: 20px;
+
+  @include rmaxwd(550) {
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .sec-content {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    margin-bottom: -16px;
+    margin-top: -8px;
+
+    @include rmaxwd(550) {
+      width: 100%;
     }
-    .only-divider { 
-      &::after {
-        content: "";
-        width: 20px;
-        height: 1px;
-        border-bottom: 1px solid $primary-color;
-        flex: 1 1;
+    .sec-desc {
+      p {
+        br {
+          @include md {
+            display: none;
+          }
+          @include sm {
+            display: none;
+          }
+        }
       }
     }
-    .title {
-      font-family: $heading-font;
+  }
+  .short-title {
+    font-family: $heading-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    &::before,
+    &::after
+    {
+      content: "";
+      width: 20px;
+      height: 1px;
+      border-bottom: 1px solid $primary-color;
+      flex: 1 1;
+    }
+
+    &.only-divider {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .title {
+    font-family: $heading-font;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: $black;
+    margin-bottom: 0;
+
+
+    @include lg {
       font-size: 48px;
-      font-weight: 700;
-      line-height: 60px;
-      text-transform: capitalize;
+      line-height: 62px;
+    }
+    @include nesthub {
+      font-size: 47px;
+    }
+    @include md {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    @include sm {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 439px){
+      br {
+        display: none;
+      }
+    }
+    span {
+      color: $primary-color;
+    }
+  }
+  .sec-desc {
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $gray-800;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    .theme-btn {
+      background-color: transparent;
       color: $black;
-      margin-bottom: 20px;
+      flex-shrink: 0;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+        @include transition;
+      }
     }
-    .desc {
-      font-family: $body-font;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 30px;
-      color: $gray-800;
-      margin-bottom: 0px;
-    }
+  }
 }
