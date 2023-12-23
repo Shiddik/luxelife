@@ -23,6 +23,9 @@
   .footer-sec {
     padding-top: 80px;
 
+    hr{
+      margin: 50px 0 0 0;
+    }
   }
 
   //.widget-menu-wrapper {
@@ -181,7 +184,7 @@
       position: relative;
       display: inline-block;
       width: 100%;
-      padding-bottom: 11px;
+      padding-bottom: 10px;
 
       &:last-child {
         padding-top: 0;
@@ -237,19 +240,11 @@
       list-style: none;
 
       li {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         line-height: 30px;
-        gap: 20px;
-
-        &:first-child {
-          align-items: flex-start;
-
-          .contact-icon {
-            margin-top: 5px;
-          }
-        }
+        gap: 10px;
 
         &:last-child {
           margin-bottom: 0;
@@ -262,14 +257,21 @@
           display: flex;
           align-items: center;
           flex-shrink: 0;
+          i{
+            font-family: $font-awesome;
+            font-size: 16px;
+            font-weight: 900;
+            color: $primary-color;
+          }
         }
 
         .contact-text {
           color: $white-100;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 30px;
+          font-weight: 400;
           overflow: hidden;
-          font-family: $roboto-font;
+          font-family: $body-font;
 
           a {
             &:hover {
@@ -365,10 +367,12 @@
 
     li {
       a {
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
         text-transform: capitalize;
         color: $white-100;
-        font-family: $roboto-font;
+        font-family: $body-font;
         @include transition;
 
         &:hover {
@@ -402,7 +406,7 @@
 }
 
 .footer-bottom-area {
-  padding: 57px 0;
+  padding: 30px 0;
 
   @include rmaxwd(991) {
     padding: 30px 0;
@@ -412,14 +416,17 @@
     p {
       color: $white-100;
       margin-bottom: 0;
-      font-family: $roboto-font;
-      font-size: 18px;
+      font-family: $body-font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
 
       a {
         color: $white-100;
         font-weight: 400;
-        font-family: $roboto-font;
-        font-size: 18px;
+        font-family: $body-font;
+        font-size: 16px;
+        line-height: 30px;
 
         &:hover {
           color: $primary-color;
@@ -451,9 +458,14 @@
 }
 
 .subscribe-form-wrapper {
-  font-size: 18px;
+  p{
+    font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
   color: $white-100;
-  font-family: $roboto-font;
+  font-family: $body-font;
+  margin-bottom: 20px;
+  }
 }
 
 .subscribe-form-widget {
@@ -463,8 +475,6 @@
     display: flex;
     background-color: transparent;
     overflow: hidden;
-    border-radius: 5px;
-    gap: 10px;
 
     @include xs {
       flex-wrap: wrap;
@@ -477,11 +487,12 @@
     input {
       color: $white;
       height: 60px;
-      padding: 0 30px;
+      padding: 0 20px;
       font-size: 16px;
       width: 100%;
-      border-radius: 5px;
-      background-color: #ffffff1a;
+      background: none;
+      border: 1px solid $white-100;
+      border-right: 0;
     }
 
     *::-webkit-input-placeholder {
@@ -513,15 +524,15 @@
 
   .submit-btn {
     background-color: $primary-color;
-    color: $black;
+    color: $white;
     cursor: pointer;
     padding: 15px 19px;
     display: flex;
     align-items: center;
     gap: 9px;
     text-transform: capitalize;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 900;
     letter-spacing: 0.6px;
     whispace: nowrap;
   }

@@ -11640,6 +11640,9 @@ ul.children {
 .footer .footer-sec {
   padding-top: 80px;
 }
+.footer .footer-sec hr {
+  margin: 50px 0 0 0;
+}
 .footer .footer-bg {
   position: absolute;
   bottom: 30px;
@@ -11765,7 +11768,7 @@ ul.children {
   position: relative;
   display: inline-block;
   width: 100%;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
 }
 .footer-widget.widget_nav_menu li:last-child {
   padding-top: 0;
@@ -11821,7 +11824,7 @@ ul.children {
   list-style: none;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11829,15 +11832,7 @@ ul.children {
       -ms-flex-align: center;
           align-items: center;
   line-height: 30px;
-  gap: 20px;
-}
-.footer-widget .footer-widget-contact .footer-contact ul li:first-child {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.footer-widget .footer-widget-contact .footer-contact ul li:first-child .contact-icon {
-  margin-top: 5px;
+  gap: 10px;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li:last-child {
   margin-bottom: 0;
@@ -11855,10 +11850,17 @@ ul.children {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  font-weight: 900;
+  color: #D9A14C;
+}
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
   color: rgba(255, 255, 255, 0.7019607843);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
+  font-weight: 400;
   overflow: hidden;
   font-family: "Rubik", sans-serif;
 }
@@ -11947,7 +11949,9 @@ ul.children {
   }
 }
 .footer-bottom-menu ul li a {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.7019607843);
   font-family: "Rubik", sans-serif;
@@ -11997,7 +12001,7 @@ ul.children {
 }
 
 .footer-bottom-area {
-  padding: 57px 0;
+  padding: 30px 0;
 }
 @media (max-width: 991px) {
   .footer-bottom-area {
@@ -12008,13 +12012,16 @@ ul.children {
   color: rgba(255, 255, 255, 0.7019607843);
   margin-bottom: 0;
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
 }
 .footer-bottom-area .copyright-text p a {
   color: rgba(255, 255, 255, 0.7019607843);
   font-weight: 400;
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 30px;
 }
 .footer-bottom-area .copyright-text p a:hover {
   color: #D9A14C;
@@ -12042,10 +12049,13 @@ ul.children {
   gap: 25px;
 }
 
-.subscribe-form-wrapper {
-  font-size: 18px;
+.subscribe-form-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
   color: rgba(255, 255, 255, 0.7019607843);
   font-family: "Rubik", sans-serif;
+  margin-bottom: 20px;
 }
 
 .subscribe-form-widget {
@@ -12057,8 +12067,6 @@ ul.children {
   display: flex;
   background-color: transparent;
   overflow: hidden;
-  border-radius: 5px;
-  gap: 10px;
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .subscribe-form-widget .mc4wp-form-fields {
@@ -12074,11 +12082,12 @@ ul.children {
 .subscribe-form-widget .single-field input {
   color: #ffffff;
   height: 60px;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 16px;
   width: 100%;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1019607843);
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.7019607843);
+  border-right: 0;
 }
 .subscribe-form-widget .single-field *::-webkit-input-placeholder {
   color: #778196;
@@ -12098,7 +12107,7 @@ ul.children {
 }
 .subscribe-form-widget .submit-btn {
   background-color: #D9A14C;
-  color: #23262D;
+  color: #ffffff;
   cursor: pointer;
   padding: 15px 19px;
   display: -webkit-box;
@@ -12109,8 +12118,8 @@ ul.children {
           align-items: center;
   gap: 9px;
   text-transform: capitalize;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 900;
   letter-spacing: 0.6px;
   whispace: nowrap;
 }
