@@ -297,6 +297,17 @@
         }
       }
     }
+    // Extra Info
+    .extra-info {
+      .extra-title {
+        font-family: $heading-font;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #FFFFFFB7;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   // Footer Latest News

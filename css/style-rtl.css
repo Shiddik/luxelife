@@ -11882,6 +11882,14 @@ ul.children {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+.footer-widget .footer-widget-contact .extra-info .extra-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.7176470588);
+  margin-bottom: 10px;
+}
 .footer-widget .widget_latest_post ul li .latest-post-thumb {
   width: 60px;
   height: 60px;
