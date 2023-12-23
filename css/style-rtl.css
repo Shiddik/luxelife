@@ -10198,10 +10198,6 @@ ul.children {
   list-style: none;
 }
 
-.post-comments-form .contacts-message {
-  margin-top: 10px;
-}
-
 /*Comment Input Filed*/
 .post-comments-title .sub-title {
   font-size: 18px;
@@ -10238,13 +10234,7 @@ ul.children {
 }
 
 .comment-respond {
-  padding: 50px;
   position: relative;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .comment-respond {
-    padding: 30px;
-  }
 }
 .comment-respond p {
   margin: 0;
@@ -10253,7 +10243,7 @@ ul.children {
 .comment-respond .contacts-name,
 .comment-respond .single-input-field,
 .comment-respond .contacts-message {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   position: relative;
 }
 .comment-respond .contacts-email label,
@@ -10312,9 +10302,9 @@ ul.children {
   padding: 0 27px;
   height: 70px;
   width: 100%;
-  color: #778196;
+  color: #616670;
   opacity: 1;
-  border: 1px solid rgba(44, 53, 62, 0.1490196078) !important;
+  border: 1px solid #E3E3E3 !important;
   font-size: 18px;
   font-weight: 400;
   background-color: transparent;
@@ -10329,33 +10319,33 @@ ul.children {
   font-weight: 500;
 }
 .comment-respond *::-webkit-input-placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond *::-moz-placeholder {
-  color: #778196;
+  color: #616670;
   opacity: 1;
 }
 .comment-respond *:-ms-input-placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond *::-ms-input-placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond *::placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond textarea {
   resize: vertical;
   padding: 27px;
   width: 100%;
-  color: #778196;
-  border: 1px solid rgba(44, 53, 62, 0.1490196078) !important;
+  color: #616670;
+  border: 1px solid #E3E3E3 !important;
   font-size: 18px;
   font-weight: 400;
   background-color: transparent;
   font-family: "Rubik", sans-serif !important;
-  height: 140px;
-  margin-bottom: 12px;
+  height: 200px;
+  margin-bottom: 0;
 }
 .comment-respond input:focus,
 .comment-respond textarea:focus,
@@ -10366,76 +10356,6 @@ ul.children {
   border-color: #D9A14C !important;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-}
-
-.comment-respond.style-2 {
-  margin: 0;
-  padding: 0;
-}
-.comment-respond.style-2 .contacts-email,
-.comment-respond.style-2 .contacts-name,
-.comment-respond.style-2 .single-input-field,
-.comment-respond.style-2 .contacts-message {
-  margin-bottom: 0;
-}
-.comment-respond.style-2 .contacts-email label,
-.comment-respond.style-2 .contacts-name label,
-.comment-respond.style-2 .single-input-field label,
-.comment-respond.style-2 .contacts-message label {
-  background-color: #1F2732;
-  color: #ffffff;
-}
-.comment-respond.style-2 .comment-respond-wrapper {
-  margin-right: 335px;
-  padding: 53px 70px 33px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  position: relative;
-  z-index: 2;
-}
-.comment-respond.style-2 .comment-respond-wrapper:before {
-  position: absolute;
-  content: "";
-  width: 9999px;
-  height: 100%;
-  right: 0;
-  background-color: #1F2732;
-  top: 0;
-  margin-left: 10px;
-  border-radius: 20px;
-  z-index: -1;
-}
-.comment-respond.style-2 .comment-respond-wrapper .form-title {
-  color: #ffffff;
-  font-size: 45px;
-  font-weight: 600;
-  line-height: initial;
-}
-.comment-respond.style-2 .form-field-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-.comment-respond.style-2 .form-field-wrapper .single-input-field {
-  width: 256px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-.comment-respond.style-2 input,
-.comment-respond.style-2 select,
-.comment-respond.style-2 textarea {
-  border-color: #2C353E !important;
-  margin-bottom: 0;
 }
 
 .team-member-card {
