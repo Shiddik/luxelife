@@ -286,10 +286,8 @@ blockquote {
   margin: 40px 0;
   position: relative;
   z-index: 1;
-  padding-left: 60px;
-  @include sm {
-    padding-left: 30px;
-  }
+  padding: 40px 60px;
+
   //background-color: $white;
 
   //&:before {
@@ -307,18 +305,14 @@ blockquote {
   //}
   p {
     font-family: $body-font;
-    font-size: 21px;
-    color: #8f939b;
-    line-height: initial;
+    font-size: 16px;
+    color: $text-color;
+    line-height: 30px;
     font-weight: 400;
     margin: 0 !important;
     //margin-top: 10px;
-    font-style: italic;
+    //font-style: italic;
 
-    @include sm {
-      font-size: 18px;
-      line-height: initial;
-    }
     a {
       color: $primary-color;
       text-decoration: underline;
@@ -326,10 +320,10 @@ blockquote {
   }
   footer {
     font-family: $heading-font;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     text-transform: capitalize;
-    color: $secondary-color;
+    color: $black;
     margin-top: 20px;
   }
 }
@@ -343,11 +337,11 @@ blockquote {
 }
 
 .wp-block-quote, blockquote {
-  border-left: solid 5px $primary-color;
+  border-left: 2px solid $primary-color;
 }
 .wp-block-pullquote {
-  border-top: 5px solid $primary-color !important;
-  border-bottom: 5px solid $primary-color !important;
+  border-top: 2px solid $primary-color !important;
+  border-bottom: 2px solid $primary-color !important;
   background-color: #eef5f8;
 }
 .wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
