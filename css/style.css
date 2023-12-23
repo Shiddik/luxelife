@@ -5512,8 +5512,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 28px 0;
-  gap: 66px;
+  gap: 40px;
 }
 @media (max-width: 767px) {
   .brand-marquee-area {
@@ -9053,7 +9052,7 @@ ul.children {
   color: #616670;
 }
 .comment-respond *:-moz-placeholder {
-  color: #778196;
+  color: #616670;
   opacity: 1;
 }
 .comment-respond *::-moz-placeholder {
@@ -9091,69 +9090,6 @@ ul.children {
   transition: all 0.4s ease 0s;
 }
 
-<<<<<<< HEAD
-.comment-respond.style-2 {
-  margin: 0;
-  padding: 0;
-}
-.comment-respond.style-2 .contacts-email,
-.comment-respond.style-2 .contacts-name,
-.comment-respond.style-2 .single-input-field,
-.comment-respond.style-2 .contacts-message {
-  margin-bottom: 0;
-}
-.comment-respond.style-2 .contacts-email label,
-.comment-respond.style-2 .contacts-name label,
-.comment-respond.style-2 .single-input-field label,
-.comment-respond.style-2 .contacts-message label {
-  background-color: #1F2732;
-  color: #ffffff;
-}
-.comment-respond.style-2 .comment-respond-wrapper {
-  margin-left: 335px;
-  padding: 53px 0 33px 70px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  position: relative;
-  z-index: 2;
-}
-.comment-respond.style-2 .comment-respond-wrapper:before {
-  position: absolute;
-  content: "";
-  width: 9999px;
-  height: 100%;
-  left: 0;
-  background-color: #1F2732;
-  top: 0;
-  margin-right: 10px;
-  border-radius: 20px;
-  z-index: -1;
-}
-.comment-respond.style-2 .comment-respond-wrapper .form-title {
-  color: #ffffff;
-  font-size: 45px;
-  font-weight: 600;
-  line-height: initial;
-}
-.comment-respond.style-2 .form-field-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.comment-respond.style-2 .form-field-wrapper .single-input-field {
-  width: 256px;
-  flex-shrink: 0;
-}
-.comment-respond.style-2 input,
-.comment-respond.style-2 select,
-.comment-respond.style-2 textarea {
-  border-color: #2C353E !important;
-  margin-bottom: 0;
-}
-
-=======
->>>>>>> 17c4e57bc5c544cb39302147cebed6ee3fbac3ed
 .team-member-card {
   position: relative;
   background-color: #F4F4F4;
@@ -9684,9 +9620,35 @@ ul.children {
   padding-bottom: 153px;
 }
 
+.feature-area.style-1 {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.feature-area.style-1 .section-title {
+  margin-bottom: 100px;
+}
+
+.portfolio-section.style-1 .section-title {
+  margin-bottom: 52px;
+}
+
 .counter-up-area,
 .video-popup-area {
   margin: 0 80px;
+}
+
+.testimonial-slider-area.style-1 .section-title {
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 0;
+  align-items: start;
+}
+.testimonial-slider-area.style-1 .section-title .sec-desc {
+  text-align: left;
+}
+
+.latest-posts-area.style-1 .section-title {
+  margin-bottom: 60px;
 }
 
 .cta-area.style-3 {

@@ -291,7 +291,7 @@
         $("#testimonial_style_one").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -309,6 +309,7 @@
                 },
             }, ],
         });
+        
 
         /*
        Testimonial Slider
