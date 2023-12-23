@@ -8943,10 +8943,6 @@ ul.children {
   list-style: none;
 }
 
-.post-comments-form .contacts-message {
-  margin-top: 10px;
-}
-
 /*Comment Input Filed*/
 .post-comments-title .sub-title {
   font-size: 18px;
@@ -8979,13 +8975,7 @@ ul.children {
 }
 
 .comment-respond {
-  padding: 50px;
   position: relative;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .comment-respond {
-    padding: 30px;
-  }
 }
 .comment-respond p {
   margin: 0;
@@ -8994,7 +8984,7 @@ ul.children {
 .comment-respond .contacts-name,
 .comment-respond .single-input-field,
 .comment-respond .contacts-message {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   position: relative;
 }
 .comment-respond .contacts-email label,
@@ -9043,9 +9033,9 @@ ul.children {
   padding: 0 27px;
   height: 70px;
   width: 100%;
-  color: #778196;
+  color: #616670;
   opacity: 1;
-  border: 1px solid rgba(44, 53, 62, 0.1490196078) !important;
+  border: 1px solid #E3E3E3 !important;
   font-size: 18px;
   font-weight: 400;
   background-color: transparent;
@@ -9060,37 +9050,37 @@ ul.children {
   font-weight: 500;
 }
 .comment-respond *::-webkit-input-placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond *:-moz-placeholder {
   color: #778196;
   opacity: 1;
 }
 .comment-respond *::-moz-placeholder {
-  color: #778196;
+  color: #616670;
   opacity: 1;
 }
 .comment-respond *:-ms-input-placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond *::-ms-input-placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond *::placeholder {
-  color: #778196;
+  color: #616670;
 }
 .comment-respond textarea {
   resize: vertical;
   padding: 27px;
   width: 100%;
-  color: #778196;
-  border: 1px solid rgba(44, 53, 62, 0.1490196078) !important;
+  color: #616670;
+  border: 1px solid #E3E3E3 !important;
   font-size: 18px;
   font-weight: 400;
   background-color: transparent;
   font-family: "Rubik", sans-serif !important;
-  height: 140px;
-  margin-bottom: 12px;
+  height: 200px;
+  margin-bottom: 0;
 }
 .comment-respond input:focus,
 .comment-respond textarea:focus,
@@ -9101,6 +9091,7 @@ ul.children {
   transition: all 0.4s ease 0s;
 }
 
+<<<<<<< HEAD
 .comment-respond.style-2 {
   margin: 0;
   padding: 0;
@@ -9161,6 +9152,8 @@ ul.children {
   margin-bottom: 0;
 }
 
+=======
+>>>>>>> 17c4e57bc5c544cb39302147cebed6ee3fbac3ed
 .team-member-card {
   position: relative;
   background-color: #F4F4F4;
