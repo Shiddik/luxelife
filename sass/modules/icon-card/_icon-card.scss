@@ -6,10 +6,11 @@
 
         .icon-divider {
             content: "";
-            height: 212px;
             width: 1px;
             background-color: $primary-color;
             position: relative;
+            display: flex;
+            align-self: stretch;
 
             &::before {
                 content: "";

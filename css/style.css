@@ -5211,10 +5211,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .icon-card.style-1 .icon-divider {
   content: "";
-  height: 212px;
   width: 1px;
   background-color: #D9A14C;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
 }
 .icon-card.style-1 .icon-divider::before {
   content: "";
@@ -5298,6 +5302,40 @@ body.admin-bar .header-menu-area.sticky_menu {
 .icon-card.style-2 .image {
   width: 65px;
   height: 65px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.icon-card.style-3 {
+  padding: 0 54px;
+  background-color: #F4F4F4;
+}
+.icon-card.style-3 .icon-card-inner {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.icon-card.style-3 .icon-card-inner:nth-child(even) {
+  border-top: 1px solid rgba(35, 38, 45, 0.3);
+  border-bottom: 1px solid rgba(35, 38, 45, 0.3);
+}
+.icon-card.style-3 .icon-card-inner .image {
+  width: 65px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
