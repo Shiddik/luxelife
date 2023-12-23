@@ -1,71 +1,37 @@
-<<<<<<< HEAD
-=======
-//.about-us-area {
-//    padding: 120px 0;
-//}
-//
-//.feature-area {
-//    &.style-2 {
-//        .section-title {
-//            align-items: center;
-//            margin-bottom: 60px;
-//            text-align: center;
-//            flex-direction: column;
-//
-//            .short-title {
-//                &::before {
-//                    content: "";
-//                    width: 20px;
-//                    height: 1px;
-//                    border-bottom: 1px solid $primary-color;
-//                    flex: 1 1;
-//                }
-//                &::after {
-//                    content: "";
-//                    width: 20px;
-//                    height: 1px;
-//                    border-bottom: 1px solid $primary-color;
-//                    flex: 1 1;
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//.video-popup-area {
-//    &.style-2 {
-//        background-color: $gray-100;
-//    }
-//}
+.subscribe-area {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $white;
 
-//.about-us-area {
-//    padding: 120px 0;
-//    background-color: $white;
-//}
-//
-//.feature-area {
-//    &.style-2 {
-//        .section-title {
-//            margin-bottom: 60px;
-//            text-align: center;
-//
-//            .short-title {
-//                &::before {
-//                    content: "";
-//                    width: 20px;
-//                    height: 1px;
-//                    border-bottom: 1px solid $primary-color;
-//                    flex: 1 1;
-//                  }
-//            }
-//        }
-//    }
-//}
-//
-//.video-popup-area {
-//    &.style-2 {
-//        background-color: $gray-100;
-//    }
-//}
->>>>>>> 7be62a02b14c3a3f6fd3e3bf696196b126d9fdff
->>>>>>> 025ddf52816e3301d1553599b62bdae8b5bf6cf0
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .desc {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .subscribe-form-widget {
+        .mc4wp-form-fields{
+            border-radius: 0;
+        }
+        .single-field {
+            input {
+                border: 1px solid #E3E3E3;
+                color: $black;
+                padding: 0 20px;
+            }
+            
+        }
+        .submit-btn {
+            padding: 14px 25px;
+            color: $white;
+        }
+    }
+    
+
+
+}
