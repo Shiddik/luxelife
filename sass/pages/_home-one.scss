@@ -7,8 +7,54 @@
   }
 }
 
+// Feature Area
+.feature-area{
+  &.style-1{
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    .section-title{
+      margin-bottom: 100px;
+    }
+  }
+}
+
+// Portfolio Section
+.portfolio-section{
+  &.style-1{
+    .section-title{
+      margin-bottom: 52px;
+    }
+  }
+}
+
 // Counter Up Area
 .counter-up-area,
 .video-popup-area {
   margin: 0 80px;
+}
+
+// Testimonial Slider Area
+.testimonial-slider-area{
+  &.style-1{
+    .section-title{
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 0;
+      align-items: start;
+
+      .sec-desc{
+        text-align: left;
+      }
+    }
+  }
+}
+
+// latest-posts-area
+.latest-posts-area{
+  &.style-1{
+    .section-title{
+      margin-bottom: 60px;
+    }
+  }
 }

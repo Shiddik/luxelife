@@ -6169,8 +6169,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  padding: 28px 0;
-  gap: 66px;
+  gap: 40px;
 }
 @media (max-width: 767px) {
   .brand-marquee-area {
@@ -10321,6 +10320,13 @@ ul.children {
 .comment-respond *::-webkit-input-placeholder {
   color: #616670;
 }
+<<<<<<< HEAD
+.comment-respond *:-moz-placeholder {
+  color: #616670;
+  opacity: 1;
+}
+=======
+>>>>>>> 14645d66ca5bb23cc6f72636be15b8e8e9a43b1c
 .comment-respond *::-moz-placeholder {
   color: #616670;
   opacity: 1;
@@ -11012,9 +11018,35 @@ ul.children {
   padding-bottom: 153px;
 }
 
+.feature-area.style-1 {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.feature-area.style-1 .section-title {
+  margin-bottom: 100px;
+}
+
+.portfolio-section.style-1 .section-title {
+  margin-bottom: 52px;
+}
+
 .counter-up-area,
 .video-popup-area {
   margin: 0 80px;
+}
+
+.testimonial-slider-area.style-1 .section-title {
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 0;
+  align-items: start;
+}
+.testimonial-slider-area.style-1 .section-title .sec-desc {
+  text-align: left;
+}
+
+.latest-posts-area.style-1 .section-title {
+  margin-bottom: 60px;
 }
 
 .cta-area.style-3 {
