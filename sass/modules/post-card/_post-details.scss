@@ -21,7 +21,12 @@
   }
   .single-post-item {
     //border: 0;
-    //overflow: visible;
+    overflow: visible;
+    box-shadow: none;
+
+    blockquote {
+      box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    }
     .single-post-meta {
       margin-bottom: 0;
       gap: 20px;
@@ -63,9 +68,9 @@
         @include transition;
       }
     }
-    //.post-content-wrapper {
-    //  padding: 0 0 10px 0;
-    //}
+    .post-content-wrapper {
+      padding: 40px 0 0 0;
+    }
     .post-content {
       margin-bottom: 17px;
       /* Unit Test Data Compatibility Start */
@@ -255,6 +260,10 @@
     flex-basis: 0;
     flex-grow: 1;
     width: 50%;
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+    padding: 30px 0;
+
     @include rmaxwd(374) {
       flex-direction: column !important;
     }
@@ -301,23 +310,28 @@
       width: 100%;
 
       span {
-        font-size: 16px;
-        font-family: $heading-font;
+        font-size: 14px;
+        font-family: $body-font;
         text-transform: capitalize;
-        font-weight: 500;
+        font-weight: 400;
         display: block;
-        color: $primary-color;
+        color: $text-color;
+
+        i {
+          color: $primary-color;
+        }
       }
-      h4 {
-        font-size: 21px;
+      .post-title {
+        font-size: 18px;
         margin: 0;
-        line-height: 30px;
+        line-height: 27px;
         text-transform: capitalize;
 
         a {
           color: $black;
-          font-weight: 500;
-          font-size: 21px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 27px;
           text-transform: capitalize;
           @include transition;
 

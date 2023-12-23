@@ -2389,27 +2389,15 @@ blockquote {
   margin: 40px 0;
   position: relative;
   z-index: 1;
-  padding-left: 60px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  blockquote {
-    padding-left: 30px;
-  }
+  padding: 40px 60px;
 }
 blockquote p {
   font-family: "Rubik", sans-serif;
-  font-size: 21px;
-  color: #8f939b;
-  line-height: initial;
+  font-size: 16px;
+  color: #616670;
+  line-height: 30px;
   font-weight: 400;
   margin: 0 !important;
-  font-style: italic;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  blockquote p {
-    font-size: 18px;
-    line-height: initial;
-  }
 }
 blockquote p a {
   color: #D9A14C;
@@ -2417,10 +2405,10 @@ blockquote p a {
 }
 blockquote footer {
   font-family: "Rajdhani", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   text-transform: capitalize;
-  color: #26262c;
+  color: #23262D;
   margin-top: 20px;
 }
 
@@ -2431,12 +2419,12 @@ blockquote footer {
 }
 
 .wp-block-quote, blockquote {
-  border-left: solid 5px #D9A14C;
+  border-left: 2px solid #D9A14C;
 }
 
 .wp-block-pullquote {
-  border-top: 5px solid #D9A14C !important;
-  border-bottom: 5px solid #D9A14C !important;
+  border-top: 2px solid #D9A14C !important;
+  border-bottom: 2px solid #D9A14C !important;
   background-color: #eef5f8;
 }
 
@@ -6487,6 +6475,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .wp-block-group.has-background .wp-block-button .wp-block-button__link {
   color: #ffffff !important;
 }
+.blog-details-wrapper .single-post-item {
+  overflow: visible;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.blog-details-wrapper .single-post-item blockquote {
+  -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
 .blog-details-wrapper .single-post-item .single-post-meta {
   margin-bottom: 0;
   gap: 20px;
@@ -6525,6 +6522,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .single-post-item .wp-block-post-featured-image img {
   transform: scale(1);
   transition: all 0.5s ease-out;
+}
+.blog-details-wrapper .single-post-item .post-content-wrapper {
+  padding: 40px 0 0 0;
 }
 .blog-details-wrapper .single-post-item .post-content {
   margin-bottom: 17px;
@@ -6694,6 +6694,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-basis: 0;
   flex-grow: 1;
   width: 50%;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+  padding: 30px 0;
 }
 @media (max-width: 374px) {
   .blog-post-nav .post-navigation {
@@ -6747,27 +6750,31 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
 }
 .blog-post-nav .post-navigation .text span {
-  font-size: 16px;
-  font-family: "Rajdhani", sans-serif;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   display: block;
+  color: #616670;
+}
+.blog-post-nav .post-navigation .text span i {
   color: #D9A14C;
 }
-.blog-post-nav .post-navigation .text h4 {
-  font-size: 21px;
+.blog-post-nav .post-navigation .text .post-title {
+  font-size: 18px;
   margin: 0;
-  line-height: 30px;
+  line-height: 27px;
   text-transform: capitalize;
 }
-.blog-post-nav .post-navigation .text h4 a {
+.blog-post-nav .post-navigation .text .post-title a {
   color: #23262D;
-  font-weight: 500;
-  font-size: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
 }
-.blog-post-nav .post-navigation .text h4 a:hover {
+.blog-post-nav .post-navigation .text .post-title a:hover {
   color: #D9A14C;
   transition: all 0.5s ease-out;
 }
@@ -8841,6 +8848,12 @@ body.single-post .page-heading .page-title {
 }
 .latest-comments li .comments-box .comments-avatar {
   float: left;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 30px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .latest-comments li .comments-box .comments-avatar {
@@ -8849,9 +8862,13 @@ body.single-post .page-heading .page-title {
   }
 }
 .latest-comments li .comments-box .comments-avatar img {
-  margin-right: 23px;
-  width: 84px;
-  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
 }
 .latest-comments li .comments-box .comments-text {
   overflow: hidden;
@@ -8868,20 +8885,20 @@ body.single-post .page-heading .page-title {
   position: relative;
 }
 .latest-comments li .comments-box .comments-text .avatar-name h5 {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 5px;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 27px;
   font-family: "Rajdhani", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .latest-comments li .comments-box .comments-text .avatar-name span {
-  color: #abb0ba;
-  font-size: 16px;
+  color: #616670;
+  font-size: 14px;
   font-weight: 400;
   font-family: "Rubik", sans-serif;
-  font-style: italic;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .latest-comments li .comments-box .comments-text .avatar-name span {
