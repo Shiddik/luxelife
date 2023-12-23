@@ -62,6 +62,7 @@
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
+    justify-content: center;
 
     li {
       padding-top: 0;
@@ -82,16 +83,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $text-color;
-    background-color: $white;
-    border-radius: 6px;
-    height: 53px;
-    width: 53px;
+    color: $black;
+    background-color: rgba(217, 161, 76, 0.1);
+    border-radius: 50%;
+    height: 67px;
+    width: 67px;
     @include transition;
-    font-size: 18px;
-    font-weight: 500;
-    border: 1px solid $gray-300;
+    font-size: 24px;
+    font-weight: 700;
+    //border: 1px solid $gray-300;
     text-transform: capitalize;
+    font-family: $heading-font;
 
     @include rmaxwd(767) {
       width: 40px;
@@ -101,14 +103,14 @@
     &:hover {
       background: $primary-color !important;
       color: $white;
-      border-color: $primary-color;
+      //border-color: $primary-color;
       @include transition;
     }
 
     &.current {
-      background: $blue-color !important;
+      background: $primary-color !important;
       color: $white;
-      border-color: $blue-color;
+      //border-color: $blue-color;
       @include transition;
     }
 

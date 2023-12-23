@@ -6899,7 +6899,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-align: center;
           align-items: center;
   gap: 32px;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -8381,6 +8381,9 @@ body.single-post .page-heading .page-title {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .basic-pagination ul li,
 .page-links ul li,
@@ -8415,17 +8418,17 @@ body.single-post .page-heading .page-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #616670;
-  background-color: #ffffff;
-  border-radius: 6px;
-  height: 53px;
-  width: 53px;
+  color: #23262D;
+  background-color: rgba(217, 161, 76, 0.1);
+  border-radius: 50%;
+  height: 67px;
+  width: 67px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  font-size: 18px;
-  font-weight: 500;
-  border: 1px solid rgba(44, 53, 62, 0.1490196078);
+  font-size: 24px;
+  font-weight: 700;
   text-transform: capitalize;
+  font-family: "Rajdhani", sans-serif;
 }
 @media (max-width: 767px) {
   .basic-pagination .page-numbers,
@@ -8447,7 +8450,6 @@ body.single-post .page-heading .page-title {
 .wp-block-query-pagination-numbers .post-page-numbers:hover {
   background: #D9A14C !important;
   color: #ffffff;
-  border-color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -8457,9 +8459,8 @@ body.single-post .page-heading .page-title {
 .page-links .post-page-numbers.current,
 .wp-block-query-pagination-numbers .page-numbers.current,
 .wp-block-query-pagination-numbers .post-page-numbers.current {
-  background: #CDB091 !important;
+  background: #D9A14C !important;
   color: #ffffff;
-  border-color: #CDB091;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
