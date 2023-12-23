@@ -8982,7 +8982,7 @@ body.single-post .page-heading .page-title {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8991,21 +8991,19 @@ body.single-post .page-heading .page-title {
 .widget .wp-block-tag-cloud a {
   color: #616670;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
-  padding: 12px 18px;
-  border-radius: 6px;
+  padding: 12px 14px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  border: 1px solid rgba(255, 255, 255, 0.7176470588);
+  background-color: #ffffff;
 }
 .widget .tagcloud a:hover,
 .widget .wp-block-tag-cloud a:hover {
   color: #ffffff;
   background: #D9A14C;
-  border-color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -9049,7 +9047,7 @@ body.single-post .page-heading .page-title {
   position: relative;
   display: inline-block;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.5s ease-out;
@@ -9297,9 +9295,17 @@ body.single-post .page-heading .page-title {
   overflow: hidden;
   width: 90px;
   height: 90px;
-  border-radius: 6px;
+  border-radius: 50%;
+  position: relative;
 }
 .widget_latest_post ul li .latest-post-thumb img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.5s ease-out;
@@ -9307,24 +9313,24 @@ body.single-post .page-heading .page-title {
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title {
   margin-bottom: 8px;
-  font-size: 21px;
-  line-height: 30px;
-  color: #26262c;
+  font-size: 18px;
+  line-height: 27px;
+  color: #23262D;
   font-family: "Rajdhani", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .widget_latest_post ul li .latest-post-desc .latest-post-title {
-    font-size: 19px;
+    font-size: 16px;
     height: 60px;
     overflow: hidden;
   }
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title a {
-  font-size: 21px;
-  line-height: 30px;
-  color: #26262c;
-  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #23262D;
+  font-weight: 700;
   position: relative;
   text-transform: capitalize;
   -webkit-transition: all 0.5s ease-out;
@@ -9333,7 +9339,7 @@ body.single-post .page-heading .page-title {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .widget_latest_post ul li .latest-post-desc .latest-post-title a {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title a:hover {
@@ -9351,7 +9357,11 @@ body.single-post .page-heading .page-title {
           align-items: center;
   font-weight: 400;
   gap: 8px;
-  color: #5e6f92;
+  color: #616670;
+  font-family: "Rubik", sans-serif;
+}
+.widget_latest_post ul li .latest-post-desc .latest-post-meta i {
+  color: #D9A14C;
 }
 
 .widget-instagram-feed {
