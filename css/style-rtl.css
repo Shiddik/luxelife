@@ -6169,8 +6169,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  padding: 28px 0;
-  gap: 66px;
+  gap: 40px;
 }
 @media (max-width: 767px) {
   .brand-marquee-area {
@@ -11012,9 +11011,40 @@ ul.children {
   padding-bottom: 153px;
 }
 
+.feature-area.style-1 {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.feature-area.style-1 .section-title {
+  margin-bottom: 100px;
+}
+
+.portfolio-section.style-1 .section-title {
+  margin-bottom: 52px;
+}
+
 .counter-up-area,
 .video-popup-area {
   margin: 0 80px;
+}
+
+.testimonial-slider-area.style-1 .section-title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  margin-bottom: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.testimonial-slider-area.style-1 .section-title .sec-desc {
+  text-align: right;
+}
+
+.latest-posts-area.style-1 .section-title {
+  margin-bottom: 60px;
 }
 
 .cta-area.style-3 {

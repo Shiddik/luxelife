@@ -10320,13 +10320,6 @@ ul.children {
 .comment-respond *::-webkit-input-placeholder {
   color: #616670;
 }
-<<<<<<< HEAD
-.comment-respond *:-moz-placeholder {
-  color: #616670;
-  opacity: 1;
-}
-=======
->>>>>>> 14645d66ca5bb23cc6f72636be15b8e8e9a43b1c
 .comment-respond *::-moz-placeholder {
   color: #616670;
   opacity: 1;
@@ -11036,10 +11029,15 @@ ul.children {
 }
 
 .testimonial-slider-area.style-1 .section-title {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 50px;
   margin-bottom: 0;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .testimonial-slider-area.style-1 .section-title .sec-desc {
   text-align: left;
