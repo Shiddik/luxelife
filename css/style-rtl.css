@@ -11180,25 +11180,16 @@ ul.children {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 0px;
-  gap: 10px;
-}
-.testimonial-slider-area.style-2 .section-title .sec-content {
-  margin-bottom: 50px;
-}
-.testimonial-slider-area.style-2 .section-title .short-title {
-  margin-bottom: 0;
-}
-.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper {
-  gap: 20px;
+  gap: 0px;
 }
 .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn {
   width: 60px;
   height: 60px;
   background-color: rgba(217, 161, 76, 0.1);
   color: #D9A14C;
+  font-size: 16px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  font-size: 16px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -11208,11 +11199,45 @@ ul.children {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+.testimonial-slider-area.style-2 .section-title .sec-content {
+  margin-bottom: 50px;
+  gap: 10px;
+}
+.testimonial-slider-area.style-2 .section-title .short-title {
+  margin-bottom: 0;
+}
+.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper {
+  gap: 20px;
+}
 .testimonial-slider-area.style-2 #testimonial_style_two .slick-prev, .testimonial-slider-area.style-2 #testimonial_style_two .slick-next {
   display: none !important;
 }
 .testimonial-slider-area.style-2 #testimonial_style_two .slick-arrow {
   display: none !important;
+}
+
+.latest-posts-area.style-3 .section-title {
+  margin-bottom: 60px;
+}
+.latest-posts-area.style-3 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn, .latest-posts-area.style-3 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(217, 161, 76, 0.1);
+  color: #D9A14C;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.latest-posts-area.style-3 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn:hover, .latest-posts-area.style-3 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn:hover {
+  background-color: #D9A14C;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.latest-posts-area.style-3 .section-title .sec-content {
+  margin: 0;
 }
 
 .cta-area.style-3 {
