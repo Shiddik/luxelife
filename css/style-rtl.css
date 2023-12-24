@@ -8662,6 +8662,42 @@ body.single-post .page-heading .page-title {
   transition: all 0.5s ease-out;
 }
 
+.nav-tab {
+  list-style: none;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .nav-tab {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.nav-tab li .theme-btn {
+  background: none;
+  color: #23262D;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.nav-tab li.active .theme-btn {
+  background-color: #D9A14C;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 .project-page-wrapper {
   padding-top: 144px;
   padding-bottom: 114px;
