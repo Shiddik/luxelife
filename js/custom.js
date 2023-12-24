@@ -92,8 +92,7 @@
             dots: false,
             speed: 1500,
             rtl: false,
-            responsive: [
-                {
+            responsive: [{
                     breakpoint: 1200,
                     settings: {
                         slidesToShow: 4,
@@ -245,12 +244,6 @@
                         slidesToShow: 1,
                     },
                 },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
             ],
         });
 
@@ -309,31 +302,42 @@
                 },
             }, ],
         });
-    //     /*
-    //    Testimonial Slider
-    //    ============================*/
-    //     $("#testimonial_style_two").slick({
-    //         slidesToShow: 1,
-    //         infinite: true,
-    //         autoplay: false,
-    //         draggable: true,
-    //         arrows: true,
-    //         slidesToScroll: 1,
-    //         loop: true,
-    //         dots: false,
-    //         variableWidth: true,
-    //         speed: 1500,
-    //         rtl: false,
-    //         responsive: [{
-    //             breakpoint: 1023,
-    //             settings: {
-    //                 autoplay: false,
-    //                 slidesToShow: 1,
-    //                 arrows: false,
-    //             },
-    //         }, ],
-    //     });
-        
+
+        /*
+       Testimonial Slider
+       ============================*/
+        $("#testimonial_style_two").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            rtl: false,
+            
+        });
+        $('.slider-card-prev-btn').on('click', function (e) {
+            e.preventDefault();
+            $('.slick-prev').trigger('click');
+        });
+        $('.slider-card-next-btn').on('click', function (e) {
+            e.preventDefault();
+            $('.slick-next').trigger('click');
+        });
+
+
+        // $('#testimonial_one_prev_btn').on('click', function (e) {
+        //     e.preventDefault();
+        //     $('#testimonial_style_one .slick-prev').trigger('click');
+        // });
+        // $('#testimonial_one_next_btn').on('click', function (e) {
+        //     e.preventDefault();
+        //     $('#testimonial_style_one .slick-next').trigger('click');
+        // });
+
 
         /*
        Testimonial Slider
@@ -366,14 +370,14 @@
             ],
         });
 
-        $('.slider-nav-prev-btn').on('click', function (e) {
-            e.preventDefault();
-            $('.slick-prev').trigger('click');
-        });
-        $('.slider-nav-next-btn').on('click', function (e) {
-            e.preventDefault();
-            $('.slick-next').trigger('click');
-        });
+        // $('.slider-nav-prev-btn').on('click', function (e) {
+        //     e.preventDefault();
+        //     $('.slick-prev').trigger('click');
+        // });
+        // $('.slider-nav-next-btn').on('click', function (e) {
+        //     e.preventDefault();
+        //     $('.slick-next').trigger('click');
+        // });
 
         /*
        Feature Slider JS
@@ -404,6 +408,47 @@
                 },
             ],
         });
+
+        /*
+        Post Card Slider
+        ============================*/
+        $("#post_card_slider_wrapper").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: false,
+                    },
+                },
+            ],
+        });
+
+        $('.latest-posts-area .slider-nav-prev-btn').on('click', function (e) {
+            e.preventDefault();
+            $('#post_card_slider_wrapper .slick-prev').trigger('click');
+        });
+        $('.latest-posts-area .slider-nav-next-btn').on('click', function (e) {
+            e.preventDefault();
+            $('#post_card_slider_wrapper .slick-next').trigger('click');
+        });
+
+
         /*
        Related Portfolio Slider
        ============================*/

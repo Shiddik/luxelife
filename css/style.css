@@ -7092,6 +7092,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .post-card {
   background-color: #ffffff;
+  margin: 0 15px;
 }
 .post-card:hover .image img {
   -webkit-transform: scale(1.1);
@@ -8652,6 +8653,42 @@ body.single-post .page-heading .page-title {
 .wp-block-query-pagination-numbers .page-numbers.current,
 .wp-block-query-pagination-numbers .post-page-numbers.current {
   background: #D9A14C !important;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-tab {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .nav-tab {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.nav-tab li .theme-btn {
+  background: none;
+  color: #23262D;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.nav-tab li.active .theme-btn {
+  background-color: #D9A14C;
   color: #ffffff;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -11070,23 +11107,15 @@ ul.children {
   margin: 0 80px;
 }
 
-.testimonial-slider-area.style-1 .section-title {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
-  margin-bottom: 0;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-.testimonial-slider-area.style-1 .section-title .sec-desc {
-  text-align: left;
-}
-
 .latest-posts-area.style-1 .section-title {
   margin-bottom: 60px;
+}
+
+.post-card-slider-wrapper .slick-arrow {
+  display: none !important;
+}
+.post-card-slider-wrapper .slick-list.draggable {
+  margin: 0 -15px;
 }
 
 .subscribe-area {
@@ -11125,7 +11154,7 @@ ul.children {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 0px;
-  gap: 10px;
+  gap: 0px;
 }
 .testimonial-slider-area.style-2 .section-title .sec-content {
   margin-bottom: 50px;
@@ -11136,7 +11165,14 @@ ul.children {
 .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper {
   gap: 20px;
 }
-.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn {
+.testimonial-slider-area.style-2 #testimonial_style_two .slick-prev, .testimonial-slider-area.style-2 #testimonial_style_two .slick-next {
+  display: none !important;
+}
+.testimonial-slider-area.style-2 #testimonial_style_two .slick-arrow {
+  display: none !important;
+}
+
+.section-title .slider-card-prev-btn, .section-title .slider-card-next-btn, .section-title .slider-post-prev-btn, .section-title .slider-post-next-btn {
   width: 60px;
   height: 60px;
   background-color: rgba(217, 161, 76, 0.1);
@@ -11147,17 +11183,18 @@ ul.children {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn:hover, .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn:hover {
+.section-title .slider-card-prev-btn:hover, .section-title .slider-card-next-btn:hover, .section-title .slider-post-prev-btn:hover, .section-title .slider-post-next-btn:hover {
   background-color: #D9A14C;
   color: #ffffff;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.testimonial-slider-area.style-2 #testimonial_style_two .slick-prev, .testimonial-slider-area.style-2 #testimonial_style_two .slick-next {
-  display: none !important;
+
+.latest-posts-area.style-3 .section-title {
+  margin-bottom: 60px;
 }
-.testimonial-slider-area.style-2 #testimonial_style_two .slick-arrow {
-  display: none !important;
+.latest-posts-area.style-3 .section-title .sec-content {
+  margin: 0;
 }
 
 .cta-area.style-3 {
