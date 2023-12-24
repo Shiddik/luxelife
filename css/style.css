@@ -11128,8 +11128,8 @@ ul.children {
   margin-bottom: 52px;
 }
 
-.counter-up-area,
-.video-popup-area {
+.counter-up-area.style-1,
+.video-popup-area.style-1 {
   margin: 0 80px;
 }
 

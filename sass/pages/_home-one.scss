@@ -31,7 +31,9 @@
 // Counter Up Area
 .counter-up-area,
 .video-popup-area {
-  margin: 0 80px;
+  &.style-1 {
+    margin: 0 80px;
+  }
 }
 
 
