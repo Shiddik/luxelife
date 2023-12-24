@@ -128,8 +128,8 @@
         /*
         Portfolio Hover
         ============================*/
-        $('.portfolio-fullscreen').each(function () {
-            const item = $(this).find('.single-portfolio-item');
+        $('.portfolio-showscreen').each(function () {
+            const item = $(this).find('.portfolio-card');
             const img = $(this).find('.tabimg');
             item.on('mouseenter', function () {
                 const tab_id = $(this).attr('data-tab');

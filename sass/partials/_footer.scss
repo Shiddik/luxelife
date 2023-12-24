@@ -297,34 +297,48 @@
         }
       }
     }
+    // Extra Info
+    .extra-info {
+      .extra-title {
+        font-family: $heading-font;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #FFFFFFB7;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   // Footer Latest News
   .widget_latest_post {
     ul {
       li {
+        margin-bottom: 40px;
+
         .latest-post-thumb {
-          width: 60px;
-          height: 60px;
+          width: 80px;
+          height: 80px;
+          border-radius: 0;
         }
 
         .latest-post-desc {
           .latest-post-title {
-            margin-bottom: 8px;
+            margin-bottom: 0;
             font-size: 16px;
-            line-height: 22px;
+            line-height: 30px;
             color: $white;
-            font-weight: 500;
-            font-family: $roboto-font;
+            font-weight: 400;
+            font-family: $body-font;
 
             a {
               font-size: 16px;
-              line-height: 22px;
+              line-height: 30px;
               color: $white;
               position: relative;
               text-transform: capitalize;
-              font-weight: 500;
-              font-family: $roboto-font;
+              font-weight: 400;
+              font-family: $body-font;
               @include transition;
 
               &:hover {
@@ -335,13 +349,13 @@
           }
 
           .latest-post-meta {
-            font-size: 14px;
+            font-size: 16px;
             display: flex;
             align-items: center;
             font-weight: 400;
-            gap: 8px;
-            color: $white-100;
-            font-family: $roboto-font;
+            gap: 10px;
+            color: $white;
+            font-family: $body-font;
           }
         }
       }
