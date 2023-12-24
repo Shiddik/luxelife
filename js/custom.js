@@ -694,7 +694,7 @@
 
         // Portfolio Hover
         $('.portfolio-card-main-wrapper').each(function() {
-            const item = $(this).find('.portfolio-card');
+            const item = $(this).find('.portfolio-card, .icon-card-inner');
             const img = $(this).find('.tabimg');
             item.on('mouseenter', function() {
                 const tab_id = $(this).attr('data-tab');
