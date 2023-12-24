@@ -513,7 +513,7 @@
             nextArrow: "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
         });
         /*
-       Client Logo Slider
+       Portfolio Logo Slider
        ============================*/
         $(".portfolio-slider").slick({
             slidesToShow: 3,
@@ -691,6 +691,22 @@
                 }
             });
         }
+
+        // Portfolio Hover
+        $('.portfolio-card-main-wrapper').each(function() {
+            const item = $(this).find('.portfolio-card');
+            const img = $(this).find('.tabimg');
+            item.on('mouseenter', function() {
+                const tab_id = $(this).attr('data-tab');
+                item.removeClass('active');
+                $(this).addClass('active');
+                img.removeClass('active');
+                $("#" + tab_id).addClass('active');
+                if ($(this).hasClass('active')) {
+                    return false;
+                }
+            });
+        });
 
         /*
         Scroll To Top Js
