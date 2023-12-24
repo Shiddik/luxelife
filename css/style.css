@@ -5082,15 +5082,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 42px 50px;
   border-radius: 50%;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   position: absolute;
@@ -7600,6 +7594,31 @@ body.single-post .page-heading .page-title {
   transition: all 0.5s ease-out;
 }
 
+.nav-tab {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .nav-tab {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.nav-tab li .theme-btn {
+  background: none;
+  color: #23262D;
+  transition: all 0.5s ease-out;
+}
+.nav-tab li.active .theme-btn {
+  background-color: #D9A14C;
+  color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+
 .project-page-wrapper {
   padding-top: 144px;
   padding-bottom: 114px;
@@ -9098,13 +9117,10 @@ ul.children {
 .comment-respond *::-webkit-input-placeholder {
   color: #616670;
 }
-<<<<<<< HEAD
 .comment-respond *:-moz-placeholder {
   color: #616670;
   opacity: 1;
 }
-=======
->>>>>>> c1bf3fa7fdd9ce9b0c8c4c49960943da5f5aee54
 .comment-respond *::-moz-placeholder {
   color: #616670;
   opacity: 1;
@@ -9687,35 +9703,17 @@ ul.children {
   margin: 0 80px;
 }
 
-<<<<<<< HEAD
-=======
-.testimonial-slider-area.style-1 .section-title {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
-  margin-bottom: 0;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-.testimonial-slider-area.style-1 .section-title .sec-desc {
-  text-align: left;
-}
-
->>>>>>> c1bf3fa7fdd9ce9b0c8c4c49960943da5f5aee54
 .latest-posts-area.style-1 .section-title {
   margin-bottom: 60px;
 }
 
-<<<<<<< HEAD
 .post-card-slider-wrapper .slick-arrow {
   display: none !important;
 }
 .post-card-slider-wrapper .slick-list.draggable {
   margin: 0 -15px;
-=======
+}
+
 .subscribe-area {
   padding-top: 80px;
   padding-bottom: 90px;
@@ -9741,7 +9739,6 @@ ul.children {
 .subscribe-area .subscribe-form-widget .submit-btn {
   padding: 14px 25px;
   color: #ffffff;
->>>>>>> c1bf3fa7fdd9ce9b0c8c4c49960943da5f5aee54
 }
 
 .cta-area.style-3 {
@@ -10569,13 +10566,7 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-meta {
-<<<<<<< HEAD
-  font-size: 14px;
-=======
   font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> c1bf3fa7fdd9ce9b0c8c4c49960943da5f5aee54
   display: flex;
   align-items: center;
   font-weight: 400;
