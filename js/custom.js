@@ -516,20 +516,21 @@
        Portfolio Logo Slider
        ============================*/
         $(".portfolio-slider").slick({
-            slidesToShow: 3,
+            slidesToShow: 4,
             infinite: true,
             autoplay: false,
             draggable: true,
             arrows: false,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
+            variableWidth: true,
             loop: true,
-            dots: true,
+            dots: false,
             speed: 1500,
             rtl: false,
             responsive: [{
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                     },
                 },
                 {
