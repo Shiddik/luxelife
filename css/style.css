@@ -11993,25 +11993,29 @@ ul.children {
   color: rgba(255, 255, 255, 0.7176470588);
   margin-bottom: 10px;
 }
+.footer-widget .widget_latest_post ul li {
+  margin-bottom: 40px;
+}
 .footer-widget .widget_latest_post ul li .latest-post-thumb {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title {
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 30px;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Rubik", sans-serif;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title a {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 30px;
   color: #ffffff;
   position: relative;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Rubik", sans-serif;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -12022,7 +12026,7 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-meta {
-  font-size: 14px;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12030,8 +12034,8 @@ ul.children {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  gap: 8px;
-  color: rgba(255, 255, 255, 0.7019607843);
+  gap: 10px;
+  color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
 
