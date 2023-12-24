@@ -309,6 +309,30 @@
                 },
             }, ],
         });
+    //     /*
+    //    Testimonial Slider
+    //    ============================*/
+    //     $("#testimonial_style_two").slick({
+    //         slidesToShow: 1,
+    //         infinite: true,
+    //         autoplay: false,
+    //         draggable: true,
+    //         arrows: true,
+    //         slidesToScroll: 1,
+    //         loop: true,
+    //         dots: false,
+    //         variableWidth: true,
+    //         speed: 1500,
+    //         rtl: false,
+    //         responsive: [{
+    //             breakpoint: 1023,
+    //             settings: {
+    //                 autoplay: false,
+    //                 slidesToShow: 1,
+    //                 arrows: false,
+    //             },
+    //         }, ],
+    //     });
         
 
         /*

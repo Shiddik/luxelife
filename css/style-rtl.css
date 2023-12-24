@@ -11124,46 +11124,40 @@ ul.children {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   gap: 10px;
+}
+.testimonial-slider-area.style-2 .section-title .sec-content {
+  margin-bottom: 50px;
 }
 .testimonial-slider-area.style-2 .section-title .short-title {
   margin-bottom: 0;
 }
-.testimonial-slider-area.style-2 .btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper {
   gap: 20px;
 }
-.testimonial-slider-area.style-2 .btn-wrapper .previous-btn, .testimonial-slider-area.style-2 .btn-wrapper .next-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn {
   width: 60px;
   height: 60px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   background-color: rgba(217, 161, 76, 0.1);
-  border-radius: 50%;
   color: #D9A14C;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.testimonial-slider-area.style-2 .btn-wrapper .previous-btn:hover, .testimonial-slider-area.style-2 .btn-wrapper .next-btn:hover {
+.testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-prev-btn:hover, .testimonial-slider-area.style-2 .section-title .slider-nav-btn-wrapper .slider-nav-next-btn:hover {
   background-color: #D9A14C;
   color: #ffffff;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+.testimonial-slider-area.style-2 #testimonial_style_two .slick-prev, .testimonial-slider-area.style-2 #testimonial_style_two .slick-next {
+  display: none !important;
+}
+.testimonial-slider-area.style-2 #testimonial_style_two .slick-arrow {
+  display: none !important;
 }
 
 .cta-area.style-3 {
