@@ -1,0 +1,44 @@
+.about-image-card {
+    &.style-5 {
+       margin-right: 88px;
+
+        .main-img-inner {
+            padding: 22px 23px;
+            position: relative;
+            &.box {
+                background-image: repeating-linear-gradient(178deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(268deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(-2deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(88deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px);
+                background-size: 4px calc(100% + 21.01px), calc(100% + 21.01px) 4px, 4px calc(100% + 21.01px) , calc(100% + 21.01px) 4px;
+                background-position: 0 0, 0 0, 100% 0, 0 100%;
+                background-repeat: no-repeat;
+                animation: borderAnimation 1s infinite linear reverse;
+            }
+
+            .review-card {
+                padding: 42px 50px;
+                border-radius: 50%;
+                background-color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 100px;
+                right: -75px;
+
+                .card-text {
+                    text-align: center;
+                    .number {
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 60px;
+                        text-transform: capitalize;
+                        color: $white;
+                        -webkit-text-stroke: 2px black;
+                        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                    }
+                }
+            }
+        }
+    }
+}
