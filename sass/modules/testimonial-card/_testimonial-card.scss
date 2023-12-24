@@ -16,10 +16,13 @@
     flex-shrink: 0;
 
     .user-img{
+      display: flex;
+      justify-content: center;
+      align-self: flex-start;
+      flex-shrink: 0;
       width: 76px;
       height: 76px;
       position: relative;
-
 
       img {
         position: absolute;
@@ -28,6 +31,7 @@
         top: 0;
         left: 0;
         object-fit: cover;
+        aspect-ratio: 1/1;
       }
     }
     .user-meta {

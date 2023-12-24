@@ -17,6 +17,27 @@
         .post-content{
           margin-bottom: 10px;
         }
+
+        .btn-wrapper {
+          .theme-btn {
+            background-color: $white;
+            color: $black;
+            @include transition;
+
+            i {
+              color: $primary-color;
+              @include transition;
+            }
+
+            &:hover {
+              background-color: $primary-color;
+              color: $white;
+              i {
+                color: $white;
+              }
+            }
+          }
+        }
       }
     }
   }

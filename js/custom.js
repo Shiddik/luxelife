@@ -312,6 +312,31 @@
             $('#testimonial_style_one .slick-next').trigger('click');
         });
 
+    //     /*
+    //    Testimonial Slider
+    //    ============================*/
+    //     $("#testimonial_style_two").slick({
+    //         slidesToShow: 1,
+    //         infinite: true,
+    //         autoplay: false,
+    //         draggable: true,
+    //         arrows: true,
+    //         slidesToScroll: 1,
+    //         loop: true,
+    //         dots: false,
+    //         variableWidth: true,
+    //         speed: 1500,
+    //         rtl: false,
+    //         responsive: [{
+    //             breakpoint: 1023,
+    //             settings: {
+    //                 autoplay: false,
+    //                 slidesToShow: 1,
+    //                 arrows: false,
+    //             },
+    //         }, ],
+    //     });
+
 
         /*
        Testimonial Slider
@@ -709,9 +734,3 @@
 
     });
 })(jQuery);
-
-var image = document.getElementsByClassName('full-width-bg');
-new simpleParallax(image, {
-    delay: .6,
-    transition: 'cubic-bezier(0,0,0,1)'
-});
