@@ -312,30 +312,38 @@
             $('#testimonial_style_one .slick-next').trigger('click');
         });
 
-    //     /*
-    //    Testimonial Slider
-    //    ============================*/
-    //     $("#testimonial_style_two").slick({
-    //         slidesToShow: 1,
-    //         infinite: true,
-    //         autoplay: false,
-    //         draggable: true,
-    //         arrows: true,
-    //         slidesToScroll: 1,
-    //         loop: true,
-    //         dots: false,
-    //         variableWidth: true,
-    //         speed: 1500,
-    //         rtl: false,
-    //         responsive: [{
-    //             breakpoint: 1023,
-    //             settings: {
-    //                 autoplay: false,
-    //                 slidesToShow: 1,
-    //                 arrows: false,
-    //             },
-    //         }, ],
-    //     });
+       /*
+       Testimonial Slider
+       ============================*/
+        $("#testimonial_style_two").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            rtl: false,
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                },
+            }, ],
+        });
+
+        $('#testimonial_two_prev_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_two .slick-prev').trigger('click');
+        });
+        $('#testimonial_two_next_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_two .slick-next').trigger('click');
+        });
 
 
         /*
