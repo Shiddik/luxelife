@@ -59,6 +59,12 @@
       flex: 1 1;
     }
 
+    &.no-divider {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
     &.only-divider {
       &::before {
         display: none;
@@ -145,7 +151,6 @@
     }
     .sec-desc {
       width: 537px;
-      font-size: 21px;
       font-family: $body-font;
 
       @include lg {
