@@ -4453,7 +4453,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
   background-color: rgba(255, 255, 255, 0.7176470588);
   padding-top: 90px;
-  padding-bottom: 105px;
+  padding-bottom: 36px;
 }
 .slider-area.style-1 .slider-bg {
   position: absolute;
@@ -4530,6 +4530,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .slider-area.style-1 .single-slider .slider-content-wrapper {
   position: relative;
   z-index: 99;
+  margin-top: 63px;
+  margin-right: 50px;
+  margin-left: -2px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-1 .single-slider .slider-content-wrapper {
@@ -4565,11 +4568,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-1 .single-slider .slider-content-wrapper .slider-content .slider-title {
   font-size: 68px;
-  line-height: 115%;
+  line-height: 78px;
   font-weight: 700;
   font-family: "Rajdhani", sans-serif;
   color: #23262D;
   margin-bottom: 30px;
+  margin-top: 7px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area.style-1 .single-slider .slider-content-wrapper .slider-content .slider-title {
@@ -4636,7 +4640,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 58px;
 }
 .slider-area.style-1 .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .simple-btn, .slider-area.style-1 .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .theme-btn {
-  padding: 14px 25px;
+  padding: 14px 24px;
   font-family: "Rajdhani", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -4705,7 +4709,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-1 .single-slider .slider-image .slider-image-inner {
   display: inline-block;
-  margin-right: -80px;
+  margin-right: -70px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-1 .single-slider .slider-image {
@@ -4761,7 +4765,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area .slider-wrapper .next-btn, .slider-area .slider-wrapper .prev-btn {
   position: absolute;
-  right: 162px;
+  right: 173px;
   left: unset;
   border: none;
   outline: none;
@@ -4784,20 +4788,20 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: 30%;
 }
 .slider-area .slider-wrapper .next-btn {
-  bottom: 30%;
+  bottom: 38%;
 }
 .slider-area .slider-wrapper .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 2px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 50%;
-  right: 167px;
+  top: 346px;
+  right: 178px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 2;
@@ -5976,7 +5980,19 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 53px;
+  gap: 40px;
+}
+.about-info-card.style-2 .about-info-content .section-title {
+  gap: 0;
+}
+.about-info-card.style-2 .about-info-content .section-title .short-title {
+  margin-bottom: 10px;
+}
+.about-info-card.style-2 .about-info-content .section-title .title {
+  margin-bottom: 20px;
+}
+.about-info-card.style-2 .about-info-content .section-title .desc {
+  margin-bottom: 0;
 }
 
 .counter-card.style-1 {
@@ -11142,6 +11158,32 @@ ul.children {
 }
 .post-card-slider-wrapper .slick-list.draggable {
   margin: 0 -15px;
+}
+
+.about-us-area.style-2 .about-info-card {
+  margin-top: 70px;
+}
+
+.feature-area.style-2 .section-title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+  gap: 0;
+}
+
+.portfolio-area.style-1 .section-title.two-column {
+  margin-bottom: 60px;
+}
+.portfolio-area.style-1 .section-title.two-column .sec-desc .desc {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 30px;
 }
 
 .subscribe-area {

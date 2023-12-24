@@ -1,3 +1,43 @@
+.about-us-area {
+    &.style-2 {
+        .about-info-card {
+            margin-top: 70px;
+        }
+    }
+}
+
+.feature-area {
+    &.style-2 {
+        .section-title {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 60px;
+            gap: 0;
+        }
+    }
+}
+
+.portfolio-area {
+    &.style-1 {
+        .section-title {
+            
+            &.two-column {
+                margin-bottom: 60px;
+            }
+            &.two-column .sec-desc {
+                .desc {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    margin-top: 30px;
+
+                }
+            }
+        }
+       
+    }
+}
+
 .subscribe-area {
     padding-top: 80px;
     padding-bottom: 90px;
