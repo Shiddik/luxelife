@@ -303,13 +303,22 @@
             }, ],
         });
 
-        /*
+        $('#testimonial_one_prev_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_one .slick-prev').trigger('click');
+        });
+        $('#testimonial_one_next_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_one .slick-next').trigger('click');
+        });
+
+       /*
        Testimonial Slider
        ============================*/
         $("#testimonial_style_two").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -317,53 +326,24 @@
             dots: false,
             speed: 1500,
             rtl: false,
-            
-        });
-        $('.slider-card-prev-btn').on('click', function (e) {
-            e.preventDefault();
-            $('.slick-prev').trigger('click');
-        });
-        $('.slider-card-next-btn').on('click', function (e) {
-            e.preventDefault();
-            $('.slick-next').trigger('click');
+            responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                },
+            }, ],
         });
 
-<<<<<<< HEAD
-
-        // $('#testimonial_one_prev_btn').on('click', function (e) {
-        //     e.preventDefault();
-        //     $('#testimonial_style_one .slick-prev').trigger('click');
-        // });
-        // $('#testimonial_one_next_btn').on('click', function (e) {
-        //     e.preventDefault();
-        //     $('#testimonial_style_one .slick-next').trigger('click');
-        // });
-=======
-    //     /*
-    //    Testimonial Slider
-    //    ============================*/
-    //     $("#testimonial_style_two").slick({
-    //         slidesToShow: 1,
-    //         infinite: true,
-    //         autoplay: false,
-    //         draggable: true,
-    //         arrows: true,
-    //         slidesToScroll: 1,
-    //         loop: true,
-    //         dots: false,
-    //         variableWidth: true,
-    //         speed: 1500,
-    //         rtl: false,
-    //         responsive: [{
-    //             breakpoint: 1023,
-    //             settings: {
-    //                 autoplay: false,
-    //                 slidesToShow: 1,
-    //                 arrows: false,
-    //             },
-    //         }, ],
-    //     });
->>>>>>> 6948f13115f7bc9e8f4fe6252e41dc6802488557
+        $('#testimonial_two_prev_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_two .slick-prev').trigger('click');
+        });
+        $('#testimonial_two_next_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_two .slick-next').trigger('click');
+        });
 
 
         /*

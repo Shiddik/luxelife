@@ -40,8 +40,27 @@
             align-items: flex-start;
             margin-bottom: 0px;
             gap: 0px;
+
+            .slider-nav-btn-wrapper {
+                .slider-nav-prev-btn, .slider-nav-next-btn {
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgba(217, 161, 76, 0.1);
+                    color: $primary-color;
+                    font-size: 16px;
+                    box-shadow: none;
+                    @include transition;
+
+                    &:hover {
+                        background-color: $primary-color;
+                        color: $white;
+                        @include transition;
+                    }
+                }
+            }
             .sec-content {
                 margin-bottom: 50px;
+                gap: 10px;
             }
 
             .short-title {
@@ -51,6 +70,7 @@
                 gap: 20px;
             }
         }
+
         #testimonial_style_two {
             .slick-prev, .slick-next {
               display: none !important;
@@ -62,28 +82,29 @@
     }
 }
 
-.section-title {
-    .slider-card-prev-btn, .slider-card-next-btn, .slider-post-prev-btn, .slider-post-next-btn {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(217, 161, 76, 0.1);
-        color: $primary-color;
-        box-shadow: none;
-        font-size: 16px;
-        @include transition;
-    
-        &:hover {
-            background-color: $primary-color;
-            color: $white;
-            @include transition;
-        }
-    }
-}
-
 .latest-posts-area {
     &.style-3 {
         .section-title {
             margin-bottom: 60px;
+
+            .slider-nav-btn-wrapper {
+                .slider-nav-prev-btn, .slider-nav-next-btn {
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgba(217, 161, 76, 0.1);
+                    color: $primary-color;
+                    font-size: 16px;
+                    box-shadow: none;
+                    @include transition;
+                    
+
+                    &:hover {
+                        background-color: $primary-color;
+                        color: $white;
+                        @include transition;
+                    }
+                }
+            }
 
             .sec-content {
                 margin: 0;
