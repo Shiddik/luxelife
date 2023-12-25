@@ -84,3 +84,55 @@
 //    }
 //  }
 //}
+
+// Testimonial section
+.testimonial-slider-area{
+    &.style-3{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+            background-color: $black;
+            z-index: 2;
+        }
+
+        .container{
+            position: relative;
+            z-index: 5;
+        }
+
+        .slider-nav-btn-wrapper{
+            .slider-nav-prev-btn, .slider-nav-next-btn{
+                background: none;
+                border: 1px solid $primary-color;
+                color: $white;
+                @include transition;
+
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+        .testimonial-slider-wrapper{
+            .slick-arrow{
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Counter Up
+.counter-up-area{
+    position: absolute;
+    width: 100%;
+    margin-top: -70px;
+    z-index: 10;
+}
