@@ -1,17 +1,45 @@
 .post-card {
     &.style-4 {
-        .post-meta{
-            .single-post-meta{
-                color: $gray-800;
+        flex-direction: column;
+        gap: 26px;
 
-                i{
-                    color: $gray-800;
+        &:hover{
+            .post-meta {
+                .single-post-meta{
+                    i{
+                        color: $primary-color;
+                        @include transition;
+                    }
                 }
             }
         }
+
+        .image {
+            height: 433px;
+
+            @include sm {
+                height: 300px;
+            }
+        }
         .content{
+            padding: 20px 40px 40px;
             gap: 20px;
-            padding: 30px 30px 20px;
+            border: none;
+            background-color: $white;
+
+            .title{
+                margin-bottom: 20px;
+            }
+        }
+        .post-meta {
+            margin-top: 5px;
+
+            .single-post-meta{
+                i{
+                    color: $gray-800;
+                    @include transition;
+                }
+            }
         }
     }
 }
