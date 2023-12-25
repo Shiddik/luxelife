@@ -6295,7 +6295,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Rajdhani", sans-serif;
   font-size: 68px;
   font-weight: 700;
-  line-height: 78.2px;
+  line-height: 78px;
   color: #23262D;
   white-space: nowrap;
 }
@@ -11199,6 +11199,15 @@ ul.children {
   margin-right: -4px;
   margin-top: -3px;
 }
+.feature-area.style-3 .section-title {
+  margin-bottom: 60px;
+}
+.feature-area.style-3 .section-title .sec-content {
+  gap: 0;
+}
+.feature-area.style-3 .section-title .sec-desc {
+  margin-bottom: 80px;
+}
 
 .portfolio-area.style-1 .section-title .sec-content {
   gap: 0;
@@ -11252,6 +11261,11 @@ ul.children {
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1.28px;
+}
+
+.product-area {
+  padding-top: 120px;
+  padding-bottom: 35px;
 }
 
 .testimonial-slider-area.style-2 .section-title {
