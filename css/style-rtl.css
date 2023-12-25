@@ -6395,6 +6395,8 @@ body.admin-bar .header-menu-area.sticky_menu {
           align-items: center;
   text-align: center;
   gap: 50px;
+  padding: 0;
+  background: none;
 }
 .testimonial-card.style-3 .user-info-wrapper {
   -webkit-box-orient: horizontal;
@@ -6418,12 +6420,18 @@ body.admin-bar .header-menu-area.sticky_menu {
 .testimonial-card.style-3 .user-info-wrapper .user-meta .rating-icon {
   margin-bottom: 20px;
 }
+.testimonial-card.style-3 .user-info-wrapper .user-meta .name {
+  color: #ffffff;
+}
 .testimonial-card.style-3 .user-info-wrapper .user-meta .designation {
   margin: 10px 0 0;
+  color: #ffffff;
 }
 .testimonial-card.style-3 .content-wrapper .description {
   font-size: 22px;
   line-height: 33px;
+  color: #ffffff;
+  padding: 0 20px;
 }
 
 .testimonial-card.style-4 {
@@ -11290,6 +11298,47 @@ ul.children {
 }
 .latest-posts-area.style-3 .section-title .sec-content {
   margin: 0;
+}
+
+.testimonial-slider-area.style-3 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.testimonial-slider-area.style-3 .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.8;
+  background-color: #23262D;
+  z-index: 2;
+}
+.testimonial-slider-area.style-3 .container {
+  position: relative;
+  z-index: 5;
+}
+.testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-next-btn {
+  background: none;
+  border: 1px solid #D9A14C;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-prev-btn:hover, .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-next-btn:hover {
+  background-color: #D9A14C;
+}
+.testimonial-slider-area.style-3 .testimonial-slider-wrapper .slick-arrow {
+  display: none !important;
+}
+
+.counter-up-area {
+  position: absolute;
+  width: 100%;
+  margin-top: -70px;
+  z-index: 10;
 }
 
 .cta-area.style-3 {

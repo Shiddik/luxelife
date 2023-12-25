@@ -346,45 +346,39 @@
         });
 
 
-        /*
+       /*
        Testimonial Slider
        ============================*/
-        $("#testimonial_two").slick({
-            slidesToShow: 3,
+        $("#testimonial_style_three").slick({
+            slidesToShow: 1,
             infinite: true,
             autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
+            dots: false,
             speed: 1500,
-            variableWidth: true,
             rtl: false,
             responsive: [{
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                    },
+                breakpoint: 1023,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 1,
+                    arrows: false,
                 },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        variableWidth: false,
-                    },
-                },
-            ],
+            }, ],
         });
 
-        // $('.slider-nav-prev-btn').on('click', function (e) {
-        //     e.preventDefault();
-        //     $('.slick-prev').trigger('click');
-        // });
-        // $('.slider-nav-next-btn').on('click', function (e) {
-        //     e.preventDefault();
-        //     $('.slick-next').trigger('click');
-        // });
+        $('#testimonial_three_prev_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_three .slick-prev').trigger('click');
+        });
+        $('#testimonial_three_next_btn').on('click', function (e) {
+            e.preventDefault();
+            $('#testimonial_style_three .slick-next').trigger('click');
+        });
+
 
         /*
        Feature Slider JS
