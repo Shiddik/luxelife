@@ -25,3 +25,24 @@
         }
     }
 }
+
+// Counter UP
+.counter-up-area{
+    &.style-3{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 396px 0 80px;
+
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $black;
+            opacity: 0.9;
+        }
+    }
+}
