@@ -1,9 +1,11 @@
-
+.portfolio-wrapper {
+  margin-right: 8px;
+}
 .portfolio-card {
   display: flex;
   gap: 50px;
   align-items: center;
-  padding: 30px 0;
+  padding: 28px 0;
   border-bottom: 3px solid #E3E3E3;
   cursor: default;
 
@@ -31,7 +33,6 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
-    line-height: initial;
     color: $black;
     width: 170px;
     flex-shrink: 0;
@@ -77,6 +78,7 @@
   height: 100%;
   width: 100%;
   position: relative;
+  margin-left: 30px;
 
   .tabimg {
     transform: scale(1.1);

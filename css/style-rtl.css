@@ -10676,6 +10676,10 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 
+.portfolio-wrapper {
+  margin-left: 8px;
+}
+
 .portfolio-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10684,7 +10688,7 @@ ul.children {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
+  padding: 28px 0;
   border-bottom: 3px solid #E3E3E3;
   cursor: default;
 }
@@ -10715,7 +10719,6 @@ ul.children {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  line-height: initial;
   color: #23262D;
   width: 170px;
   -ms-flex-negative: 0;
@@ -10772,6 +10775,7 @@ ul.children {
   height: 100%;
   width: 100%;
   position: relative;
+  margin-right: 30px;
 }
 .portfolio-fullscreen-image .tabimg {
   -webkit-transform: scale(1.1);
