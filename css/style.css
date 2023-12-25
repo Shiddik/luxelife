@@ -6444,7 +6444,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .testimonial-card.style-4 {
   width: 850px;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 40px;
   padding: 40px 137px;
   background-color: #ffffff;
@@ -6456,9 +6458,13 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 25px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .testimonial-card.style-4 .user-info-wrapper .user-img {
   width: 85px;
@@ -6485,11 +6491,16 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .testimonial-card.style-5 {
   background-color: #23262D;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 50px;
 }
 .testimonial-card.style-5 .user-info-wrapper {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 25px;
   margin-bottom: 20px;
 }
@@ -11401,17 +11412,29 @@ ul.children {
 }
 
 .testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 -15px;
 }
 .testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 40px 0 0;
   list-style: none;
   padding: 0;
