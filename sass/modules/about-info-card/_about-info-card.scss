@@ -10,11 +10,19 @@
     margin-top: 117px;
   }
   &.style-4 {
-    margin-top: 103px;
-    margin-right: 80px;
+    margin-top: 161px;
+    margin-left: 2px;
 
-    .btn-wrapper {
-      margin-top: 28px;
+    .about-info-content {
+      gap: 20px;
+
+      .section-title {
+        gap: 0;
+      }
+      .desc {
+        margin-bottom: 0;
+      }
+      
     }
   }
   .about-info-content {

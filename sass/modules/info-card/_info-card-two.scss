@@ -4,8 +4,12 @@
         border: 1px solid $gray-200;
 
         .title-wrapper {
-            gap: 12px;
+            gap: 15px;
             padding-bottom: 20px;
+            .icon-wrapper {
+                padding-right: 6px;
+                margin-top: -10px;
+            }
             .icon {
                 width: 65px;
                 height: 65px;
