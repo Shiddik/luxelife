@@ -6443,20 +6443,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .testimonial-card.style-4 {
-<<<<<<< HEAD
   width: 850px;
   align-items: start;
   gap: 40px;
   padding: 40px 137px;
   background-color: #ffffff;
   margin: 0 15px;
-=======
-  background-color: #23262D;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  gap: 50px;
->>>>>>> a63570a6509c8220a9fad2e626d297fef0efa874
 }
 .testimonial-card.style-4 .user-info-wrapper {
   -webkit-box-orient: horizontal;
