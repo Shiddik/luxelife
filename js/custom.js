@@ -312,9 +312,9 @@
             $('#testimonial_style_one .slick-next').trigger('click');
         });
 
-       /*
-       Testimonial Slider
-       ============================*/
+        /*
+        Testimonial Slider
+        ============================*/
         $("#testimonial_style_two").slick({
             slidesToShow: 1,
             infinite: true,
@@ -346,9 +346,9 @@
         });
 
 
-       /*
-       Testimonial Slider
-       ============================*/
+        /*
+        Testimonial Slider
+        ============================*/
         $("#testimonial_style_three").slick({
             slidesToShow: 1,
             infinite: true,
@@ -377,6 +377,37 @@
         $('#testimonial_three_next_btn').on('click', function (e) {
             e.preventDefault();
             $('#testimonial_style_three .slick-next').trigger('click');
+        });
+
+
+        /*
+        Testimonial Slider
+        ============================*/
+        $("#testimonial_style_four").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            variableWidth: true,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
         });
 
 
@@ -688,10 +719,10 @@
         }
 
         // Portfolio Hover
-        $('.portfolio-card-main-wrapper').each(function() {
+        $('.portfolio-card-main-wrapper').each(function () {
             const item = $(this).find('.portfolio-card, .icon-card-inner');
             const img = $(this).find('.tabimg');
-            item.on('mouseenter', function() {
+            item.on('mouseenter', function () {
                 const tab_id = $(this).attr('data-tab');
                 item.removeClass('active');
                 $(this).addClass('active');
