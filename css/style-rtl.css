@@ -7396,89 +7396,89 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 
-.post-card.style-2 {
+.post-card.style-2 .image {
+  height: 299px;
+}
+.post-card.style-2 .content-wrapper {
+  padding-left: 30px;
+  margin-top: -65px;
+  position: relative;
+  z-index: 1;
+}
+.post-card.style-2 .content-wrapper .content {
+  background-color: #ffffff;
+  padding: 20px 30px 40px;
+  gap: 20px;
+}
+.post-card.style-2 .content-wrapper .content .post-content {
+  margin-bottom: 10px;
+}
+.post-card.style-2 .content-wrapper .content .btn-wrapper .theme-btn {
+  background-color: #ffffff;
+  color: #23262D;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-2 .content-wrapper .content .btn-wrapper .theme-btn i {
+  color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-2 .content-wrapper .content .btn-wrapper .theme-btn:hover {
+  background-color: #D9A14C;
+  color: #ffffff;
+}
+.post-card.style-2 .content-wrapper .content .btn-wrapper .theme-btn:hover i {
+  color: #ffffff;
+}
+
+.post-card.style-3 .post-meta .single-post-meta {
+  color: #616670;
+}
+.post-card.style-3 .post-meta .single-post-meta i {
+  color: #616670;
+}
+.post-card.style-3 .content {
+  gap: 20px;
+  padding: 30px 30px 20px;
+}
+
+.post-card.style-4 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 26px;
 }
-.post-card.style-2:hover .post-meta .single-post-meta i {
+.post-card.style-4:hover .post-meta .single-post-meta i {
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.post-card.style-2 .image {
+.post-card.style-4 .image {
   height: 433px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .post-card.style-2 .image {
+  .post-card.style-4 .image {
     height: 300px;
   }
 }
-.post-card.style-2 .content {
+.post-card.style-4 .content {
   padding: 20px 40px 40px;
   gap: 20px;
   border: none;
   background-color: #ffffff;
 }
-.post-card.style-2 .content .title {
+.post-card.style-4 .content .title {
   margin-bottom: 20px;
 }
-.post-card.style-2 .post-meta {
+.post-card.style-4 .post-meta {
   margin-top: 5px;
-}
-.post-card.style-2 .post-meta .single-post-meta i {
-  color: #616670;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-.post-card.style-3 .image {
-  height: 299px;
-}
-.post-card.style-3 .content-wrapper {
-  padding-left: 30px;
-  margin-top: -65px;
-  position: relative;
-  z-index: 1;
-}
-.post-card.style-3 .content-wrapper .content {
-  background-color: #ffffff;
-  padding: 20px 30px 40px;
-  gap: 20px;
-}
-.post-card.style-3 .content-wrapper .content .post-content {
-  margin-bottom: 10px;
-}
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn {
-  background-color: #ffffff;
-  color: #23262D;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn i {
-  color: #D9A14C;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn:hover {
-  background-color: #D9A14C;
-  color: #ffffff;
-}
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn:hover i {
-  color: #ffffff;
-}
-
-.post-card.style-4 .post-meta .single-post-meta {
-  color: #616670;
 }
 .post-card.style-4 .post-meta .single-post-meta i {
   color: #616670;
-}
-.post-card.style-4 .content {
-  gap: 20px;
-  padding: 30px 30px 20px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .post-card.style-5 .post-meta .single-post-meta {
@@ -11452,6 +11452,23 @@ ul.children {
   margin: 40px 0 0;
   list-style: none;
   padding: 0;
+}
+
+.counter-up-area.style-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 396px 0 80px;
+}
+.counter-up-area.style-3 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #23262D;
+  opacity: 0.9;
 }
 
 .cta-area.style-3 {
