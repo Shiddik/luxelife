@@ -5725,41 +5725,79 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .testimonial-card.style-4 {
-  background-color: #23262D;
+  width: 850px;
   align-items: start;
-  gap: 50px;
+  gap: 40px;
+  padding: 40px 137px;
+  background-color: #ffffff;
+  margin: 0 15px;
 }
 .testimonial-card.style-4 .user-info-wrapper {
   flex-direction: row;
   gap: 25px;
-  margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 .testimonial-card.style-4 .user-info-wrapper .user-img {
   width: 85px;
   height: 85px;
   overflow: hidden;
+  border-radius: 50%;
 }
 .testimonial-card.style-4 .user-info-wrapper .user-meta {
   text-align: left;
 }
-.testimonial-card.style-4 .user-info-wrapper .user-meta .name {
+.testimonial-card.style-4 .content-wrapper {
+  text-align: center;
+}
+.testimonial-card.style-4 .content-wrapper .comma-icon i {
+  font-family: "Font Awesome 6 Pro";
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #D9A14C;
+}
+.testimonial-card.style-4 .content-wrapper .description {
+  margin-top: 20px;
+}
+
+.testimonial-card.style-5 {
+  background-color: #23262D;
+  align-items: start;
+  gap: 50px;
+}
+.testimonial-card.style-5 .user-info-wrapper {
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+.testimonial-card.style-5 .user-info-wrapper .user-img {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+}
+.testimonial-card.style-5 .user-info-wrapper .user-meta {
+  text-align: left;
+}
+.testimonial-card.style-5 .user-info-wrapper .user-meta .name {
   color: #ffffff;
 }
-.testimonial-card.style-4 .user-info-wrapper .user-meta .designation {
+.testimonial-card.style-5 .user-info-wrapper .user-meta .designation {
   color: #ffffff;
   margin-bottom: 10px;
 }
-.testimonial-card.style-4 .user-info-wrapper .user-meta .designation {
+.testimonial-card.style-5 .user-info-wrapper .user-meta .designation {
   margin: 0;
 }
-.testimonial-card.style-4 .content-wrapper .comma-icon i {
+.testimonial-card.style-5 .content-wrapper .comma-icon i {
   font-family: "Font Awesome 6 Pro";
   font-size: 48px;
   line-height: 48px;
   color: #23262D;
   -webkit-text-stroke: 1px #D9A14C;
 }
-.testimonial-card.style-4 .content-wrapper .description {
+.testimonial-card.style-5 .content-wrapper .description {
   color: #ffffff;
   margin-top: 20px;
 }
@@ -9889,6 +9927,23 @@ ul.children {
   width: 100%;
   margin-top: -70px;
   z-index: 10;
+}
+
+.testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable {
+  display: flex;
+  justify-content: center;
+  margin: 0 -15px;
+}
+.testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable .slick-track {
+  display: flex;
+  justify-content: start;
+}
+.testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0;
+  list-style: none;
+  padding: 0;
 }
 
 .cta-area.style-3 {
