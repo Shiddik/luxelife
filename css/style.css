@@ -2571,6 +2571,7 @@ nav.wp-calendar-nav a:hover {
   display: inline-block;
   width: 100%;
   overflow: hidden;
+  gap: 10px;
 }
 .wp-block-search .wp-block-search__inside-wrapper,
 .search-form .wp-block-search__inside-wrapper {
@@ -7992,9 +7993,6 @@ body.single-post .page-heading .page-title {
   color: #616670;
 }
 
-.sidebar {
-  padding-left: 22px;
-}
 @media (max-width: 991px) {
   .sidebar {
     padding-left: 0;
@@ -8054,10 +8052,9 @@ body.single-post .page-heading .page-title {
   align-items: center;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   color: #23262D;
   position: relative;
-  margin-top: -4px;
 }
 .widget .wp-block-social-links .wp-social-link {
   padding: 0;
@@ -8255,7 +8252,7 @@ body.single-post .page-heading .page-title {
 .widget ul li,
 .widget ol li {
   display: block;
-  padding: 6px 0;
+  padding: 7px 0;
   /* Recent Comment Widget */
 }
 .widget ul li:first-child,
