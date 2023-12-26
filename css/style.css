@@ -11763,6 +11763,11 @@ ul.children {
   margin-bottom: 0;
   margin-top: 67px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-area.style-1 .section-title.two-column .sec-desc .desc {
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-area.style-1 .section-title.two-column .sec-desc .desc {
     margin: 0;
@@ -11818,11 +11823,13 @@ ul.children {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .product-area {
     padding-top: 100px;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .product-area {
     padding-top: 80px;
+    padding-bottom: 0;
   }
 }
 

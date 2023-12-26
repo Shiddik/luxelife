@@ -115,6 +115,9 @@
                     margin-bottom: 0;
                     margin-top: 67px;
 
+                    @include md {
+                        margin: 0;
+                    }
                     @include sm {
                         margin: 0;
                     }
@@ -179,9 +182,11 @@
 
     @include md {
         padding-top: 100px;
+        padding-bottom: 0;
     }
     @include sm {
         padding-top: 80px;
+        padding-bottom: 0;
     }
 }
 .brand-marquee-area {
