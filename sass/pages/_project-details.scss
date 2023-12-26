@@ -28,66 +28,25 @@
        padding-top: 80px;
         padding-bottom: 130px;
     }
-
-    .project-details-padding-left {
-        padding-left: 60px;
-
-        @include rmaxwd(1199) {
-            padding-left: 12px;
-            margin-top: 60px;
-        }
-        @include rmaxwd(991) {
-            margin-top: 40px;
-        }
-      .tiny-content {
-        margin-bottom: 60px;
-
-        @include rmaxwd(991) {
-          margin-bottom: 40px;
-        }
-
-      }
-      .mt-60 {
-        @include rmaxwd(991) {
-          margin-top: 40px;
-        }
-      }
-    }
-    img {
-        border-radius: 12px;
-    }
-    .mt-65 {
-        @include rmaxwd(767) {
-            margin-top: 45px;
-        }
-    }
+}
+.tiny-content {
+  margin-bottom: 60px;
+  p{
+    margin-bottom: 20px;
+  }
+  @include rmaxwd(991) {
+    margin-bottom: 40px;
+  }
 }
 .project-gallery-image {
-    border-radius: 12px;
     overflow: hidden;
     position: relative;
-
+    margin-bottom: 60px;
     &:hover {
-        &:before {
-            height: 250%;
-            transition: all 900ms linear;
-            background-color: transparent;
-        }
         img {
             transform: scale(1.1);
             @include transition;
         }
-    }
-    &:before {
-        position: absolute;
-        width: 200%;
-        height: 0%;
-        left: 50%;
-        top: 50%;
-        background-color: rgba(255, 255, 255, 0.3);
-        transform: translate(-50%, -50%) rotate(-45deg);
-        content: "";
-        z-index: 1;
     }
     img {
         width: 100%;
@@ -97,36 +56,30 @@
     }
 }
 .project-details-title {
-    font-size: 30px;
-    line-height: 28px;
+    color: $black;
+    margin-bottom: 20px;
+    border-bottom: 2px solid $primary-color;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.main-title {
+    font-size: 48px;
+    line-height: 50px;
     font-weight: 500;
     color: $secondary-color;
-    margin-bottom: 30px;
-}
-.simillar-project-title {
-    h2 {
-        font-size: 48px;
-        line-height: 50px;
-        font-weight: 500;
-        color: $secondary-color;
-        margin: 0;
+    margin-bottom: 20px;
 
-        @include rmaxwd(767) {
-            font-size: 28px;
-            line-height: 32px;
-        }
-      @include md {
-        font-size: 38px;
-        line-height: 42px;
-      }
-      @include lg {
-        font-size: 40px;
-        line-height: 46px;
-      }
+    @include rmaxwd(767) {
+        font-size: 28px;
+        line-height: 32px;
     }
-
-    @include rmaxwd(991) {
-        margin-bottom: 30px;
+    @include md {
+      font-size: 38px;
+      line-height: 42px;
+    }
+    @include lg {
+      font-size: 40px;
+      line-height: 46px;
     }
 }
 .project-info-widget-wrapper {

@@ -4887,9 +4887,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .slider-area.style-2 {
   padding: 0;
+  height: 730px;
 }
 .slider-area.style-2 .slider-bg {
   width: 100%;
+}
+.slider-area.style-2 .slider-bg img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .info-card-wrapper {
@@ -6591,6 +6597,77 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area-wrapper.style-1 .testimonial-slider-wrapper .slick-item {
   margin-left: 30px;
+}
+
+.testimonial-slider-wrapper.style-4 .slick-list {
+  overflow: visible !important;
+}
+.testimonial-slider-wrapper.style-4 .slick-item {
+  margin-top: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-wrapper.style-4 .slick-item.slick-center {
+  margin-top: -40px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li {
+  list-style: none;
+  line-height: 0;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li:first-child button {
+  border-radius: 0 40px 40px 0;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li:last-child button {
+  border-radius: 40px 0 0 40px;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li.slick-active button {
+  width: 105px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li.slick-active button:before {
+  width: 100%;
+  visibility: visible;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li button {
+  width: 65px;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  background-color: #E3E3E3;
+  height: 11px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: relative;
+}
+.testimonial-slider-wrapper.style-4 .slick-dots li button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #D9A14C;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-radius: 40px;
 }
 
 .accordion-wrapper .accordion-list-item .accordion-head {
@@ -11665,34 +11742,6 @@ ul.children {
 
 .testimonial-slider-area.style-4 {
   margin-top: -120px;
-}
-.testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 -15px;
-}
-.testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-.testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 40px 0 0;
-  list-style: none;
-  padding: 0;
 }
 
 .counter-up-area.style-3 {
