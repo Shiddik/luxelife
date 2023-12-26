@@ -2,18 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 74px;
-  gap: 20px;
+  margin-bottom: 76px;
+  gap: 40px;
+
 
   @include rmaxwd(550) {
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 76px;
     align-items: flex-start;
     gap: 40px;
   }
   .sec-content {
     display: flex;
-    gap: 10px;
     flex-direction: column;
     z-index: 2;
     position: relative;
@@ -126,8 +126,7 @@
     }
   }
   &.two-column {
-    align-items: center;
-    margin-bottom: 84px;
+    align-items: flex-end;
 
     @include sm {
       flex-direction: column;
@@ -141,9 +140,7 @@
       margin-bottom: 50px;
       align-items: flex-start;
     }
-    @include lg {
-      margin-bottom: 50px;
-    }
+   
     .sec-content {
       @include rmaxwd(767) {
         width: 100%;
@@ -163,7 +160,7 @@
         width: 100%;
       }
       p {
-        margin-bottom: 25px;
+        margin-bottom: 0px;
       }
       .simple-btn {
         font-size: 18px;
