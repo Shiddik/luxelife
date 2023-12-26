@@ -7,6 +7,34 @@
     padding: 120px 0 240px;
 
     .team-member-gallery-area{
+        .nav-tab{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            li{
+                height: 237px;
+                cursor: pointer;
+                &.active{
+                    border: 5px solid $primary-color;
+                    @include transition;
+                }
+
+                .title{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
         .member-img{
             height: 237px;
             width: 100%;
@@ -25,9 +53,11 @@
     .skill-progress-area{
         background-color: $white;
         padding: 40px;
+        margin-left: 6px;
+        @include transition;
 
         .content{
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             .name{
                 font-family: $heading-font;
             font-size: 24px;
@@ -44,13 +74,13 @@
             }
         }
         .counter-card{
-            margin-top: 55px;
+            margin-top: 45px;
             .content{
                 flex-direction: row;
                 align-items: center;
                 margin: 0;
-                gap: 5px;
-                padding: 20px;
+                gap: 20px;
+                padding: 16px 20px;
                 border: 1px dashed $primary-color;
 
                 .number{
