@@ -16,6 +16,7 @@ body {
   font-smoothing: antialiased;
   direction: ltr;
 }
+
 p {
   margin: 0 0 15px;
 }
@@ -33,6 +34,7 @@ h5 a,
 h6 a {
   color: inherit;
 }
+
 h1,
 h2,
 h3,
@@ -52,61 +54,73 @@ h1 {
   line-height: 102px;
   font-weight: 500;
 }
+
 h2 {
   font-size: 60px;
   line-height: 72px;
   font-weight: 500;
 }
+
 h3 {
   font-size: 36px;
   line-height: 60px;
   font-weight: 500;
 }
+
 h4 {
   font-size: 30px;
   line-height: 42px;
   font-weight: 500;
 }
+
 h5 {
   font-size: 24px;
   line-height: 36px;
   font-weight: 500;
 }
+
 h6 {
   font-size: 21px;
   line-height: 32px;
   font-weight: 500;
 }
+
 label {
   color: $text-color;
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
 }
+
 button {
   cursor: pointer;
   @include transition;
 }
+
 a:not([href]):not([tabindex]) {
   text-decoration: none;
 
 
 }
+
 a,
 .button {
   text-decoration: none;
   @include transition;
 }
+
 a:focus,
 .button:focus {
   text-decoration: none;
   outline: none;
 }
+
 a:focus {
   color: $primary-color;
   text-decoration: none;
   @include transition;
 }
+
 a,
 button {
   color: $primary-color;
@@ -118,6 +132,7 @@ button {
     @include transition;
   }
 }
+
 button:focus,
 input:focus,
 input:focus,
@@ -125,6 +140,7 @@ textarea,
 textarea:focus {
   outline: 0;
 }
+
 ul {
   list-style: outside none none;
   margin: 0;
@@ -136,11 +152,13 @@ ul {
   text-shadow: none;
   color: #fff;
 }
+
 ::selection {
   background: $primary-color;
   text-shadow: none;
   color: #fff;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -149,12 +167,15 @@ input:focus {
 .background-black {
   background-color: $black;
 }
+
 .background-gray {
   background-color: #F4F4F4;
 }
+
 .background-orange {
   background-color: $primary-color;
 }
+
 //.background-black-light {
 //  background-color: $black-100;
 //}
@@ -188,6 +209,7 @@ input:focus {
 .page-bg {
   background-color: $black;
 }
+
 .bg-gray-100 {
   background-color: $gray-100;
 }
@@ -196,10 +218,12 @@ input:focus {
   padding-top: 113px;
   padding-bottom: 100px;
 }
+
 .blog-area {
   padding-top: 120px;
   padding-bottom: 80px;
 }
+
 .page-area,
 .blog-area {
 
@@ -207,23 +231,29 @@ input:focus {
     padding-top: 100px;
     padding-bottom: 52px;
   }
+
   @include rmaxwd(767) {
     padding-top: 80px;
     padding-bottom: 32px;
   }
+
   .page-links {
     margin-bottom: 20px;
   }
 }
+
 .border-radius-12 {
   border-radius: 12px;
 }
+
 .text-white-100 {
   color: $white-100;
 }
+
 code {
   color: $primary-color;
 }
+
 .theme-btn,
 .wp-block-loginout a,
 input.theme-btn {
@@ -267,12 +297,14 @@ input.theme-btn {
     color: #fff;
     border-color: $blue-color;
     background-color: $blue-color;
+
     &:before {
       width: 150%;
       background-color: $blue-color;
       @include transition;
     }
   }
+
   &:focus {
     color: $white;
   }
@@ -293,6 +325,7 @@ input.theme-btn {
     @include transition;
   }
 }
+
 .wp-block-loginout {
   a {
     position: relative;
@@ -308,6 +341,7 @@ input.theme-btn {
     //}
   }
 }
+
 .contact-form-btn {
   justify-content: center;
   width: 100%;
@@ -319,11 +353,13 @@ input.theme-btn {
   }
 
 }
+
 input.theme-btn {
   display: inline-block !important;
   width: inherit !important;
   border: 0 !important;
 }
+
 //.style-btn {
 //  width: 143px;
 //  height: 143px;
@@ -405,6 +441,7 @@ input.theme-btn {
   //  animation: none;
   //}
 }
+
 .animate-move-top-bottom {
   animation: MoveUpDown 1.5s linear infinite alternate;
   //@include xs {
@@ -435,6 +472,7 @@ input.theme-btn {
       width: 60px;
       height: 60px;
     }
+
     &:hover {
       background-color: $primary-color;
       color: $white;
@@ -463,6 +501,7 @@ input.theme-btn {
     transform: translate(-50%, -50%);
   }
 }
+
 .circle-rotate-text {
   transform-origin: center center;
   animation: spin 6s linear infinite;
@@ -480,6 +519,7 @@ input.theme-btn {
     letter-spacing: 2px;
     color: #fff;
   }
+
   //width: 164px;
 
   //width: 150px;
@@ -509,12 +549,15 @@ input.theme-btn {
   @include sm {
     --bs-gutter-x: 1rem;
   }
+
   @include md {
     --bs-gutter-x: 1rem;
   }
+
   @include lg {
     --bs-gutter-x: 1rem;
   }
+
   @include xl {
     --bs-gutter-x: 2rem;
   }

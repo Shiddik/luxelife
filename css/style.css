@@ -4893,6 +4893,17 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-shrink: 0;
 }
 
+.icon-card.style-4 .icon-card-inner {
+  display: flex;
+  gap: 20px;
+}
+.icon-card.style-4 .icon-card-inner .image {
+  width: 60px;
+  height: 60px;
+  background-color: #F4F4F4;
+  flex-shrink: 0;
+}
+
 .about-image-card.style-2 .main-img-wrapper .main-img-inner {
   position: relative;
 }
@@ -10365,7 +10376,7 @@ ul.children {
 }
 .service-details-page .details-content .feature-image {
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .service-details-page .details-content .feature-image img {
   width: 100%;
@@ -10374,25 +10385,24 @@ ul.children {
   margin-bottom: 30px;
 }
 .service-details-page .details-content .text .title {
-  font-size: 45px;
-  font-weight: 600;
-  line-height: initial;
-  margin-bottom: 24px;
   color: #23262D;
+  margin-bottom: 20px;
 }
 .service-details-page .details-content .text p {
   font-size: 16px;
-  line-height: 29px;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 .service-details-page .details-content .member-court {
-  padding: 26px 110px 27px 41px;
-  border-left: 3px solid #CDB091;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .service-details-page .details-content .member-court .desc {
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
   color: #23262D;
   margin-bottom: 0;
 }
@@ -10400,6 +10410,10 @@ ul.children {
   font-size: 16px;
   line-height: 29px;
   margin-bottom: 0;
+}
+.service-details-page .details-content .icon-card-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .key-featured-area {
