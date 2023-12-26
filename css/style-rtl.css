@@ -7870,12 +7870,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 18px;
+  gap: 20px;
 }
 
 .skill-progressbar .progress-inner-item {
   position: relative;
-  margin: 0;
+  margin-bottom: 10px;
   line-height: inherit;
 }
 .skill-progressbar .skill-title {
@@ -7908,8 +7908,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .skill-progressbar .progress-content-outter {
   height: 8px;
-  background-color: #2C2C2C;
-  border-radius: 50px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 20px;
 }
 .skill-progressbar .progress-content {
   height: 8px;
@@ -11425,6 +11425,79 @@ ul.children {
   z-index: 10;
 }
 
+.our-team-area {
+  background-position: top right;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  padding: 120px 0 240px;
+}
+.our-team-area .team-member-gallery-area .member-img {
+  height: 237px;
+  width: 100%;
+  position: relative;
+}
+.our-team-area .team-member-gallery-area .member-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-team-area .skill-progress-area {
+  background-color: #ffffff;
+  padding: 40px;
+}
+.our-team-area .skill-progress-area .content {
+  margin-bottom: 30px;
+}
+.our-team-area .skill-progress-area .content .name {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.our-team-area .skill-progress-area .content .designation {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+}
+.our-team-area .skill-progress-area .counter-card {
+  margin-top: 55px;
+}
+.our-team-area .skill-progress-area .counter-card .content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  gap: 5px;
+  padding: 20px;
+  border: 1px dashed #D9A14C;
+}
+.our-team-area .skill-progress-area .counter-card .content .number {
+  font-size: 48px;
+  line-height: 60px;
+}
+.our-team-area .skill-progress-area .counter-card .content .title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #23262D;
+}
+
+.testimonial-slider-area.style-4 {
+  margin-top: -120px;
+}
 .testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable {
   display: -webkit-box;
   display: -ms-flexbox;
