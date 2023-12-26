@@ -2629,6 +2629,7 @@ nav.wp-calendar-nav a:hover {
   display: inline-block;
   width: 100%;
   overflow: hidden;
+  gap: 10px;
 }
 .wp-block-search .wp-block-search__inside-wrapper,
 .search-form .wp-block-search__inside-wrapper {
@@ -9297,9 +9298,6 @@ body.single-post .page-heading .page-title {
   color: #616670;
 }
 
-.sidebar {
-  padding-left: 22px;
-}
 @media (max-width: 991px) {
   .sidebar {
     padding-left: 0;
@@ -9363,10 +9361,9 @@ body.single-post .page-heading .page-title {
           align-items: center;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   color: #23262D;
   position: relative;
-  margin-top: -4px;
 }
 .widget .wp-block-social-links .wp-social-link {
   padding: 0;
@@ -9596,7 +9593,7 @@ body.single-post .page-heading .page-title {
 .widget ul li,
 .widget ol li {
   display: block;
-  padding: 6px 0;
+  padding: 7px 0;
   /* Recent Comment Widget */
 }
 .widget ul li:first-child,
@@ -10046,17 +10043,16 @@ body.single-post .page-heading .page-title {
 @media (max-width: 767px) {
   .service-sidebar {
     margin-top: 56px !important;
-    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .service-sidebar {
-    padding-bottom: 100px;
+    margin-top: 80px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .service-sidebar {
-    padding-bottom: 120px;
+    margin-top: 100px;
   }
 }
 .service-sidebar .widget {
@@ -12154,15 +12150,27 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .service-details-page {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .service-details-page {
     padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-details-page {
+    padding-bottom: 120px;
   }
 }
 .service-details-page .service-details-wrapper {
   padding-right: 38px;
+}
+@media (max-width: 1199px) {
+  .service-details-page .service-details-wrapper {
+    padding-right: 12px;
+  }
 }
 .service-details-page .details-content .feature-image {
   overflow: hidden;
@@ -12225,6 +12233,15 @@ ul.children {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 60px;
+}
+@media (max-width: 991px) {
+  .service-details-page .details-content .icon-card-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .key-featured-area {
