@@ -1,12 +1,49 @@
+// Project Area
+.project-area{
+    .portfolio-slider-disable{
+        position: relative;
+        z-index: 10;
+    }
+}
+
 // Our Team Member
 .our-team-area{
-    background-position: top left;
+    background-position: bottom left;
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
-    padding: 120px 0 240px;
+    padding: 634px 0 240px;
+    margin-top: -463px;
 
     .team-member-gallery-area{
+        .nav-tab{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            li{
+                height: 237px;
+                cursor: pointer;
+                &.active{
+                    border: 5px solid $primary-color;
+                    @include transition;
+                }
+
+                .title{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
         .member-img{
             height: 237px;
             width: 100%;
@@ -25,9 +62,11 @@
     .skill-progress-area{
         background-color: $white;
         padding: 40px;
+        margin-left: 6px;
+        @include transition;
 
         .content{
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             .name{
                 font-family: $heading-font;
             font-size: 24px;
@@ -44,13 +83,13 @@
             }
         }
         .counter-card{
-            margin-top: 55px;
+            margin-top: 45px;
             .content{
                 flex-direction: row;
                 align-items: center;
                 margin: 0;
-                gap: 5px;
-                padding: 20px;
+                gap: 20px;
+                padding: 16px 20px;
                 border: 1px dashed $primary-color;
 
                 .number{
@@ -73,27 +112,15 @@
 .testimonial-slider-area{
     &.style-4{
         margin-top: -120px;
-        .testimonial-slider-wrapper{
-            .slick-list{
-                &.draggable{
-                    display: flex;
-                    justify-content: center;
-                    margin: 0 -15px;
+    }
+}
 
-                    .slick-track{
-                        display: flex;
-                        justify-content: start;
-                    }
-                }
-            }
-            .slick-dots{
-                display: flex;
-                justify-content: center;
-                margin: 40px 0 0;
-                list-style: none;
-                padding: 0;
-            }
-        }
+
+// Price Area
+.price-area{
+    .container{
+        position: relative;
+        z-index: 20;
     }
 }
 
@@ -104,7 +131,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        padding: 396px 0 80px;
+        padding: 296px 0 80px;
+        margin-top: -236px;
 
         .overlay{
             position: absolute;
@@ -114,6 +142,24 @@
             left: 0;
             background-color: $black;
             opacity: 0.9;
+        }
+    }
+}
+
+// Img Gallery
+.img-gallery-area{
+    .img-card{
+        width: 100%;
+        height: 250px;
+        position: relative;
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
         }
     }
 }
