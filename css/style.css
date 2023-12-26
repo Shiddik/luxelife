@@ -95,39 +95,39 @@ h6 {
 }
 
 h1 {
-  font-size: 90px;
-  line-height: 102px;
-  font-weight: 500;
+  font-size: 68px;
+  line-height: 78px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 60px;
-  line-height: 72px;
-  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 30px;
-  line-height: 42px;
-  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 h5 {
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
 }
 
 h6 {
-  font-size: 21px;
-  line-height: 32px;
-  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 label {
@@ -7453,6 +7453,31 @@ body.admin-bar .header-menu-area.sticky_menu {
 .post-card.style-2:hover .content-wrapper .content .btn-wrapper .theme-btn i {
   color: #ffffff;
 }
+.post-card.style-2 .content-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-right: 30px;
+  margin-top: -60px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-2:hover .content-wrapper .content {
+  border-color: transparent;
+  border-bottom-color: #D9A14C;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-2:hover .content-wrapper .content .btn-wrapper .theme-btn {
+  background-color: #D9A14C;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-2:hover .content-wrapper .content .btn-wrapper .theme-btn i {
+  color: #ffffff;
+}
 .post-card.style-2 .image {
   height: 300px;
 }
@@ -7487,51 +7512,53 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #D9A14C;
 }
 
-.post-card.style-3 .image {
-  height: 299px;
+.post-card.style-3 .post-meta .single-post-meta {
+  color: #616670;
 }
-.post-card.style-3 .content-wrapper {
-  padding-right: 30px;
-  margin-top: -65px;
-  position: relative;
-  z-index: 1;
+.post-card.style-3 .post-meta .single-post-meta i {
+  color: #616670;
 }
-.post-card.style-3 .content-wrapper .content {
-  background-color: #ffffff;
-  padding: 20px 30px 40px;
+.post-card.style-3 .content {
   gap: 20px;
+  padding: 30px 30px 20px;
 }
-.post-card.style-3 .content-wrapper .content .post-content {
-  margin-bottom: 10px;
+
+.post-card.style-4 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
 }
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn {
-  background-color: #ffffff;
-  color: #23262D;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn i {
+.post-card.style-4:hover .post-meta .single-post-meta i {
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn:hover {
-  background-color: #D9A14C;
-  color: #ffffff;
+.post-card.style-4 .image {
+  height: 433px;
 }
-.post-card.style-3 .content-wrapper .content .btn-wrapper .theme-btn:hover i {
-  color: #ffffff;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-card.style-4 .image {
+    height: 300px;
+  }
 }
-
-.post-card.style-4 .post-meta .single-post-meta {
-  color: #616670;
+.post-card.style-4 .content {
+  padding: 20px 40px 40px;
+  gap: 20px;
+  border: none;
+  background-color: #ffffff;
+}
+.post-card.style-4 .content .title {
+  margin-bottom: 20px;
+}
+.post-card.style-4 .post-meta {
+  margin-top: 5px;
 }
 .post-card.style-4 .post-meta .single-post-meta i {
   color: #616670;
-}
-.post-card.style-4 .content {
-  gap: 20px;
-  padding: 30px 30px 20px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .post-card.style-5 .post-meta .single-post-meta {
@@ -7923,12 +7950,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 18px;
+  gap: 20px;
 }
 
 .skill-progressbar .progress-inner-item {
   position: relative;
-  margin: 0;
+  margin-bottom: 10px;
   line-height: inherit;
 }
 .skill-progressbar .skill-title {
@@ -7961,8 +7988,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .skill-progressbar .progress-content-outter {
   height: 8px;
-  background-color: #2C2C2C;
-  border-radius: 50px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 20px;
 }
 .skill-progressbar .progress-content {
   height: 8px;
@@ -11484,6 +11511,79 @@ ul.children {
   z-index: 10;
 }
 
+.our-team-area {
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  padding: 120px 0 240px;
+}
+.our-team-area .team-member-gallery-area .member-img {
+  height: 237px;
+  width: 100%;
+  position: relative;
+}
+.our-team-area .team-member-gallery-area .member-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-team-area .skill-progress-area {
+  background-color: #ffffff;
+  padding: 40px;
+}
+.our-team-area .skill-progress-area .content {
+  margin-bottom: 30px;
+}
+.our-team-area .skill-progress-area .content .name {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.our-team-area .skill-progress-area .content .designation {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+}
+.our-team-area .skill-progress-area .counter-card {
+  margin-top: 55px;
+}
+.our-team-area .skill-progress-area .counter-card .content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  gap: 5px;
+  padding: 20px;
+  border: 1px dashed #D9A14C;
+}
+.our-team-area .skill-progress-area .counter-card .content .number {
+  font-size: 48px;
+  line-height: 60px;
+}
+.our-team-area .skill-progress-area .counter-card .content .title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #23262D;
+}
+
+.testimonial-slider-area.style-4 {
+  margin-top: -120px;
+}
 .testimonial-slider-area.style-4 .testimonial-slider-wrapper .slick-list.draggable {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11511,6 +11611,23 @@ ul.children {
   margin: 40px 0 0;
   list-style: none;
   padding: 0;
+}
+
+.counter-up-area.style-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 396px 0 80px;
+}
+.counter-up-area.style-3 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #23262D;
+  opacity: 0.9;
 }
 
 .cta-area.style-3 {
