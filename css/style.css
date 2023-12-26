@@ -10493,6 +10493,21 @@ ul.children {
 .service-details-page .details-content .feature-image {
   overflow: hidden;
   margin-bottom: 30px;
+  position: relative;
+}
+.service-details-page .details-content .feature-image .icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  padding: 8px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  top: 30px;
+}
+.service-details-page .details-content .feature-image .icon img {
+  width: auto;
 }
 .service-details-page .details-content .feature-image img {
   width: 100%;

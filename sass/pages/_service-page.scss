@@ -59,7 +59,21 @@
         .feature-image {
             overflow: hidden;
             margin-bottom: 30px;
-
+            position: relative;
+            .icon{
+                width: 60px;
+                height: 60px;
+                flex-shrink: 0;
+                padding: 8px;
+                background-color: $white;
+                position: absolute;
+                z-index: 1;
+                left: 30px;
+                top: 30px;
+                img{
+                    width: auto;
+                }
+            }
             img {
                 width: 100%;
             }
