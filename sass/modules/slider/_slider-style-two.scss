@@ -1,6 +1,9 @@
 .slider-area {
   &.style-2 {
+    padding: 0;
 
-
+    .slider-bg {
+      width: 100%;
+    }
   }
 }
