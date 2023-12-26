@@ -394,6 +394,7 @@
             dots: true,
             speed: 1500,
             variableWidth: true,
+            centerMode: true,
             rtl: false,
             responsive: [{
                     breakpoint: 1200,
