@@ -14,8 +14,10 @@
 
             li{
                 height: 237px;
+                cursor: pointer;
                 &.active{
                     border: 5px solid $primary-color;
+                    @include transition;
                 }
 
                 .title{
@@ -52,6 +54,7 @@
         background-color: $white;
         padding: 40px;
         margin-left: 6px;
+        @include transition;
 
         .content{
             margin-bottom: 25px;
