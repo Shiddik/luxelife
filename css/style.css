@@ -4451,15 +4451,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: 0;
   right: 0;
   height: 100%;
-  width: 725px;
-  background-color: black;
+  width: 100%;
+  background-color: #23262D;
   z-index: -1;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .slider-area .slider-bg {
-    width: 100%;
-    height: 100%;
-  }
 }
 .slider-area .slider-bg img {
   position: absolute;
@@ -4554,7 +4548,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 27px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: "Rajdhani", sans-serif;
   color: #2C2C2C;
   margin-bottom: 10px;
 }
@@ -4887,10 +4880,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .slider-area.style-2 {
   padding: 0;
-  height: 730px;
 }
 .slider-area.style-2 .slider-bg {
   width: 100%;
+  z-index: 1;
+  background-color: transparent;
 }
 .slider-area.style-2 .slider-bg img {
   padding: 0;

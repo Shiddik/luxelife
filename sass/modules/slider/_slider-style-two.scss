@@ -1,10 +1,11 @@
 .slider-area {
   &.style-2 {
     padding: 0;
-    height: 730px;
 
     .slider-bg {
       width: 100%;
+      z-index: 1;
+      background-color: transparent;
 
       img {
         padding: 0;
