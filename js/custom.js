@@ -155,7 +155,7 @@
         /*
         Skill Progress Bar Js
         ============================*/
-        $('.skill-progressbar').one('inview', function (event, isInView) {
+        $('.skill-progress-card').one('inview', function (event, isInView) {
             if (isInView) {
                 $('.progress-inner').each(function () {
                     $(this).find('.progress-content').animate({
