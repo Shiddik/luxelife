@@ -2,9 +2,6 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
-
-  position: relative;
-  background-color: $white-50;
   padding-top: 90px;
   padding-bottom: 36px;
 
@@ -12,7 +9,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 867px;
+    height: 100%;
     width: 725px;
     background-color: black;
     z-index: -1;

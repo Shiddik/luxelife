@@ -4443,8 +4443,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   position: relative;
   z-index: 2;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.7176470588);
   padding-top: 90px;
   padding-bottom: 36px;
 }
@@ -4452,7 +4450,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: absolute;
   top: 0;
   right: 0;
-  height: 867px;
+  height: 100%;
   width: 725px;
   background-color: black;
   z-index: -1;
@@ -11538,7 +11536,8 @@ ul.children {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our-team-area .team-member-gallery-area .member-img {
   height: 237px;
