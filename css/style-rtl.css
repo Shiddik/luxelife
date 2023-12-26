@@ -5269,6 +5269,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .info-card.style-5 {
   padding: 0 40px 40px 40px;
   border: 1px solid #E3E3E3;
+  background-color: #ffffff;
 }
 .info-card.style-5 .title-wrapper {
   padding-bottom: 20px;
@@ -6616,7 +6617,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0 0;
 }
 .testimonial-slider-wrapper.style-4 .slick-dots li {
   list-style: none;
@@ -11633,12 +11634,18 @@ ul.children {
   z-index: 10;
 }
 
+.project-area .portfolio-slider-disable {
+  position: relative;
+  z-index: 10;
+}
+
 .our-team-area {
-  background-position: top right;
+  background-position: bottom right;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  padding: 120px 0 240px;
+  padding: 634px 0 240px;
+  margin-top: -463px;
 }
 .our-team-area .team-member-gallery-area .nav-tab {
   display: grid;
@@ -11738,12 +11745,18 @@ ul.children {
   margin-top: -120px;
 }
 
+.price-area .container {
+  position: relative;
+  z-index: 20;
+}
+
 .counter-up-area.style-3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 396px 0 80px;
+  padding: 296px 0 80px;
+  margin-top: -236px;
 }
 .counter-up-area.style-3 .overlay {
   position: absolute;
@@ -11753,6 +11766,21 @@ ul.children {
   right: 0;
   background-color: #23262D;
   opacity: 0.9;
+}
+
+.img-gallery-area .img-card {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.img-gallery-area .img-card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cta-area.style-3 {
