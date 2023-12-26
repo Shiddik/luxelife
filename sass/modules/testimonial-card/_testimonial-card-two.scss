@@ -2,7 +2,12 @@
   &.style-2 {
     flex-direction: row;
     gap: 110px;
-    padding: 40px 80px 48px 40px;
+    padding: 40px 81px 48px 40px;
+    margin-left: 2px;
+
+    .user-info-wrapper {
+      margin-top: 2px;
+    }
 
     .content-wrapper{
       .desc{
