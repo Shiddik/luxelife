@@ -2,42 +2,73 @@
     &.style-2 {
         flex-direction: column;
         gap: 26px;
+        @include transition;
 
-        &:hover{
-            .post-meta {
-                .single-post-meta{
-                    i{
-                        color: $primary-color;
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            margin-right: 30px;
+            margin-top: -60px;
+            @include transition;
+        }
+        
+        &:hover {
+           .content-wrapper {
+
+
+              .content {
+                border-color: transparent;
+                border-bottom-color: $primary-color;
+                box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+                @include transition;
+                .btn-wrapper {
+                    .theme-btn {
+                        background-color: $primary-color;
+                        color: $white;
                         @include transition;
+
+                        i {
+                            color: $white;
+                        }
                     }
                 }
+              }
             }
         }
 
         .image {
-            height: 433px;
+            height: 300px;
 
             @include sm {
                 height: 300px;
             }
         }
         .content{
-            padding: 20px 40px 40px;
+            padding: 20px 30px 40px;
             gap: 20px;
-            border: none;
             background-color: $white;
 
-            .title{
-                margin-bottom: 20px;
+            .btn-wrapper {
+                margin-top: 10px;
+
+                .theme-btn {
+                    background-color: $white;
+                    color: $black;
+                    @include transition;
+
+                    i {
+                        color: $primary-color;
+                        @include transition;
+                    }
+                }
             }
         }
         .post-meta {
-            margin-top: 5px;
+            gap: 30px;
 
             .single-post-meta{
                 i{
-                    color: $gray-800;
-                    @include transition;
+                    color: $primary-color;
                 }
             }
         }
