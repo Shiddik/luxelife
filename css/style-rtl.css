@@ -5433,6 +5433,29 @@ body.admin-bar .header-menu-area.sticky_menu {
       flex-shrink: 0;
 }
 
+.icon-card.style-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.icon-card.style-4 .image {
+  width: 60px;
+  height: 60px;
+  background-color: #F4F4F4;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .about-image-card.style-2 .main-img-wrapper .main-img-inner {
   position: relative;
 }
@@ -9966,9 +9989,8 @@ body.single-post .page-heading .page-title {
 
 .widget_service_categories {
   margin-bottom: 50px;
-  padding: 50px 0px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background: #FAF8F7;
+  padding: 0px;
+  background: transparent;
 }
 .widget_service_categories .title {
   font-size: 35px;
@@ -9976,11 +9998,9 @@ body.single-post .page-heading .page-title {
   line-height: initial;
   color: #23262D;
   margin-bottom: 32px;
-  margin-right: 40px;
 }
 .widget_service_categories ul li {
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+  background-color: #F4F4F4;
   width: 100%;
   padding: 0;
   margin-bottom: 10px;
@@ -9992,15 +10012,26 @@ body.single-post .page-heading .page-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   color: #23262D;
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
   width: 100%;
-  padding: 20px 40px;
+  padding: 16px 30px;
+}
+.widget_service_categories ul li a:after {
+  content: "\f105";
+  color: #D9A14C;
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .widget_service_categories ul li a i {
   color: #D9A14C;
@@ -10015,7 +10046,10 @@ body.single-post .page-heading .page-title {
   }
 }
 .widget_service_categories ul li a:hover {
-  background: #CDB091;
+  background: #D9A14C;
+  color: #ffffff;
+}
+.widget_service_categories ul li a:hover:after {
   color: #ffffff;
 }
 .widget_service_categories ul li a:hover i {
@@ -10024,7 +10058,10 @@ body.single-post .page-heading .page-title {
   transition: all 0.5s ease-out;
 }
 .widget_service_categories ul li.active a {
-  background: #CDB091;
+  background: #D9A14C;
+  color: #ffffff;
+}
+.widget_service_categories ul li.active a:after {
   color: #ffffff;
 }
 .widget_service_categories ul li.active a i {
@@ -10032,26 +10069,37 @@ body.single-post .page-heading .page-title {
 }
 
 .widget_service_promotion {
+  padding: 30px;
   position: relative;
   overflow: hidden;
 }
-.widget_service_promotion .contact-text {
-  position: absolute;
-  bottom: 0;
-  padding: 0 40px 30px 0;
+.widget_service_promotion .contact-text .title {
+  margin-bottom: 28px;
 }
-.widget_service_promotion .contact-text .number {
-  font-size: 35px;
-  font-weight: 600;
-  line-height: initial;
-  font-family: "Rajdhani", sans-serif;
-  color: #ffffff;
+.widget_service_promotion .contact-text ul {
+  padding-right: 0;
 }
-.widget_service_promotion .contact-text .text {
-  font-size: 16px;
-  line-height: 29px;
-  color: #ffffff;
-  margin-bottom: 0;
+.widget_service_promotion .contact-text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 17px;
+  color: #23262D;
+  padding: 0;
+  margin-top: 5px;
+}
+.widget_service_promotion .contact-text ul li a {
+  color: #23262D;
+}
+.widget_service_promotion .contact-text ul li i {
+  color: #FF9205;
+  margin-top: 7px;
+}
+.widget_service_promotion .contact-text ul li:first-child {
+  padding-top: 0;
 }
 .widget_service_promotion .wp-block-heading {
   color: #ffffff;
@@ -11521,9 +11569,12 @@ ul.children {
 }
 .our-team-area .team-member-gallery-area .nav-tab li {
   height: 237px;
+  cursor: pointer;
 }
 .our-team-area .team-member-gallery-area .nav-tab li.active {
   border: 5px solid #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .our-team-area .team-member-gallery-area .nav-tab li .title {
   width: 100%;
@@ -11557,6 +11608,8 @@ ul.children {
   background-color: #ffffff;
   padding: 40px;
   margin-right: 6px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .our-team-area .skill-progress-area .content {
   margin-bottom: 25px;
@@ -12011,7 +12064,8 @@ ul.children {
 }
 
 .service-details-page {
-  padding-top: 140px;
+  padding-top: 120px;
+  padding-bottom: 150px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .service-details-page {
@@ -12028,7 +12082,23 @@ ul.children {
 }
 .service-details-page .details-content .feature-image {
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.service-details-page .details-content .feature-image .icon {
+  width: 60px;
+  height: 60px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 8px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 30px;
+}
+.service-details-page .details-content .feature-image .icon img {
+  width: auto;
 }
 .service-details-page .details-content .feature-image img {
   width: 100%;
@@ -12037,25 +12107,24 @@ ul.children {
   margin-bottom: 30px;
 }
 .service-details-page .details-content .text .title {
-  font-size: 45px;
-  font-weight: 600;
-  line-height: initial;
-  margin-bottom: 24px;
   color: #23262D;
+  margin-bottom: 20px;
 }
 .service-details-page .details-content .text p {
   font-size: 16px;
-  line-height: 29px;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 .service-details-page .details-content .member-court {
-  padding: 26px 41px 27px 110px;
-  border-right: 3px solid #CDB091;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .service-details-page .details-content .member-court .desc {
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
   color: #23262D;
   margin-bottom: 0;
 }
@@ -12063,6 +12132,15 @@ ul.children {
   font-size: 16px;
   line-height: 29px;
   margin-bottom: 0;
+}
+.service-details-page .details-content .icon-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
 }
 
 .key-featured-area {
