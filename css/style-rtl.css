@@ -11129,12 +11129,18 @@ ul.children {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
+    padding: 24px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio-card {
     gap: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-card {
+    gap: 16px;
   }
 }
 .portfolio-card:first-child {
@@ -11210,11 +11216,13 @@ ul.children {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio-fullscreen-image {
     min-height: 400px;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-fullscreen-image {
     min-height: 350px;
+    margin: 0;
   }
 }
 .portfolio-fullscreen-image .tabimg {
