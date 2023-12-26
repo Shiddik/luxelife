@@ -7919,25 +7919,22 @@ body.single-post .page-heading .page-title {
   }
 }
 
+@media (max-width: 1199px) {
+  .project-info-widget-wrapper {
+    margin-top: 40px;
+  }
+}
 .project-info-widget-wrapper .social-share {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 48px;
-}
-.project-info-widget-wrapper .social-share .social-share-title {
-  margin-right: 16px;
-  font-size: 24px;
-  color: #23262D;
-  font-weight: 500;
-  text-transform: capitalize;
+  gap: 15px;
 }
 .project-info-widget-wrapper .social-share a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 27px;
+  height: 27px;
   flex-shrink: 0;
   border-radius: 50%;
   color: #ffffff;
@@ -7945,26 +7942,29 @@ body.single-post .page-heading .page-title {
   font-size: 18px;
 }
 .project-info-widget-wrapper .social-share a.facebook {
-  background-color: #CDB091;
+  background-color: #4676ED;
+}
+.project-info-widget-wrapper .social-share a.pinterest {
+  background-color: #C40027;
 }
 .project-info-widget-wrapper .social-share a.twitter {
-  background-color: #1da1f3;
+  background-color: #5A99EC;
 }
 .project-info-widget-wrapper .social-share a.linkedin {
-  background-color: #0078b5;
+  background-color: #4467AD;
 }
 
 .project-info-widget {
-  background: #ebf4f8;
-  padding: 55px 58px;
+  padding: 40px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  border: 1px solid #E3E3E3;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .project-info-widget {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
@@ -7973,19 +7973,47 @@ body.single-post .page-heading .page-title {
   flex-direction: column;
   gap: 8px;
 }
-.project-info-widget .info-item h3 {
-  margin: 0;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #26262c;
-}
 .project-info-widget .info-item p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 22px;
   color: #616670;
+  margin-bottom: 0;
+}
+.project-info-widget .info-item h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #23262D;
+  margin-bottom: 0;
+}
+
+.sidebar-image {
+  margin-top: 60px;
+  position: relative;
+  width: 410px;
+  height: 212px;
+}
+.sidebar-image:before {
+  content: "";
+  background-color: #D9A14C;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sidebar-image {
+    width: auto;
+    height: auto;
+  }
+}
+.sidebar-image img {
+  width: 100%;
 }
 
 .process-step-area.style-2 {
