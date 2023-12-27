@@ -6775,11 +6775,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 .slider-area-wrapper.style-1 {
   margin-left: -9999px;
 }
-.slider-area-wrapper.style-1 .testimonial-slider-wrapper .slick-arrow {
-  display: none !important;
-}
 .slider-area-wrapper.style-1 .testimonial-slider-wrapper .slick-item {
   margin-left: 30px;
+}
+
+.testimonial-slider-wrapper .slick-arrow {
+  display: none !important;
 }
 
 .testimonial-slider-wrapper.style-4 .slick-list {
@@ -7848,11 +7849,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
+.post-card.style-5 {
+  margin: 0;
+}
 .post-card.style-5 .post-meta .single-post-meta {
   color: #ffffff;
 }
 .post-card.style-5 .content {
-  background-color: #23262D;
+  background-color: #282b33;
   gap: 20px;
   padding: 30px;
   border: none;
@@ -12133,7 +12137,7 @@ ul.children {
   display: none !important;
 }
 
-.counter-up-area {
+.counter-up-area.style-2 {
   position: absolute;
   width: 100%;
   margin-top: -70px;
@@ -12287,6 +12291,28 @@ ul.children {
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.testimonial-slider-area.style-5 {
+  position: relative;
+}
+.testimonial-slider-area.style-5 .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-5 .slider-nav-btn-wrapper .slider-nav-next-btn {
+  background: none;
+  border: 1px solid #D9A14C;
+  color: #ffffff;
+  margin-top: -25px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-area.style-5 .slider-nav-btn-wrapper .slider-nav-prev-btn:hover, .testimonial-slider-area.style-5 .slider-nav-btn-wrapper .slider-nav-next-btn:hover {
+  background-color: #D9A14C;
+}
+.testimonial-slider-area.style-5 .testimonial-card.style-3 {
+  gap: 30px;
+}
+
+.latest-posts-area.style-5 {
+  position: relative;
 }
 
 .cta-area.style-3 {
