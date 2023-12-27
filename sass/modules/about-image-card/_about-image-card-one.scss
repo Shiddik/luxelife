@@ -1,23 +1,26 @@
 .about-image-card {
     &.style-1 {
+
        .main-img-wrapper {
             position: relative;
+            margin-right: 30px;
 
          .main-img-inner {
            position: relative;
            display: flex;
            gap: 24px;
+           margin-left: 15px;
    
            .top-image {
                 position: absolute;
                 top: 36px;
-                right: 38px;
+                right: -12px;
            }
    
          }
          .review-card-wrapper{
             margin-top: -200px;
-            margin-left: 40px;
+            margin-left: 54px;
          }
          .review-card {
             max-width: 516px;
