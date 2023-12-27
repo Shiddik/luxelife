@@ -11636,18 +11636,29 @@ ul.children {
   padding-right: 170px;
 }
 .hero-section.style-1 .hero-content .hero-content-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero-section.style-1 .hero-content .hero-content-bottom .btn-wrapper {
   margin-left: -7px;
 }
 .hero-section.style-1 .hero-content .hero-content-bottom .trusted-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 66px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .hero-section.style-1 .hero-content .hero-content-bottom .trusted-clients img {
   width: 54px;
@@ -11687,6 +11698,8 @@ ul.children {
   margin-bottom: 30px;
 }
 .hero-section.style-1 .hero-gallery-area .nav-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -11698,11 +11711,13 @@ ul.children {
   font-weight: 400;
   font-family: "Rubik", sans-serif;
   letter-spacing: initial;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .hero-section.style-1 .hero-gallery-area .nav-tab .theme-btn:hover {
   background-color: #D9A14C;
   color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .hero-section.style-1 .hero-gallery-area .nav-tab .theme-btn.active {
@@ -11721,10 +11736,12 @@ ul.children {
   height: 44px;
   background: none;
   border: 1px solid #E3E3E3;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .hero-section.style-1 .hero-gallery-slider .slick-arrow:hover {
   border: 1px solid #D9A14C;
+  -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
 .hero-section.style-1 .hero-gallery-slider .slick-arrow i {
@@ -11747,7 +11764,8 @@ ul.children {
 .hero-section.style-1 .hero-gallery-slider .slick-track .slick-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-us-area.style-1 {
@@ -12287,11 +12305,15 @@ ul.children {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .latest-gallery-area.style-2 .img-card img:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
