@@ -3,7 +3,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "a a b c" "d e e e" "f f g h" "i j j j" "k k l m" "n o o o";
-  margin: -15px;
+  margin: -22px;
+ margin-left: 2px;
 
   :nth-child(1){
     grid-area: a;

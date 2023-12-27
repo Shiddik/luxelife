@@ -4231,7 +4231,6 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 76px;
-  gap: 40px;
 }
 @media (max-width: 550px) {
   .section-title {
@@ -4313,7 +4312,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 60px;
   text-transform: capitalize;
   color: #23262D;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title .title {
@@ -5067,7 +5066,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 27px;
   padding-bottom: 15px;
   border-bottom: none;
   -webkit-transition: all 0.6s ease;
@@ -5113,7 +5112,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 43px;
 }
 .info-card .content .desc {
   -webkit-transition: all 0.6s ease;
@@ -5315,7 +5314,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 43px;
+  margin-right: 40px;
+  margin-top: -16px;
 }
 .icon-card.style-1 .icon-divider {
   content: "";
@@ -5357,6 +5358,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  margin-right: 2px;
 }
 .icon-card .content {
   display: -webkit-box;
@@ -6126,7 +6128,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: 40px;
 }
 .about-info-card.style-1 {
-  margin-top: 70px;
+  margin-top: 72px;
+  margin-right: 18px;
 }
 .about-info-card.style-3 {
   margin-top: 117px;
@@ -6170,6 +6173,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
 }
 
+.about-info-card.style-1 .about-info-content .sec-content .desc {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
 .about-info-card.style-2 .about-info-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6518,6 +6525,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .testimonial-card.style-1 {
   width: 410px;
+  gap: 14px;
 }
 .testimonial-card .user-info-wrapper {
   display: -webkit-box;
@@ -8510,7 +8518,6 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 76px;
-  gap: 40px;
 }
 @media (max-width: 550px) {
   .section-title {
@@ -8592,7 +8599,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 60px;
   text-transform: capitalize;
   color: #23262D;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title .title {
@@ -11355,16 +11362,26 @@ ul.children {
   animation: none;
 }
 
+.video-popup-card.style-2 {
+  position: relative;
+}
+.video-popup-card.style-2 .overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.51) 100%);
+}
 .video-popup-card.style-2 .video-popup-btn {
-  background-color: #ffffff;
   border-radius: 50%;
-  padding: 15px;
+  padding: 11px;
+  border: 3px solid #D9A14C;
 }
 .video-popup-card.style-2 .video-popup-btn a {
-  width: 140px;
-  height: 140px;
-  border: 1px solid #D9A14C;
-  background-color: #ffffff;
+  width: 162px;
+  height: 162px;
+  background-color: #D9A14C;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-popup-card.style-2 .video-popup-btn a {
@@ -11379,7 +11396,9 @@ ul.children {
   }
 }
 .video-popup-card.style-2 .video-popup-btn a i {
-  color: #D9A14C;
+  color: #ffffff;
+  font-size: 53px;
+  margin-right: 12px;
 }
 
 .video-popup-card.style-3 .video-popup-btn {
@@ -11524,7 +11543,8 @@ ul.children {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "a a b c" "d e e e" "f f g h" "i j j j" "k k l m" "n o o o";
-  margin: -15px;
+  margin: -22px;
+  margin-right: 2px;
 }
 .img-gallery-card :nth-child(1) {
   grid-area: a;
@@ -11766,28 +11786,88 @@ ul.children {
 
 .about-us-area.style-1 {
   padding-top: 120px;
-  padding-bottom: 153px;
+  padding-bottom: 151px;
 }
 
 .feature-area.style-1 {
+  padding: 122px 0;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 70px 0px;
+  background-size: contain;
+  position: relative;
 }
 .feature-area.style-1 .section-title {
   margin-bottom: 100px;
 }
+.feature-area.style-1 .section-title .title {
+  margin-bottom: 10px;
+}
 
+.portfolio-section.style-1 {
+  padding: 127px 0;
+}
 .portfolio-section.style-1 .section-title {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
+  margin-right: 15px;
+}
+.portfolio-section.style-1 .section-title .sec-desc {
+  margin-bottom: 3px;
+  margin-left: -6px;
 }
 
-.counter-up-area.style-1,
+.counter-up-area.style-1 {
+  margin-right: 86px;
+  margin-left: 57px;
+  position: relative;
+  width: auto;
+  margin-top: 2px;
+}
+
 .video-popup-area.style-1 {
-  margin: 0 80px;
+  margin-right: 86px;
+  margin-left: 57px;
 }
 
+.testimonial-slider-area.style-1 {
+  padding-right: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+.testimonial-slider-area.style-1 .section-title {
+  margin-top: 8px;
+}
+.testimonial-slider-area.style-1 .section-title .title {
+  margin-bottom: 0;
+}
+.testimonial-slider-area.style-1 .section-title .slider-nav-btn-wrapper a {
+  width: 60px;
+  height: 60px;
+  font-size: 17px;
+}
+
+.latest-posts-area.style-1 .post_card_slider_wrapper {
+  margin-right: 15px;
+  margin-top: -4px;
+}
 .latest-posts-area.style-1 .section-title {
   margin-bottom: 60px;
+  margin-top: 7px;
+  margin-right: 15px;
+}
+.latest-posts-area.style-1 .section-title .sec-desc {
+  margin-left: -15px;
+  margin-bottom: 4px;
+}
+.latest-posts-area.style-1 .section-title .slider-nav-btn-wrapper a {
+  width: 60px;
+  height: 60px;
+  font-size: 17px;
 }
 
 .post-card-slider-wrapper .slick-arrow {
