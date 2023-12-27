@@ -399,13 +399,42 @@
             responsive: [{
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 1,
                     },
                 },
                 {
                     breakpoint: 992,
                     settings: {
                         slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+        /*
+        Project Card Slider
+        ============================*/
+        $("#project_card_slider").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
                     },
                 },
             ],
