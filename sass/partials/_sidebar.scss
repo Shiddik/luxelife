@@ -16,6 +16,9 @@
   background-color: $gray-100;
   padding: 40px;
   margin-bottom: 40px;
+  @include rmaxwd(991){
+    padding: 20px;
+  }
   @include lg{
     padding: 20px;
   }
