@@ -6793,14 +6793,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-<<<<<<< HEAD
 
 .slick-dots {
-=======
-.testimonial-slider-wrapper.style-4 .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 262a01d4d7adbed239de0bfacc14146a78ff430c
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
