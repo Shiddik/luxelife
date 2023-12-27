@@ -28,5 +28,11 @@
             margin-bottom: 0;
             color: $text-color;
         }
+        &.style-two{
+            gap: 10px;
+            .icon{
+                font-size: 8px;
+            }
+        }
     }
 }
