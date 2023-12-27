@@ -6055,32 +6055,33 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: -40px;
   transition: all 0.5s ease-out;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots {
+
+.slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px 0 0;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li {
+.slick-dots li {
   list-style: none;
   line-height: 0;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li:first-child button {
+.slick-dots li:first-child button {
   border-radius: 40px 0 0 40px;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li:last-child button {
+.slick-dots li:last-child button {
   border-radius: 0 40px 40px 0;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li.slick-active button {
+.slick-dots li.slick-active button {
   width: 105px;
   transition: all 0.5s ease-out;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button:before {
   width: 100%;
   visibility: visible;
   transition: all 0.5s ease-out;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li button {
+.slick-dots li button {
   width: 65px;
   font-size: 0;
   line-height: 0;
@@ -6090,7 +6091,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
   position: relative;
 }
-.testimonial-slider-wrapper.style-4 .slick-dots li button:before {
+.slick-dots li button:before {
   position: absolute;
   content: "";
   top: 0;
@@ -10063,6 +10064,9 @@ ul.children {
   margin-top: 6px;
 }
 
+.project-card.style-2 {
+  margin: 0 15px;
+}
 .project-card.style-2 .main-content {
   height: 100%;
   padding: 50px;
@@ -10526,7 +10530,7 @@ ul.children {
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  padding: 634px 0 240px;
+  padding: 584px 0 240px;
   margin-top: -463px;
 }
 .our-team-area .team-member-gallery-area .nav-tab {
