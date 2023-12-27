@@ -12,10 +12,14 @@
   @include sm {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
+    padding: 24px 0;
   }
   @include md {
     gap: 30px;
+  }
+  @include lg {
+    gap: 16px;
   }
   &:first-child {
     border-top: 3px solid #E3E3E3;
@@ -79,6 +83,15 @@
   width: 100%;
   position: relative;
   margin-left: 30px;
+
+  @include md {
+    min-height: 400px;
+    margin: 0;
+  }
+  @include sm {
+    min-height: 350px;
+    margin: 0;
+  }
 
   .tabimg {
     transform: scale(1.1);

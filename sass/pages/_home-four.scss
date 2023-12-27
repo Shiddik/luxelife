@@ -1,10 +1,19 @@
+// Project Area
+.project-area{
+    .portfolio-slider-disable{
+        position: relative;
+        z-index: 10;
+    }
+}
+
 // Our Team Member
 .our-team-area{
-    background-position: top left;
+    background-position: bottom left;
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
-    padding: 120px 0 240px;
+    padding: 634px 0 240px;
+    margin-top: -463px;
 
     .team-member-gallery-area{
         .nav-tab{
@@ -106,6 +115,15 @@
     }
 }
 
+
+// Price Area
+.price-area{
+    .container{
+        position: relative;
+        z-index: 20;
+    }
+}
+
 // Counter UP
 .counter-up-area{
     &.style-3{
@@ -113,7 +131,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        padding: 396px 0 80px;
+        padding: 296px 0 80px;
+        margin-top: -236px;
 
         .overlay{
             position: absolute;
@@ -123,6 +142,24 @@
             left: 0;
             background-color: $black;
             opacity: 0.9;
+        }
+    }
+}
+
+// Img Gallery
+.img-gallery-area{
+    .img-card{
+        width: 100%;
+        height: 250px;
+        position: relative;
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
         }
     }
 }
