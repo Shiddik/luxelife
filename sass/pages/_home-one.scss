@@ -1,5 +1,206 @@
-// About Us Area
+// Hero Section Style-1
+.hero-section {
+  &.style-1 {
+    
+    .hero-content-area{
+      background-image: url(../images/hero-section/v-1/bg.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      padding: 200px 80px 192px 124px;
+      max-width: 945px;
+    
+      .bg-dark-effect{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(91deg, #000 0.47%, rgba(0, 0, 0, 0.00) 99.58%);
+      }
+    }
 
+    .hero-content{
+      position: relative;
+      z-index: 5;
+    
+      .title{
+          font-family: $heading-font;
+          font-size: 86px;
+          line-height: 99px;
+          font-weight: 700;
+          color: $white;
+      }
+      .desc{
+          font-size: 16px;
+          line-height: 30px;
+          margin: 22px 0 37px;
+          color: $white;
+          padding-right: 170px;
+      }
+    
+      .hero-content-bottom{
+          display: flex;
+          align-items: center;
+    
+          .btn-wrapper {
+            margin-left: -7px;
+          }
+    
+          .trusted-clients{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 66px;
+              flex-shrink: 0;
+    
+              img{
+                  width: 54px;
+                  height: 54px;
+                  border: 2px solid $white;
+                  border-radius: 50%;
+
+                  &.img-1, &.img-2 {
+                    margin-left: -15px;
+                  }
+                  &.img-3 {
+                    margin-left: -20px;
+                  }
+              }
+          }
+    
+          .member-count{
+                  margin-left: 18px;
+                  h4{
+                      font-size: 32px;
+                      font-weight: 700;
+                      line-height: 41.6px;
+                      text-transform: capitalize;
+                      color: $white;
+                  }
+                  span{
+                      font-size: 16px;
+                      line-height: 30px;
+                      color: $white;
+                  }
+          }
+      }
+    }
+    
+    .hero-gallery-area{
+      padding: 60px 0 46px 80px;
+    
+      h4{
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+          color: #000000;
+          margin-bottom: 30px;
+      }
+    
+      .nav-tab{
+          display: flex;
+          gap: 20px;
+    
+          .theme-btn{
+              background: none;
+              color: $black;
+              padding: 9px 20px;
+              text-transform: none !important;
+              font-weight: 400;
+              font-family: $body-font;
+              letter-spacing: initial;
+              @include transition;
+
+              &:hover {
+                background-color: $primary-color;
+                color: $white;
+                @include transition;
+              }
+    
+              &.active{
+                  background: $primary-color;
+                  border: 1px solid $primary-color;
+                  color: $white;
+              }
+          }
+      }
+    }
+    
+    .hero-gallery-slider{
+      padding: 30px 0 60px;
+      position: relative;
+    
+      .slick-arrow{
+          position: absolute;
+          bottom: -3px;
+          width: 44px;
+          height: 44px;
+          background: none;
+          border: 1px solid #E3E3E3;
+          transition: all 0.5s;
+          &:hover{
+              border: 1px solid $primary-color;
+              transition: all 0.8s ease-out;
+          }
+    
+          i{
+              color: #23262D;
+              font-size: 16px;
+              font-weight: 900;
+              font-family: Font Awesome 6 Free;
+          }
+      }
+      .slick-arrow.btn-next{
+          margin-left: 59px;
+      }
+    
+      .slick-track{
+          display: block;
+    
+          .slick-item{
+              margin-right: 30px;
+              width: 300px;
+              height: 470px;
+      
+              img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+              }
+          }
+      }
+    }    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// About Us Area
 .about-us-area {
   &.style-1 {
     padding-top: 120px;
