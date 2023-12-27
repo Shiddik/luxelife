@@ -3,16 +3,19 @@
     margin-right: -9999px;
 
     .testimonial-slider-wrapper{
-
-      .slick-arrow{
-        display: none !important;
-      }
       .slick-item{
         margin-right: 30px;
       }
     }
   }
 
+}
+
+// Testimonial Slider Arrow hidden
+.testimonial-slider-wrapper{
+  .slick-arrow{
+    display: none !important;
+  }
 }
 
 // Testimonial Slider Dots

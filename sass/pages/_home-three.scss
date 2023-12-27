@@ -131,8 +131,10 @@
 
 // Counter Up
 .counter-up-area{
-    position: absolute;
-    width: 100%;
-    margin-top: -70px;
-    z-index: 10;
+    &.style-2{
+        position: absolute;
+        width: 100%;
+        margin-top: -70px;
+        z-index: 10;
+    }
 }

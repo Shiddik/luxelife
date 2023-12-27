@@ -1,12 +1,13 @@
 .post-card {
     &.style-5 {
+        margin: 0;
         .post-meta{
             .single-post-meta{
                 color: $white;
             }
         }
         .content{
-            background-color: $black;
+            background-color: #282b33;
             gap: 20px;
             padding: 30px;
             border: none;

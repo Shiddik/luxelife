@@ -1,0 +1,38 @@
+
+
+// testimonial section
+.testimonial-slider-area{
+    &.style-5{
+        position: relative;
+
+        .slider-nav-btn-wrapper{
+            .slider-nav-prev-btn, .slider-nav-next-btn{
+                background: none;
+                border: 1px solid $primary-color;
+                color: $white;
+                margin-top: -25px;
+                @include transition;
+
+
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        .testimonial-card{
+            &.style-3{
+                gap: 30px;
+            }
+        }
+    }
+}
+
+
+// Latest Posts Area
+.latest-posts-area{
+    &.style-5{
+        position: relative;
+
+    }
+}
