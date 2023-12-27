@@ -13,6 +13,9 @@
     justify-content: center;
     gap: 50px;
 
+    @include xs {
+      gap: 26px;
+    }
 
 
     &.first-brand-marquee{
@@ -51,6 +54,13 @@
       color: $black;
       white-space: nowrap;
 
+      @include xs {
+        font-size: 32px !important;
+      }
+      @include sm {
+        font-size: 44px;
+      }
+
       // @include sm {
       //   font-size: 62px;
       //   line-height: 62px;
@@ -67,6 +77,11 @@
       //   font-size: 100px;
       //   line-height: 80px;
       // }
+    }
+    img {
+      @include sm {
+        width: 50px;
+      }
     }
   }
 }

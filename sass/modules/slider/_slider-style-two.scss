@@ -1,15 +1,22 @@
 .slider-area {
   &.style-2 {
     padding: 0;
-    height: 730px;
 
+    .single-slider {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
     .slider-bg {
       width: 100%;
+      z-index: 1;
+      background-color: transparent;
+
 
       img {
         padding: 0;
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
   }
