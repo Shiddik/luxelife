@@ -16,7 +16,12 @@
   background-color: $gray-100;
   padding: 40px;
   margin-bottom: 40px;
-
+  @include lg{
+    padding: 20px;
+  }
+  @include xl{
+    padding: 30px;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -526,7 +531,9 @@
       margin-bottom: 10px;
       border: 0;
       align-items: center;
-
+      @include lg{
+        gap: 10px;
+      }
       &:hover {
         .latest-post-thumb {
           img {
@@ -613,6 +620,10 @@
           font-family: $body-font;
           @include sm {
             font-size: 15px;
+            line-height: normal;
+          }
+          @include lg{
+            font-size: 14px;
             line-height: normal;
           }
           i {
