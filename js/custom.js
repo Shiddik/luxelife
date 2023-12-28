@@ -82,7 +82,7 @@
         Client Logo Slider
         ============================*/
         $(".client-logo-slider-wrapper").slick({
-            slidesToShow: 6,
+            slidesToShow: 5,
             infinite: true,
             autoplay: true,
             draggable: true,
