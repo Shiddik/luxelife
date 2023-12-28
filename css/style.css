@@ -9631,12 +9631,14 @@ ul.children {
   padding: 0 27px;
   height: 70px;
   width: 100%;
-  color: #616670;
+  color: #616161;
   opacity: 1;
   border: 1px solid #E3E3E3 !important;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  background-color: transparent;
+  line-height: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
   font-family: "Rubik", sans-serif !important;
 }
 .comment-respond input[type=submit] {
@@ -9671,13 +9673,15 @@ ul.children {
   resize: vertical;
   padding: 27px;
   width: 100%;
-  color: #616670;
+  color: #616161;
   border: 1px solid #E3E3E3 !important;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  background-color: transparent;
+  line-height: 30px;
+  background-color: #ffffff;
   font-family: "Rubik", sans-serif !important;
   height: 200px;
+  border-radius: 5px;
   margin-bottom: 0;
 }
 .comment-respond input:focus,
