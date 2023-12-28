@@ -156,24 +156,24 @@
         Skill Progress Bar Js
         ============================*/
         $('.skill-progress-card').one('inview', function (event, isInView) {
-            if (isInView) {
-                $('.progress-inner').each(function () {
-                    $(this).find('.progress-content').animate({
-                        width: $(this).attr('data-percentage')
-                    }, 2000);
+            $('.progress-inner').each(function () {
+                $(this).find('.progress-content').animate({
+                    width: $(this).attr('data-percentage')
+                }, 2000);
 
-                    $(this).find('.progress-number-count').animate({
-                        left: $(this).attr('data-percentage')
-                    }, {
-                        duration: 2000,
-                        step: function (now) {
-                            let data = Math.round(now);
-                            $(this).find('.progress-percent').html(data + '%');
-                        }
-                    });
+                $(this).find('.progress-number-count').animate({
+                    left: $(this).attr('data-percentage')
+                }, {
+                    duration: 2000,
+                    step: function (now) {
+                        let data = Math.round(now);
+                        $(this).find('.progress-percent').html(data + '%');
+                    }
                 });
+            });
+            // if (isInView) {
 
-            }
+            // }
         });
 
         /*
