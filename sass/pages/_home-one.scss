@@ -8,8 +8,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-      padding: 200px 80px 192px 124px;
-      max-width: 945px;
+      width: 100%;
+      text-align: right;
     
       .bg-dark-effect{
           position: absolute;
@@ -24,6 +24,22 @@
     .hero-content{
       position: relative;
       z-index: 5;
+      display: inline-block;
+      text-align: left;
+      padding: 200px 80px 191px 131px;
+      @include xs {
+        padding: 100px 30px !important;
+      }
+      @include sm {
+        padding: 100px 50px;
+      }
+      @include lg {
+        padding: 120px 50px;
+      }
+
+      @include xl {
+        padding-left: 54px;
+      }
     
       .title{
           font-family: $heading-font;
@@ -31,6 +47,27 @@
           line-height: 99px;
           font-weight: 700;
           color: $white;
+
+          @include xs {
+            font-size: 54px !important;
+            line-height: 72px !important;
+          }
+          @include sm {
+            font-size: 60px;
+            line-height: 76px;
+          }
+          @include md {
+            font-size: 72px;
+            line-height: 88px;
+          }
+          @include lg {
+            font-size: 60px;
+            line-height: 82px;
+          }
+          @include xl {
+            font-size: 72px;
+            line-height: 82px;
+          }
       }
       .desc{
           font-size: 16px;
@@ -38,14 +75,46 @@
           margin: 22px 0 37px;
           color: $white;
           padding-right: 170px;
+
+        @include xs  {
+          padding-right: 55px !important;
+        }
+        @include sm  {
+          padding-right: 100px;
+        }
+          @include lg {
+            padding-right: 60px;
+          }
+          @include xl {
+            padding-right: 120px;
+          }
       }
     
       .hero-content-bottom{
           display: flex;
           align-items: center;
+
+          @include sm {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 50px;
+          }
+
+          @include lg {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 40px;
+          }
     
           .btn-wrapper {
             margin-left: -7px;
+
+            @include xs {
+              margin-left: 0 !important;
+            }
+          }
+          .trusted-clients-wrapper {
+            display: flex;
           }
     
           .trusted-clients{
@@ -54,6 +123,16 @@
               justify-content: center;
               margin-left: 66px;
               flex-shrink: 0;
+
+              @include xs {
+                margin-left: 15px !important;
+              }
+              @include sm {
+                margin-left: 0;
+              }
+              @include lg {
+                margin-left: 0;
+              }
     
               img{
                   width: 54px;
@@ -90,6 +169,21 @@
     
     .hero-gallery-area{
       padding: 60px 0 46px 80px;
+
+      @include sm {
+        padding: 40px;
+      }
+
+      @include md {
+        padding: 50px;
+      }
+      @include lg {
+        padding-left: 40px;
+        padding-bottom: 60px;
+      }
+      @include xl {
+        padding: 76px 0 76px 80px;
+      }
     
       h4{
           font-size: 24px;
