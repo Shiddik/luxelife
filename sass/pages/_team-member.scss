@@ -68,3 +68,42 @@
         }
     }
 }
+
+// Our Team Members
+.our-team-area{
+    &.style-3{
+        .section-title{
+            @include rmaxwd(991){
+                margin-bottom: 30px;
+            }
+            .title{
+                br{
+                    @include lg{
+                    display: none;
+                    }
+                }
+            }
+        }
+        .section-img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                @include transition;
+
+                &:hover{
+                    transform: scale(1.05);
+                    @include transition;
+                }
+            }
+        }
+    }
+}
