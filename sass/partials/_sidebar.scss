@@ -16,7 +16,15 @@
   background-color: $gray-100;
   padding: 40px;
   margin-bottom: 40px;
-
+  @include rmaxwd(991){
+    padding: 20px;
+  }
+  @include lg{
+    padding: 20px;
+  }
+  @include xl{
+    padding: 30px;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -526,7 +534,9 @@
       margin-bottom: 10px;
       border: 0;
       align-items: center;
-
+      @include lg{
+        gap: 10px;
+      }
       &:hover {
         .latest-post-thumb {
           img {
@@ -590,6 +600,10 @@
             @include transition;
             font-family: $heading-font;
 
+            @include sm {
+              font-size: 16px;
+              line-height: normal;
+            }
             @include lg {
               font-size: 16px;
             }
@@ -607,7 +621,14 @@
           gap: 8px;
           color: $gray-800;
           font-family: $body-font;
-
+          @include sm {
+            font-size: 15px;
+            line-height: normal;
+          }
+          @include lg{
+            font-size: 14px;
+            line-height: normal;
+          }
           i {
             color: $primary-color;
           }
@@ -628,8 +649,9 @@
   @media only screen and (min-width: 992px) and (max-width: 1280px){
     grid-template-columns: repeat(2, 1fr);
   }
-  @include rmaxwd(374) {
+  @include rmaxwd(767) {
     grid-template-columns: repeat(2, 1fr);
+    width: auto !important;
   }
   .single-instagram-feed {
     border-radius: 6px;

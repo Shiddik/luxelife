@@ -204,18 +204,26 @@
 .about-us-area {
   &.style-1 {
     padding-top: 120px;
-    padding-bottom: 153px;
+    padding-bottom: 151px;
   }
 }
 
 // Feature Area
 .feature-area{
   &.style-1{
+    padding: 122px 0;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: 70px 0px;
+    background-size: contain;
+    position: relative;
+
 
     .section-title{
       margin-bottom: 100px;
+
+      .title {
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -223,26 +231,85 @@
 // Portfolio Section
 .portfolio-section{
   &.style-1{
+    padding: 127px 0;
     .section-title{
-      margin-bottom: 52px;
+      margin-bottom: 54px;
+      margin-left: 15px;
+
+      .sec-desc {
+        margin-bottom: 3px;
+        margin-right: -6px;
+      }
     }
   }
 }
 
 // Counter Up Area
-.counter-up-area,
+.counter-up-area {
+  &.style-1 {
+    margin-left: 86px;
+    margin-right: 57px;
+    position: relative;
+    width: auto;
+    margin-top: 2px;
+
+  }
+}
 .video-popup-area {
   &.style-1 {
-    margin: 0 80px;
+    margin-left: 86px;
+    margin-right: 57px;
   }
 }
 
+.testimonial-slider-area {
+  &.style-1 {
+    padding-left: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .section-title {
+      margin-top: 8px;
+      .title {
+        margin-bottom: 0;
+      }
+      .slider-nav-btn-wrapper {
+        a {
+          width: 60px;
+          height: 60px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
 
 // latest-posts-area
 .latest-posts-area{
   &.style-1{
+
+    .post_card_slider_wrapper {
+      margin-left: 15px;
+      margin-top: -4px;
+    }
+
     .section-title{
       margin-bottom: 60px;
+      margin-top: 7px;
+      margin-left: 15px;
+
+      .sec-desc {
+        margin-right: -15px;
+        margin-bottom: 4px;
+      }
+      .slider-nav-btn-wrapper {
+        a {
+          width: 60px;
+          height: 60px;
+          font-size: 17px;
+        }
+      }
     }
   }
 }
