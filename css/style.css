@@ -11263,6 +11263,20 @@ ul.children {
   position: relative;
 }
 
+.about-info-card.style-6 .list-item-wrapper {
+  gap: 20px;
+}
+.about-info-card.style-6 .list-item-wrapper .list-item {
+  gap: 10px;
+}
+.about-info-card.style-6 .list-item-wrapper .list-item .text {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #ffffff;
+}
+
 .cta-area.style-3 {
   position: relative;
   z-index: 2;
