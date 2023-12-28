@@ -22,18 +22,30 @@
               
             
                 @include md {
-                    width: 100px;
-                    height: 100px;
+                    width: 70px;
+                    height: 70px;
                 }
                 @include sm {
-                    width: 100px;
-                    height: 100px;
+                    width: 70px;
+                    height: 70px;
                 }
 
                 i {
                     color: $white;
                     font-size: 53px;
                     margin-left: 12px;
+
+                    @include sm {
+                        font-size: 24px;
+                        margin-left: 6px;
+                    }
+                    @include md {
+                        font-size: 24px;
+                        margin-left: 6px;
+                    }
+                        
+
+                    
                 }
 
             }

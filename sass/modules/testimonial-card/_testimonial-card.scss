@@ -8,6 +8,15 @@
   &.style-1 {
     width: 410px;
     gap: 14px;
+
+    @include sm {
+      max-width: 330px;
+      width: 100%;
+    }
+
+    .user-info-wrapper {
+      gap: 22px;
+    }
   }
 
   .user-info-wrapper {

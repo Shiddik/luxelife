@@ -3,11 +3,7 @@
     padding: 80px 125px;
     border-right: 1px solid $white;
 
-    &.first{
-      padding: 80px 125px 80px 0;
-    }
     &.last{
-      padding: 80px 0 80px 125px;
       border: none;
     }
     .content{
@@ -16,6 +12,7 @@
       }
       .title{
         color: $white;
+        white-space: no-wrap;
       }
     }
   }
