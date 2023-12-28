@@ -12373,6 +12373,54 @@ ul.children {
      object-fit: cover;
 }
 
+.service-list-card-wrapper .single-service-item {
+  border-bottom: 1px solid #616670;
+}
+.service-list-card-wrapper .single-service-item .service-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+.service-list-card-wrapper .single-service-item .service-card-content .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+.service-list-card-wrapper .single-service-item .service-card-content .content-wrapper .counter-number {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #23262D;
+  -webkit-text-stroke: 1px #D9A14C;
+}
+.service-list-card-wrapper .single-service-item .service-card-content .content-wrapper .title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.service-list-card-wrapper .single-service-item .service-card-content .icon {
+  font-family: "Font Awesome 6 Pro";
+  font-size: 34px;
+  font-weight: 900;
+  color: #ffffff;
+  justify-items: end;
+}
+
 .latest-gallery-area.style-2 .img-card {
   width: 100%;
   height: 630px;
