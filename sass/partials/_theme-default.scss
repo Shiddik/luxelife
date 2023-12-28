@@ -563,3 +563,9 @@ input.theme-btn {
     --bs-gutter-x: 2rem;
   }
 }
+
+
+// Elementor Default Padding
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+  padding: 0 12px !important;
+}
