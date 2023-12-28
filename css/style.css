@@ -10859,7 +10859,7 @@ ul.children {
   z-index: 10;
 }
 
-.our-team-area {
+.our-team-area.style-1 {
   background-position: bottom left;
   background-repeat: no-repeat;
   position: relative;
@@ -10867,25 +10867,25 @@ ul.children {
   padding: 584px 0 240px;
   margin-top: -463px;
 }
-.our-team-area .team-member-gallery-area .nav-tab {
+.our-team-area.style-1 .team-member-gallery-area .nav-tab {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.our-team-area .team-member-gallery-area .nav-tab li {
+.our-team-area.style-1 .team-member-gallery-area .nav-tab li {
   height: 237px;
   cursor: pointer;
 }
-.our-team-area .team-member-gallery-area .nav-tab li.active {
+.our-team-area.style-1 .team-member-gallery-area .nav-tab li.active {
   border: 5px solid #D9A14C;
   transition: all 0.5s ease-out;
 }
-.our-team-area .team-member-gallery-area .nav-tab li .title {
+.our-team-area.style-1 .team-member-gallery-area .nav-tab li .title {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.our-team-area .team-member-gallery-area .nav-tab li .title img {
+.our-team-area.style-1 .team-member-gallery-area .nav-tab li .title img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -10893,12 +10893,12 @@ ul.children {
   left: 0;
   object-fit: cover;
 }
-.our-team-area .team-member-gallery-area .member-img {
+.our-team-area.style-1 .team-member-gallery-area .member-img {
   height: 237px;
   width: 100%;
   position: relative;
 }
-.our-team-area .team-member-gallery-area .member-img img {
+.our-team-area.style-1 .team-member-gallery-area .member-img img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -10906,33 +10906,33 @@ ul.children {
   left: 0;
   object-fit: cover;
 }
-.our-team-area .skill-progress-area {
+.our-team-area.style-1 .skill-progress-area {
   background-color: #ffffff;
   padding: 40px;
   margin-left: 6px;
   transition: all 0.5s ease-out;
 }
-.our-team-area .skill-progress-area .content {
+.our-team-area.style-1 .skill-progress-area .content {
   margin-bottom: 25px;
 }
-.our-team-area .skill-progress-area .content .name {
+.our-team-area.style-1 .skill-progress-area .content .name {
   font-family: "Rajdhani", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 10px;
 }
-.our-team-area .skill-progress-area .content .designation {
+.our-team-area.style-1 .skill-progress-area .content .designation {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   color: #616670;
 }
-.our-team-area .skill-progress-area .counter-card {
+.our-team-area.style-1 .skill-progress-area .counter-card {
   margin-top: 45px;
 }
-.our-team-area .skill-progress-area .counter-card .content {
+.our-team-area.style-1 .skill-progress-area .counter-card .content {
   flex-direction: row;
   align-items: center;
   margin: 0;
@@ -10940,11 +10940,11 @@ ul.children {
   padding: 16px 20px;
   border: 1px dashed #D9A14C;
 }
-.our-team-area .skill-progress-area .counter-card .content .number {
+.our-team-area.style-1 .skill-progress-area .counter-card .content .number {
   font-size: 48px;
   line-height: 60px;
 }
-.our-team-area .skill-progress-area .counter-card .content .title {
+.our-team-area.style-1 .skill-progress-area .counter-card .content .title {
   font-family: "Rajdhani", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -11029,6 +11029,36 @@ ul.children {
   font-weight: 900;
   color: #ffffff;
   justify-items: end;
+}
+
+.our-team-area.style-2 .team-member-card {
+  background-color: #282828;
+  border: none;
+}
+.our-team-area.style-2 .team-member-card .content .title {
+  color: #ffffff;
+}
+.our-team-area.style-2 .team-member-card .content .desc {
+  color: #ffffff;
+}
+.our-team-area.style-2 .section-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.our-team-area.style-2 .section-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: all 0.5s ease-out;
+}
+.our-team-area.style-2 .section-img img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
 }
 
 .latest-gallery-area.style-2 .img-card {

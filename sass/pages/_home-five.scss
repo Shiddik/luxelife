@@ -44,6 +44,47 @@
     }
 }
 
+// Our Team Members
+.our-team-area{
+    &.style-2{
+        .team-member-card{
+            background-color: #282828;
+            border: none;
+
+            .content{
+                .title{
+                    color: $white;
+                }
+                .desc{
+                    color: $white;
+                }
+            }
+        }
+
+        .section-img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                @include transition;
+
+                &:hover{
+                    transform: scale(1.05);
+                    @include transition;
+                }
+            }
+        }
+    }
+}
+
 // Lastes Gallery
 .latest-gallery-area{
     &.style-2{
