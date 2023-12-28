@@ -7714,6 +7714,29 @@ body.admin-bar .header-menu-area.sticky_menu {
 .post-card.style-1 .post-meta .single-post-meta i {
   color: #ffffff;
 }
+.post-card.style-1 .btn-wrapper .theme-btn {
+  color: #23262D;
+  background-color: #ffffff;
+  border: 1px solid #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-1 .btn-wrapper .theme-btn i {
+  color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-1 .btn-wrapper .theme-btn:hover {
+  color: #ffffff;
+  background-color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.post-card.style-1 .btn-wrapper .theme-btn:hover i {
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 
 .post-card.style-2 {
   -webkit-box-orient: vertical;
@@ -11853,6 +11876,16 @@ ul.children {
   width: 60px;
   height: 60px;
   font-size: 17px;
+  background-color: rgba(217, 161, 76, 0.1);
+  color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-area.style-1 .section-title .slider-nav-btn-wrapper a:hover {
+  background-color: #D9A14C;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .latest-posts-area.style-1 .post_card_slider_wrapper {
@@ -11872,6 +11905,16 @@ ul.children {
   width: 60px;
   height: 60px;
   font-size: 17px;
+  background-color: rgba(217, 161, 76, 0.1);
+  color: #D9A14C;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.latest-posts-area.style-1 .section-title .slider-nav-btn-wrapper a:hover {
+  background-color: #D9A14C;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .post-card-slider-wrapper .slick-arrow {

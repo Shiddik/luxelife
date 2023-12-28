@@ -279,6 +279,15 @@
           width: 60px;
           height: 60px;
           font-size: 17px;
+          background-color: rgba(217, 161, 76, 0.1);
+          color: $primary-color;
+          @include transition;
+
+          &:hover {
+            background-color: $primary-color;
+            color: $white;
+            @include transition;
+          }
         }
       }
     }
@@ -308,6 +317,15 @@
           width: 60px;
           height: 60px;
           font-size: 17px;
+          background-color: rgba(217, 161, 76, 0.1);
+          color: $primary-color;
+          @include transition;
+
+          &:hover {
+            background-color: $primary-color;
+            color: $white;
+            @include transition;
+          }
         }
       }
     }

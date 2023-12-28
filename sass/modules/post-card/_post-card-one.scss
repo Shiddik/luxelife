@@ -196,5 +196,29 @@
         }
       }
     }
+    .btn-wrapper {
+      .theme-btn {
+        color: $black;
+        background-color: $white;
+        border: 1px solid $primary-color;
+        @include transition;
+
+        i {
+          color: $primary-color;
+          @include transition;
+        }
+
+        &:hover {
+          color: $white;
+          background-color: $primary-color;
+          @include transition;
+
+          i {
+            color: $white;
+            @include transition;
+          }
+        }
+      }
+    }
   }
 }
