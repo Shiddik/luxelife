@@ -1,0 +1,16 @@
+.about-info-card{
+    &.style-5{
+        .about-info-content{
+            gap: 50px;
+
+            .section-title{
+                .title{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .btn-wrapper{
+            margin-top: 60px;
+        }
+    }
+}
