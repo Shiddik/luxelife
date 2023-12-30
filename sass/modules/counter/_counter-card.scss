@@ -2,6 +2,7 @@
   &.style-1{
     position: relative;
 
+
     &:last-child {
       .divider {
         display: none;
@@ -39,6 +40,7 @@
 
     .content{
       padding: 80px 126px;
+      width: 100%;
 
       @include xl {
         padding: 50px 80px;
@@ -56,6 +58,7 @@
 
       .number{
         color: $white;
+        width: 100%;
       }
       .title{
         color: $white;
@@ -88,11 +91,15 @@
       flex-shrink: 0;
       display: flex;
       align-items: center;
+      max-width: 116px;
+      width: 100%;
 
       @include lg {
         font-size: 60px;
         line-height: 72px;
       }
+
+     
      
     }
   
