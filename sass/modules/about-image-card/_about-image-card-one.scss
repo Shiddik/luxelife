@@ -1,6 +1,8 @@
 .about-image-card {
     &.style-1 {
 
+     
+
        .main-img-wrapper {
             position: relative;
             margin-right: 30px;
@@ -9,18 +11,33 @@
            position: relative;
            display: flex;
            gap: 24px;
-           margin-left: 15px;
+           z-index: 2;
+
+           img{
+            height: 100%;
+            @include sm {
+              width: 200px;
+            }
+           }
    
            .top-image {
-                position: absolute;
-                top: 36px;
-                right: -12px;
+               margin-top: 36px;
+               flex-shrink: 0;
            }
    
          }
          .review-card-wrapper{
-            margin-top: -200px;
-            margin-left: 54px;
+            position: relative;
+            margin-top: -410px;
+            margin-left: 40px;
+            z-index: 1;
+
+            @include sm {
+              margin-top: -268px;
+              margin-left: 0;
+              text-align: center;
+            }
+          
          }
          .review-card {
             max-width: 516px;
@@ -29,6 +46,11 @@
             background-color: rgba(217, 161, 76, 0.15);
             display: flex;
             align-items: flex-end;
+
+            @include sm {
+              width: 425px;
+              height: 340px;
+            }
    
            .card-text {
                 background-color: $primary-color;
@@ -42,12 +64,24 @@
                 margin-left: 37px;
                 margin-bottom: 26px;
 
+                @include sm {
+                  width: 165px;
+                  height: auto;
+                  margin-left: 35px;
+                  padding: 20px;
+                }
+
              h2 {
                color: $white;
                font-size: 48px;
                font-weight: 700;
                line-height: 60px;
                text-transform: capitalize;
+
+               @include sm {
+                font-size: 38px;
+                line-height: 48px;
+               }
              }
              span {
                color: $white;

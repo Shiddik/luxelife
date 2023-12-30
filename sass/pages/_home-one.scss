@@ -26,7 +26,7 @@
       z-index: 5;
       display: inline-block;
       text-align: left;
-      padding: 200px 80px 191px 131px;
+      padding: 200px 80px 191px 114px;
       @include xs {
         padding: 100px 30px !important;
       }
@@ -106,13 +106,7 @@
             gap: 40px;
           }
     
-          .btn-wrapper {
-            margin-left: -7px;
-
-            @include xs {
-              margin-left: 0 !important;
-            }
-          }
+         
           .trusted-clients-wrapper {
             display: flex;
           }
@@ -168,7 +162,7 @@
     }
     
     .hero-gallery-area{
-      padding: 60px 0 46px 80px;
+      padding: 59px 0 46px 52px;
 
       @include sm {
         padding: 40px;
@@ -299,6 +293,18 @@
   &.style-1 {
     padding-top: 120px;
     padding-bottom: 151px;
+
+    @include md {
+      padding: 100px 0;
+    }
+    @include sm {
+      padding: 80px 0;
+    }
+    .section-title {
+      @include sm {
+        gap: 0;
+      }
+    }
   }
 }
 
@@ -311,9 +317,20 @@
     background-size: contain;
     position: relative;
 
+    @include md {
+      padding: 100px 0;
+    }
+    @include sm {
+      padding: 80px 0;
+    }
+
 
     .section-title{
       margin-bottom: 100px;
+
+      @include sm {
+        margin-bottom: 70px;
+      }
 
       .title {
         margin-bottom: 10px;
@@ -326,13 +343,19 @@
 .portfolio-section{
   &.style-1{
     padding: 127px 0;
+
+    @include md {
+      padding: 100px 0;
+    }
+    @include sm {
+      padding: 80px 0;
+    }
     .section-title{
       margin-bottom: 54px;
-      margin-left: 15px;
 
       .sec-desc {
-        margin-bottom: 3px;
-        margin-right: -6px;
+        margin-bottom: 5px;
+        margin-right: 10px;
       }
     }
   }
@@ -341,27 +364,40 @@
 // Counter Up Area
 .counter-up-area {
   &.style-1 {
-    margin-left: 86px;
-    margin-right: 57px;
+   margin: 0 72px;
     position: relative;
     width: auto;
     margin-top: 2px;
+
+    @include sm {
+      margin: 0 20px;
+    }
 
   }
 }
 .video-popup-area {
   &.style-1 {
-    margin-left: 86px;
-    margin-right: 57px;
+    margin: 0 72px;
+
+    @include sm {
+      margin: 0 20px;
+    }
   }
 }
 
 .testimonial-slider-area {
   &.style-1 {
-    padding-left: 34px;
     display: flex;
     flex-direction: column;
     gap: 100px;
+
+    @include md {
+      padding: 100px 0;
+    }
+    @include sm {
+      padding: 80px 0;
+    }
+  
 
     .section-title {
       margin-top: 8px;
@@ -391,7 +427,12 @@
 // latest-posts-area
 .latest-posts-area{
   &.style-1{
-
+    @include sm {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
     .post_card_slider_wrapper {
       margin-left: 15px;
       margin-top: -4px;
@@ -399,13 +440,7 @@
 
     .section-title{
       margin-bottom: 60px;
-      margin-top: 7px;
-      margin-left: 15px;
-
-      .sec-desc {
-        margin-right: -15px;
-        margin-bottom: 4px;
-      }
+      
       .slider-nav-btn-wrapper {
         a {
           width: 60px;
