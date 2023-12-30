@@ -2,6 +2,7 @@
     &.style-6{
         background-color: #282B33;
         margin: 0;
+        
         &:hover{
             .content{
                 border-bottom: 1px solid #FF9205;
@@ -15,7 +16,9 @@
         .content{
             gap: 20px;
             border: none;
+            border-bottom: 1px solid #282B33;
             @include transition;
+            
             .post-meta{
                 .single-post-meta{
                     i{
