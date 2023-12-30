@@ -85,6 +85,18 @@
 //  }
 //}
 
+//feature area
+.feature-area {
+    &.style-4 {
+        .section-title {
+            margin-bottom: 57px;
+        }
+        .sec-desc {
+            margin-top: 60px;
+        }
+    }
+}
+
 // Testimonial section
 .testimonial-slider-area{
     &.style-3{
