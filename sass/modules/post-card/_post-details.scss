@@ -23,7 +23,34 @@
     //border: 0;
     overflow: visible;
     box-shadow: none;
-
+    .post-title{
+      margin-bottom: 20px;
+    }
+    .post-meta-info{
+      font-family: $heading-font;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+    }
+    .divider{
+      width: 2px;
+      height: 100%;
+      background-color: $primary-color;
+      flex-shrink: 0;
+    }
+    .gallery-image-wrapper{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      .gallery-image{
+        flex-shrink: 0;
+      }
+      .gallery-image-content{
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
     blockquote {
       box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
       @include sm{
@@ -33,6 +60,12 @@
     .single-post-meta {
       margin-bottom: 0;
       gap: 20px;
+      .blog-post-tag{
+        .tag-icon{
+          color: $primary-color;
+          font-size: 20px;
+        }
+      }
     }
     iframe {
       width: 100%;
@@ -77,7 +110,17 @@
     .post-content {
       margin-bottom: 17px;
       /* Unit Test Data Compatibility Start */
-
+      .list-item-wrapper{
+        .list-item{
+          .text{
+            font-family: $heading-font;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            color: $black;
+          }
+        }
+      }
       .wp-block-archives li a,
       .wp-block-tag-cloud a {
         color: $text-color;

@@ -8066,6 +8066,38 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.blog-details-wrapper .single-post-item .post-title {
+  margin-bottom: 20px;
+}
+.blog-details-wrapper .single-post-item .post-meta-info {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.blog-details-wrapper .single-post-item .divider {
+  width: 2px;
+  height: 100%;
+  background-color: #D9A14C;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.blog-details-wrapper .single-post-item .gallery-image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-details-wrapper .single-post-item .gallery-image-wrapper .gallery-image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.blog-details-wrapper .single-post-item .gallery-image-wrapper .gallery-image-content p {
+  margin-bottom: 0;
+}
 .blog-details-wrapper .single-post-item blockquote {
   -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
@@ -8078,6 +8110,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .single-post-item .single-post-meta {
   margin-bottom: 0;
   gap: 20px;
+}
+.blog-details-wrapper .single-post-item .single-post-meta .blog-post-tag .tag-icon {
+  color: #D9A14C;
+  font-size: 20px;
 }
 .blog-details-wrapper .single-post-item iframe {
   width: 100%;
@@ -8126,6 +8162,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 17px;
   /* Unit Test Data Compatibility Start */
   /* Unit Test Data Compatibility End */
+}
+.blog-details-wrapper .single-post-item .post-content .list-item-wrapper .list-item .text {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #23262D;
 }
 .blog-details-wrapper .single-post-item .post-content .wp-block-archives li a,
 .blog-details-wrapper .single-post-item .post-content .wp-block-tag-cloud a {
