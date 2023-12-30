@@ -2,20 +2,25 @@
 
 .post-comments-title {
   .sub-title {
-    font-size: 18px;
-    font-weight: 500;
     font-family: $heading-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     color: $primary-color;
     display: inline-block;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   h2 {
-    font-size: 36px;
-    line-height: 28px;
-    font-weight: 500;
-    color: $secondary-color;
-    margin-bottom: 40px;
+    font-family: $heading-font;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: $black;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 
@@ -23,29 +28,24 @@
       font-size: 28px;
       margin-bottom: 20px;
     }
-    small {
-      font-size: 16px;
-      font-family: $body-font;
-      color: $primary-color;
-    }
+  }
+  .desc{
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; 
+    color: $gray;
+    margin-bottom: 30px;
   }
 }
 .comment-respond {
-  //padding: 50px;
   position: relative;
-
-  //@include sm {
-  //  padding: 30px;
-  //}
-  p {
-    margin: 0;
-  }
 
   .contacts-email,
   .contacts-name,
   .single-input-field,
   .contacts-message {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 
     label {
@@ -58,6 +58,12 @@
       color: $black;
       padding: 0 10px;
     }
+  }
+  .theme-btn{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   //label {
   //  display: block;
@@ -99,17 +105,16 @@
   }
   input,
   select {
-    padding: 0 27px;
-    height: 70px;
+    padding: 0 20px;
+    height: 60px;
     width: 100%;
-    color: #616161;
+    color: $gray;
     opacity: 1;
     border: 1px solid $gray-200 !important;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     background-color: $white;
-    border-radius: 5px;
     font-family: $body-font !important;
   }
   input[type="submit"] {
@@ -141,19 +146,21 @@
     color: $gray-800;
   }
 
-
+  .contacts-message{
+    margin-bottom: 10px;
+  }
   textarea {
     resize: vertical;
-    padding: 27px;
+    padding: 20px;
     width: 100%;
-    color: #616161;
+    color: $gray;
     border: 1px solid $gray-200 !important;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     background-color: $white;
     font-family: $body-font !important;
-    height: 200px;
+    height: 150px;
     border-radius: 5px;
     margin-bottom: 0;
   }
