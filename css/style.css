@@ -6101,6 +6101,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #23262D;
   align-items: start;
   gap: 50px;
+  width: 630px;
+  margin: 0 15px;
 }
 .testimonial-card.style-5 .user-info-wrapper {
   flex-direction: row;
@@ -11460,6 +11462,38 @@ ul.children {
   font-weight: 700;
   line-height: 27px;
   color: #ffffff;
+}
+
+.cta-area.style-6 {
+  padding: 206px 0;
+  margin: 0 100px;
+}
+.cta-area.style-6 .cta-overlay {
+  background: none;
+}
+
+.portfolio-section.style-1 .section-title .sec-desc .desc {
+  width: 625px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.testimonial-slider-area.style-6 {
+  background-color: #282B33;
+  padding-bottom: 190px;
+  position: relative;
+  z-index: 5;
+}
+
+.counter-up-area.style-6 {
+  margin-top: -90px;
+}
+.counter-up-area.style-6 .counter-card {
+  position: relative;
+  z-index: 10;
 }
 
 .cta-area.style-3 {
