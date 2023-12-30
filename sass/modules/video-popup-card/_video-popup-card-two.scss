@@ -11,6 +11,14 @@
             background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.51) 100%);
         }
 
+        .video-popup-image {
+            img {
+                @include xs {
+                    height: 200px;
+                }
+            }
+        }
+
         .video-popup-btn {
             border-radius: 50%;
             padding: 11px;

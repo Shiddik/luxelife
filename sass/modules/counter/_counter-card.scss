@@ -1,12 +1,59 @@
 .counter-card {
   &.style-1{
-    padding: 80px 125px;
-    border-right: 1px solid $white;
+    position: relative;
 
-    &.last{
-      border: none;
+    &:last-child {
+      .divider {
+        display: none;
+      }
     }
+    @include md {
+      &:nth-child(2) {
+        .divider {
+            display: none;
+        }
+      }
+    }
+    @include sm {
+      &:nth-child(2) {
+        .divider {
+            display: none;
+        }
+      }
+    }
+    @include xs {
+      &:nth-child(2) {
+        .divider {
+            display: initial !important;
+        }
+      }
+      .divider {
+        top: unset !important;
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        height: 1px !important;
+      }
+    }
+   
+
     .content{
+      padding: 80px 126px;
+
+      @include xl {
+        padding: 50px 80px;
+      }
+      @include lg {
+        padding: 50px 50px;
+      }
+      @include md {
+        padding: 44px 44px;
+      }
+      @include sm {
+        padding: 44px 44px;
+      }
+
+
       .number{
         color: $white;
       }
@@ -14,6 +61,14 @@
         color: $white;
         white-space: no-wrap;
       }
+    }
+    .divider {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      background-color: $white;
     }
   }
 
@@ -33,6 +88,12 @@
       flex-shrink: 0;
       display: flex;
       align-items: center;
+
+      @include lg {
+        font-size: 60px;
+        line-height: 72px;
+      }
+     
     }
   
     .title {
