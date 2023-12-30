@@ -1,0 +1,18 @@
+// About Us
+.about-info-card{
+    &.style-6{
+        .list-item-wrapper{
+            gap: 20px;
+            .list-item{
+                gap: 10px;
+                .text{
+                    font-family: $heading-font;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
