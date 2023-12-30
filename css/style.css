@@ -11858,6 +11858,20 @@ ul.children {
     margin-top: 50px;
   }
 }
+.contact-form-area.style-2 .post-comments-title h2,
+.contact-form-area.style-2 .post-comments-title .desc {
+  color: #ffffff;
+}
+.contact-form-area.style-2 .comment-respond input,
+.contact-form-area.style-2 .comment-respond select,
+.contact-form-area.style-2 .comment-respond textarea {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #616670 !important;
+}
+.contact-form-area.style-2 .comment-respond *::placeholder {
+  color: #ffffff;
+}
 
 .contact-map-area {
   padding-bottom: 120px;

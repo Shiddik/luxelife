@@ -32,6 +32,26 @@
       margin-top: 50px;
     }
   }
+  &.style-2{
+    .post-comments-title{
+      h2,
+      .desc{
+        color: $white;
+      }
+    }
+    .comment-respond {
+      input, 
+      select,
+      textarea{
+        background-color: transparent;
+        color: $white;
+        border-color: $gray !important;
+      }
+      *::placeholder {
+        color: $white;
+      }
+    }
+  }
 }
 // Contact Form Map
 .contact-map-area {
