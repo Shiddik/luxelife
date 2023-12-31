@@ -9769,6 +9769,11 @@ ul.children {
     margin-bottom: 20px;
   }
 }
+.post-comments-title h2 small {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #D9A14C;
+}
 .post-comments-title .desc {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
