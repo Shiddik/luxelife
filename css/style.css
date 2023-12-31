@@ -11087,20 +11087,25 @@ ul.children {
 
 /*Comment Input Filed*/
 .post-comments-title .sub-title {
-  font-size: 18px;
-  font-weight: 500;
   font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
   color: #D9A14C;
   display: inline-block;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .post-comments-title h2 {
-  font-size: 36px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #26262c;
-  margin-bottom: 40px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #23262D;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11114,23 +11119,23 @@ ul.children {
     margin-bottom: 20px;
   }
 }
-.post-comments-title h2 small {
-  font-size: 16px;
+.post-comments-title .desc {
   font-family: "Rubik", sans-serif;
-  color: #D9A14C;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+  margin-bottom: 30px;
 }
 
 .comment-respond {
   position: relative;
 }
-.comment-respond p {
-  margin: 0;
-}
 .comment-respond .contacts-email,
 .comment-respond .contacts-name,
 .comment-respond .single-input-field,
 .comment-respond .contacts-message {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
 }
 .comment-respond .contacts-email label,
@@ -11146,6 +11151,18 @@ ul.children {
   font-size: 18px;
   color: #23262D;
   padding: 0 10px;
+}
+.comment-respond .theme-btn {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .comment-respond .checkbox-field-wrapper {
   display: -webkit-box;
@@ -11186,17 +11203,16 @@ ul.children {
 }
 .comment-respond input,
 .comment-respond select {
-  padding: 0 27px;
-  height: 70px;
+  padding: 0 20px;
+  height: 60px;
   width: 100%;
-  color: #616161;
+  color: #616670;
   opacity: 1;
   border: 1px solid #E3E3E3 !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   background-color: #ffffff;
-  border-radius: 5px;
   font-family: "Rubik", sans-serif !important;
 }
 .comment-respond input[type=submit] {
@@ -11223,18 +11239,21 @@ ul.children {
 .comment-respond *::placeholder {
   color: #616670;
 }
+.comment-respond .contacts-message {
+  margin-bottom: 10px;
+}
 .comment-respond textarea {
   resize: vertical;
-  padding: 27px;
+  padding: 20px;
   width: 100%;
-  color: #616161;
+  color: #616670;
   border: 1px solid #E3E3E3 !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   background-color: #ffffff;
   font-family: "Rubik", sans-serif !important;
-  height: 200px;
+  height: 150px;
   border-radius: 5px;
   margin-bottom: 0;
 }
@@ -13497,6 +13516,7 @@ ul.children {
 
 .contact-form-area {
   padding: 120px 0;
+  position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .contact-form-area {
@@ -13507,6 +13527,16 @@ ul.children {
   .contact-form-area {
     padding: 100px 0;
   }
+}
+.contact-form-area .shape-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.contact-form-area .shape-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .contact-form-area .contact-info-area {
   display: -webkit-box;
@@ -13520,7 +13550,7 @@ ul.children {
 }
 .contact-form-area .comment-respond {
   padding: 0;
-  margin-top: -15px;
+  margin-top: 0px;
   border: 0;
 }
 @media (max-width: 991px) {
@@ -13528,27 +13558,43 @@ ul.children {
     margin-top: 50px;
   }
 }
-.contact-form-area .comment-respond .post-comments-title {
-  margin-bottom: 86px;
-}
-.contact-form-area .comment-respond .post-comments-title h2 {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: initial;
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contact-form-area .comment-respond .post-comments-title h2 {
-    font-size: 28px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-area .image-wrapper {
+    height: 100%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-form-area .comment-respond .post-comments-title h2 {
-    font-size: 32px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-area .image-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
   }
+}
+.contact-form-area.style-2 .post-comments-title h2,
+.contact-form-area.style-2 .post-comments-title .desc {
+  color: #ffffff;
+}
+.contact-form-area.style-2 .comment-respond input,
+.contact-form-area.style-2 .comment-respond select,
+.contact-form-area.style-2 .comment-respond textarea {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #616670 !important;
+}
+.contact-form-area.style-2 .comment-respond *::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contact-form-area.style-2 .comment-respond *::-moz-placeholder {
+  color: #ffffff;
+}
+.contact-form-area.style-2 .comment-respond *:-ms-input-placeholder {
+  color: #ffffff;
+}
+.contact-form-area.style-2 .comment-respond *::-ms-input-placeholder {
+  color: #ffffff;
+}
+.contact-form-area.style-2 .comment-respond *::placeholder {
+  color: #ffffff;
 }
 
 .contact-map-area {
