@@ -8889,7 +8889,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   height: 100%;
   background-color: rgba(35, 38, 45, 0.8);
-  z-index: -1;
 }
 .cta-area .cta-wrapper {
   display: -webkit-box;
@@ -13484,7 +13483,7 @@ ul.children {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 53, 0.71);
+  background-color: rgba(35, 38, 45, 0.86);
   top: 0;
   left: 0;
   z-index: -1;
@@ -13602,7 +13601,7 @@ ul.children {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 53, 0.71);
+  background-color: rgba(35, 38, 45, 0.86);
   top: 0;
   left: 0;
   z-index: -1;
