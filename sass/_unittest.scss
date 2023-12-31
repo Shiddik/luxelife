@@ -342,6 +342,12 @@ blockquote {
   border-top: 2px solid $primary-color !important;
   border-bottom: 2px solid $primary-color !important;
   background-color: #eef5f8;
+  &.is-style-solid-color{
+    background-color: $gray-100;
+    &.blockquote{
+      background-color: $white;
+    }
+  }
 }
 .wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
   margin-top: 10px;

@@ -2512,6 +2512,12 @@ blockquote footer {
   border-bottom: 2px solid #D9A14C !important;
   background-color: #eef5f8;
 }
+.wp-block-pullquote.is-style-solid-color {
+  background-color: #F4F4F4;
+}
+.wp-block-pullquote.is-style-solid-color.blockquote {
+  background-color: #ffffff;
+}
 
 .wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
   margin-top: 10px;
