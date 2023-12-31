@@ -7349,6 +7349,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .single-post-item .blog-post-tag .social-share {
   padding-bottom: 20px;
 }
+.blog-details-wrapper .single-post-item.post-1786 .post-meta-info {
+  margin-bottom: 20px;
+}
 .blog-details-wrapper .wp-block-calendar {
   margin-bottom: 30px;
 }
