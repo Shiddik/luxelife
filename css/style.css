@@ -8113,6 +8113,7 @@ body.single-post .page-heading .page-title {
   display: inline-flex;
   gap: 0 12px;
   align-items: center;
+  color: #fff;
 }
 .breadcrumb-list ul li.active {
   color: #D9A14C;
