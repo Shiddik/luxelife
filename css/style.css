@@ -11858,6 +11858,17 @@ ul.children {
     margin-top: 50px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-area .image-wrapper {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-area .image-wrapper img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
 .contact-form-area.style-2 .post-comments-title h2,
 .contact-form-area.style-2 .post-comments-title .desc {
   color: #ffffff;

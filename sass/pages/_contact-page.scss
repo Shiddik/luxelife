@@ -32,6 +32,17 @@
       margin-top: 50px;
     }
   }
+  .image-wrapper{
+    @include lg{
+      height: 100%;
+    }
+    img{
+      @include lg{
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
   &.style-2{
     .post-comments-title{
       h2,
