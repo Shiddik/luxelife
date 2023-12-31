@@ -4582,9 +4582,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .slider-area.style-2 {
   padding: 0;
+  margin-top: -120px;
+  z-index: -1;
 }
 .slider-area.style-2 .single-slider {
-  padding-top: 150px;
+  padding-top: 216px;
   padding-bottom: 150px;
 }
 .slider-area.style-2 .slider-bg {
@@ -4597,6 +4599,17 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
+}
+.slider-area.style-2 .slider-content-wrapper {
+  margin-top: 0;
+}
+.slider-area.style-2 .slider-content-wrapper .slider-content .slider-title {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.slider-area.style-2 .slider-content-wrapper .slider-content .slider-short-desc {
+  margin-bottom: 50px;
 }
 
 .info-card-wrapper {
@@ -4847,12 +4860,16 @@ body.admin-bar .header-menu-area.sticky_menu {
 .info-card.style-4 .title-wrapper {
   padding-bottom: 20px;
 }
+.info-card.style-4 .content {
+  gap: 40px;
+}
 .info-card.style-4 .content .read-more {
   display: flex;
-  justify-content: space-between;
+  gap: 96px;
   align-items: center;
 }
 .info-card.style-4 .content .read-more a {
+  white-space: nowrap;
   padding: 20px 30px;
   background-color: #ffffff;
   box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
@@ -5685,6 +5702,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .counter-card.style-1 .content {
   padding: 80px 126px;
+  width: 100%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .counter-card.style-1 .content {
@@ -5708,6 +5726,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .counter-card.style-1 .content .number {
   color: #ffffff;
+  width: 100%;
 }
 .counter-card.style-1 .content .title {
   color: #ffffff;
@@ -5737,6 +5756,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  max-width: 116px;
+  width: 100%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .counter-card .content .number {
@@ -6159,6 +6180,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #23262D;
   align-items: start;
   gap: 50px;
+  width: 630px;
+  margin: 0 15px;
 }
 .testimonial-card.style-5 .user-info-wrapper {
   flex-direction: row;
@@ -7137,6 +7160,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .post-card.style-6 .content {
   gap: 20px;
   border: none;
+  border-bottom: 1px solid #282B33;
   transition: all 0.5s ease-out;
 }
 .post-card.style-6 .content .post-meta .single-post-meta i {
@@ -11291,6 +11315,13 @@ ul.children {
   margin: 0;
 }
 
+.feature-area.style-4 .section-title {
+  margin-bottom: 57px;
+}
+.feature-area.style-4 .sec-desc {
+  margin-top: 60px;
+}
+
 .testimonial-slider-area.style-3 {
   background-repeat: no-repeat;
   background-position: center center;
@@ -11591,6 +11622,72 @@ ul.children {
   font-weight: 700;
   line-height: 27px;
   color: #ffffff;
+}
+
+.cta-area.style-6 {
+  padding: 206px 0;
+  margin: 0 100px;
+}
+.cta-area.style-6 .cta-overlay {
+  background: none;
+}
+
+.feature-area.style-6 .info-card.style-2 {
+  border: none;
+  border-bottom: 1px solid #282B33;
+  background-color: #282B33;
+  transition: all 0.5s ease-out;
+}
+.feature-area.style-6 .info-card.style-2:hover {
+  border-bottom: 1px solid #FF9205;
+  transition: all 0.5s ease-out;
+}
+.feature-area.style-6 .info-card.style-2 .icon-wrapper {
+  justify-content: start;
+  gap: 20px;
+}
+.feature-area.style-6 .info-card.style-2 .icon-wrapper .title {
+  color: #ffffff;
+}
+.feature-area.style-6 .info-card.style-2 .content {
+  gap: 40px;
+}
+.feature-area.style-6 .info-card.style-2 .content .desc {
+  color: #ffffff;
+}
+.feature-area.style-6 .info-card.style-2 .content .read-more a {
+  color: #ffffff;
+}
+.feature-area.style-6 .info-card.style-2 .content .read-more a i {
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  font-weight: 900;
+  color: #FF9205;
+  margin-left: 12px;
+}
+
+.portfolio-section.style-1 .section-title .sec-desc .desc {
+  width: 625px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.testimonial-slider-area.style-6 {
+  background-color: #282B33;
+  padding-bottom: 190px;
+  position: relative;
+  z-index: 5;
+}
+
+.counter-up-area.style-6 {
+  margin-top: -90px;
+}
+.counter-up-area.style-6 .counter-card {
+  position: relative;
+  z-index: 10;
 }
 
 .cta-area.style-3 {

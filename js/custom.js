@@ -411,6 +411,45 @@
             ],
         });
 
+
+        /*
+        Testimonial Slider
+        ============================*/
+        $("#testimonial_style_five").slick({
+            slidesToShow: 2,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            variableWidth: true,
+            // centerMode: true,
+            rtl: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+
         /*
         Project Card Slider
         ============================*/
