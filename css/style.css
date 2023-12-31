@@ -7351,6 +7351,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .blog-details-wrapper .single-post-item.post-1786 .post-meta-info {
   margin-bottom: 20px;
+  display: block;
 }
 .blog-details-wrapper .wp-block-calendar {
   margin-bottom: 30px;
