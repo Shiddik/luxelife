@@ -7363,6 +7363,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .single-post-item.post-1778 .post-content-wrapper p {
   line-height: normal;
 }
+.blog-details-wrapper .single-post-item.post-1782 .post-content-wrapper {
+  padding-top: 0;
+}
 .blog-details-wrapper .wp-block-calendar {
   margin-bottom: 30px;
 }
