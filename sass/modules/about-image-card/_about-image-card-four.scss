@@ -2,10 +2,11 @@
     &.style-4 {
         .main-img-wrapper {
             position: relative;
+            margin-left: 122px;
 
             .img-shape {
                 position: absolute;
-                right: 0;
+                right: -112px;
                 bottom: -30px;
                 flex-shrink: 0;
                 z-index: 1;
@@ -15,7 +16,7 @@
         .main-img-inner {
             display: flex;
             justify-content: flex-end;
-            margin-right: 50px;
+            margin-right: -62px;
             position: relative;
             z-index: 2;
         }
@@ -43,8 +44,9 @@
 
                 .icon-wrapper {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     gap: 10px;
+                    margin-left: 8px;
 
                     .icon {
                         background-color: $primary-color;
