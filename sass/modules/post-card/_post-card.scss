@@ -197,7 +197,6 @@
     padding-top: 15px;
     margin-top: 0;
     margin-bottom: 20px;
-    flex-direction: column;
     width: 100%;
   }
   // Social Share
@@ -230,7 +229,6 @@
   }
   // Post Tags
   .blog-post-tag {
-    width: 100%;
     display: inline-block;
 
     span {
@@ -242,8 +240,8 @@
       margin-bottom: 0;
       margin-right: 30px;
       text-transform: uppercase;
-      margin-top: 8px;
       float: left;
+      line-height: 24px;
     }
     .post-tag-list {
       display: flex;
@@ -256,15 +254,10 @@
         display: inline-block;
         font-size: 18px;
         line-height: 1;
-        padding: 13px 21px;
-        border-radius: 6px;
         @include transition;
-        border: 1px solid $gray-300;
 
         &:hover {
-          color: $white;
-          background: $primary-color;
-          border-color: $primary-color;
+          color: $primary-color;
           @include transition;
         }
       }

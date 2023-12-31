@@ -16,3 +16,99 @@
         }
     }
 }
+
+// cta-area
+.cta-area{
+    &.style-6{
+        padding: 206px 0;
+        margin: 0 100px;
+        .cta-overlay{
+            background: none;
+        }
+    }
+}
+
+// Feature Area
+.feature-area{
+    &.style-6{
+        .info-card{
+            &.style-2{
+                border: none;
+                border-bottom: 1px solid #282B33;
+                background-color: #282B33;
+                @include transition;
+
+                &:hover{
+                    border-bottom: 1px solid #FF9205;
+                    @include transition;
+                }
+
+                .icon-wrapper{
+                    justify-content: start;
+                    gap: 20px;
+                    .title{
+                        color: $white;
+                    }
+                }
+
+                .content{
+                    gap: 40px;
+                    .desc{
+                        color: $white;
+                    }
+                    .read-more{
+                        a{
+                            color: $white;
+                            i{
+                                font-family: $font-awesome;
+                                font-size: 16px;
+                                font-weight: 900;
+                                color: #FF9205;
+                                margin-left: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// portfolio-section
+.portfolio-section{
+    &.style-1{
+        .section-title{
+            .sec-desc{
+                .desc{
+                    width: 625px;
+                    font-size: 16px;
+                    font-family: $body-font;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// Testimonial Slider Area
+.testimonial-slider-area{
+    &.style-6{
+        background-color: #282B33;
+        padding-bottom: 190px;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+// counter-up-area
+.counter-up-area{
+    &.style-6{
+        margin-top: -90px;
+        .counter-card{
+            position: relative;
+            z-index: 10;
+        }
+    }
+}
