@@ -343,8 +343,8 @@ blockquote {
   border-bottom: 2px solid $primary-color !important;
   background-color: #eef5f8;
   &.is-style-solid-color{
-    background-color: $gray-100;
-    &.blockquote{
+    background-color: $gray-100 !important;
+    .blockquote{
       background-color: $white;
     }
   }

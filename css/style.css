@@ -2513,9 +2513,9 @@ blockquote footer {
   background-color: #eef5f8;
 }
 .wp-block-pullquote.is-style-solid-color {
-  background-color: #F4F4F4;
+  background-color: #F4F4F4 !important;
 }
-.wp-block-pullquote.is-style-solid-color.blockquote {
+.wp-block-pullquote.is-style-solid-color .blockquote {
   background-color: #ffffff;
 }
 
