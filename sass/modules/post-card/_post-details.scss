@@ -106,7 +106,9 @@
       overflow: hidden;
       //margin-bottom: 45px;
       position: relative;
-
+      .post-content-wrapper {
+        padding: 40px 0 0 0;
+      }
       &:hover {
         img {
           transform: scale(1.06);
@@ -118,9 +120,6 @@
         transform: scale(1);
         @include transition;
       }
-    }
-    .post-content-wrapper {
-      padding: 40px 0 0 0;
     }
     .post-content {
       margin-bottom: 17px;

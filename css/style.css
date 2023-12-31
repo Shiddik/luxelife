@@ -7288,6 +7288,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   position: relative;
 }
+.blog-details-wrapper .single-post-item .post-thumbnail .post-content-wrapper,
+.blog-details-wrapper .single-post-item .post-video .post-content-wrapper,
+.blog-details-wrapper .single-post-item .post-gallery .post-content-wrapper,
+.blog-details-wrapper .single-post-item .postbox-audio .post-content-wrapper,
+.blog-details-wrapper .single-post-item .wp-block-post-featured-image .post-content-wrapper {
+  padding: 40px 0 0 0;
+}
 .blog-details-wrapper .single-post-item .post-thumbnail:hover img,
 .blog-details-wrapper .single-post-item .post-video:hover img,
 .blog-details-wrapper .single-post-item .post-gallery:hover img,
@@ -7303,9 +7310,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-details-wrapper .single-post-item .wp-block-post-featured-image img {
   transform: scale(1);
   transition: all 0.5s ease-out;
-}
-.blog-details-wrapper .single-post-item .post-content-wrapper {
-  padding: 40px 0 0 0;
 }
 .blog-details-wrapper .single-post-item .post-content {
   margin-bottom: 17px;
