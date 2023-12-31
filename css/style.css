@@ -2510,7 +2510,7 @@ blockquote footer {
 .wp-block-pullquote {
   border-top: 2px solid #D9A14C !important;
   border-bottom: 2px solid #D9A14C !important;
-  background-color: #eef5f8;
+  background-color: #f4f4f4;
 }
 .wp-block-pullquote.is-style-solid-color {
   background-color: #F4F4F4 !important;
@@ -7248,6 +7248,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .blog-details-wrapper .single-post-item blockquote {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-details-wrapper .single-post-item blockquote {
