@@ -190,6 +190,13 @@
         display: block;
       }
     }
+    &.post-1778{
+      .post-content-wrapper{
+        p{
+          line-height: normal;
+        }
+      }
+    }
   }
   .wp-block-calendar {
     margin-bottom: 30px;
