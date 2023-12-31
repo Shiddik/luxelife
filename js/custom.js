@@ -835,7 +835,15 @@
             });
         });
 
-
+        // Share btn click action
+        $('.social-btn').on('click', 'li', function () {
+            $("li").removeClass("active");
+            $(this).addClass("active");
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
         /*
         Window Load
         ============================*/
