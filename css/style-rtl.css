@@ -11152,18 +11152,6 @@ ul.children {
   color: #23262D;
   padding: 0 10px;
 }
-.comment-respond .theme-btn {
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .comment-respond .checkbox-field-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13557,6 +13545,18 @@ ul.children {
   .contact-form-area .comment-respond {
     margin-top: 50px;
   }
+}
+.contact-form-area .comment-respond .theme-btn {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact-form-area .image-wrapper {
