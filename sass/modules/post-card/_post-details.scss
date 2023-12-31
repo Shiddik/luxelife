@@ -37,13 +37,23 @@
       height: 100%;
       background-color: $primary-color;
       flex-shrink: 0;
+      @include sm{
+        width: 100%;
+        height: 2px;
+      }
     }
     .gallery-image-wrapper{
       display: flex;
       gap: 30px;
       align-items: center;
+      @include sm{
+        flex-direction: column;
+      }
       .gallery-image{
         flex-shrink: 0;
+        @include sm{
+          margin-bottom: 0;
+        }
       }
       .gallery-image-content{
         p{
@@ -61,6 +71,9 @@
       margin-bottom: 0;
       gap: 20px;
       justify-content: space-between;
+      @include sm{
+        flex-direction: column;
+      }
       .blog-post-tag{
         .tag-icon{
           color: $primary-color;
@@ -160,7 +173,7 @@
         }
       }
       .gallery-image{
-        @include rmaxwd(1199){
+        @media only screen and (min-width: 768px) and (max-width: 1199px){
           margin-bottom: 30px;
         }
       }
