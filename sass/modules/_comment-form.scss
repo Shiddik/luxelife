@@ -54,14 +54,10 @@
     position: relative;
 
     label {
-      position: absolute;
-      top: 0;
-      left: 20px;
-      transform: translateY(-50%);
-      background: $white;
       font-size: 18px;
       color: $black;
       padding: 0 10px;
+      margin-bottom: 8px;
     }
   }
   //label {

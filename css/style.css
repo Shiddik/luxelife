@@ -9897,14 +9897,10 @@ ul.children {
 .comment-respond .contacts-name label,
 .comment-respond .single-input-field label,
 .comment-respond .contacts-message label {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  transform: translateY(-50%);
-  background: #ffffff;
   font-size: 18px;
   color: #23262D;
   padding: 0 10px;
+  margin-bottom: 8px;
 }
 .comment-respond .checkbox-field-wrapper {
   display: flex;
