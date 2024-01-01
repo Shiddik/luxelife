@@ -12036,9 +12036,27 @@ ul.children {
   right: 0;
 }
 .contact-form-area .contact-info-area {
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 46px 56px;
+}
+.contact-form-area .contact-info-area .contact-card {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+}
+.contact-form-area .contact-info-area .contact-card .icon {
+  margin-top: 8px;
+}
+.contact-form-area .contact-info-area .contact-card .icon i {
+  font-size: 24px;
+  color: #D9A14C;
+}
+.contact-form-area .contact-info-area .contact-card .desc {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #616670;
+  font-family: "Rubik", sans-serif;
 }
 .contact-form-area .comment-respond {
   padding: 0;
@@ -12067,6 +12085,13 @@ ul.children {
     height: 100%;
   }
 }
+.contact-form-area .map-widget {
+  padding-left: 20px;
+  height: 100%;
+}
+.contact-form-area .map-widget iframe {
+  height: 100%;
+}
 .contact-form-area.style-2 .post-comments-title h2,
 .contact-form-area.style-2 .post-comments-title .desc {
   color: #ffffff;
@@ -12081,32 +12106,21 @@ ul.children {
 .contact-form-area.style-2 .comment-respond *::placeholder {
   color: #ffffff;
 }
-
-.contact-map-area {
-  padding-bottom: 120px;
+.contact-form-area.style-3 {
+  padding-bottom: 0;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contact-map-area {
-    padding-bottom: 80px;
-  }
+.contact-form-area.style-3 .contact-form-inner {
+  background-color: #F4F4F4;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-map-area {
-    padding-bottom: 100px;
-  }
+.contact-form-area.style-3 .comment-respond {
+  padding: 60px;
+  padding-right: 0;
 }
-.contact-map-area .map-widget {
-  margin-bottom: -10px;
+.contact-form-area.style-3 .comment-respond .theme-btn {
+  width: auto;
 }
-.contact-map-area .map-widget iframe {
-  width: 100%;
-  height: 470px;
-  border-radius: 12px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contact-map-area .map-widget iframe {
-    height: 350px;
-  }
+.contact-form-area.style-3 .map-widget iframe {
+  border-radius: 0;
 }
 
 .process-step-area.style-1 {
