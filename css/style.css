@@ -6350,8 +6350,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   align-items: center;
   gap: 25px;
-  border-top: 1px solid rgba(34, 34, 34, 0.15);
-  padding: 15px 0;
+  border-top: 1px solid #E3E3E3;
+  padding: 30px 0;
   position: relative;
 }
 .accordion-wrapper .accordion-list-item .accordion-head:before {
@@ -6382,22 +6382,25 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 500;
 }
 .accordion-wrapper .accordion-list-item .accordion-head .accordion-title {
-  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 30px;
   color: #23262D;
-  font-weight: 600;
   margin-bottom: 0;
 }
-.accordion-wrapper .accordion-list-item:last-child {
-  border-bottom: 1px solid rgba(34, 34, 34, 0.15);
+.accordion-wrapper .accordion-list-item:first-child .accordion-head {
+  border-top: transparent;
 }
 .accordion-wrapper .accordion-list-item .accordion-item-body {
   padding-bottom: 15px;
+  background-color: #ffffff;
+  padding: 30px;
   transition: all 0.5s ease-out;
 }
 .accordion-wrapper .accordion-list-item .accordion-item-body p {
   font-size: 16px;
-  color: #23262D;
+  color: #616670;
   font-weight: 400;
   line-height: 29px;
   margin: 0;
@@ -12111,6 +12114,30 @@ ul.children {
 }
 .apartment-details p:last-child {
   margin-bottom: 0;
+}
+
+.faq-area .section-title {
+  margin-bottom: 0;
+}
+.faq-area .search-form {
+  border: 1px solid #E3E3E3;
+  margin-top: 30px;
+}
+.faq-area .search-form input {
+  height: 50px;
+}
+.faq-area .search-form button {
+  background-color: transparent;
+}
+.faq-area .search-form button i {
+  color: #616670;
+}
+.faq-area .accordion-wrapper {
+  margin-top: 57px;
+  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F4F4F4;
 }
 
 .cta-area.style-3 {
