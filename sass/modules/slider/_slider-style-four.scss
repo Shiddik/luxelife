@@ -1,0 +1,26 @@
+.slider-area{
+    &.style-4{
+        margin: 0;
+        padding: 150px 0;
+        background-color: $gray-700;
+
+        .single-slider-wrapper{
+            .single-slider{
+                .slider-bg{
+                    background-color: $gray-700;
+                }
+            }
+            .slider-content{
+                .slider-short-title{
+                    color: $primary-color;
+                }
+                .slider-title{
+                    margin-bottom: 20px;
+                }
+                .slider-short-desc{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

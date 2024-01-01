@@ -4618,6 +4618,24 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 50px;
 }
 
+.slider-area.style-4 {
+  margin: 0;
+  padding: 150px 0;
+  background-color: #2C2C2C;
+}
+.slider-area.style-4 .single-slider-wrapper .single-slider .slider-bg {
+  background-color: #2C2C2C;
+}
+.slider-area.style-4 .single-slider-wrapper .slider-content .slider-short-title {
+  color: #D9A14C;
+}
+.slider-area.style-4 .single-slider-wrapper .slider-content .slider-title {
+  margin-bottom: 20px;
+}
+.slider-area.style-4 .single-slider-wrapper .slider-content .slider-short-desc {
+  margin-bottom: 20px;
+}
+
 .info-card-wrapper {
   position: relative;
 }
@@ -10597,7 +10615,6 @@ ul.children {
   top: 0;
   left: 0;
   object-fit: cover;
-  filter: brightness(70%);
   border-radius: 5px;
 }
 .project-card.style-3 .main-content {
@@ -10610,6 +10627,7 @@ ul.children {
   flex-direction: column;
   align-items: start;
   background-image: linear-gradient(180deg, #23262D 0%, rgba(35, 38, 45, 0) 100%);
+  overflow: hidden;
 }
 .project-card.style-3 .main-content .main-content-wrapper:hover .title {
   color: #D9A14C;
@@ -13133,4 +13151,4 @@ ul.children {
 }
 .footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .single-field input {
   height: 60px;
-}/*# sourceMappingURL=style.css.map */
+}
