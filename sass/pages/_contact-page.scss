@@ -65,10 +65,11 @@
     }
   }
   .image-wrapper{
+    height: 100%;
     @include lg{
-      height: 100%;
     }
     img{
+      height: 100%;
       @include lg{
         object-fit: cover;
         height: 100%;

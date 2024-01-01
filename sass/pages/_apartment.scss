@@ -1,6 +1,31 @@
 .book-appointment-area{
     .comment-respond{
         margin-top: 0;
+        .theme-btn{
+            margin-top: 10px;
+        }
+        .contacts-message{
+            margin-bottom: 25px;
+        }
+    }
+    h5{
+        margin-bottom: 10px;
+    }
+    .single-checkbox{
+        margin-bottom: 30px;
+    }
+    .form-check{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+        input{
+            background-image: none !important;
+            border-radius: 50px !important;
+            &:before{
+                border-radius: 50px;
+            }
+        }
     }
 }
 .apartment-details{
