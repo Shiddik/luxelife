@@ -112,3 +112,14 @@
         }
     }
 }
+
+// Project Area
+.project-area{
+    &.style-3{
+        .project-card-slider{
+            .row{
+                margin: 0 80px;
+            }
+        }
+    }
+}
