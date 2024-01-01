@@ -1,14 +1,18 @@
 .slider-area{
     &.style-4{
         margin: 0;
-        padding: 150px 0;
+        padding: 180px 0;
         background-color: $gray-700;
 
         .single-slider-wrapper{
+            margin: 0;
             .single-slider{
                 .slider-bg{
-                    background-color: $gray-700;
+                    background: none;
                 }
+            }
+            .slider-content-wrapper{
+                margin: 0;
             }
             .slider-content{
                 .slider-short-title{
@@ -19,6 +23,9 @@
                 }
                 .slider-short-desc{
                     margin-bottom: 20px;
+                }
+                .slider-btn-wrapper{
+                    margin: 0;
                 }
             }
         }
