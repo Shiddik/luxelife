@@ -107,10 +107,10 @@ body {
       align-items: center;
       color: #fff;
       &.active {
-        color: $primary-color;
+        // color: $primary-color;
 
         a {
-          color: $primary-color;
+          // color: $primary-color;
         }
       }
       a {
