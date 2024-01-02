@@ -13401,6 +13401,12 @@ ul.children {
 .footer.style-2 .footer-widget-title {
   color: rgba(255, 255, 255, 0.7019607843);
 }
+.footer.style-2 .footer-widget-info .extra-info {
+  margin-top: 20px;
+}
+.footer.style-2 .footer-widget-info .extra-info .time-slot {
+  margin-bottom: 0;
+}
 .footer.style-2 .footer-widget-info p,
 .footer.style-2 .footer-widget.widget_nav_menu li a,
 .footer.style-2 .footer-bottom-menu ul li a,
