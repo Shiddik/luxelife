@@ -12913,7 +12913,6 @@ ul.children {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
   background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
 }
 .footer.style-1 {
@@ -12926,11 +12925,15 @@ ul.children {
   margin: 50px 0 0 0;
 }
 .footer .footer-bg {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.footer .footer-bg img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-widget-title {
