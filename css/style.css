@@ -12995,13 +12995,14 @@ ul.children {
   position: relative;
 }
 .footer-widget .footer-widget-info p {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   margin-bottom: 40px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   padding-right: 40px;
+  opacity: 0.7;
 }
 .footer-widget .footer-widget-info .footer-logo {
   margin-bottom: 40px;
@@ -13090,7 +13091,7 @@ ul.children {
   }
 }
 .footer-widget .footer-widget-contact p {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .footer-widget .footer-widget-contact .footer-contact ul {
@@ -13107,7 +13108,6 @@ ul.children {
   margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  color: rgba(255, 255, 255, 0.7019607843);
   border-radius: 50px;
   float: left;
   display: flex;
@@ -13121,12 +13121,13 @@ ul.children {
   color: #D9A14C;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
   overflow: hidden;
   font-family: "Rubik", sans-serif;
+  opacity: 0.7;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a:hover span {
   color: #D9A14C;
@@ -13135,7 +13136,7 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text p,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -13143,6 +13144,7 @@ ul.children {
   width: 100%;
   margin-bottom: 0;
   font-family: "Rubik", sans-serif;
+  opacity: 0.7;
   transition: all 0.5s ease-out;
 }
 .footer-widget .footer-widget-contact .extra-info .extra-title {
@@ -13247,7 +13249,6 @@ ul.children {
 }
 .footer-bottom-area .footer-bottom-wrapper {
   padding: 30px 0;
-  border-top: 1px solid #ffffff;
 }
 @media (max-width: 991px) {
   .footer-bottom-area .footer-bottom-wrapper {

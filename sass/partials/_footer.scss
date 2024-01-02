@@ -122,13 +122,14 @@
   .footer-widget-info {
     position: relative;
     p {
-      color: $white-100;
+      color: $white;
       margin-bottom: 40px;
       font-family: $body-font;
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
       padding-right: 40px;
+      opacity: 0.7;
     }
 
     .footer-logo {
@@ -239,7 +240,7 @@
     }
 
     p {
-      color: $white-100;
+      color: $white;
       margin-bottom: 20px;
     }
 
@@ -258,7 +259,6 @@
         }
 
         .contact-icon {
-          color: $white-100;
           border-radius: 50px;
           float: left;
           display: flex;
@@ -273,12 +273,13 @@
         }
 
         .contact-text {
-          color: $white-100;
+          color: $white;
           font-size: 16px;
           line-height: 30px;
           font-weight: 400;
           overflow: hidden;
           font-family: $body-font;
+          opacity: 0.7;
 
           a {
             &:hover {
@@ -292,7 +293,7 @@
           span,
           p,
           a {
-            color: $white-100;
+            color: $white;
             font-size: 16px;
             line-height: 30px;
             font-weight: 400;
@@ -300,6 +301,7 @@
             width: 100%;
             margin-bottom: 0;
             font-family: $roboto-font;
+            opacity: 0.7;
             @include transition;
           }
         }
@@ -431,7 +433,6 @@
   position: relative;
   .footer-bottom-wrapper{
     padding: 30px 0;
-    border-top: 1px solid $white;
     @include rmaxwd(991) {
       padding: 30px 0;
     }
