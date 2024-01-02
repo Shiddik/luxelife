@@ -5884,21 +5884,60 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 20px 120px;
   border-right: 1px solid #ffffff;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-card.style-3 {
+    padding: 20px 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3 {
+    padding: 15px 80px;
+  }
+}
 .counter-card.style-3.first {
   padding: 20px 120px 20px 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-card.style-3.first {
+    padding: 20px 80px 20px 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3.first {
+    padding: 15px 80px 15px 0;
+  }
 }
 .counter-card.style-3.last {
   padding: 20px 0 20px 120px;
   border: none;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-card.style-3.last {
+    padding: 20px 0 20px 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3.last {
+    padding: 15px 0 15px 80px;
+  }
 }
 .counter-card.style-3 .content {
   gap: 0;
 }
 .counter-card.style-3 .content .number {
   -webkit-text-stroke: 1px #ffffff;
+  width: 145px;
+  max-width: 145px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3 .content .number {
+    max-width: 116px;
+    font-size: 48px;
+  }
 }
 .counter-card.style-3 .content .title {
   color: #ffffff;
+  font-size: 16px;
 }
 
 .counter-card.style-4 {
@@ -13436,4 +13475,4 @@ ul.children {
 }
 .footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .single-field input {
   height: 60px;
-}/*# sourceMappingURL=style.css.map */
+}

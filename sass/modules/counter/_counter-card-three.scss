@@ -2,22 +2,49 @@
     &.style-3{
         padding: 20px 120px;
         border-right: 1px solid $white;
+
+        @include xl{
+          padding: 20px 80px;
+        }
+    
+        @include lg{
+          padding: 15px 80px;
+        }
     
         &.first{
           padding: 20px 120px 20px 0;
+          @include xl{
+            padding: 20px 80px 20px 0;
+          }
+          @include lg{
+            padding: 15px 80px 15px 0;
+          }
         }
         &.last{
           padding: 20px 0 20px 120px;
           border: none;
+          @include xl{
+            padding: 20px 0 20px 80px;
+          }
+          @include lg{
+            padding: 15px 0 15px 80px;
+          }
         }
         .content{
             gap: 0;
 
           .number{
             -webkit-text-stroke: 1px $white;
+            width: 145px;
+            max-width: 145px;
+            @include lg{
+              max-width: 116px;
+              font-size: 48px;
+            }
           }
           .title{
             color: $white;
+            font-size: 16px;
           }
         }
       }
