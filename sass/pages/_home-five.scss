@@ -12,6 +12,22 @@
             justify-content: space-between;
             padding: 50px 0;
 
+            &:hover{
+                .content-wrapper{
+                    .counter-number{
+                        color: $primary-color;
+                        @include transition;
+                    }
+                }
+                .icon{
+                    i{
+                        color: $primary-color;
+                        transform: rotate(30deg);
+                        @include transition
+                    }
+                }
+            }
+
             .content-wrapper{
                 display: flex;
                 align-items: center;
@@ -24,6 +40,7 @@
                     line-height: 78px;
                     color: $black;
                     -webkit-text-stroke: 1px $primary-color;
+                    @include transition;
                 }
                 .title{
                     font-family: $heading-font;
@@ -35,11 +52,15 @@
                 }
             }
             .icon{
-                font-family: $font-awesome;
-                font-size: 34px;
-                font-weight: 900;
-                color: $white;
-                justify-items: end;
+                i{
+                    font-family: $font-awesome;
+                    font-size: 34px;
+                    font-weight: 900;
+                    color: $white;
+                    justify-items: end;
+                    transform: rotate(0deg);
+                    @include transition;
+                }
             }
         }
     }
@@ -51,6 +72,13 @@
         .team-member-card{
             background-color: #282828;
             border: none;
+            border-top: 5px solid #282828;
+            @include transition;
+
+            &:hover{
+                border-top: 5px solid $primary-color;
+                @include transition;
+            }
 
             .content{
                 .title{

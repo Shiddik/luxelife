@@ -836,13 +836,13 @@
         });
 
         // Share btn click action
-        $('.social-btn').on('click', 'li', function () {
-            $("li").removeClass("active");
-            $(this).addClass("active");
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
+        $('.social-btn').on('click', function () {
+            $(".share-group").toggleClass("active");
+            $(".social-btn-overlay").toggleClass("active");
+        });
+        $('.social-btn-overlay').on('click', function () {
+            $(".share-group").removeClass("active");
+            $(".social-btn-overlay").removeClass("active");
         });
         /*
         Window Load
