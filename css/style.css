@@ -12958,6 +12958,7 @@ ul.children {
 
 .footer-widget {
   margin-bottom: 30px;
+  position: relative;
 }
 @media (max-width: 991px) {
   .footer-widget {
@@ -12989,6 +12990,9 @@ ul.children {
   .footer-widget .widget-instagram-feed {
     width: 170px;
   }
+}
+.footer-widget .footer-widget-info {
+  position: relative;
 }
 .footer-widget .footer-widget-info p {
   color: rgba(255, 255, 255, 0.7019607843);

@@ -77,6 +77,7 @@
 
 .footer-widget {
   margin-bottom: 30px;
+  position: relative;
 
   @include rmaxwd(991) {
     margin-bottom: 40px;
@@ -119,6 +120,7 @@
 
   // Footer Info Widget
   .footer-widget-info {
+    position: relative;
     p {
       color: $white-100;
       margin-bottom: 40px;
