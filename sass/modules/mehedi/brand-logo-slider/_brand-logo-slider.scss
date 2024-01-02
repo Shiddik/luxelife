@@ -1,0 +1,24 @@
+.brand-logo-slider{
+    display: flex;
+    justify-content: center;
+
+    .slick-list.draggable{
+        width: 90%;
+    }
+
+    .slick-track{
+        display: flex;
+        align-items: center;
+        column-gap: 170px;
+
+        .slick-slide{
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 80px;
+                width: auto;
+            }
+        }
+    }
+}

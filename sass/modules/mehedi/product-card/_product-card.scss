@@ -1,0 +1,103 @@
+
+
+.product-group{
+    display: flex;
+    justify-content: center;
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.product-card{
+    margin-right: 30px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+
+    &:hover{
+        height: auto;
+        position: relative;
+
+        .product-img img{
+            transform: scale(1.02);
+            @include transition;
+        }
+        .section-content{
+            position: absolute;
+            z-index: 5;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: auto;
+            background-color: #FFFFFF;
+            padding: 30px 0 40px;
+
+            .card-btn{
+                height: auto;
+                visibility: visible;
+                padding: 14px 25px;
+                margin-top: 25px;
+                @include transition;
+            }
+        }
+    }
+
+    .product-img{
+        width: 300px;
+        height: 411px;
+        background-color: #fbf6ed;
+        overflow: hidden;
+        img{
+            @include transition;
+        }
+    }
+    .section-content{
+        display: inline-block;
+        padding: 30px 0 0;
+        margin: 0;
+
+        .title{
+            font-family: Rajdhani;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+        .price{
+            font-family: Rajdhani;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 130%;
+            text-transform: capitalize;
+            margin: 10px 0;
+        }
+        .rating-icon{
+            i{
+                font-size: 14px;
+                font-weight: 900;
+                color: #D9A14C;
+            }
+        }
+        .card-btn{
+            height: 0;
+            visibility: hidden;
+            overflow: hidden;
+            background-color: #D9A14C;
+            color: #FFFFFF;
+            font-family: Rajdhani;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;
+            padding: 0;
+            border: none;
+            @include transition;
+
+            i{
+                font-family: Font Awesome 6 Free;
+                font-size: 16px;
+                font-weight: 900;
+                margin-left: 8px;
+            }
+        }
+    }
+}
