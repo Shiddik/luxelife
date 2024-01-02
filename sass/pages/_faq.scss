@@ -21,5 +21,8 @@
         padding-top: 30px;
         padding-bottom: 30px;
         background-color: $gray-100;
+        @include sm{
+            padding: 10px 30px;
+        }
     }
 }
