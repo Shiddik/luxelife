@@ -12255,6 +12255,7 @@ ul.children {
   width: 100%;
 }
 .project-card .image img {
+  max-width: 630px;
   width: 100%;
 }
 .project-card .main-content {
@@ -12285,6 +12286,11 @@ ul.children {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .project-card .main-content .main-content-wrapper {
+    padding: 16px 24px;
+  }
+}
 .project-card .main-content .main-content-wrapper .angle-btn {
   width: 60px;
   height: 60px;
@@ -12302,6 +12308,13 @@ ul.children {
   color: #ffffff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .project-card .main-content .main-content-wrapper .angle-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
 }
 .project-card .main-content .main-content-wrapper .arrow-btn {
   width: 88px;
@@ -12328,6 +12341,11 @@ ul.children {
   color: #ffffff;
   margin-bottom: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .project-card .main-content .main-content-wrapper .title {
+    font-size: 22px;
+  }
+}
 .project-card .main-content .main-content-wrapper .desc {
   font-size: 16px;
   font-weight: 400;
@@ -12335,6 +12353,11 @@ ul.children {
   color: #ffffff;
   margin-bottom: 0;
   margin-top: 6px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .project-card .main-content .main-content-wrapper .desc {
+    font-size: 13px;
+  }
 }
 
 .project-card.style-2 {
@@ -13499,6 +13522,16 @@ ul.children {
   padding-top: 120px;
   padding-bottom: 30px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-area.style-1 {
+    padding: 100px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-area.style-1 {
+    padding: 80px 0;
+  }
+}
 .project-area.style-1 .section-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -13511,6 +13544,16 @@ ul.children {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .project-area.style-1 .section-title {
+    gap: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-area.style-1 .section-title .title {
+    margin-bottom: 0;
+  }
 }
 .project-area.style-1 .portfolio-slider .slick-slide {
   margin: 0 15px;
@@ -13538,6 +13581,20 @@ ul.children {
   position: relative;
   z-index: 5;
 }
+.testimonial-slider-area.style-3 .slider-nav-btn-wrapper {
+  position: absolute;
+  top: 56%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-next-btn {
   width: 67px;
   height: 67px;
@@ -13546,6 +13603,7 @@ ul.children {
   background: none;
   border: 1px solid #D9A14C;
   color: #ffffff;
+  font-size: 17px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -13559,10 +13617,36 @@ ul.children {
 .counter-up-area.style-2 {
   position: absolute;
   width: 100%;
-  margin-top: -70px;
-  z-index: 10;
+  bottom: -72px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-up-area.style-2 {
+    margin-bottom: -190px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-up-area.style-2 {
+    bottom: -90%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-up-area.style-2 {
+    bottom: -75%;
+  }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .latest-posts-area.style-3 {
+    padding-top: 350px;
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .latest-posts-area.style-3 {
+    padding-bottom: 80px;
+    padding-top: 620px;
+  }
+}
 .latest-posts-area.style-3 .section-title {
   margin-bottom: 30px;
 }
