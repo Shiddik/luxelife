@@ -281,6 +281,7 @@
           font-family: $body-font;
 
           a {
+            color: $primary-color;
             &:hover {
               span {
                 color: $primary-color;
@@ -301,7 +302,7 @@
             font-family: $roboto-font;
             @include transition;
           }
-          
+
         }
       }
     }
