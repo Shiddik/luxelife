@@ -13400,13 +13400,13 @@ ul.children {
 }
 
 .footer.style-2 .footer-widget-title {
-  color: #23262D;
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer.style-2 .footer-widget-info p,
 .footer.style-2 .footer-widget.widget_nav_menu li a,
 .footer.style-2 .footer-bottom-menu ul li a,
 .footer.style-2 .footer-bottom-area .copyright-text p {
-  color: #8f939b;
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer.style-2 .footer-widget.widget_nav_menu li a:hover,
 .footer.style-2 .footer-bottom-menu ul li a:hover {
@@ -13438,17 +13438,11 @@ ul.children {
 .footer.style-2 .footer-widget .social-profile a {
   color: unset;
 }
-.footer.style-2 .footer-widget .social-profile a i.fa-facebook-f {
-  color: #1877f2;
+.footer.style-2 .footer-widget .social-profile a i {
+  color: #ffffff;
 }
-.footer.style-2 .footer-widget .social-profile a i.fa-twitter {
-  color: #1da1f2;
-}
-.footer.style-2 .footer-widget .social-profile a i.fa-linkedin-in {
-  color: #0077b5;
-}
-.footer.style-2 .footer-widget .social-profile a i.fa-youtube {
-  color: #ff0000;
+.footer.style-2 .footer-widget .social-profile a:hover i {
+  color: #D9A14C;
 }
 .footer.style-2 .subscribe-form-wrapper p {
   color: #8f939b;
