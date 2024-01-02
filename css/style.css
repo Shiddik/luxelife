@@ -5894,6 +5894,23 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 15px 80px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3 {
+    padding: 20px 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3 {
+    padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3 {
+    padding: 15px 120px;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+}
 .counter-card.style-3.first {
   padding: 20px 120px 20px 0;
 }
@@ -5905,6 +5922,21 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .counter-card.style-3.first {
     padding: 15px 80px 15px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3.first {
+    padding: 20px 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3.first {
+    padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3.first {
+    padding: 20px 120px;
   }
 }
 .counter-card.style-3.last {
@@ -5921,6 +5953,36 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 15px 0 15px 80px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3.last {
+    padding: 20px 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3.last {
+    padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3.last {
+    padding: 20px 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3.second {
+    border: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3.second {
+    border: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3.second {
+    border-bottom: 1px solid #ffffff;
+  }
+}
 .counter-card.style-3 .content {
   gap: 0;
 }
@@ -5933,6 +5995,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   .counter-card.style-3 .content .number {
     max-width: 116px;
     font-size: 48px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3 .content .number {
+    font-size: 48px;
+    justify-content: center;
   }
 }
 .counter-card.style-3 .content .title {
@@ -12391,18 +12459,7 @@ ul.children {
 }
 
 .contact-form-area {
-  padding: 120px 0;
   position: relative;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contact-form-area {
-    padding: 80px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-form-area {
-    padding: 100px 0;
-  }
 }
 .contact-form-area .shape-1 {
   position: absolute;
@@ -12437,6 +12494,11 @@ ul.children {
     gap: 30px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-area .contact-info-area {
+    padding: 40px 20px;
+  }
+}
 .contact-form-area .contact-info-area .divider {
   width: 1px;
   height: 28px;
@@ -12464,6 +12526,11 @@ ul.children {
     font-size: 18px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-area .contact-info-area .contact-card .icon i {
+    font-size: 18px;
+  }
+}
 .contact-form-area .contact-info-area .contact-card .desc {
   margin-bottom: 0;
   font-size: 16px;
@@ -12473,6 +12540,11 @@ ul.children {
   font-family: "Rubik", sans-serif;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-form-area .contact-info-area .contact-card .info-title {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact-form-area .contact-info-area .contact-card .info-title {
     font-size: 24px;
   }
@@ -12510,6 +12582,11 @@ ul.children {
   height: 100%;
 }
 @media (max-width: 991px) {
+  .contact-form-area .map-widget {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact-form-area .map-widget {
     padding-left: 0;
   }
@@ -12943,7 +13020,6 @@ ul.children {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
   background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
 }
 .footer.style-1 {
@@ -12956,11 +13032,15 @@ ul.children {
   margin: 50px 0 0 0;
 }
 .footer .footer-bg {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.footer .footer-bg img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-widget-title {
@@ -12985,6 +13065,7 @@ ul.children {
 
 .footer-widget {
   margin-bottom: 30px;
+  position: relative;
 }
 @media (max-width: 991px) {
   .footer-widget {
@@ -13017,13 +13098,18 @@ ul.children {
     width: 170px;
   }
 }
+.footer-widget .footer-widget-info {
+  position: relative;
+}
 .footer-widget .footer-widget-info p {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   margin-bottom: 40px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  padding-right: 40px;
+  opacity: 0.7;
 }
 .footer-widget .footer-widget-info .footer-logo {
   margin-bottom: 40px;
@@ -13112,7 +13198,7 @@ ul.children {
   }
 }
 .footer-widget .footer-widget-contact p {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .footer-widget .footer-widget-contact .footer-contact ul {
@@ -13129,7 +13215,6 @@ ul.children {
   margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  color: rgba(255, 255, 255, 0.7019607843);
   border-radius: 50px;
   float: left;
   display: flex;
@@ -13158,8 +13243,9 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text p,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: rgba(255, 255, 255, 0.7019607843);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
+  font-weight: 400;
   display: inline-block;
   width: 100%;
   margin-bottom: 0;
@@ -13264,10 +13350,13 @@ ul.children {
 }
 
 .footer-bottom-area {
+  position: relative;
+}
+.footer-bottom-area .footer-bottom-wrapper {
   padding: 30px 0;
 }
 @media (max-width: 991px) {
-  .footer-bottom-area {
+  .footer-bottom-area .footer-bottom-wrapper {
     padding: 30px 0;
   }
 }
@@ -13373,7 +13462,10 @@ ul.children {
   font-size: 16px;
   font-weight: 900;
   letter-spacing: 0.6px;
-  whispace: nowrap;
+  white-space: nowrap;
+}
+.subscribe-form-widget .submit-btn span {
+  display: none;
 }
 .subscribe-form-widget .mc4wp-response {
   position: relative;

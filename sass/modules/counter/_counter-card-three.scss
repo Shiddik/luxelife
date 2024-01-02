@@ -10,6 +10,17 @@
         @include lg{
           padding: 15px 80px;
         }
+        @include md{
+          padding: 20px 90px;
+        }
+        @include sm{
+          padding: 15px 50px;
+        }
+        @include xs{
+          padding: 15px 120px;
+          border-right: none;
+          border-bottom: 1px solid $white;
+        }
     
         &.first{
           padding: 20px 120px 20px 0;
@@ -18,6 +29,15 @@
           }
           @include lg{
             padding: 15px 80px 15px 0;
+          }
+          @include md{
+            padding: 20px 90px;
+          }
+          @include sm{
+            padding: 15px 50px;
+          }
+          @include xs{
+            padding: 20px 120px;
           }
         }
         &.last{
@@ -28,6 +48,26 @@
           }
           @include lg{
             padding: 15px 0 15px 80px;
+          }
+          @include md{
+            padding: 20px 90px;
+          }
+          @include sm{
+            padding: 15px 50px;
+          }
+          @include xs{
+            padding: 20px 120px;
+          }
+        }
+        &.second{
+          @include md{
+            border: none;
+          }
+          @include sm{
+            border: none;
+          }
+          @include xs{
+            border-bottom: 1px solid $white;
           }
         }
         .content{
@@ -40,6 +80,10 @@
             @include lg{
               max-width: 116px;
               font-size: 48px;
+            }
+            @include sm{
+              font-size: 48px;
+              justify-content: center;
             }
           }
           .title{
