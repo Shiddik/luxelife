@@ -13129,7 +13129,7 @@ ul.children {
   font-family: "Rubik", sans-serif;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
-  color: #D9A14C;
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a:hover span {
   color: #D9A14C;
