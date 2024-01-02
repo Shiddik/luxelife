@@ -293,7 +293,7 @@
           span,
           p,
           a {
-            color: $white;
+            color: #ffffffb3;
             font-size: 16px;
             line-height: 30px;
             font-weight: 400;
@@ -301,7 +301,6 @@
             width: 100%;
             margin-bottom: 0;
             font-family: $roboto-font;
-            opacity: 0.7;
             @include transition;
           }
         }

@@ -13136,7 +13136,7 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text p,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7019607843);
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -13144,7 +13144,6 @@ ul.children {
   width: 100%;
   margin-bottom: 0;
   font-family: "Rubik", sans-serif;
-  opacity: 0.7;
   transition: all 0.5s ease-out;
 }
 .footer-widget .footer-widget-contact .extra-info .extra-title {
