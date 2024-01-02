@@ -12994,6 +12994,7 @@ ul.children {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  padding-right: 40px;
 }
 .footer-widget .footer-widget-info .footer-logo {
   margin-bottom: 40px;
@@ -13128,8 +13129,9 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text p,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: rgba(255, 255, 255, 0.7019607843);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
+  font-weight: 400;
   display: inline-block;
   width: 100%;
   margin-bottom: 0;
