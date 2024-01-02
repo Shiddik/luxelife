@@ -13243,6 +13243,7 @@ ul.children {
 }
 
 .footer-bottom-area {
+  position: relative;
   padding: 30px 0;
 }
 @media (max-width: 991px) {
@@ -13352,7 +13353,10 @@ ul.children {
   font-size: 16px;
   font-weight: 900;
   letter-spacing: 0.6px;
-  whispace: nowrap;
+  white-space: nowrap;
+}
+.subscribe-form-widget .submit-btn span {
+  display: none;
 }
 .subscribe-form-widget .mc4wp-response {
   position: relative;

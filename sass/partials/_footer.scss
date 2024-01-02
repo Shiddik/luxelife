@@ -428,6 +428,7 @@
 }
 
 .footer-bottom-area {
+  position: relative;
   padding: 30px 0;
 
   @include rmaxwd(991) {
@@ -556,7 +557,10 @@
     font-size: 16px;
     font-weight: 900;
     letter-spacing: 0.6px;
-    whispace: nowrap;
+    white-space: nowrap;
+    span{
+      display: none;
+    }
   }
 
   // Form Submit Message
