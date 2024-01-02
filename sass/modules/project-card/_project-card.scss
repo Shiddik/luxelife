@@ -1,6 +1,21 @@
 .project-card {
     position: relative;
+    @include transition;
 
+    &.style-1 {
+       
+        &:hover {
+            .main-content {
+                display: block;
+                @include transition;
+            }
+        }
+
+        .main-content {
+            display: none;
+            @include transition;
+        }
+    }
 
     .image {
         flex-shrink: 0;

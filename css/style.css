@@ -4033,8 +4033,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-direction: column;
   z-index: 2;
   position: relative;
-  margin-bottom: -16px;
-  margin-top: -8px;
 }
 @media (max-width: 550px) {
   .section-title .sec-content {
@@ -5066,7 +5064,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .icon-card.style-3 {
-  padding: 0 54px;
+  padding: 0 72px;
   background-color: #F4F4F4;
 }
 .icon-card.style-3 .icon-card-inner {
@@ -5074,6 +5072,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.icon-card.style-3 .icon-card-inner .content {
+  margin-right: 82px;
 }
 .icon-card.style-3 .icon-card-inner:nth-child(even) {
   border-top: 1px solid rgba(35, 38, 45, 0.3);
@@ -5343,10 +5344,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .about-image-card.style-4 .main-img-wrapper {
   position: relative;
+  margin-left: 122px;
 }
 .about-image-card.style-4 .main-img-wrapper .img-shape {
   position: absolute;
-  right: 0;
+  right: -112px;
   bottom: -30px;
   flex-shrink: 0;
   z-index: 1;
@@ -5354,7 +5356,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .about-image-card.style-4 .main-img-inner {
   display: flex;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: -62px;
   position: relative;
   z-index: 2;
 }
@@ -5379,8 +5381,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+  margin-left: 8px;
 }
 .about-image-card.style-4 .top-img-wrapper .review-card .icon-wrapper .icon {
   background-color: #D9A14C;
@@ -5669,8 +5672,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: 117px;
 }
 .about-info-card.style-4 {
-  margin-left: 2px;
-  margin-top: 28px;
+  margin-top: 102px;
+  margin-right: 80px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .about-info-card.style-4 {
@@ -5685,6 +5688,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .about-info-card.style-4 .about-info-content .desc {
   margin-bottom: 0;
+}
+.about-info-card.style-4 .btn-wrapper {
+  margin-top: 30px;
 }
 .about-info-card .about-info-content {
   display: flex;
@@ -6170,22 +6176,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
 }
 .testimonial-card.style-3 .user-info-wrapper .user-img {
-  width: 120px;
-  height: 120px;
+  width: 126px;
+  height: 130px;
   overflow: hidden;
   border-radius: 50%;
 }
 .testimonial-card.style-3 .user-info-wrapper .user-meta {
   text-align: left;
-}
-.testimonial-card.style-3 .user-info-wrapper .user-meta .rating-icon {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .testimonial-card.style-3 .user-info-wrapper .user-meta .name {
   color: #ffffff;
 }
 .testimonial-card.style-3 .user-info-wrapper .user-meta .designation {
-  margin: 10px 0 0;
   color: #ffffff;
 }
 .testimonial-card.style-3 .content-wrapper .description {
@@ -7154,6 +7159,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 20px;
   padding: 30px 30px 20px;
 }
+.post-card.style-3 .content .title {
+  padding-right: 72px;
+}
 
 .post-card.style-4 {
   flex-direction: column;
@@ -7952,8 +7960,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-direction: column;
   z-index: 2;
   position: relative;
-  margin-bottom: -16px;
-  margin-top: -8px;
 }
 @media (max-width: 550px) {
   .section-title .sec-content {
@@ -10308,7 +10314,6 @@ ul.children {
   height: 100%;
   width: 100%;
   position: relative;
-  margin-left: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio-fullscreen-image {
@@ -10332,7 +10337,7 @@ ul.children {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 600px;
+  max-width: 645px;
   width: 100%;
   height: 100%;
 }
@@ -10547,6 +10552,15 @@ ul.children {
 
 .project-card {
   position: relative;
+  transition: all 0.5s ease-out;
+}
+.project-card.style-1:hover .main-content {
+  display: block;
+  transition: all 0.5s ease-out;
+}
+.project-card.style-1 .main-content {
+  display: none;
+  transition: all 0.5s ease-out;
 }
 .project-card .image {
   flex-shrink: 0;
@@ -11558,13 +11572,60 @@ ul.children {
 }
 
 .feature-area.style-4 .section-title {
-  margin-bottom: 57px;
+  margin-bottom: 42px;
 }
 .feature-area.style-4 .sec-desc {
-  margin-top: 60px;
+  margin-top: 70px;
+}
+
+.service-area.style-2 .section-title {
+  margin-bottom: 40px;
+}
+
+.cta-area.style-3 {
+  padding-top: 80px !important;
+  padding-bottom: 74px !important;
+}
+.cta-area.style-3 .section-title {
+  padding-left: 80px;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+.cta-area.style-3 .section-title .title {
+  margin-bottom: 0;
+}
+.cta-area.style-3 .input-field {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-us-area.style-4 {
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.brand-slider-area.style-3 {
+  padding: 0;
+}
+
+.project-area.style-1 {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.project-area.style-1 .section-title {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.project-area.style-1 .portfolio-slider .slick-slide {
+  margin: 0 15px;
 }
 
 .testimonial-slider-area.style-3 {
+  padding-top: 115px;
+  padding-bottom: 150px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11585,6 +11646,9 @@ ul.children {
   z-index: 5;
 }
 .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-next-btn {
+  width: 67px;
+  height: 67px;
+  flex-shrink: 0;
   background: none;
   border: 1px solid #D9A14C;
   color: #ffffff;
@@ -11602,6 +11666,10 @@ ul.children {
   width: 100%;
   margin-top: -70px;
   z-index: 10;
+}
+
+.latest-posts-area.style-3 .section-title {
+  margin-bottom: 30px;
 }
 
 .project-area .portfolio-slider-disable {
@@ -11976,7 +12044,7 @@ ul.children {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 53, 0.71);
+  background-color: rgba(35, 38, 45, 0.86);
   top: 0;
   left: 0;
   z-index: -1;
@@ -12170,7 +12238,7 @@ ul.children {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 53, 0.71);
+  background-color: rgba(35, 38, 45, 0.86);
   top: 0;
   left: 0;
   z-index: -1;

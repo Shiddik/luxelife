@@ -89,17 +89,88 @@
 .feature-area {
     &.style-4 {
         .section-title {
-            margin-bottom: 57px;
+            margin-bottom: 42px;
         }
         .sec-desc {
-            margin-top: 60px;
+            margin-top: 70px;
         }
     }
 }
 
+
+//service area
+.service-area {
+    &.style-2 {
+        .section-title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+//CTA area start
+.cta-area {
+    &.style-3 {
+        padding-top: 80px !important;
+        padding-bottom: 74px !important;
+
+        .section-title {
+            padding-left: 80px;
+            align-items: flex-start;
+            margin-bottom: 0;
+
+            .title {
+                margin-bottom: 0;
+            }
+        }
+        .input-field {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+
+//About us area
+.about-us-area {
+    &.style-4 {
+        padding-top: 120px;
+        padding-bottom: 150px;
+    }
+}
+
+//brand slider area
+.brand-slider-area {
+    &.style-3 {
+        padding: 0;
+    }
+}
+//Project area 
+.project-area {
+    &.style-1 {
+        padding-top: 120px;
+        padding-bottom: 30px;
+
+        .section-title {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        .portfolio-slider {
+            .slick-slide {
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+
 // Testimonial section
 .testimonial-slider-area{
     &.style-3{
+        padding-top: 115px;
+        padding-bottom: 150px;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -123,6 +194,9 @@
 
         .slider-nav-btn-wrapper{
             .slider-nav-prev-btn, .slider-nav-next-btn{
+                width: 67px;
+                height: 67px;
+                flex-shrink: 0;
                 background: none;
                 border: 1px solid $primary-color;
                 color: $white;
@@ -148,5 +222,16 @@
         width: 100%;
         margin-top: -70px;
         z-index: 10;
+
+       
+    }
+}
+
+//latest post area
+.latest-posts-area {
+    &.style-3 {
+        .section-title {
+            margin-bottom: 30px;
+        }
     }
 }
