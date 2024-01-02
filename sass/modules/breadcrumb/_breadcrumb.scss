@@ -105,11 +105,12 @@ body {
       display: inline-flex;
       gap:0 12px;
       align-items: center;
+      color: #fff;
       &.active {
-        color: $primary-color;
+        // color: $primary-color;
 
         a {
-          color: $primary-color;
+          // color: $primary-color;
         }
       }
       a {

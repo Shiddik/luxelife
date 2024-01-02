@@ -1,13 +1,6 @@
 // Contact Form Area
 .contact-form-area {
-  padding: 120px 0;
   position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 100px 0;
-  }
   .shape-1{
     position: absolute;
     bottom: 0;
@@ -19,9 +12,68 @@
     right: 0;
   }
   .contact-info-area {
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+    padding: 46px 56px;
     display: flex;
-    flex-direction: column;
-    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    @include sm{
+      padding: 40px 20px;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+    @include md{
+      padding: 40px 30px;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+    @include lg{
+      padding: 40px 20px;
+    }
+    .divider{
+      width: 1px;
+      height: 28px;
+      background-color: $gray-200;
+      @include rmaxwd(991){
+        width: 100%;
+        height: 1px;
+      }
+    }
+    .contact-card{
+      display: flex;
+      gap: 20px;
+      .icon{
+        margin-top: 8px;
+        i{
+          font-size: 24px;
+          color: $primary-color;
+          @include sm{
+            font-size: 18px;
+          }
+          @include lg{
+            font-size: 18px;
+          }
+        }
+      }
+      .desc{
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $text-color;
+        font-family: $body-font;
+      }
+      .info-title{
+        @include sm{
+          font-size: 24px;
+        }
+        @include lg{
+          font-size: 24px;
+        }
+      }
+    }
   }
   .comment-respond {
     padding: 0;
@@ -39,14 +91,28 @@
     }
   }
   .image-wrapper{
+    height: 100%;
     @include lg{
-      height: 100%;
     }
     img{
+      height: 100%;
       @include lg{
         object-fit: cover;
         height: 100%;
       }
+    }
+  }
+  .map-widget{
+    padding-left: 20px;
+    height: 100%;
+    @include rmaxwd(991){
+      padding-left: 0;
+    }
+    @include lg{
+      padding-left: 0;  
+    }
+    iframe{
+      height: 100%;
     }
   }
   &.style-2{
@@ -69,27 +135,26 @@
       }
     }
   }
-}
-// Contact Form Map
-.contact-map-area {
-  padding-bottom: 120px;
-
-  @include sm {
-    padding-bottom: 80px;
-  }
-  @include md {
-    padding-bottom: 100px;
-  }
-  .map-widget {
-    margin-bottom: -10px;
-
-    iframe {
-      width: 100%;
-      height: 470px;
-      border-radius: 12px;
-
-      @include sm {
-        height: 350px;
+  &.style-3{
+    .contact-form-inner{
+      background-color: $gray-100;
+    }
+    .comment-respond{
+      padding: 60px;
+      padding-right: 0;
+      @include sm{
+        padding: 20px;
+      }
+      @include md{
+        padding: 30px;
+      }
+      .theme-btn{
+        width: auto;
+      }
+    }
+    .map-widget{
+      iframe{
+        border-radius: 0;
       }
     }
   }

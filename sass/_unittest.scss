@@ -341,7 +341,13 @@ blockquote {
 .wp-block-pullquote {
   border-top: 2px solid $primary-color !important;
   border-bottom: 2px solid $primary-color !important;
-  background-color: #eef5f8;
+  background-color: #f4f4f4;
+  &.is-style-solid-color{
+    background-color: $gray-100 !important;
+    .blockquote{
+      background-color: $white;
+    }
+  }
 }
 .wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
   margin-top: 10px;
@@ -508,7 +514,7 @@ nav.wp-calendar-nav {
       padding: 0 25px;
       height: 60px;
       width: 100%;
-      color: #abb0ba;
+      color: $black;
       font-size: 18px;
       //border-radius: 6px 0 0 6px;
     }

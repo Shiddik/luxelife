@@ -835,7 +835,15 @@
             });
         });
 
-
+        // Share btn click action
+        $('.social-btn').on('click', function () {
+            $(".share-group").toggleClass("active");
+            $(".social-btn-overlay").toggleClass("active");
+        });
+        $('.social-btn-overlay').on('click', function () {
+            $(".share-group").removeClass("active");
+            $(".social-btn-overlay").removeClass("active");
+        });
         /*
         Window Load
         ============================*/

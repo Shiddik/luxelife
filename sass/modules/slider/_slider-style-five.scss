@@ -1,0 +1,32 @@
+.slider-area{
+    &.style-5{
+        margin: 0;
+        padding: 80px 0 135px;
+        background-color: #1d212d;
+
+        .single-slider-wrapper{
+            .single-slider{
+                .slider-bg{
+                    background: none;
+                }
+            }
+            .slider-content-wrapper{
+                margin: 0;
+            }
+            .slider-content{
+                .slider-short-title{
+                    color: $primary-color;
+                }
+                .slider-title{
+                    margin-bottom: 20px;
+                }
+                .slider-short-desc{
+                    margin-bottom: 40px;
+                }
+                .slider-btn-wrapper{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
