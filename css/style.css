@@ -13244,10 +13244,13 @@ ul.children {
 
 .footer-bottom-area {
   position: relative;
+}
+.footer-bottom-area .footer-bottom-wrapper {
   padding: 30px 0;
+  border-top: 1px solid #ffffff;
 }
 @media (max-width: 991px) {
-  .footer-bottom-area {
+  .footer-bottom-area .footer-bottom-wrapper {
     padding: 30px 0;
   }
 }
