@@ -273,13 +273,12 @@
         }
 
         .contact-text {
-          color: $white;
+          color: #ffffffb3;
           font-size: 16px;
           line-height: 30px;
           font-weight: 400;
           overflow: hidden;
           font-family: $body-font;
-          opacity: 0.7;
 
           a {
             &:hover {
