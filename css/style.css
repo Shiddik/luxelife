@@ -13096,6 +13096,7 @@ ul.children {
 }
 .footer-widget .footer-widget-contact .footer-contact ul {
   list-style: none;
+  margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li {
   margin-bottom: 10px;
