@@ -12161,8 +12161,18 @@ ul.children {
   border-radius: 50px;
 }
 
+@media (max-width: 991px) {
+  .apartment-details {
+    margin-top: 60px;
+  }
+}
 .apartment-details h3 {
   margin-bottom: 17px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .apartment-details h3 {
+    font-size: 27px;
+  }
 }
 .apartment-details h4 {
   margin-bottom: 10px;
@@ -12182,6 +12192,21 @@ ul.children {
 .apartment-details .list-item i {
   color: #D9A14C;
   font-size: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .apartment-details .list-item i {
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .apartment-details .list-item {
+    align-items: start;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .apartment-details .list-item h4 {
+    font-size: 21px;
+  }
 }
 .apartment-details p:last-child {
   margin-bottom: 0;

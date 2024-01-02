@@ -29,8 +29,14 @@
     }
 }
 .apartment-details{
+    @include rmaxwd(991){
+        margin-top: 60px;
+    }
     h3{
         margin-bottom: 17px;
+        @include sm{
+            font-size: 27px;
+        }
     }
     h4{
         margin-bottom: 10px;
@@ -49,6 +55,17 @@
         i{
             color: $primary-color;
             font-size: 16px;
+            @include sm{
+                margin-top: 16px;
+            }
+        }
+        @include sm{
+            align-items: start;
+        }
+        h4{
+            @include sm{
+                font-size: 21px;
+            }
         }
     }
     p{
