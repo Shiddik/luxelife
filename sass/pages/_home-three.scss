@@ -88,11 +88,34 @@
 //feature area
 .feature-area {
     &.style-4 {
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
+        }
+
         .section-title {
             margin-bottom: 42px;
+
+            @include md {
+                margin-bottom: 0;
+            }
+            @include sm {
+                margin-bottom: 0;
+            }
         }
         .sec-desc {
             margin-top: 70px;
+
+            @include md {
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+            @include sm {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -101,6 +124,12 @@
 //service area
 .service-area {
     &.style-2 {
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
+        }
         .section-title {
             margin-bottom: 40px;
         }
@@ -113,10 +142,25 @@
         padding-top: 80px !important;
         padding-bottom: 74px !important;
 
+        .about-info-content {
+            @include sm {
+                text-align: center;
+            }
+        }
+
         .section-title {
             padding-left: 80px;
             align-items: flex-start;
             margin-bottom: 0;
+
+            @include md {
+                align-items: center;
+                padding-left: 0;                
+            }
+            @include sm {
+                align-items: center;
+                padding-left: 0;
+            }
 
             .title {
                 margin-bottom: 0;
@@ -126,6 +170,14 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-wrap: wrap;
+
+            @include md {
+                margin: auto;
+            }
+            @include sm {
+                margin: auto;
+            }
         }
     }
 }
@@ -135,6 +187,15 @@
     &.style-4 {
         padding-top: 120px;
         padding-bottom: 150px;
+
+        @include md {
+           padding-top: 100px;
+           padding-bottom: 120px;
+        }
+        @include xs {
+            padding-top: 80px;
+            padding-bottom: 0px;
+        }
     }
 }
 

@@ -4,12 +4,41 @@
             position: relative;
             margin-left: 122px;
 
+            @include lg {
+                margin-left: 0;
+            }
+            @include md {
+                margin-left: 0;
+            }
+            @include sm {
+                margin-left: 0;
+            }
+            @include xs {
+                padding: 0 24px;
+            }
+
             .img-shape {
                 position: absolute;
                 right: -112px;
                 bottom: -30px;
                 flex-shrink: 0;
                 z-index: 1;
+
+                @include lg {
+                    right: -25px;
+                }
+
+                @include md {
+                    right: -25px;
+                }
+                @include sm {
+                    right: -25px;
+                }
+                @include xs {
+                    right: 0;
+                    bottom: 70px;
+                }
+                
             }
         }
 
@@ -19,6 +48,20 @@
             margin-right: -62px;
             position: relative;
             z-index: 2;
+
+            @include lg {
+                margin-right: 0;
+                margin-left: 70px;
+            }
+            @include md {
+                margin-right: 0;
+            }
+            @include sm {
+                margin-right: 0;
+            }
+            @include xs {
+                z-index: 1;
+            }
         }
         .top-img-wrapper {
             padding: 22px 20px;
@@ -26,6 +69,19 @@
             top: 50px;
             left: 20px;
             z-index: 3;
+
+            @include lg {
+                top: 24px;
+                left: 0;
+            }
+
+            @include xs {
+                position: relative;
+                top: -100px;
+                z-index: 2;
+                left: 0;
+                margin: 0 24px;
+            }
 
             &.box {
                 background-image: repeating-linear-gradient(178deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(268deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(-2deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px), repeating-linear-gradient(88deg, $primary-color, $primary-color 13px, transparent 13px, transparent 21px, $primary-color 21px);
@@ -40,6 +96,10 @@
                 background-color: rgba(255, 255, 255, 1);
                 padding: 30px 70px 20px 70px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+                @include xs {
+                    padding: 20px 24px;
+                }
                 
 
                 .icon-wrapper {
@@ -47,6 +107,9 @@
                     align-items: flex-start;
                     gap: 10px;
                     margin-left: 8px;
+                    @include xs {
+                        margin-left: 0;
+                    }
 
                     .icon {
                         background-color: $primary-color;
@@ -62,6 +125,10 @@
                         line-height: 60px;
                         color: $black;
                         text-transform: capitalize;
+
+                        @include xs {
+                            font-size: 44px;
+                        }
                     }
                 }
                 .card-text {
@@ -70,6 +137,12 @@
             }
             .top-image {
                 margin-top: 40px;
+                @include xs {
+                    margin-top: 24px;
+                }
+                img {
+                    width: 100%;
+                }
             }
         }
     }
