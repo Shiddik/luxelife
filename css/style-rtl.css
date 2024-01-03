@@ -7013,6 +7013,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .counter-card.style-3 .content .title {
   color: #ffffff;
   font-size: 16px;
+  margin-top: -10px;
 }
 
 .counter-card.style-4 {
@@ -9376,7 +9377,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .price-card .price-btn {
   background-color: #D9A14C;
-  padding: 20px 30px;
+  padding: 14px 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9390,7 +9391,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
-  margin-top: 40px;
+  margin-top: 38px;
   text-align: center;
   letter-spacing: 1.28px;
   text-transform: uppercase;
@@ -9429,7 +9430,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.935px;
-  text-transform: capitalize;
   color: #23262D;
 }
 .price-card .price .price-heading .price-time {
@@ -9437,7 +9437,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  margin-right: 6px;
+  margin-right: 20px;
 }
 .price-card .price .price-desc {
   margin-bottom: 0;
@@ -9464,7 +9464,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 10px;
+  gap: 7px;
   width: 100%;
 }
 .price-card .list ul li {
@@ -14053,16 +14053,30 @@ ul.children {
   z-index: 10;
 }
 
+.section-bg-frame.style-2 {
+  z-index: 1;
+}
+.section-bg-frame.style-2 img {
+  top: 160px;
+  right: 17px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
 .our-team-area.style-1 {
-  background-position: bottom right;
-  background-repeat: no-repeat;
   position: relative;
-  z-index: 2;
-  padding: 584px 0 240px;
-  margin-top: -463px;
+  padding: 120px 0;
 }
 .our-team-area.style-1 .section-title {
   margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+.our-team-area.style-1 .team-member-gallery-area {
+  position: relative;
+  z-index: 2;
 }
 .our-team-area.style-1 .team-member-gallery-area .nav-tab {
   display: grid;
@@ -14107,6 +14121,8 @@ ul.children {
      object-fit: cover;
 }
 .our-team-area.style-1 .skill-progress-area {
+  position: relative;
+  z-index: 2;
   background-color: #ffffff;
   padding: 40px;
   margin-right: 2px;
@@ -14180,8 +14196,13 @@ ul.children {
   color: #23262D;
 }
 
-.testimonial-slider-area.style-4 {
-  margin-top: -120px;
+.testimonial-slider-area.style-4 .section-title {
+  position: relative;
+  z-index: 2;
+}
+.testimonial-slider-area.style-4 .slider-area-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .price-area .container {
