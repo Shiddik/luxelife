@@ -5093,14 +5093,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .slider-area.style-4 {
   margin: 0;
-  padding: 180px 0;
   background-color: #2C2C2C;
+  padding: 0;
 }
 .slider-area.style-4 .single-slider-wrapper {
   margin: 0;
 }
-.slider-area.style-4 .single-slider-wrapper .single-slider .slider-bg {
-  background: none;
+.slider-area.style-4 .single-slider-wrapper .single-slider {
+  padding: 180px 0;
 }
 .slider-area.style-4 .single-slider-wrapper .slider-content-wrapper {
   margin: 0;
