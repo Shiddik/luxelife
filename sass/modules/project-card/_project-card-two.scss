@@ -21,6 +21,9 @@
 
         .btn-wrapper {
           align-self: flex-end;
+          .arrow-btn {
+            font-size: 50px;
+          }
 
           i {
             transform: rotate(-45deg);

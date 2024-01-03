@@ -1,5 +1,42 @@
+.about-us-area {
+    &.style-3 {
+        position: relative;
+        padding-bottom: 57px;
+        z-index: 3;
+    }
+}
+
+.section-bg-frame {
+  position: relative;
+  z-index: 3;
+
+  img {
+    position: absolute;
+    right: -8px;
+    top: -442px;
+    flex-shrink: 0;
+    z-index: -1;
+    opacity: 0.1;
+  }
+}
+
+.latest-service-area {
+    position: relative;
+    z-index: 2;
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+
 // Project Area
 .project-area{
+    &.style-2 {
+        .section-title {
+            margin-bottom: 40px;
+        }
+    }
     .portfolio-slider-disable{
         position: relative;
         z-index: 10;
@@ -15,6 +52,10 @@
         z-index: 2;
         padding: 584px 0 240px;
         margin-top: -463px;
+
+        .section-title {
+            margin-bottom: 40px;
+        }
     
         .team-member-gallery-area{
             .nav-tab{
@@ -63,11 +104,11 @@
         .skill-progress-area{
             background-color: $white;
             padding: 40px;
-            margin-left: 6px;
+            margin-left: 2px;
             @include transition;
     
             .content{
-                margin-bottom: 25px;
+                margin-bottom: 29px;
                 .name{
                     font-family: $heading-font;
                 font-size: 24px;
@@ -83,19 +124,37 @@
                     color: $gray-800;
                 }
             }
+            .skill-progressbar-wrapper {
+                gap: 16px;
+            }
             .counter-card{
-                margin-top: 45px;
-                .content{
-                    flex-direction: row;
-                    align-items: center;
-                    margin: 0;
-                    gap: 20px;
-                    padding: 16px 20px;
-                    border: 1px dashed $primary-color;
+                margin-top: 52px;
+                .box {
+                    background-image: repeating-linear-gradient(-3deg, $primary-color, $primary-color 14px, transparent 14px, transparent 25px, $primary-color 25px), repeating-linear-gradient(87deg, $primary-color, $primary-color 14px, transparent 14px, transparent 25px, $primary-color 25px), repeating-linear-gradient(177deg, $primary-color, $primary-color 14px, transparent 14px, transparent 25px, $primary-color 25px), repeating-linear-gradient(267deg, $primary-color, $primary-color 14px, transparent 14px, transparent 25px, $primary-color 25px);
+                    background-size: 2px calc(100% + 25.03px), calc(100% + 25.03px) 2px, 2px calc(100% + 25.03px) , calc(100% + 25.03px) 2px;
+                    background-position: 0 0, 0 0, 100% 0, 0 100%;
+                    background-repeat: no-repeat;
+                    animation: borderAnimation 1s infinite linear;
+                    display: inline-flex;
+                }
+                @keyframes borderAnimation {
+                    from { background-position: 0 0, -25.03px 0, 100% -25.03px, 0 100%; }
+                    to { background-position: 0 -25.03px, 0 0, 100% 0, -25.03px 100%; }
+                }
+                   
+                .review-object{
+                   padding: 20px;
+                   padding-bottom: 13px;
+                   display: flex;
+                   align-items: center;
+                   gap: 14px;
+
     
                     .number{
                         font-size: 48px;
                         line-height: 60px;
+                        width: 85px;
+                        text-align: center;
                     }
                     .title{
                         font-family: $heading-font;

@@ -13,6 +13,18 @@
   }
   &.style-3 {
     margin-top: 117px;
+
+    .about-info-content {
+      gap: 10px;
+
+      .list-item-wrapper {
+        gap: 30px;
+
+      }
+    }
+    .btn-wrapper {
+      margin-top: 44px;
+    }
   }
   &.style-4 {
     margin-top: 102px;

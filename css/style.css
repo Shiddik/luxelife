@@ -6620,6 +6620,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .about-info-card.style-3 {
   margin-top: 117px;
 }
+.about-info-card.style-3 .about-info-content {
+  gap: 10px;
+}
+.about-info-card.style-3 .about-info-content .list-item-wrapper {
+  gap: 30px;
+}
+.about-info-card.style-3 .btn-wrapper {
+  margin-top: 44px;
+}
 .about-info-card.style-4 {
   margin-top: 102px;
   margin-right: 80px;
@@ -6864,6 +6873,16 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-2 .content .number {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-2 .content .title {
+    font-size: 18px;
+  }
 }
 
 .counter-card.style-3 {
@@ -7338,6 +7357,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 0;
   background: none;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 {
+    gap: 30px;
+  }
+}
 .testimonial-card.style-3 .user-info-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -7354,6 +7378,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   border-radius: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 .user-info-wrapper .user-img {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+  }
+}
 .testimonial-card.style-3 .user-info-wrapper .user-meta {
   text-align: left;
   display: -webkit-box;
@@ -7364,6 +7395,11 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 .user-info-wrapper .user-meta {
+    gap: 0;
+  }
 }
 .testimonial-card.style-3 .user-info-wrapper .user-meta .name {
   color: #ffffff;
@@ -7376,6 +7412,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 33px;
   color: #ffffff;
   padding: 0 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 .content-wrapper .description {
+    font-size: 18px;
+  }
 }
 
 .testimonial-card.style-4 {
@@ -12693,6 +12734,9 @@ ul.children {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+.project-card.style-2 .main-content .main-content-wrapper .btn-wrapper .arrow-btn {
+  font-size: 50px;
+}
 .project-card.style-2 .main-content .main-content-wrapper .btn-wrapper i {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -13873,6 +13917,11 @@ ul.children {
   background-size: cover;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-slider-area.style-3 {
+    padding: 80px 0;
+  }
+}
 .testimonial-slider-area.style-3 .overlay {
   position: absolute;
   height: 100%;
@@ -13900,6 +13949,11 @@ ul.children {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-area.style-3 .slider-nav-btn-wrapper {
+    display: none;
+  }
 }
 .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-next-btn {
   width: 67px;
@@ -13937,7 +13991,8 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .counter-up-area.style-2 {
-    bottom: -75%;
+    position: initial;
+    margin-top: 80px;
   }
 }
 
@@ -13953,10 +14008,46 @@ ul.children {
     padding-top: 620px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .latest-posts-area.style-3 {
+    padding: 80px 0;
+  }
+}
 .latest-posts-area.style-3 .section-title {
   margin-bottom: 30px;
 }
 
+.about-us-area.style-3 {
+  position: relative;
+  padding-bottom: 57px;
+  z-index: 3;
+}
+
+.section-bg-frame {
+  position: relative;
+  z-index: 3;
+}
+.section-bg-frame img {
+  position: absolute;
+  right: -8px;
+  top: -442px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.latest-service-area {
+  position: relative;
+  z-index: 2;
+}
+.latest-service-area .section-title {
+  margin-bottom: 40px;
+}
+
+.project-area.style-2 .section-title {
+  margin-bottom: 40px;
+}
 .project-area .portfolio-slider-disable {
   position: relative;
   z-index: 10;
@@ -13969,6 +14060,9 @@ ul.children {
   z-index: 2;
   padding: 584px 0 240px;
   margin-top: -463px;
+}
+.our-team-area.style-1 .section-title {
+  margin-bottom: 40px;
 }
 .our-team-area.style-1 .team-member-gallery-area .nav-tab {
   display: grid;
@@ -14015,12 +14109,12 @@ ul.children {
 .our-team-area.style-1 .skill-progress-area {
   background-color: #ffffff;
   padding: 40px;
-  margin-left: 6px;
+  margin-left: 2px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .our-team-area.style-1 .skill-progress-area .content {
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 .our-team-area.style-1 .skill-progress-area .content .name {
   font-family: "Rajdhani", sans-serif;
@@ -14036,27 +14130,49 @@ ul.children {
   line-height: 30px;
   color: #616670;
 }
-.our-team-area.style-1 .skill-progress-area .counter-card {
-  margin-top: 45px;
+.our-team-area.style-1 .skill-progress-area .skill-progressbar-wrapper {
+  gap: 16px;
 }
-.our-team-area.style-1 .skill-progress-area .counter-card .content {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.our-team-area.style-1 .skill-progress-area .counter-card {
+  margin-top: 52px;
+}
+.our-team-area.style-1 .skill-progress-area .counter-card .box {
+  background-image: repeating-linear-gradient(-3deg, #D9A14C, #D9A14C 14px, transparent 14px, transparent 25px, #D9A14C 25px), repeating-linear-gradient(87deg, #D9A14C, #D9A14C 14px, transparent 14px, transparent 25px, #D9A14C 25px), repeating-linear-gradient(177deg, #D9A14C, #D9A14C 14px, transparent 14px, transparent 25px, #D9A14C 25px), repeating-linear-gradient(267deg, #D9A14C, #D9A14C 14px, transparent 14px, transparent 25px, #D9A14C 25px);
+  background-size: 2px calc(100% + 25.03px), calc(100% + 25.03px) 2px, 2px calc(100% + 25.03px), calc(100% + 25.03px) 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: borderAnimation 1s infinite linear;
+          animation: borderAnimation 1s infinite linear;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@keyframes borderAnimation {
+  from {
+    background-position: 0 0, -25.03px 0, 100% -25.03px, 0 100%;
+  }
+  to {
+    background-position: 0 -25.03px, 0 0, 100% 0, -25.03px 100%;
+  }
+}
+.our-team-area.style-1 .skill-progress-area .counter-card .review-object {
+  padding: 20px;
+  padding-bottom: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  gap: 20px;
-  padding: 16px 20px;
-  border: 1px dashed #D9A14C;
+  gap: 14px;
 }
-.our-team-area.style-1 .skill-progress-area .counter-card .content .number {
+.our-team-area.style-1 .skill-progress-area .counter-card .review-object .number {
   font-size: 48px;
   line-height: 60px;
+  width: 85px;
+  text-align: center;
 }
-.our-team-area.style-1 .skill-progress-area .counter-card .content .title {
+.our-team-area.style-1 .skill-progress-area .counter-card .review-object .title {
   font-family: "Rajdhani", sans-serif;
   font-size: 24px;
   font-weight: 700;
