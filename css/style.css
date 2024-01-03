@@ -6533,21 +6533,130 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 20px 120px;
   border-right: 1px solid #ffffff;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-card.style-3 {
+    padding: 20px 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3 {
+    padding: 15px 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3 {
+    padding: 20px 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3 {
+    padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3 {
+    padding: 15px 120px;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+}
 .counter-card.style-3.first {
   padding: 20px 120px 20px 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-card.style-3.first {
+    padding: 20px 80px 20px 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3.first {
+    padding: 15px 80px 15px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3.first {
+    padding: 20px 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3.first {
+    padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3.first {
+    padding: 20px 120px;
+  }
 }
 .counter-card.style-3.last {
   padding: 20px 0 20px 120px;
   border: none;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-card.style-3.last {
+    padding: 20px 0 20px 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3.last {
+    padding: 15px 0 15px 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3.last {
+    padding: 20px 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3.last {
+    padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3.last {
+    padding: 20px 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card.style-3.second {
+    border: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3.second {
+    border: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-3.second {
+    border-bottom: 1px solid #ffffff;
+  }
 }
 .counter-card.style-3 .content {
   gap: 0;
 }
 .counter-card.style-3 .content .number {
   -webkit-text-stroke: 1px #ffffff;
+  width: 145px;
+  max-width: 145px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-card.style-3 .content .number {
+    max-width: 116px;
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card.style-3 .content .number {
+    font-size: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .counter-card.style-3 .content .title {
   color: #ffffff;
+  font-size: 16px;
 }
 
 .counter-card.style-4 {
@@ -8105,6 +8214,11 @@ body.admin-bar .header-menu-area.sticky_menu {
           flex-direction: column;
   gap: 26px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card.style-4 {
+    margin: 0 10px;
+  }
+}
 .post-card.style-4:hover .post-meta .single-post-meta i {
   color: #D9A14C;
   -webkit-transition: all 0.5s ease-out;
@@ -8112,6 +8226,21 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .post-card.style-4 .image {
   height: 433px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .post-card.style-4 .image {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card.style-4 .image {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .post-card.style-4 .image {
+    height: 300px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .post-card.style-4 .image {
@@ -8124,16 +8253,51 @@ body.admin-bar .header-menu-area.sticky_menu {
   border: none;
   background-color: #ffffff;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .post-card.style-4 .content {
+    padding: 20px 30px 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card.style-4 .content {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .post-card.style-4 .content {
+    padding: 20px;
+  }
+}
 .post-card.style-4 .content .title {
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card.style-4 .content .title {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .post-card.style-4 .content .title {
+    margin-bottom: 10px;
+  }
+}
 .post-card.style-4 .post-meta {
   margin-top: 5px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card.style-4 .post-meta {
+    gap: 10px;
+  }
 }
 .post-card.style-4 .post-meta .single-post-meta i {
   color: #616670;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card.style-4 .post-meta .single-post-meta {
+    gap: 5px;
+  }
 }
 
 .post-card.style-5 {
