@@ -14062,25 +14062,25 @@ ul.children {
 .footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   margin-top: 8px;
 }
-.footer.style-2 .subscribe-form-wrapper p {
+.footer .subscribe-form-wrapper p {
   color: #8f939b;
   margin-bottom: 30px;
   margin-top: -8px;
 }
-.footer.style-2 .subscribe-form-widget.style-2 .mc4wp-form-fields {
+.footer .subscribe-form-widget.style-2 .mc4wp-form-fields {
   border-color: rgb(199, 199, 225);
   display: block;
 }
-.footer.style-2 .subscribe-form-widget.style-2 .submit-btn {
+.footer .subscribe-form-widget.style-2 .submit-btn {
   color: #23262D;
   width: auto;
   margin-top: 20px;
   padding: 12px 19px;
 }
-.footer.style-2 .subscribe-form-widget.style-2 .submit-btn i {
+.footer .subscribe-form-widget.style-2 .submit-btn i {
   display: none;
 }
-.footer.style-2 .subscribe-form-widget.style-2 .submit-btn span {
+.footer .subscribe-form-widget.style-2 .submit-btn span {
   display: block;
   text-transform: uppercase;
   color: #ffffff;
@@ -14090,7 +14090,43 @@ ul.children {
   letter-spacing: 1.28px;
   font-family: "Rajdhani", sans-serif;
 }
-.footer.style-2 .subscribe-form-widget.style-2 .single-field input {
+.footer .subscribe-form-widget.style-2 .single-field input {
   height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-widget.widget_luxelife_about_info_widget {
+  padding-right: 100px;
+}
+.footer-widget.widget_luxelife_about_info_widget p {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.footer-widget.widget_nav_menu li a {
+  color: #ffffff;
+}
+.footer-widget.widget_nav_menu li a:before {
+  content: "\f00c";
+  height: 14px;
+  width: 14px;
+  background-color: #D9A14C;
+  border-radius: 2px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #23262D;
+  font-weight: 700;
+}
+.footer-widget .footer-widget-info p {
+  padding-right: 0;
+}
+.footer-widget .social-profile a:hover {
+  color: #ffffff;
+  background-color: #D9A14C;
+}
+.footer-widget .footer-widget-contact p {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.footer-widget .footer-widget-contact .extra-info .time-slot p {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

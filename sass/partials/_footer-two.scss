@@ -86,44 +86,44 @@
         }
       }
     }
-    // Subscribe Form
-    .subscribe-form-wrapper {
-      p {
-        color: #8f939b;
-        margin-bottom: 30px;
-        margin-top: -8px;
-      }
+  }
+  // Subscribe Form
+  .subscribe-form-wrapper {
+    p {
+      color: #8f939b;
+      margin-bottom: 30px;
+      margin-top: -8px;
     }
-    .subscribe-form-widget {
-      &.style-2 {
-        .mc4wp-form-fields {
-          border-color: rgb(199, 199, 225);
+  }
+  .subscribe-form-widget {
+    &.style-2 {
+      .mc4wp-form-fields {
+        border-color: rgb(199, 199, 225);
+        display: block;
+      }
+      .submit-btn {
+        color: $black;
+        width: auto;
+        margin-top: 20px;
+        padding: 12px 19px;
+        i {
+          display: none;
+        }
+        span {
           display: block;
+          text-transform: uppercase;
+          color: $white;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 1.28px;
+          font-family: $heading-font;
         }
-        .submit-btn {
-          color: $black;
-          width: auto;
-          margin-top: 20px;
-          padding: 12px 19px;
-          i {
-            display: none;
-          }
-          span {
-            display: block;
-            text-transform: uppercase;
-            color: $white;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 32px;
-            letter-spacing: 1.28px;
-            font-family: $heading-font;
-          }
-        }
-        .single-field {
-          input {
-            height: 60px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-          }
+      }
+      .single-field {
+        input {
+          height: 60px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
         }
       }
     }
