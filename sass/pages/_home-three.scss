@@ -88,11 +88,34 @@
 //feature area
 .feature-area {
     &.style-4 {
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
+        }
+
         .section-title {
             margin-bottom: 42px;
+
+            @include md {
+                margin-bottom: 0;
+            }
+            @include sm {
+                margin-bottom: 0;
+            }
         }
         .sec-desc {
             margin-top: 70px;
+
+            @include md {
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+            @include sm {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
         }
     }
 }
@@ -101,6 +124,12 @@
 //service area
 .service-area {
     &.style-2 {
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
+        }
         .section-title {
             margin-bottom: 40px;
         }
@@ -113,10 +142,25 @@
         padding-top: 80px !important;
         padding-bottom: 74px !important;
 
+        .about-info-content {
+            @include sm {
+                text-align: center;
+            }
+        }
+
         .section-title {
             padding-left: 80px;
             align-items: flex-start;
             margin-bottom: 0;
+
+            @include md {
+                align-items: center;
+                padding-left: 0;                
+            }
+            @include sm {
+                align-items: center;
+                padding-left: 0;
+            }
 
             .title {
                 margin-bottom: 0;
@@ -126,6 +170,14 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-wrap: wrap;
+
+            @include md {
+                margin: auto;
+            }
+            @include sm {
+                margin: auto;
+            }
         }
     }
 }
@@ -135,6 +187,15 @@
     &.style-4 {
         padding-top: 120px;
         padding-bottom: 150px;
+
+        @include md {
+           padding-top: 100px;
+           padding-bottom: 120px;
+        }
+        @include xs {
+            padding-top: 80px;
+            padding-bottom: 0px;
+        }
     }
 }
 
@@ -150,11 +211,28 @@
         padding-top: 120px;
         padding-bottom: 30px;
 
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
+        }
+
         .section-title {
             align-items: center;
             justify-content: center;
             flex-direction: column;
             margin-bottom: 40px;
+
+            @include xs {
+                gap: 0;
+            }
+
+            .title {
+                @include sm {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .portfolio-slider {
@@ -193,6 +271,15 @@
         }
 
         .slider-nav-btn-wrapper{
+            position: absolute;
+            top: 56%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+
+
             .slider-nav-prev-btn, .slider-nav-next-btn{
                 width: 67px;
                 height: 67px;
@@ -200,6 +287,7 @@
                 background: none;
                 border: 1px solid $primary-color;
                 color: $white;
+                font-size: 17px;
                 @include transition;
 
                 &:hover{
@@ -220,16 +308,31 @@
     &.style-2{
         position: absolute;
         width: 100%;
-        margin-top: -70px;
-        z-index: 10;
+        bottom: -72px;
 
-       
+        @include md {
+            margin-bottom: -190px;
+        }
+        @include sm {
+            bottom: -90%;
+        }
+        @include xs {
+            bottom: -75%;
+        }
     }
 }
 
 //latest post area
 .latest-posts-area {
     &.style-3 {
+        @include md {
+            padding-top: 350px;
+            padding-bottom: 100px;
+        }
+        @include sm {
+            padding-bottom: 80px;
+           padding-top: 620px;
+        }
         .section-title {
             margin-bottom: 30px;
         }

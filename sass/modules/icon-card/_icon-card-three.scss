@@ -3,14 +3,29 @@
         padding: 0 72px;
         background-color: $gray-100;
 
+        @include xs {
+            padding: 0 30px;
+        }
+
         .icon-card-inner {
             padding: 40px 0;
             display: flex;
             align-items: center;
             gap: 30px;
+            
+            @include xs {
+                flex-wrap: wrap;
+            }
 
             .content {
                 margin-right: 82px;
+
+                @include lg {
+                    margin-right: 0;
+                }
+                @include sm {
+                    margin-right: 0;
+                }
             }
 
             &:nth-child(even) {

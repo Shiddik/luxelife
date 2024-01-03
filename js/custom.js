@@ -624,31 +624,35 @@
             responsive: [{
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 3,
                     },
                 },
                 {
                     breakpoint: 992,
                     settings: {
                         slidesToShow: 2,
+                        variableWidth: false,
                     },
                 },
                 {
                     breakpoint: 991,
                     settings: {
                         slidesToShow: 2,
+                        variableWidth: false,
                     },
                 },
                 {
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 1,
+                        variableWidth: false,
                     },
                 },
                 {
                     breakpoint: 460,
                     settings: {
                         slidesToShow: 1,
+                        variableWidth: false,
                     },
                 },
             ],
