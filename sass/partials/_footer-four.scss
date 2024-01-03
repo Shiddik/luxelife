@@ -1,0 +1,53 @@
+.footer {
+  &.style-4 {
+    .footer-top-widget {
+      &.widget_luxelife_subscriber_widget {
+        text-align: center;
+        position: relative;
+        margin-bottom: 80px;
+        .footer-top-widget-title {
+          padding: 0 70px;
+          margin-bottom: 40px;
+          h2 {
+            color: $white;
+          }
+        }
+      }
+    }
+    .footer-widget {
+      &.widget_luxelife_about_info_widget {
+        padding-right: 65px;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+      &.widget_luxelife-latest-posts-footer {
+        padding-right: 75px;
+        .widget_latest_post {
+          ul {
+            li {
+              .latest-post-desc {
+                .latest-post-meta,
+                .latest-post-title {
+                  color: #ffffffb3;
+                  a {
+                    color: #ffffffb3;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.widget_nav_menu {
+        li {
+          a {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
