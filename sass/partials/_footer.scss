@@ -205,7 +205,7 @@
       }
 
       a {
-        color: $white-100;
+        color: $white;
         text-transform: capitalize;
         font-size: 16px;
         @include transition;
@@ -279,7 +279,7 @@
         }
 
         .contact-text {
-          color: #ffffffb3;
+          color: $white;
           font-size: 16px;
           line-height: 30px;
           font-weight: 400;
@@ -287,7 +287,7 @@
           font-family: $body-font;
 
           a {
-            color: #ffffffb3;
+            color: $white;
             &:hover {
               span {
                 color: $primary-color;
@@ -492,7 +492,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    color: $white-100;
+    color: $white;
     font-family: $body-font;
     margin-bottom: 20px;
   }
@@ -526,29 +526,29 @@
     }
 
     *::-webkit-input-placeholder {
-      color: #ffffffb3;
+      color: $white;
     }
 
     *:-moz-placeholder {
-      color: #ffffffb3;
+      color: $white;
       opacity: 1;
     }
 
     *::-moz-placeholder {
-      color: #ffffffb3;
+      color: $white;
       opacity: 1;
     }
 
     *:-ms-input-placeholder {
-      color: #ffffffb3;
+      color: $white;
     }
 
     *::-ms-input-placeholder {
-      color: #ffffffb3;
+      color: $white;
     }
 
     *::placeholder {
-      color: #ffffffb3;
+      color: $white;
     }
   }
 

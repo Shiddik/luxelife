@@ -4,13 +4,14 @@
       text-align: center;
       position: relative;
       margin-bottom: 80px;
-      .footer-top-widget-title {
-        padding: 0 70px;
-        margin-bottom: 40px;
+    }
+    .footer-top-widget-title {
+      position: relative;
+      padding: 0 70px;
+      margin-bottom: 40px;
+      color: $white;
+      h2,h3 {
         color: $white;
-        h2,h3 {
-          color: $white;
-        }
       }
     }
     .footer-widget {
