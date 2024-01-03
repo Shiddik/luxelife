@@ -1,38 +1,35 @@
 .footer {
   &.style-4 {
-    .footer-top-widget {
-      &.widget_luxelife_subscriber_widget {
-        text-align: center;
-        position: relative;
-        margin-bottom: 80px;
-        .footer-top-widget-title {
-          padding: 0 70px;
-          margin-bottom: 40px;
-          h2 {
-            color: $white;
-          }
-        }
+    .subscribe-footer-widget {
+      text-align: center;
+      position: relative;
+      margin-bottom: 80px;
+    }
+    .footer-top-widget-title {
+      position: relative;
+      padding: 0 70px;
+      margin-bottom: 40px;
+      color: $white;
+      h2,h3 {
+        color: $white;
       }
     }
     .footer-widget {
-      &.widget_luxelife_about_info_widget {
+      .footer-widget-info {
         padding-right: 65px;
         p {
-          margin-bottom: 20px;
+          margin-bottom: 50px;
         }
       }
-      &.widget_luxelife-latest-posts-footer {
-        padding-right: 75px;
-        .widget_latest_post {
-          ul {
-            li {
-              .latest-post-desc {
-                .latest-post-meta,
-                .latest-post-title {
+      .widget_latest_post {
+        ul {
+          li {
+            .latest-post-desc {
+              .latest-post-meta,
+              .latest-post-title {
+                color: #ffffffb3;
+                a {
                   color: #ffffffb3;
-                  a {
-                    color: #ffffffb3;
-                  }
                 }
               }
             }

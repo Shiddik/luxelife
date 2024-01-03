@@ -1,7 +1,8 @@
 .footer {
   &.style-2 {
-    .footer-widget-title {
-      color: #ffffffb3;
+    .widget-menu-wrapper{
+      padding-left: 50px;
+      padding-right: 30px;
     }
     .footer-widget-info {
       .extra-info {
@@ -81,20 +82,18 @@
               .contact-icon {
                 margin-top: 8px;
               }
+              .contact-text{
+                a,span{
+                  color: #ffffffb3;
+                }
+              }
             }
           }
         }
       }
     }
   }
-  // Subscribe Form
-  .subscribe-form-wrapper {
-    p {
-      color: #8f939b;
-      margin-bottom: 30px;
-      margin-top: -8px;
-    }
-  }
+  
   .subscribe-form-widget {
     &.style-2 {
       .mc4wp-form-fields {

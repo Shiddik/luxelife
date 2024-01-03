@@ -1,8 +1,11 @@
 .footer {
   &.style-3 {
+    .widget-menu-wrapper{
+        padding-left: 50px;
+        padding-right: 30px;
+      }
     .footer-widget {
-      &.widget_luxelife_about_info_widget {
-        padding-right: 100px;
+        .footer-widget-info {
         p {
           color: #ffffffb3;
         }

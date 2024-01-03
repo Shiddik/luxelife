@@ -15349,6 +15349,13 @@ ul.children {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 38, 45, 0.9)), to(#23262d));
   background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
 }
+.footer .divider {
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+  margin-top: 30px;
+}
 .footer.style-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 38, 45, 0.9)), to(#23262d));
   background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
@@ -15499,7 +15506,7 @@ ul.children {
   padding-bottom: 0;
 }
 .footer-widget.widget_nav_menu li a {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   text-transform: capitalize;
   font-size: 16px;
   -webkit-transition: all 0.5s ease-out;
@@ -15581,7 +15588,7 @@ ul.children {
   color: #D9A14C;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -15589,7 +15596,7 @@ ul.children {
   font-family: "Rubik", sans-serif;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a:hover span {
   color: #D9A14C;
@@ -15795,7 +15802,7 @@ ul.children {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   font-family: "Rubik", sans-serif;
   margin-bottom: 20px;
 }
@@ -15832,20 +15839,20 @@ ul.children {
   border-right: 0;
 }
 .subscribe-form-widget .single-field *::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
 }
 .subscribe-form-widget .single-field *::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
   opacity: 1;
 }
 .subscribe-form-widget .single-field *:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
 }
 .subscribe-form-widget .single-field *::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
 }
 .subscribe-form-widget .single-field *::placeholder {
-  color: rgba(255, 255, 255, 0.7019607843);
+  color: #ffffff;
 }
 .subscribe-form-widget .submit-btn {
   background-color: #D9A14C;
@@ -15916,8 +15923,9 @@ ul.children {
   border-radius: 12px;
 }
 
-.footer.style-2 .footer-widget-title {
-  color: rgba(255, 255, 255, 0.7019607843);
+.footer.style-2 .widget-menu-wrapper {
+  padding-left: 50px;
+  padding-right: 30px;
 }
 .footer.style-2 .footer-widget-info .extra-info {
   margin-top: 20px;
@@ -15990,10 +15998,8 @@ ul.children {
 .footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   margin-top: 8px;
 }
-.footer .subscribe-form-wrapper p {
-  color: #8f939b;
-  margin-bottom: 30px;
-  margin-top: -8px;
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a, .footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span {
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer .subscribe-form-widget.style-2 .mc4wp-form-fields {
   border-color: rgb(199, 199, 225);
@@ -16023,10 +16029,11 @@ ul.children {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer.style-3 .footer-widget.widget_luxelife_about_info_widget {
-  padding-right: 100px;
+.footer.style-3 .widget-menu-wrapper {
+  padding-left: 50px;
+  padding-right: 30px;
 }
-.footer.style-3 .footer-widget.widget_luxelife_about_info_widget p {
+.footer.style-3 .footer-widget .footer-widget-info p {
   color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer.style-3 .footer-widget.widget_nav_menu li a {
@@ -16065,33 +16072,32 @@ ul.children {
   margin-bottom: 0;
 }
 
-.footer.style-4 .footer-top-widget.widget_luxelife_subscriber_widget {
+.footer.style-4 .subscribe-footer-widget {
   text-align: center;
   position: relative;
   margin-bottom: 80px;
 }
-.footer.style-4 .footer-top-widget.widget_luxelife_subscriber_widget .footer-top-widget-title {
+.footer.style-4 .footer-top-widget-title {
+  position: relative;
   padding: 0 70px;
   margin-bottom: 40px;
-}
-.footer.style-4 .footer-top-widget.widget_luxelife_subscriber_widget .footer-top-widget-title h2 {
   color: #ffffff;
 }
-.footer.style-4 .footer-widget.widget_luxelife_about_info_widget {
+.footer.style-4 .footer-top-widget-title h2, .footer.style-4 .footer-top-widget-title h3 {
+  color: #ffffff;
+}
+.footer.style-4 .footer-widget .footer-widget-info {
   padding-right: 65px;
 }
-.footer.style-4 .footer-widget.widget_luxelife_about_info_widget p {
-  margin-bottom: 20px;
+.footer.style-4 .footer-widget .footer-widget-info p {
+  margin-bottom: 50px;
 }
-.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer {
-  padding-right: 75px;
-}
-.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-meta,
-.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-title {
+.footer.style-4 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-meta,
+.footer.style-4 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title {
   color: rgba(255, 255, 255, 0.7019607843);
 }
-.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-meta a,
-.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-title a {
+.footer.style-4 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-meta a,
+.footer.style-4 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title a {
   color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer.style-4 .footer-widget.widget_nav_menu li a:before {
