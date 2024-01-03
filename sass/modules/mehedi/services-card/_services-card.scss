@@ -1,0 +1,58 @@
+
+
+.services-card-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    .service-card{
+        margin: 0 50px;
+        padding: 5px;
+        text-align: center;
+
+        .card-icon{
+            width: 65px;
+            height: 65px;
+            margin-bottom: 30px;
+        }
+        .card-title{
+            font-size: 24px;
+            font-family: Rajdhani;
+            font-weight: 700;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        .card-description{
+            font-family: Rubik;
+            font-size: 16px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+            font-weight: 400;
+            opacity: 0.72;
+        }
+        .card-btn{
+            font-family: Rajdhani;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            &:hover i{
+                color: #FF9205;
+                @include transition;
+            }
+
+            i{
+                margin-left: 6px;
+                font-weight: 900;
+                color: #FFFFFF;
+                @include transition;
+            }
+        }
+    }
+}

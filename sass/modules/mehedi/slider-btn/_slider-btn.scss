@@ -1,0 +1,23 @@
+.slider-btn{
+    display: flex;
+
+    button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #eee8e0;
+        color: #D9A14C;
+        font-family: Font Awesome 6 Free;
+        font-size: 16px;
+        font-weight: 900;
+        margin-right: 20px;
+        @include transition;
+
+        &:hover{
+            background-color: #D9A14C;
+            color: #FFFFFF;
+            @include transition;
+        }
+    }
+}
