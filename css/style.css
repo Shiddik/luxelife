@@ -6723,6 +6723,16 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-2 .content .number {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .counter-card.style-2 .content .title {
+    font-size: 18px;
+  }
+}
 
 .counter-card.style-3 {
   padding: 20px 120px;
@@ -7087,6 +7097,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 0;
   background: none;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 {
+    gap: 30px;
+  }
+}
 .testimonial-card.style-3 .user-info-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -7103,6 +7118,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   overflow: hidden;
   border-radius: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 .user-info-wrapper .user-img {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+  }
+}
 .testimonial-card.style-3 .user-info-wrapper .user-meta {
   text-align: left;
   display: -webkit-box;
@@ -7113,6 +7135,11 @@ body.admin-bar .header-menu-area.sticky_menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 .user-info-wrapper .user-meta {
+    gap: 0;
+  }
 }
 .testimonial-card.style-3 .user-info-wrapper .user-meta .name {
   color: #ffffff;
@@ -7125,6 +7152,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 33px;
   color: #ffffff;
   padding: 0 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-card.style-3 .content-wrapper .description {
+    font-size: 18px;
+  }
 }
 
 .testimonial-card.style-4 {
@@ -13567,6 +13599,11 @@ ul.children {
   background-size: cover;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .testimonial-slider-area.style-3 {
+    padding: 80px 0;
+  }
+}
 .testimonial-slider-area.style-3 .overlay {
   position: absolute;
   height: 100%;
@@ -13594,6 +13631,11 @@ ul.children {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-area.style-3 .slider-nav-btn-wrapper {
+    display: none;
+  }
 }
 .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-prev-btn, .testimonial-slider-area.style-3 .slider-nav-btn-wrapper .slider-nav-next-btn {
   width: 67px;
@@ -13631,7 +13673,8 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .counter-up-area.style-2 {
-    bottom: -75%;
+    position: initial;
+    margin-top: 80px;
   }
 }
 
@@ -13645,6 +13688,11 @@ ul.children {
   .latest-posts-area.style-3 {
     padding-bottom: 80px;
     padding-top: 620px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .latest-posts-area.style-3 {
+    padding: 80px 0;
   }
 }
 .latest-posts-area.style-3 .section-title {

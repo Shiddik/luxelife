@@ -254,6 +254,10 @@
         background-size: cover;
         position: relative;
 
+        @include xs {
+            padding: 80px 0;
+        }
+
         .overlay{
             position: absolute;
             height: 100%;
@@ -278,6 +282,10 @@
             z-index: 2;
             display: flex;
             justify-content: space-between;
+
+            @include sm {
+                display: none;
+            }
 
 
             .slider-nav-prev-btn, .slider-nav-next-btn{
@@ -317,7 +325,8 @@
             bottom: -90%;
         }
         @include xs {
-            bottom: -75%;
+            position: initial;
+            margin-top: 80px;
         }
     }
 }
@@ -332,6 +341,9 @@
         @include sm {
             padding-bottom: 80px;
            padding-top: 620px;
+        }
+        @include xs {
+            padding: 80px 0;
         }
         .section-title {
             margin-bottom: 30px;
