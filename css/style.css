@@ -15353,12 +15353,12 @@ ul.children {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 38, 45, 0.9)), to(#23262D));
-  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 38, 45, 0.9)), to(#23262d));
+  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
 }
 .footer.style-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 38, 45, 0.9)), to(#23262D));
-  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 38, 45, 0.9)), to(#23262d));
+  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
 }
 .footer .footer-sec {
   padding-top: 80px;
@@ -15508,7 +15508,7 @@ ul.children {
 .footer-widget.widget_nav_menu li a {
   color: rgba(255, 255, 255, 0.7019607843);
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   position: relative;
@@ -15975,6 +15975,7 @@ ul.children {
 }
 .footer.style-2 .footer-widget .social-profile a {
   color: unset;
+  background-color: transparent;
 }
 .footer.style-2 .footer-widget .social-profile a i {
   color: #ffffff;
@@ -15982,17 +15983,124 @@ ul.children {
 .footer.style-2 .footer-widget .social-profile a:hover i {
   color: #D9A14C;
 }
-.footer.style-2 .subscribe-form-wrapper p {
+.footer.style-2 .footer-widget.widget_nav_menu li a:before {
+  display: none;
+}
+.footer.style-2 .footer-widget .footer-widget-contact p {
+  margin-bottom: 0;
+}
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
+  margin-top: 8px;
+}
+.footer .subscribe-form-wrapper p {
   color: #8f939b;
   margin-bottom: 30px;
   margin-top: -8px;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .mc4wp-form-fields {
+.footer .subscribe-form-widget.style-2 .mc4wp-form-fields {
   border-color: rgb(199, 199, 225);
+  display: block;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn {
+.footer .subscribe-form-widget.style-2 .submit-btn {
   color: #23262D;
+  width: auto;
+  margin-top: 20px;
+  padding: 12px 19px;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .single-field input {
+.footer .subscribe-form-widget.style-2 .submit-btn i {
+  display: none;
+}
+.footer .subscribe-form-widget.style-2 .submit-btn span {
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  font-family: "Rajdhani", sans-serif;
+}
+.footer .subscribe-form-widget.style-2 .single-field input {
   height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer.style-3 .footer-widget.widget_luxelife_about_info_widget {
+  padding-right: 100px;
+}
+.footer.style-3 .footer-widget.widget_luxelife_about_info_widget p {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.footer.style-3 .footer-widget.widget_nav_menu li a {
+  color: #ffffff;
+}
+.footer.style-3 .footer-widget.widget_nav_menu li a:before {
+  content: "\f00c";
+  height: 14px;
+  width: 14px;
+  background-color: #D9A14C;
+  border-radius: 2px;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #23262D;
+  font-weight: 700;
+}
+.footer.style-3 .footer-widget .footer-widget-info p {
+  padding-right: 0;
+}
+.footer.style-3 .footer-widget .social-profile a:hover {
+  color: #ffffff;
+  background-color: #D9A14C;
+}
+.footer.style-3 .footer-widget .footer-widget-contact p {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.footer.style-3 .footer-widget .footer-widget-contact .extra-info .time-slot p {
+  margin-bottom: 0;
+}
+
+.footer.style-4 .footer-top-widget.widget_luxelife_subscriber_widget {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.footer.style-4 .footer-top-widget.widget_luxelife_subscriber_widget .footer-top-widget-title {
+  padding: 0 70px;
+  margin-bottom: 40px;
+}
+.footer.style-4 .footer-top-widget.widget_luxelife_subscriber_widget .footer-top-widget-title h2 {
+  color: #ffffff;
+}
+.footer.style-4 .footer-widget.widget_luxelife_about_info_widget {
+  padding-right: 65px;
+}
+.footer.style-4 .footer-widget.widget_luxelife_about_info_widget p {
+  margin-bottom: 20px;
+}
+.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer {
+  padding-right: 75px;
+}
+.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-meta,
+.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-title {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-meta a,
+.footer.style-4 .footer-widget.widget_luxelife-latest-posts-footer .widget_latest_post ul li .latest-post-desc .latest-post-title a {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.footer.style-4 .footer-widget.widget_nav_menu li a:before {
+  display: none;
 }

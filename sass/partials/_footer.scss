@@ -12,17 +12,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(35, 38, 45, 0.90) 0%, #23262D 100%);
+    background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
   }
 
   &.style-1 {
-    background: linear-gradient(180deg, rgba(35, 38, 45, 0.90) 0%, #23262D 100%);
+    background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
   }
 
   .footer-sec {
     padding-top: 80px;
 
-    hr{
+    hr {
       margin: 30px 0 0 0;
     }
   }
@@ -50,7 +50,7 @@
     top: 0;
     left: 0;
     // z-index: -1;
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
@@ -201,7 +201,7 @@
       a {
         color: $white-100;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 16px;
         @include transition;
         position: relative;
         font-family: $roboto-font;
@@ -264,7 +264,7 @@
           display: flex;
           align-items: center;
           flex-shrink: 0;
-          i{
+          i {
             font-family: $font-awesome;
             font-size: 16px;
             font-weight: 900;
@@ -302,7 +302,6 @@
             font-family: $roboto-font;
             @include transition;
           }
-
         }
       }
     }
@@ -313,7 +312,7 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 27px;
-        color: #FFFFFFB7;
+        color: #ffffffb7;
         margin-bottom: 10px;
       }
     }
@@ -430,7 +429,7 @@
 
 .footer-bottom-area {
   position: relative;
-  .footer-bottom-wrapper{
+  .footer-bottom-wrapper {
     padding: 30px 0;
     @include rmaxwd(991) {
       padding: 30px 0;
@@ -483,13 +482,13 @@
 }
 
 .subscribe-form-wrapper {
-  p{
+  p {
     font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  color: $white-100;
-  font-family: $body-font;
-  margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $white-100;
+    font-family: $body-font;
+    margin-bottom: 20px;
   }
 }
 
@@ -560,7 +559,7 @@
     font-weight: 900;
     letter-spacing: 0.6px;
     white-space: nowrap;
-    span{
+    span {
       display: none;
     }
   }
@@ -571,7 +570,6 @@
     top: 15px;
 
     .mc4wp-alert {
-
       &.mc4wp-error,
       &.mc4wp-success,
       &.mc4wp-notice {
@@ -598,7 +596,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: rgba(244, 244, 244, 0.10);
+    background-color: rgba(244, 244, 244, 0.1);
     @include transition;
 
     &:hover {
