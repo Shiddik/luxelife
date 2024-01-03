@@ -14154,10 +14154,11 @@ ul.children {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer.style-3 .footer-widget.widget_luxelife_about_info_widget {
-  padding-right: 100px;
+.footer.style-3 .widget-menu-wrapper {
+  padding-left: 50px;
+  padding-right: 30px;
 }
-.footer.style-3 .footer-widget.widget_luxelife_about_info_widget p {
+.footer.style-3 .footer-widget .footer-widget-info p {
   color: rgba(255, 255, 255, 0.7019607843);
 }
 .footer.style-3 .footer-widget.widget_nav_menu li a {
