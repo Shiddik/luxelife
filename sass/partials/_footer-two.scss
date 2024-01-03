@@ -1,13 +1,12 @@
 .footer {
   &.style-2 {
-
     .footer-widget-title {
       color: #ffffffb3;
     }
-    .footer-widget-info{
-      .extra-info{
+    .footer-widget-info {
+      .extra-info {
         margin-top: 20px;
-        .time-slot{
+        .time-slot {
           margin-bottom: 0;
         }
       }
@@ -19,7 +18,7 @@
       color: #ffffffb3;
     }
     .footer-widget.widget_nav_menu li a,
-    .footer-bottom-menu ul li a{
+    .footer-bottom-menu ul li a {
       &:hover {
         color: $primary-color;
       }
@@ -51,12 +50,37 @@
       .social-profile {
         a {
           color: unset;
+          background-color: transparent;
           i {
             color: $white;
           }
-          &:hover{
-            i{
+          &:hover {
+            i {
               color: $primary-color;
+            }
+          }
+        }
+      }
+      &.widget_nav_menu {
+        li {
+          a {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+      .footer-widget-contact {
+        p {
+          margin-bottom: 0;
+        }
+        .footer-contact {
+          ul {
+            li {
+              align-items: start;
+              .contact-icon {
+                margin-top: 8px;
+              }
             }
           }
         }
@@ -69,18 +93,36 @@
         margin-bottom: 30px;
         margin-top: -8px;
       }
-      .subscribe-form-widget {
-
+    }
+    .subscribe-form-widget {
+      &.style-2 {
         .mc4wp-form-fields {
           border-color: rgb(199, 199, 225);
+          display: block;
         }
         .submit-btn {
           color: $black;
+          width: auto;
+          margin-top: 20px;
+          padding: 12px 19px;
+          i {
+            display: none;
+          }
+          span {
+            display: block;
+            text-transform: uppercase;
+            color: $white;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.28px;
+            font-family: $heading-font;
+          }
         }
-
         .single-field {
           input {
             height: 60px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
           }
         }
       }

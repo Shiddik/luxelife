@@ -12913,10 +12913,10 @@ ul.children {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
+  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
 }
 .footer.style-1 {
-  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262D 100%);
+  background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
 }
 .footer .footer-sec {
   padding-top: 80px;
@@ -13056,7 +13056,7 @@ ul.children {
 .footer-widget.widget_nav_menu li a {
   color: rgba(255, 255, 255, 0.7019607843);
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 0.5s ease-out;
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -13442,6 +13442,7 @@ ul.children {
 }
 .footer.style-2 .footer-widget .social-profile a {
   color: unset;
+  background-color: transparent;
 }
 .footer.style-2 .footer-widget .social-profile a i {
   color: #ffffff;
@@ -13449,17 +13450,47 @@ ul.children {
 .footer.style-2 .footer-widget .social-profile a:hover i {
   color: #D9A14C;
 }
+.footer.style-2 .footer-widget.widget_nav_menu li a:before {
+  display: none;
+}
+.footer.style-2 .footer-widget .footer-widget-contact p {
+  margin-bottom: 0;
+}
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li {
+  align-items: start;
+}
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
+  margin-top: 8px;
+}
 .footer.style-2 .subscribe-form-wrapper p {
   color: #8f939b;
   margin-bottom: 30px;
   margin-top: -8px;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .mc4wp-form-fields {
+.footer.style-2 .subscribe-form-widget.style-2 .mc4wp-form-fields {
   border-color: rgb(199, 199, 225);
+  display: block;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn {
+.footer.style-2 .subscribe-form-widget.style-2 .submit-btn {
   color: #23262D;
+  width: auto;
+  margin-top: 20px;
+  padding: 12px 19px;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .single-field input {
+.footer.style-2 .subscribe-form-widget.style-2 .submit-btn i {
+  display: none;
+}
+.footer.style-2 .subscribe-form-widget.style-2 .submit-btn span {
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  font-family: "Rajdhani", sans-serif;
+}
+.footer.style-2 .subscribe-form-widget.style-2 .single-field input {
   height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=style.css.map */
