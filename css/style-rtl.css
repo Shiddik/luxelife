@@ -4056,9 +4056,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #23262D;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  padding: 35px 24px;
 }
 .header-area.style-2 .header-menu-area .main-menu ul li a:hover {
   color: #D9A14C;
+}
+.header-area.style-2 .header-menu-area .main-menu ul li ul li a {
+  padding: 10px 20px;
 }
 .header-area.style-2 .header-menu-area .main-menu ul li ul li a:hover {
   color: #ffffff;
