@@ -134,7 +134,9 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      padding-right: 40px;
+      @include rwd(1400){
+        padding-right: 40px;
+      }
     }
 
     .footer-logo {
@@ -214,7 +216,9 @@
         display: flex;
         align-items: center;
         gap: 8px;
-
+        @include lg{
+          align-items: start;
+        }
         &:before {
           content: "\f105";
           font-family: $font-awesome;
@@ -232,18 +236,6 @@
 
   // Footer Contact Widget
   .footer-widget-contact {
-    @include sm {
-      padding-right: 50px;
-    }
-
-    @include md {
-      padding-right: 50px;
-    }
-
-    @include xl {
-      padding-right: 50px;
-    }
-
     p {
       color: $white;
       margin-bottom: 20px;
@@ -259,7 +251,9 @@
         align-items: center;
         line-height: 30px;
         gap: 10px;
-
+        @include lg{
+          align-items: start;
+        }
         &:last-child {
           margin-bottom: 0;
         }
@@ -270,6 +264,9 @@
           display: flex;
           align-items: center;
           flex-shrink: 0;
+          @include lg{
+            margin-top: 7px;
+          }
           i {
             font-family: $font-awesome;
             font-size: 16px;
@@ -388,7 +385,9 @@
     margin-bottom: 0;
     padding-left: 0;
     flex-wrap: wrap;
-
+    @include sm{
+      gap: 10px;
+    }
     @include rmaxwd(991) {
       justify-content: flex-start;
     }
