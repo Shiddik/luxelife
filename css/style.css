@@ -6169,12 +6169,22 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 24px;
   z-index: 2;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-image-card.style-1 .main-img-wrapper .main-img-inner {
+    gap: 14px;
+  }
+}
 .about-image-card.style-1 .main-img-wrapper .main-img-inner img {
   height: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-image-card.style-1 .main-img-wrapper .main-img-inner img {
     width: 200px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-image-card.style-1 .main-img-wrapper .main-img-inner img {
+    width: 150px;
   }
 }
 .about-image-card.style-1 .main-img-wrapper .main-img-inner .top-image {
@@ -6195,6 +6205,11 @@ body.admin-bar .header-menu-area.sticky_menu {
     text-align: center;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-image-card.style-1 .main-img-wrapper .review-card-wrapper {
+    margin-top: -277px;
+  }
+}
 .about-image-card.style-1 .main-img-wrapper .review-card {
   max-width: 516px;
   width: 100%;
@@ -6211,6 +6226,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   .about-image-card.style-1 .main-img-wrapper .review-card {
     width: 425px;
     height: 340px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-image-card.style-1 .main-img-wrapper .review-card {
+    width: 100%;
   }
 }
 .about-image-card.style-1 .main-img-wrapper .review-card .card-text {
@@ -6238,6 +6258,13 @@ body.admin-bar .header-menu-area.sticky_menu {
     height: auto;
     margin-left: 35px;
     padding: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .about-image-card.style-1 .main-img-wrapper .review-card .card-text {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 150px;
   }
 }
 .about-image-card.style-1 .main-img-wrapper .review-card .card-text h2 {

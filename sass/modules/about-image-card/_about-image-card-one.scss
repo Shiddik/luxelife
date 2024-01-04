@@ -12,11 +12,17 @@
            display: flex;
            gap: 24px;
            z-index: 2;
+           @include xs {
+            gap: 14px;
+           }
 
            img{
             height: 100%;
             @include sm {
               width: 200px;
+            }
+            @include xs {
+              width: 150px;
             }
            }
    
@@ -37,6 +43,10 @@
               margin-left: 0;
               text-align: center;
             }
+            @include xs {
+              margin-top: -277px;
+        
+            }
           
          }
          .review-card {
@@ -50,6 +60,10 @@
             @include sm {
               width: 425px;
               height: 340px;
+            }
+            @include xs {
+              width: 100%;
+             
             }
    
            .card-text {
@@ -69,6 +83,11 @@
                   height: auto;
                   margin-left: 35px;
                   padding: 20px;
+                }
+                @include xs {
+                  margin-left: 0;
+                  margin-bottom: 0;
+                  width: 150px;
                 }
 
              h2 {
