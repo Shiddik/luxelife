@@ -3403,6 +3403,55 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-area.style-1 {
   background-color: #F4F4F4;
 }
+.header-area.style-1 .header-menu-area {
+  padding: 0 300px;
+}
+@media (max-width: 1399px) {
+  .header-area.style-1 .header-menu-area {
+    padding: 0;
+  }
+}
+.header-area.style-1 .logo-wrapper {
+  margin-right: -200px;
+}
+@media (max-width: 1399px) {
+  .header-area.style-1 .logo-wrapper {
+    margin-right: 0;
+  }
+}
+.header-area.style-1 .header-menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-area.style-1 .header-menu-wrapper .search-btn-with-btn {
+  margin-right: unset;
+  margin-left: -200px;
+}
+@media (max-width: 991px) {
+  .header-area.style-1 .header-menu-wrapper .search-btn-with-btn {
+    display: none;
+  }
+}
+@media (max-width: 1399px) {
+  .header-area.style-1 .header-menu-wrapper .search-btn-with-btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .header-area.style-1 .header-menu-wrapper .search-btn-with-btn .btn-wrapper {
+    display: none;
+  }
+}
+.header-area.style-1 .mobile-menu-bar a i {
+  color: #23262D;
+}
 
 .header-top {
   background-color: #D9A14C;
@@ -3609,7 +3658,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: block;
 }
 .header-menu-area.sticky_menu .logo .sticky-logo img {
-  width: 170px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -3620,7 +3668,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: none;
 }
 .header-menu-area.sticky_menu .main-menu ul li a {
-  padding: 27px 26px;
+  padding: 27px 24px;
   color: #23262D;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -3655,7 +3703,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 220px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 20px;
@@ -3735,11 +3782,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 500;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .main-menu ul li a {
-    padding: 55px 15px;
-  }
 }
 .main-menu ul li a:before {
   position: absolute;
