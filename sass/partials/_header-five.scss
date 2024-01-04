@@ -6,15 +6,66 @@
     width: 100%;
     z-index: 999;
 
+    .logo-wrapper {
+      margin-left: -200px;
+
+      @include rmaxwd(1399) {
+        margin-left: 0;
+      }
+    }
+    .header-menu-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .search-btn-with-btn {
+        gap: 60px;
+
+        .search-btn-wrapper {
+          .search-btn {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            min-height: unset;
+          }
+        }
+        .btn-wrapper {
+          height: 100%;
+          align-self: stretch;
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          .theme-btn {
+            height: 100%;
+            gap: 25px;
+
+            .icon {
+              font-size: 40px;
+            }
+            .btn-content {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+
+              .phone-number-label {
+                font-family: $body-font;
+                font-size: 14px;
+                font-weight: 400;
+              }
+              .phone-number {
+                font-size: 18px;
+              }
+
+            }
+          }
+        }
+      }
+    }
+
     // Start Header Nav
     .header-menu-area {
-      display: flex;
-
-      .logo {
-        margin-left: 70px;
-        height: 132px;
-      }
-
       &.sticky_menu {
         .main-menu {
           ul {
@@ -63,47 +114,6 @@
                   }
                 }
               }
-            }
-          }
-        }
-      }
-      .search-btn-with-btn {
-        gap: 60px;
-
-        .search-btn-wrapper {
-          .search-btn {
-            width: 54px;
-            height: 54px;
-            border-radius: 50%;
-            flex-shrink: 0;
-            min-height: unset;
-          }
-        }
-        .btn-wrapper {
-          height: 100%;
-          align-self: stretch;
-
-          .theme-btn {
-            height: 100%;
-            gap: 25px;
-
-            .icon {
-              font-size: 40px;
-            }
-            .btn-content {
-              display: flex;
-              flex-direction: column;
-              text-align: left;
-
-              .phone-number-label {
-                font-family: $body-font;
-                font-size: 14px;
-                font-weight: 400;
-              }
-              .phone-number {
-                font-size: 18px;
-              }
-
             }
           }
         }

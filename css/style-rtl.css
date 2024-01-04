@@ -4181,14 +4181,68 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   z-index: 999;
 }
-.header-area.style-5 .header-menu-area {
+.header-area.style-5 .logo-wrapper {
+  margin-right: -200px;
+}
+@media (max-width: 1399px) {
+  .header-area.style-5 .logo-wrapper {
+    margin-right: 0;
+  }
+}
+.header-area.style-5 .header-menu-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.header-area.style-5 .header-menu-area .logo {
-  margin-right: 70px;
-  height: 132px;
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn {
+  gap: 60px;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .search-btn-wrapper .search-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-height: unset;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .btn-wrapper {
+  height: 100%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .btn-wrapper .theme-btn {
+  height: 100%;
+  gap: 25px;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .btn-wrapper .theme-btn .icon {
+  font-size: 40px;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .btn-wrapper .theme-btn .btn-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .btn-wrapper .theme-btn .btn-content .phone-number-label {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.header-area.style-5 .header-menu-wrapper .search-btn-with-btn .btn-wrapper .theme-btn .btn-content .phone-number {
+  font-size: 18px;
 }
 .header-area.style-5 .header-menu-area.sticky_menu .main-menu ul li a {
   color: #23262D;
@@ -4216,47 +4270,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-area.style-5 .header-menu-area .main-menu ul li ul li a:hover {
   color: #ffffff;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn {
-  gap: 60px;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  min-height: unset;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .btn-wrapper {
-  height: 100%;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .btn-wrapper .theme-btn {
-  height: 100%;
-  gap: 25px;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .btn-wrapper .theme-btn .icon {
-  font-size: 40px;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .btn-wrapper .theme-btn .btn-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: right;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .btn-wrapper .theme-btn .btn-content .phone-number-label {
-  font-family: "Rubik", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-.header-area.style-5 .header-menu-area .search-btn-with-btn .btn-wrapper .theme-btn .btn-content .phone-number {
-  font-size: 18px;
 }
 
 .header-area.style-6 {
