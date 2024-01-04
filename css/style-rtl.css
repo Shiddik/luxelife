@@ -14228,6 +14228,10 @@ ul.children {
   opacity: 0.9;
 }
 
+.latest-posts-area.style-4 .section-title {
+  margin-bottom: 40px;
+}
+
 .img-gallery-area .img-card {
   width: 100%;
   height: 250px;
