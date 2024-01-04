@@ -2,12 +2,24 @@
     &.style-5{
         .footer-top-area{
             position: relative;
+            @include sm{
+              margin-bottom: 30px;
+            }
             .footer-widget-info{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 24px;
                 border: 1px solid $gray-200;
+                @include md{
+                  flex-direction: column;
+                  gap: 30px;
+                }
+                @include sm{
+                  flex-direction: column;
+                  gap: 30px;
+                  align-items: start;
+                }
                 .footer-widget-contact{
                     .footer-contact{
                         ul{
@@ -16,6 +28,10 @@
                             padding: 0;
                             margin-bottom: 0;
                             list-style: none;
+                            @include sm{
+                              flex-direction: column;
+                              gap: 20px;
+                            }
                             li{
                                 display: flex;
                                 gap: 10px;

@@ -14332,14 +14332,31 @@ ul.children {
   margin-bottom: 40px;
   color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-4 .footer-top-widget-title {
+    padding: 0;
+  }
+}
 .footer.style-4 .footer-top-widget-title h2, .footer.style-4 .footer-top-widget-title h3 {
   color: #ffffff;
 }
-.footer.style-4 .footer-widget .footer-widget-info {
-  padding-right: 65px;
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .footer.style-4 .widget-menu-wrapper {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-4 .footer-widget .footer-logo {
+    margin-bottom: 0;
+  }
 }
 .footer.style-4 .footer-widget .footer-widget-info p {
   margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .footer.style-4 .footer-widget .widget_latest_post ul li {
+    margin-bottom: 20px;
+  }
 }
 .footer.style-4 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-meta,
 .footer.style-4 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title {
@@ -14356,6 +14373,11 @@ ul.children {
 .footer.style-5 .footer-top-area {
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-5 .footer-top-area {
+    margin-bottom: 30px;
+  }
+}
 .footer.style-5 .footer-top-area .footer-widget-info {
   display: flex;
   justify-content: space-between;
@@ -14363,12 +14385,31 @@ ul.children {
   padding: 24px;
   border: 1px solid #E3E3E3;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer.style-5 .footer-top-area .footer-widget-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-5 .footer-top-area .footer-widget-info {
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+  }
+}
 .footer.style-5 .footer-top-area .footer-widget-info .footer-widget-contact .footer-contact ul {
   display: flex;
   gap: 45px;
   padding: 0;
   margin-bottom: 0;
   list-style: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-5 .footer-top-area .footer-widget-info .footer-widget-contact .footer-contact ul {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .footer.style-5 .footer-top-area .footer-widget-info .footer-widget-contact .footer-contact ul li {
   display: flex;
