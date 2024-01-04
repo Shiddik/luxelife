@@ -134,7 +134,9 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      padding-right: 40px;
+      @include rwd(1400){
+        padding-right: 40px;
+      }
     }
 
     .footer-logo {
@@ -232,18 +234,6 @@
 
   // Footer Contact Widget
   .footer-widget-contact {
-    @include sm {
-      padding-right: 50px;
-    }
-
-    @include md {
-      padding-right: 50px;
-    }
-
-    @include xl {
-      padding-right: 50px;
-    }
-
     p {
       color: $white;
       margin-bottom: 20px;
@@ -388,7 +378,9 @@
     margin-bottom: 0;
     padding-left: 0;
     flex-wrap: wrap;
-
+    @include sm{
+      gap: 10px;
+    }
     @include rmaxwd(991) {
       justify-content: flex-start;
     }
