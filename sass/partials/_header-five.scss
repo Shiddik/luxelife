@@ -7,11 +7,8 @@
     z-index: 999;
 
     .logo-wrapper {
-      margin-left: -200px;
-
-      @include rmaxwd(1399) {
-        margin-left: 0;
-      }
+      position: absolute;
+      left: 60px;
     }
     .header-menu-wrapper {
       display: flex;
@@ -20,6 +17,7 @@
 
       .search-btn-with-btn {
         gap: 60px;
+        align-self: stretch;
 
         .search-btn-wrapper {
           .search-btn {

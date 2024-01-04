@@ -4182,12 +4182,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   z-index: 999;
 }
 .header-area.style-5 .logo-wrapper {
-  margin-left: -200px;
-}
-@media (max-width: 1399px) {
-  .header-area.style-5 .logo-wrapper {
-    margin-left: 0;
-  }
+  position: absolute;
+  left: 60px;
 }
 .header-area.style-5 .header-menu-wrapper {
   display: -webkit-box;
@@ -4202,6 +4198,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-area.style-5 .header-menu-wrapper .search-btn-with-btn {
   gap: 60px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
 }
 .header-area.style-5 .header-menu-wrapper .search-btn-with-btn .search-btn-wrapper .search-btn {
   width: 54px;
