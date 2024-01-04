@@ -4699,8 +4699,20 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
-.slider-area.style-2 .slider-bg {
-  width: 725px;
+@media (min-width: 1400px) {
+  .slider-area.style-2 .slider-bg {
+    width: 725px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .slider-area.style-2 .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .theme-btn {
+    color: #ffffff;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .slider-area.style-2 .single-slider .slider-content-wrapper .slider-content .foundation-text h1 {
+    -webkit-text-stroke: 2px #ffffff;
+  }
 }
 
 .slider-area.style-3 {

@@ -1,7 +1,29 @@
 .slider-area {
   &.style-2{
     .slider-bg {
-      width: 725px;
+      @include rwd(1400){
+        width: 725px;
+      }
+    }
+    .single-slider{
+      .slider-content-wrapper {
+        .slider-content {
+          .slider-btn-wrapper {
+            .theme-btn{
+              @include xl{
+                color: $white;
+              }
+            }
+          }
+          .foundation-text {
+            h1{
+              @include xl{
+                -webkit-text-stroke: 2px $white;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
