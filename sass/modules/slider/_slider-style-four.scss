@@ -1,35 +1,4 @@
 .slider-area{
-    &.style-4{
-        margin: 0;
-        background-color: $gray-700;
-        padding: 0;
-
-        .single-slider-wrapper{
-            margin: 0;
-            .single-slider{
-                padding: 180px 0;
-
-                .slider-bg{
-
-                }
-            }
-            .slider-content-wrapper{
-                margin: 0;
-            }
-            .slider-content{
-                .slider-short-title{
-                    color: $primary-color;
-                }
-                .slider-title{
-                    margin-bottom: 20px;
-                }
-                .slider-short-desc{
-                    margin-bottom: 20px;
-                }
-                .slider-btn-wrapper{
-                    margin: 0;
-                }
-            }
-        }
-    }
+    
+    
 }
