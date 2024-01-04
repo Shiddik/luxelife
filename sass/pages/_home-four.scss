@@ -43,21 +43,36 @@
     }
 }
 
+// section background frame style
+.section-bg-frame {
+    &.style-2 {
+        z-index: 1;
+        img {
+            top: 160px;
+            left: 17px;
+            flex-shrink: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+}
+
 // Our Team Member
 .our-team-area{
     &.style-1{
-        background-position: bottom left;
-        background-repeat: no-repeat;
         position: relative;
-        z-index: 2;
-        padding: 584px 0 240px;
-        margin-top: -463px;
+        padding: 120px 0;
 
         .section-title {
             margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
         }
     
         .team-member-gallery-area{
+            position: relative;
+            z-index: 2;
+
             .nav-tab{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -102,6 +117,8 @@
             }
         }
         .skill-progress-area{
+            position: relative;
+            z-index: 2;
             background-color: $white;
             padding: 40px;
             margin-left: 2px;
@@ -172,7 +189,14 @@
 // Testimonial
 .testimonial-slider-area{
     &.style-4{
-        margin-top: -120px;
+       .section-title {
+        position: relative;
+        z-index: 2;
+       }
+       .slider-area-wrapper {
+        position: relative;
+        z-index: 2;
+       }
     }
 }
 
@@ -206,6 +230,16 @@
         }
     }
 }
+
+
+.latest-posts-area {
+    &.style-4 {
+        .section-title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 
 // Img Gallery
 .img-gallery-area{
