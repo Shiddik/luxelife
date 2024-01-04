@@ -7,6 +7,14 @@
     background-color: $white;
     margin: 0 15px;
 
+    @include sm {
+      padding: 40px 30px;
+      width: 350px;
+    }
+    @include md {
+      width: 750px;
+    }
+
     .user-info-wrapper {
       flex-direction: row;
       gap: 25px;

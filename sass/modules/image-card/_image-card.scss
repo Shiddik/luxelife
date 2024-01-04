@@ -19,6 +19,16 @@
       justify-content: center;
       flex-shrink: 0;
 
+      @include lg {
+        width: 80px;
+        height: 80px;
+      }
+
+      @include xs {
+        width: 80px;
+        height: 80px;
+      }
+
       img {
         width: auto;
       }

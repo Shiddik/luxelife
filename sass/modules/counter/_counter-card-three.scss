@@ -12,12 +12,14 @@
         }
         @include md{
           padding: 20px 90px;
+          margin-bottom: 40px;
         }
         @include sm{
           padding: 15px 50px;
+          margin-bottom: 30px;
         }
         @include xs{
-          padding: 15px 120px;
+          padding: 15px 70px;
           border-right: none;
           border-bottom: 1px solid $white;
         }
@@ -32,12 +34,13 @@
           }
           @include md{
             padding: 20px 90px;
+            margin-bottom: 40px;
           }
           @include sm{
             padding: 15px 50px;
           }
           @include xs{
-            padding: 20px 120px;
+            padding: 20px 70px;
           }
         }
         &.last{
@@ -56,11 +59,11 @@
             padding: 15px 50px;
           }
           @include xs{
-            padding: 20px 120px;
+            padding: 20px 70px;
           }
         }
         &.second{
-          @include md{
+          @include md {
             border: none;
           }
           @include sm{

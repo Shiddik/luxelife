@@ -5,17 +5,85 @@
     .main-content {
       height: 100%;
       padding: 50px;
+      
+      @include sm {
+        padding: 20px;
+      }
+      @include md {
+        padding: 25px;
+      }
+      @include lg {
+        padding: 16px;
+      }
+
+      @include xl {
+        padding: 16px;
+      }
 
       .main-content-wrapper {
         flex-direction: column-reverse;
         align-items: flex-start;
         padding: 40px 40px 50px 50px;
 
+        @include xs {
+          padding: 40px !important;
+        }
+        @include sm {
+          padding: 20px;
+        }
+        @include md {
+          padding: 30px;
+        }
+        @include lg {
+          padding: 20px 30px;
+        }
+
         .content-inner {
           padding-right: 120px;
 
+          @include sm {
+            padding-right: 14px;
+          }
+
+          @include md {
+            padding-right: 18px;
+          }
+
+          @include lg {
+            padding-right: 10px;
+          }
+
+          @include xl {
+            padding-right: 38px;
+          }
+          .title {
+            @include xs {
+              font-size: 22px !important;
+            }
+            @include sm {
+              font-size: 18px;
+            }
+          }
           .desc {
             margin-top: 20px;
+
+            @include xs {
+            font-size: 14px !important;
+            }
+            @include sm {
+              font-size: 12px;
+              line-height: 22px;
+              margin-top: 10px
+            }
+            @include md {
+              font-size: 14px;
+            }
+            @include lg {
+              font-size: 14px;
+            }
+            @include xl {
+              font-size: 14px;
+            }
           }
         }
 
@@ -23,6 +91,28 @@
           align-self: flex-end;
           .arrow-btn {
             font-size: 50px;
+
+            @include sm {
+              font-size: 24px;
+              width: 50px;
+              height: 50px;
+            }
+
+            @include md {
+              font-size: 30px;
+              width: 60px;
+              height: 60px;
+            }
+            @include lg {
+              font-size: 30px;
+              width: 60px;
+              height: 60px;
+            }
+            @include xl {
+              font-size: 30px;
+              width: 60px;
+              height: 60px;
+            }
           }
 
           i {
