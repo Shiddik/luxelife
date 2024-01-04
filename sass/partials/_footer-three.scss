@@ -1,9 +1,5 @@
 .footer {
   &.style-3 {
-    .widget-menu-wrapper{
-        padding-left: 50px;
-        padding-right: 30px;
-      }
     .footer-widget {
         .footer-widget-info {
         p {
@@ -26,6 +22,9 @@
               justify-content: center;
               color: $black;
               font-weight: 700;
+              @include lg{
+                margin-top: 7px;
+              }
             }
           }
         }

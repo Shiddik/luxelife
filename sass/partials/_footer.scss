@@ -216,7 +216,9 @@
         display: flex;
         align-items: center;
         gap: 8px;
-
+        @include lg{
+          align-items: start;
+        }
         &:before {
           content: "\f105";
           font-family: $font-awesome;
@@ -249,7 +251,9 @@
         align-items: center;
         line-height: 30px;
         gap: 10px;
-
+        @include lg{
+          align-items: start;
+        }
         &:last-child {
           margin-bottom: 0;
         }
@@ -260,6 +264,9 @@
           display: flex;
           align-items: center;
           flex-shrink: 0;
+          @include lg{
+            margin-top: 7px;
+          }
           i {
             font-family: $font-awesome;
             font-size: 16px;
