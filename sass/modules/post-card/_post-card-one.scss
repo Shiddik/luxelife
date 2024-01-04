@@ -140,6 +140,10 @@
     align-items: center;
     flex-wrap: wrap;
 
+    @include sm {
+      gap: 8px 30px;
+    }
+
     .single-post-meta {
       color: #8f939b;
       font-size: 16px;

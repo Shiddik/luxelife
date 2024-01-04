@@ -47,6 +47,9 @@
       @include md {
         padding: 20px;
       }
+      @include sm {
+        gap: 20px;
+      }
 
       .title {
         margin-bottom: 20px;
@@ -59,9 +62,6 @@
       }
     }
     .post-meta {
-      @include lg {
-        gap: 10px;
-      }
 
       .single-post-meta {
         i {
