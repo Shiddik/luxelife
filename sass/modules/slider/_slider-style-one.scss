@@ -5,11 +5,6 @@
   padding-top: 90px;
   padding-bottom: 36px;
 
-  &.style-1 {
-    .slider-bg {
-      width: 725px;
-    }
-  }
   .slider-bg {
     position: absolute;
     top: 0;
@@ -103,7 +98,7 @@
           line-height: 27px;
           letter-spacing: 4px;
           text-transform: uppercase;
-          color: $gray-700;
+          color: $black;
           margin-bottom: 10px;
 
           @include xl {
@@ -156,7 +151,7 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 30px;
-          color: $text-color;
+          color: $gray-800;
           margin-bottom: 73px;
 
           @include xl {
