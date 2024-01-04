@@ -14090,6 +14090,7 @@ ul.children {
 }
 
 .about-us-area.style-4 {
+  overflow: hidden;
   padding-top: 120px;
   padding-bottom: 150px;
 }
