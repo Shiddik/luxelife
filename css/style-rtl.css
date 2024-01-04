@@ -3449,9 +3449,6 @@ body.admin-bar .header-menu-area.sticky_menu {
     display: none;
   }
 }
-.header-area.style-1 .mobile-menu-bar a i {
-  color: #23262D;
-}
 
 .header-top {
   background-color: #D9A14C;
@@ -3600,6 +3597,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   right: 0;
+}
+@media (max-width: 991px) {
+  .header-menu-area .search-btn-with-btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-menu-area .search-btn-with-btn .btn-wrapper {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header-menu-area .search-btn-with-btn .btn-wrapper i {
+    display: none;
+  }
 }
 .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn {
   color: #23262D;
@@ -4127,9 +4139,6 @@ body.admin-bar .header-menu-area.sticky_menu {
     display: none;
   }
 }
-.header-area.style-2 .mobile-menu-bar a i {
-  color: #23262D;
-}
 .header-area.style-2 .header-menu-area {
   padding: 0 300px;
 }
@@ -4389,11 +4398,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 
-.header-area.style-2 .mobile-menu-bar a i,
-.header-area .sticky_menu .mobile-menu-bar a i {
-  color: #23262D;
-}
-
 .mobile-menu-bar a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4406,7 +4410,7 @@ body.admin-bar .header-menu-area.sticky_menu {
           justify-content: center;
 }
 .mobile-menu-bar a i {
-  color: #ffffff;
+  color: #23262D;
   font-size: 22px;
 }
 
@@ -4440,8 +4444,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .menu-sidebar-area .menu-sidebar-close {
   position: absolute;
-  top: 35px;
-  left: 45px;
+  top: 0;
+  left: 0;
 }
 .menu-sidebar-area .menu-sidebar-close .menu-sidebar-close-btn {
   display: -webkit-inline-box;
@@ -4458,7 +4462,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 45px;
   background-color: #D9A14C;
   color: #ffffff;
-  border-radius: 50%;
 }
 .menu-sidebar-area .menu-sidebar-close .menu-sidebar-close-btn:hover {
   background-color: #D9A14C;

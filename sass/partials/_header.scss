@@ -40,9 +40,6 @@
         }
       }
     }
-    .mobile-menu-bar a i {
-      color: $black;
-    }
   }
 }
 .header-top {
@@ -159,17 +156,21 @@
   left: 0;
 
   .search-btn-with-btn {
-    //.btn-wrapper {
-    //  .theme-btn {
-    //    &:hover {
-    //      background-color: $blue-color;
-    //      border-color: $blue-color;
-    //    }
-    //  }
-    //}
+
+    @include rmaxwd(991) {
+      display: none;
+    }
+    .btn-wrapper {
+      @include lg {
+        display: none;
+      }
+      i {
+        @include xl {
+          display: none;
+        }
+      }
+    }
     .search-btn-wrapper {
-
-
       .search-btn {
         color: $black;
         background-color: $gray-100;
