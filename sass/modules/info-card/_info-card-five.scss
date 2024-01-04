@@ -4,8 +4,21 @@
     border: 1px solid $gray-200;
     background-color: $white;
 
+    .content {
+      .desc {
+        @include xs {
+          font-size: 14px;
+        }
+      }
+    }
+
     .title-wrapper {
       padding-bottom: 20px;
+      .title {
+        @include xs {
+          font-size: 22px;
+        }
+      }
       .icon {
         background-color: $primary-color;
         width: 80px;
@@ -15,6 +28,11 @@
         margin-top: -1px;
         padding: 8px;
         flex-shrink: 0;
+
+        @include sm {
+          width: 60px;
+          height: 60px;
+        }
       }
 
       .counter-number {
