@@ -4061,7 +4061,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
 }
 .header-area.style-2 .logo-wrapper {
-  position: absolute;
+  position: relative;
   z-index: 9999;
   height: 120px;
   display: -webkit-box;
@@ -4070,11 +4070,73 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 110px;
-  padding-left: 130px;
   background-color: #23262D;
-  -webkit-clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+  margin-right: -200px;
+  margin-bottom: -20px;
+}
+.header-area.style-2 .logo-wrapper:before {
+  position: absolute;
+  content: "";
+  width: 9999px;
+  left: 0;
+  background-color: #23262D;
+  height: 100%;
+}
+.header-area.style-2 .logo-wrapper:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -70px;
+  z-index: -1;
+  height: 100%;
+  border-right: 70px solid #23262D;
+  border-bottom: 120px solid transparent;
+}
+@media (max-width: 1399px) {
+  .header-area.style-2 .logo-wrapper {
+    margin-right: 0;
+  }
+}
+.header-area.style-2 .header-menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-area.style-2 .header-menu-wrapper .search-btn-with-btn {
+  margin-right: unset;
+  margin-left: -200px;
+}
+@media (max-width: 991px) {
+  .header-area.style-2 .header-menu-wrapper .search-btn-with-btn {
+    display: none;
+  }
+}
+@media (max-width: 1399px) {
+  .header-area.style-2 .header-menu-wrapper .search-btn-with-btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .header-area.style-2 .header-menu-wrapper .search-btn-with-btn .btn-wrapper {
+    display: none;
+  }
+}
+.header-area.style-2 .mobile-menu-bar a i {
+  color: #23262D;
+}
+.header-area.style-2 .header-menu-area {
+  padding: 0 300px;
+}
+@media (max-width: 1399px) {
+  .header-area.style-2 .header-menu-area {
+    padding: 0;
+  }
 }
 .header-area.style-2 .header-menu-area.sticky_menu .main-menu ul li a {
   color: #23262D;

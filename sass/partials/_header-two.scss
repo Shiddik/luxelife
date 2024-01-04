@@ -5,31 +5,77 @@
     align-items: center;
     position: relative;
 
+
     .logo-wrapper {
-      position: absolute;
+      position: relative;
       z-index: 9999;
       height: 120px;
       display: flex;
       align-items: center;
-      padding-left: 110px;
-      padding-right: 130px;
       background-color: $black;
-      clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+      //clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+      margin-left: -200px;
+      margin-bottom: -20px;
 
-      //
-      //&:before {
-      //  position: absolute;
-      //  content: "";
-      //  top: 0;
-      //  right: -70px;
-      //  z-index: -1;
-      //  height: 100%;
-      //  border-left: 70px solid $black;
-      //  border-bottom: 120px solid transparent;
-      //}
+      &:before {
+        position: absolute;
+        content: "";
+        width: 9999px;
+        right: 0;
+        background-color: $black;
+        height: 100%;
+      }
+
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -70px;
+        z-index: -1;
+        height: 100%;
+        border-left: 70px solid $black;
+        border-bottom: 120px solid transparent;
+      }
+      @include rmaxwd(1399) {
+        margin-left: 0;
+      }
     }
+    .header-menu-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .search-btn-with-btn {
+        margin-left: unset;
+        margin-right: -200px;
+
+        @include rmaxwd(991) {
+          display: none;
+        }
+
+        @include rmaxwd(1399) {
+          margin-right: 0;
+        }
+        .btn-wrapper {
+          @include rmaxwd(1199) {
+            display: none;
+          }
+        }
+      }
+    }
+    .mobile-menu-bar a i {
+      color: $black;
+    }
+
     // Start Header Nav
     .header-menu-area {
+      padding: 0 300px;
+
+      @include rmaxwd(1399) {
+        padding: 0;
+      }
+
       &.sticky_menu {
         .main-menu {
           ul {
@@ -81,22 +127,6 @@
           }
         }
       }
-      //.search-btn-with-btn {
-      //  margin-left: 34px;
-      //
-      //  @include rmaxwd(1399) {
-      //    display: none;
-      //  }
-      //  .btn-wrapper {
-      //    flex-shrink: 0;
-      //  }
-      //  .theme-btn {
-      //    padding: 11px 38px;
-      //  }
-      //  .search-btn {
-      //    color: $black;
-      //  }
-      //}
     }
   }
 }
