@@ -11402,6 +11402,11 @@ ul.children {
     padding: 100px 50px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section.style-1 .hero-content {
+    padding: 160px 80px 140px 80px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-section.style-1 .hero-content {
     padding: 120px 50px;
@@ -11551,7 +11556,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero-section.style-1 .hero-gallery-area {
-    padding: 40px;
+    padding: 60px 8px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -11580,6 +11585,11 @@ ul.children {
 .hero-section.style-1 .hero-gallery-area .nav-tab {
   display: flex;
   gap: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .hero-section.style-1 .hero-gallery-area .nav-tab {
+    gap: 8px;
+  }
 }
 .hero-section.style-1 .hero-gallery-area .nav-tab .theme-btn {
   background: none;
@@ -11634,6 +11644,12 @@ ul.children {
   margin-right: 30px;
   width: 300px;
   height: 470px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .hero-section.style-1 .hero-gallery-slider .slick-track .slick-item {
+    width: auto;
+    margin-right: 8px;
+  }
 }
 .hero-section.style-1 .hero-gallery-slider .slick-track .slick-item img {
   width: 100%;
