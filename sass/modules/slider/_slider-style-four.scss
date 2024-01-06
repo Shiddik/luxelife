@@ -1,4 +1,86 @@
-.slider-area{
-    
-    
+.slider-area {
+    &.style-4 {
+        padding: 0;
+
+        .section-title {
+            margin-bottom: 0;
+
+            .title {
+                margin-bottom: 0;
+            }
+        }
+
+        .slider-btn-wrapper {
+            margin-bottom: 0;
+        }
+
+        .slider-wrapper {
+            .slick-dots {
+                display: none;
+            }
+        }
+
+        .single-slider {
+            padding: 100px 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+
+        .image-banner-wrapper {
+            padding: 0 80px;
+            margin-top: 106px;
+
+            .image-banner {
+                position: relative;
+            }
+
+            .video-popup-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(50%, 50%);
+
+                @include rmaxwd(1199) {
+                    // left: 50%;
+                    // bottom: unset;
+                }
+
+                .circle-btn-text {
+                    z-index: -1;
+                }
+
+                a {
+                    width: 169px;
+                    height: 169px;
+                    animation: ripple 3s infinite;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: $primary-color;
+                        z-index: -9;
+                    }
+
+                    i {
+                        color: $white;
+                        font-size: 35px;
+                    }
+
+                    &:hover {
+                        animation: none;
+                    }
+                }
+            }
+        }
+    }
 }
