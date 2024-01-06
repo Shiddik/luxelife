@@ -1,6 +1,13 @@
 .slider-area {
   &.style-2 {
-    padding-bottom: 60px;
+    @include sm {
+      padding-bottom: 0;
+      height: 1172px;
+    }
+
+    @include md {
+      padding-bottom: 60px;
+    }
 
     .slider-bg {
       @include rwd(1400) {
@@ -91,6 +98,10 @@
         height: auto;
       }
 
+      @include sm {
+        padding-top: 0;
+      }
+
       .slider-content-wrapper {
         @include rmaxwd(1199) {
           margin: 0;
@@ -101,6 +112,10 @@
             h1 {
               @include lg {
                 font-size: 121px;
+              }
+
+              @include sm {
+                font-size: 78px;
               }
             }
           }
