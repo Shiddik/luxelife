@@ -4280,12 +4280,37 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 .header-area.style-6 .header-menu-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
 }
-.header-area.style-6 .header-menu-area .logo {
-  left: 20px;
+@media only screen and (min-width: 1200px) and (max-width: 1699px) {
+  .header-area.style-6 .header-menu-area .main-menu-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .header-area.style-6 .header-menu-area .main-menu-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+.header-area.style-6 .header-menu-area .logo-wrapper {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 1199px) {
+  .header-area.style-6 .header-menu-area .logo-wrapper {
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+.header-area.style-6 .header-menu-area .logo-wrapper .logo {
   height: 80px;
 }
 .header-area.style-6 .header-menu-area.sticky_menu .mobile-menu-bar a i {
@@ -4317,6 +4342,21 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-area.style-6 .header-menu-area .main-menu ul li ul li a:hover {
   color: #ffffff;
+}
+.header-area.style-6 .header-menu-area .search-btn-with-btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 1199px) {
+  .header-area.style-6 .header-menu-area .search-btn-with-btn {
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
 }
 .header-area.style-6 .header-menu-area .search-btn-with-btn .btn-wrapper {
   height: 100%;
