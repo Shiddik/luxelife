@@ -11978,16 +11978,10 @@ ul.children {
   font-weight: 700;
   color: #ffffff;
 }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .hero-section.style-1 .hero-content .title {
-    font-size: 54px !important;
-    line-height: 72px !important;
-  }
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero-section.style-1 .hero-content .title {
-    font-size: 60px;
-    line-height: 76px;
+    font-size: 44px;
+    line-height: normal;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
