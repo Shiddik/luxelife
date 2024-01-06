@@ -1,5 +1,7 @@
 .slider-area {
   &.style-2 {
+    padding-bottom: 60px;
+
     .slider-bg {
       @include rwd(1400) {
         width: 725px;
@@ -10,22 +12,17 @@
 
       .next-btn,
       .prev-btn {
-        @include xl {
+        @include rmaxwd(1399) {
           top: unset;
           bottom: 0;
         }
 
-        @include lg {
-          top: unset;
-          bottom: 0;
+        @include rmaxwd(991) {
+          display: none !important;
         }
 
         i {
-          @include xl {
-            transform: unset;
-          }
-
-          @include lg {
+          @include rmaxwd(1399) {
             transform: unset;
           }
         }
@@ -41,6 +38,11 @@
           left: unset;
           right: 112px;
         }
+
+        @include md {
+          left: unset;
+          right: 112px;
+        }
       }
 
       .prev-btn {
@@ -50,6 +52,11 @@
         }
 
         @include lg {
+          right: 30%;
+          left: unset;
+        }
+
+        @include md {
           right: 30%;
           left: unset;
         }
@@ -71,12 +78,21 @@
           transform: translate(37%, -50%);
           right: 86px;
         }
+
+        @include md {
+          top: unset;
+          bottom: 0;
+        }
       }
     }
 
     .single-slider {
+      @include md {
+        height: auto;
+      }
+
       .slider-content-wrapper {
-        @include lg {
+        @include rmaxwd(1199) {
           margin: 0;
         }
 
@@ -92,18 +108,14 @@
           .slider-short-title,
           .slider-title,
           .slider-short-desc {
-            @include lg {
+            @include rmaxwd(1399) {
               color: $white;
             }
           }
 
           .slider-btn-wrapper {
             .theme-btn {
-              @include xl {
-                color: $white;
-              }
-
-              @include lg {
+              @include rmaxwd(1399) {
                 color: $white;
               }
             }
@@ -111,11 +123,7 @@
 
           .foundation-text {
             h1 {
-              @include xl {
-                -webkit-text-stroke: 2px $white;
-              }
-
-              @include lg {
+              @include rmaxwd(1399) {
                 -webkit-text-stroke: 2px $white;
               }
             }
@@ -124,8 +132,12 @@
       }
 
       .slider-image {
+        @include md {
+          margin-top: 30px;
+        }
+
         .slider-image-inner {
-          @include xl {
+          @include rmaxwd(1399) {
             margin-right: 0;
           }
         }
