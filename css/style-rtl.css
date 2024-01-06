@@ -3458,11 +3458,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 5px 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 4px 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 991px) {
   .header-top {
@@ -3476,7 +3478,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 5px 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .header-top .header-top-slogan {
   color: #ffffff;
@@ -3717,7 +3721,6 @@ body.admin-bar .header-menu-area.sticky_menu {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-left: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-menu-area .logo {
@@ -4273,14 +4276,20 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-area.style-6 {
   background-color: #282B33;
 }
+.header-area.style-6 .mobile-menu-bar a i {
+  color: #ffffff;
+}
 .header-area.style-6 .header-menu-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .header-area.style-6 .header-menu-area .logo {
-  margin-right: 70px;
+  right: 20px;
   height: 80px;
+}
+.header-area.style-6 .header-menu-area.sticky_menu .mobile-menu-bar a i {
+  color: #23262D;
 }
 .header-area.style-6 .header-menu-area.sticky_menu .main-menu ul li a {
   color: #23262D;

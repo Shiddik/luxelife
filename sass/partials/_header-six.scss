@@ -2,16 +2,22 @@
   &.style-6 {
     background-color: #282B33;
 
+    .mobile-menu-bar a i {
+      color: $white;
+    }
     // Start Header Nav
     .header-menu-area {
       display: flex;
 
       .logo {
-        margin-left: 70px;
+        left: 20px;
         height: 80px;
       }
 
       &.sticky_menu {
+        .mobile-menu-bar a i {
+          color: $black;
+        }
         .main-menu {
           ul {
             li {
