@@ -1,26 +1,132 @@
 .slider-area {
-  &.style-2{
+  &.style-2 {
     .slider-bg {
-      @include rwd(1400){
+      @include rwd(1400) {
         width: 725px;
       }
     }
-    .single-slider{
+
+    .slider-wrapper {
+
+      .next-btn,
+      .prev-btn {
+        @include xl {
+          top: unset;
+          bottom: 0;
+        }
+
+        @include lg {
+          top: unset;
+          bottom: 0;
+        }
+
+        i {
+          @include xl {
+            transform: unset;
+          }
+
+          @include lg {
+            transform: unset;
+          }
+        }
+      }
+
+      .next-btn {
+        @include xl {
+          left: unset;
+          right: 112px;
+        }
+
+        @include lg {
+          left: unset;
+          right: 112px;
+        }
+      }
+
+      .prev-btn {
+        @include xl {
+          right: 30%;
+          left: unset;
+        }
+
+        @include lg {
+          right: 30%;
+          left: unset;
+        }
+      }
+
+      .slick-dots {
+        @include xl {
+          flex-direction: row;
+          top: unset;
+          bottom: 0;
+          transform: translate(-100%, -50%);
+          right: 86px;
+        }
+
+        @include lg {
+          flex-direction: row;
+          top: unset;
+          bottom: 0;
+          transform: translate(37%, -50%);
+          right: 86px;
+        }
+      }
+    }
+
+    .single-slider {
       .slider-content-wrapper {
+        @include lg {
+          margin: 0;
+        }
+
         .slider-content {
+          .foundation-text {
+            h1 {
+              @include lg {
+                font-size: 121px;
+              }
+            }
+          }
+
+          .slider-short-title,
+          .slider-title,
+          .slider-short-desc {
+            @include lg {
+              color: $white;
+            }
+          }
+
           .slider-btn-wrapper {
-            .theme-btn{
-              @include xl{
+            .theme-btn {
+              @include xl {
+                color: $white;
+              }
+
+              @include lg {
                 color: $white;
               }
             }
           }
+
           .foundation-text {
-            h1{
-              @include xl{
+            h1 {
+              @include xl {
+                -webkit-text-stroke: 2px $white;
+              }
+
+              @include lg {
                 -webkit-text-stroke: 2px $white;
               }
             }
+          }
+        }
+      }
+
+      .slider-image {
+        .slider-image-inner {
+          @include xl {
+            margin-right: 0;
           }
         }
       }
