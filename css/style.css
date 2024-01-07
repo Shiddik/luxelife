@@ -5042,7 +5042,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: none;
 }
 .slider-area.style-4 .single-slider {
-  padding: 100px 0;
+  padding-top: 100px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
@@ -5053,6 +5053,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-4 .image-banner-wrapper .image-banner {
   position: relative;
+  height: 100%;
+}
+.slider-area.style-4 .image-banner-wrapper .image-banner img {
+  height: 100%;
 }
 .slider-area.style-4 .image-banner-wrapper .video-popup-btn {
   position: absolute;
@@ -5060,8 +5064,15 @@ body.admin-bar .header-menu-area.sticky_menu {
   right: 0;
   transform: translate(50%, 50%);
 }
+.slider-area.style-4 .image-banner-wrapper .video-popup-btn .circle-rotate-text span {
+  color: #23262D;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
 .slider-area.style-4 .image-banner-wrapper .video-popup-btn .circle-btn-text {
   z-index: -1;
+  color: #23262D;
 }
 .slider-area.style-4 .image-banner-wrapper .video-popup-btn a {
   width: 169px;
@@ -5071,6 +5082,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: center;
   justify-content: center;
   position: relative;
+  color: #23262D;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-family: "Rajdhani", sans-serif;
 }
 .slider-area.style-4 .image-banner-wrapper .video-popup-btn a:before {
   position: absolute;
@@ -5080,11 +5097,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 100%;
   top: 0;
   left: 0;
-  background-color: #D9A14C;
+  background-color: #ffffff;
+  border: 1px solid #D9A14C;
   z-index: -9;
 }
 .slider-area.style-4 .image-banner-wrapper .video-popup-btn a i {
-  color: #ffffff;
+  color: #23262D;
   font-size: 35px;
 }
 .slider-area.style-4 .image-banner-wrapper .video-popup-btn a:hover {

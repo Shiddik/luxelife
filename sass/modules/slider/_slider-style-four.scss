@@ -21,7 +21,7 @@
         }
 
         .single-slider {
-            padding: 100px 0;
+            padding-top: 100px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: left center;
@@ -33,6 +33,11 @@
 
             .image-banner {
                 position: relative;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
             }
 
             .video-popup-btn {
@@ -46,8 +51,18 @@
                     // bottom: unset;
                 }
 
+                .circle-rotate-text {
+                    span {
+                        color: $black;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 27px;
+                    }
+                }
+
                 .circle-btn-text {
                     z-index: -1;
+                    color: $black;
                 }
 
                 a {
@@ -58,6 +73,12 @@
                     align-items: center;
                     justify-content: center;
                     position: relative;
+                    color: $black;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 60px;
+                    text-transform: capitalize;
+                    font-family: $heading-font;
 
                     &:before {
                         position: absolute;
@@ -67,12 +88,13 @@
                         border-radius: 100%;
                         top: 0;
                         left: 0;
-                        background-color: $primary-color;
+                        background-color: $white;
+                        border: 1px solid $primary-color;
                         z-index: -9;
                     }
 
                     i {
-                        color: $white;
+                        color: $black;
                         font-size: 35px;
                     }
 
