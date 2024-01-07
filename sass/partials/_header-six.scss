@@ -2,16 +2,42 @@
   &.style-6 {
     background-color: #282B33;
 
+    .mobile-menu-bar a i {
+      color: $white;
+    }
+
     // Start Header Nav
     .header-menu-area {
-      display: flex;
+      position: relative;
 
-      .logo {
-        margin-left: 70px;
-        height: 80px;
+      .main-menu-wrapper {
+        @media only screen and (min-width: 1200px) and (max-width: 1699px) {
+          justify-content: center;
+        }
+        @include rmaxwd(991) {
+          justify-content: flex-end;
+        }
+      }
+      .logo-wrapper {
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include rmaxwd(1199) {
+          position: unset;
+          transform: unset;
+        }
+
+        .logo {
+          height: 80px;
+        }
       }
 
       &.sticky_menu {
+        .mobile-menu-bar a i {
+          color: $black;
+        }
         .main-menu {
           ul {
             li {
@@ -65,7 +91,16 @@
       }
 
       .search-btn-with-btn {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 50%;
+        transform: translateY(-50%);
 
+        @include rmaxwd(1199) {
+          position: unset;
+          transform: unset;
+        }
         .btn-wrapper {
           height: 100%;
           align-self: stretch;
