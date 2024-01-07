@@ -25,15 +25,45 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: left center;
+
+            @include rmaxwd(991) {
+                padding-top: 50px;
+                height: auto;
+            }
         }
 
         .image-banner-wrapper {
             padding: 0 80px;
             margin-top: 106px;
+            display: flex;
+            align-items: center;
+            gap: 178px;
+
+            @include xl {
+                gap: 100px;
+            }
+
+            @include lg {
+                padding: 0 40px;
+                gap: 100px;
+            }
+
+            @include rmaxwd(991) {
+                padding: 0 24px;
+                margin-top: 38px;
+                flex-direction: column;
+                align-items: start;
+                gap: 48px;
+            }
 
             .image-banner {
                 position: relative;
                 height: 100%;
+
+                @include sm {
+                    height: 208px;
+                    object-fit: cover;
+                }
 
                 img {
                     height: 100%;
@@ -46,9 +76,18 @@
                 right: 0;
                 transform: translate(50%, 50%);
 
-                @include rmaxwd(1199) {
-                    // left: 50%;
-                    // bottom: unset;
+                @include sm {
+                    transform: translate(12%, 100%);
+                }
+
+                .circle-rotate-wrapper {
+                    .circle-rotate-inner {
+                        @include rmaxwd(1199) {
+                            width: 120px;
+                            height: 120px;
+                        }
+
+                    }
                 }
 
                 .circle-rotate-text {
@@ -57,6 +96,10 @@
                         font-size: 18px;
                         font-weight: 700;
                         line-height: 27px;
+
+                        @include rmaxwd(1199) {
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -79,6 +122,12 @@
                     line-height: 60px;
                     text-transform: capitalize;
                     font-family: $heading-font;
+
+                    @include rmaxwd(1199) {
+                        width: 120px;
+                        height: 120px;
+                        font-size: 30px;
+                    }
 
                     &:before {
                         position: absolute;
