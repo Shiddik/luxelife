@@ -5219,14 +5219,36 @@ body.admin-bar .header-menu-area.sticky_menu {
 .slider-area.style-5 .single-slider-wrapper .single-slider {
   padding: 180px 0;
 }
+@media (max-width: 991px) {
+  .slider-area.style-5 .single-slider-wrapper .single-slider {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+}
 .slider-area.style-5 .single-slider-wrapper .slider-content-wrapper {
   margin: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-5 .single-slider-wrapper .slider-content-wrapper {
+    padding: 0 12px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-5 .single-slider-wrapper .slider-content {
+    text-align: start;
+  }
 }
 .slider-area.style-5 .single-slider-wrapper .slider-content .slider-short-title {
   color: #D9A14C;
 }
 .slider-area.style-5 .single-slider-wrapper .slider-content .slider-title {
   margin-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  .slider-area.style-5 .single-slider-wrapper .slider-content .slider-title br {
+    display: none;
+  }
 }
 .slider-area.style-5 .single-slider-wrapper .slider-content .slider-short-desc {
   margin-bottom: 20px;
