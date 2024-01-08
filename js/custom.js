@@ -206,19 +206,20 @@
             infinite: true,
             autoplay: false,
             draggable: true,
-            arrows: false,
+            arrows: true,
             slidesToScroll: 1,
             loop: true,
             dots: false,
             speed: 1500,
             rtl: false,
-            prevArrow: "<button type='button' class='prev-btn'><i class='fa-solid fa-arrow-left-long'></i></button>",
-            nextArrow: "<button type='button' class='next-btn'><i class='fa-solid fa-arrow-right-long'></i></button>",
+            prevArrow: "<button type='button' class='prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='next-btn'><i class='fa-solid fa-angle-right'></i></button>",
 
             responsive: [{
                 breakpoint: 767,
                 settings: {
                     autoplay: true,
+                    arrows: false,
                 },
             }, ],
         });

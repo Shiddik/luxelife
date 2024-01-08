@@ -4,9 +4,6 @@
         // padding: 80px 0 135px;
         padding: 0;
         background-color: #1d212d;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         .slider-bg{
             // background: none;
             position: absolute;
@@ -21,6 +18,47 @@
                 padding: 0;
             }
         }
+        .slider-wrapper-six{
+            .prev-btn,
+            .next-btn{
+                position: absolute;
+                top: 50%;
+                right: 294px;
+                z-index: 1;
+                transform: translate(0, -100%);
+                width: 60px;
+                height: 60px;
+                font-size: 17px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $white;
+                color: $black;
+                transition: all 0.5s ease-out;
+                @include xl{
+                    right: 70px;
+                }
+                @include lg{
+                    right: 70px;
+                }
+                @include md{
+                    right: 35px;
+                }
+                i{
+                    color: $black;
+                }
+            }
+            .next-btn{
+                top: 60%;
+                @include lg{
+                    top: 63%;
+                }
+                @include md{
+                    top: 64%;
+                }
+            }
+        }
         .single-slider-wrapper{
             position: relative;
             .shape{
@@ -29,6 +67,9 @@
                 left: 120px;
                 transform: unset;
                 z-index: 3;
+                @include rmaxwd(1199){
+                    display: none;
+                }
             }
             .shape-2{
                 position: absolute;
@@ -36,6 +77,16 @@
                 right: 24px;
                 transform: unset;
                 z-index: 3;
+                @include xl{
+                    top: 65%;
+                }
+                @include lg{
+                    top: 62%;
+                    right: 10px;
+                }
+                @include rmaxwd(1199){
+                    display: none;
+                }
             }
             &.slick-active{
                 .single-slider{
@@ -64,13 +115,33 @@
             .single-slider{
                 padding-top: 80px;
                 padding-bottom: 120px;
+                @include md{
+                    padding-bottom: 80px;
+                    height: 580px;
+                }
+                @include sm{
+                    padding-bottom: 80px;
+                    padding-top: 40px;
+                    height: 560px;
+                }
                 .slider-overlay {
                     background: linear-gradient(180deg, #272C3B 7.32%, #1E222E 87.67%);
                     opacity: 1;
                     width: 70%;
                     left: -281px;
                     transform: skewX(-40deg);
-
+                    @include sm{
+                        opacity: 0.7;
+                        width: 100%;
+                        left: 0;
+                        transform: unset; 
+                    }
+                    @include lg{
+                        width: 80%;
+                    }
+                    @include md{
+                        width: 90%;
+                    }
                     .slider-linebar {
                         width: 230px;
                         height: 0%;
@@ -78,7 +149,15 @@
                         position: absolute;
                         right: 0;
                         @include transition;
-
+                        @include sm{
+                            display: none;
+                        }
+                        @include lg{
+                            width: 120px;
+                        }
+                        @include md{
+                            width: 120px;
+                        }
                         &:before {
                             width: 110px;
                             height: -0;
@@ -87,6 +166,9 @@
                             left: -110px;
                             content: "";
                             position: absolute;
+                            @include sm{
+                                display: none;
+                            }
                         }
                         &:after {
                             width: 120px;
@@ -96,6 +178,15 @@
                             right: 0;
                             content: "";
                             position: absolute;
+                            @include sm{
+                                display: none;
+                            }
+                            @include lg{
+                                display: none;
+                            }
+                            @include md{
+                                display: none;
+                            }
                         }
                     }
                     .slider-linebar-short{
@@ -119,6 +210,12 @@
                     transform: skewX(-40deg);
                     position: absolute;
                     transition: all 2s ease-out;
+                    @include sm{
+                        display: none;
+                    }
+                    @include lg{
+                        width: 30%;
+                    }
                     &:before {
                             content: "";
                             width: 90px;
@@ -129,7 +226,9 @@
                             left: 150px;
                             opacity: 0.1;
                             transition: all 2s ease-out;
-                            
+                            @include sm{
+                                display: none;
+                            }
                         }
                     &:after {
                             content: "";
@@ -140,6 +239,12 @@
                             bottom: 0;
                             left: -128px;
                             transition: all 2s ease-out;
+                            @include sm{
+                                display: none;
+                            }
+                            @include md{
+                                display: none;
+                            }
                         }
                 }
                 //padding: 80px 0 135px;
@@ -153,6 +258,10 @@
                 z-index: 10;
             }
             .slider-content{
+                @include sm{
+                    text-align: start;
+                    padding: 0 12px;
+                }
                 .slider-short-title{
                     color: $primary-color;
                 }
