@@ -7,7 +7,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
         .slider-bg{
             // background: none;
             position: absolute;
@@ -27,33 +26,49 @@
         //    padding-left: 200px;
         //}
         .single-slider-wrapper{
+            position: relative;
+            .shape{
+                position: absolute;
+                top: 10%;
+                left: 120px;
+                transform: unset;
+                z-index: 3;
+            }
+            .shape-2{
+                position: absolute;
+                top: 60%;
+                right: 24px;
+                transform: unset;
+                z-index: 3;
+            }
             .single-slider{
-
+                padding-top: 80px;
+                padding-bottom: 120px;
                 .slider-overlay {
                     background: linear-gradient(180deg, #272C3B 7.32%, #1E222E 87.67%);
                     opacity: 1;
-                    width: 60%;
-                    left: -200px;
-                    transform: skewX(-25deg);
+                    width: 70%;
+                    left: -281px;
+                    transform: skewX(-40deg);
 
                     .slider-linebar {
-                        width: 140px;
+                        width: 230px;
                         height: 100%;
                         background: linear-gradient(180deg, #3E475E -4.1%, #262B3B 81.1%);
                         position: absolute;
                         right: 0;
 
                         &:before {
-                            width: 70px;
+                            width: 110px;
                             height: 100%;
                             background-color: rgba(255, 255, 255, 0.03);
-                            top: -200px;
-                            left: -70px;
+                            top: -290px;
+                            left: -110px;
                             content: "";
                             position: absolute;
                         }
                         &:after {
-                            width: 70px;
+                            width: 120px;
                             height: 100%;
                             background-color: $primary-color;
                             top: 0;
@@ -62,16 +77,45 @@
                             position: absolute;
                         }
                     }
+                    .slider-linebar-short{
+                         width: 90px;
+                        height: 298px;
+                        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+                        opacity: 0.1;
+                        position: absolute;
+                        right: 58%;
+                        bottom: 0;
+                        z-index: 10;
+                    }
                 }
                 .slider-bottom-overlay {
-                    background: linear-gradient(180deg, #272C3B 7.32%, #1E222E 87.67%);
+                    background: #272C3B;
                     opacity: 1;
                     width: 40%;
-                    right: 0;
+                    right: -29%;
                     bottom: 0;
-                    height: 400px;
-                    transform: skewX(-25deg);
+                    height: 530px;
+                    transform: skewX(-40deg);
                     position: absolute;
+                    &:before {
+                            content: "";
+                            width: 90px;
+                            height: 190px;
+                            background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+                            position: absolute;
+                            bottom: 0;
+                            left: 150px;
+                            opacity: 0.1;
+                        }
+                    &:after {
+                            content: "";
+                            width: 128px;
+                            height: 190px;
+                            background-color: $primary-color;
+                            position: absolute;
+                            bottom: 0;
+                            left: -128px;
+                        }
                 }
                 //padding: 80px 0 135px;
                 //padding-left: 50px;
