@@ -7,6 +7,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
         .slider-bg{
             // background: none;
             position: absolute;
@@ -21,17 +22,62 @@
                 padding: 0;
             }
         }
-        .slider-wrapper-six{
-            z-index: 10;
-            padding-left: 200px;
-        }
+        //.slider-wrapper-six{
+        //    z-index: 10;
+        //    padding-left: 200px;
+        //}
         .single-slider-wrapper{
             .single-slider{
-                padding: 80px 0 135px;
-                padding-left: 50px;
-                .slider-image{
-                    animation: unset;
+
+                .slider-overlay {
+                    background: linear-gradient(180deg, #272C3B 7.32%, #1E222E 87.67%);
+                    opacity: 1;
+                    width: 60%;
+                    left: -200px;
+                    transform: skewX(-25deg);
+
+                    .slider-linebar {
+                        width: 140px;
+                        height: 100%;
+                        background: linear-gradient(180deg, #3E475E -4.1%, #262B3B 81.1%);
+                        position: absolute;
+                        right: 0;
+
+                        &:before {
+                            width: 70px;
+                            height: 100%;
+                            background-color: rgba(255, 255, 255, 0.03);
+                            top: -200px;
+                            left: -70px;
+                            content: "";
+                            position: absolute;
+                        }
+                        &:after {
+                            width: 70px;
+                            height: 100%;
+                            background-color: $primary-color;
+                            top: 0;
+                            right: 0;
+                            content: "";
+                            position: absolute;
+                        }
+                    }
                 }
+                .slider-bottom-overlay {
+                    background: linear-gradient(180deg, #272C3B 7.32%, #1E222E 87.67%);
+                    opacity: 1;
+                    width: 40%;
+                    right: 0;
+                    bottom: 0;
+                    height: 400px;
+                    transform: skewX(-25deg);
+                    position: absolute;
+                }
+                //padding: 80px 0 135px;
+                //padding-left: 50px;
+                //.slider-image{
+                //    animation: unset;
+                //}
             }
             .slider-content-wrapper{
                 margin: 0;
