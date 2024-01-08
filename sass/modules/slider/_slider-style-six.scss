@@ -21,10 +21,6 @@
                 padding: 0;
             }
         }
-        //.slider-wrapper-six{
-        //    z-index: 10;
-        //    padding-left: 200px;
-        //}
         .single-slider-wrapper{
             position: relative;
             .shape{
@@ -41,6 +37,30 @@
                 transform: unset;
                 z-index: 3;
             }
+            &.slick-active{
+                .single-slider{
+                    .slider-overlay{
+                        .slider-linebar{
+                            height: 100%;
+                            transition: all 1s ease-out;
+                            &:before,
+                            &:after{
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .slider-bottom-overlay{
+                        &:before{
+                            height: 190px;
+                            transition: all 2s ease-out;
+                        }
+                        &:after{
+                            height: 190px;
+                            transition: all 2s ease-out;
+                        }
+                    }
+                }
+            }
             .single-slider{
                 padding-top: 80px;
                 padding-bottom: 120px;
@@ -53,14 +73,15 @@
 
                     .slider-linebar {
                         width: 230px;
-                        height: 100%;
+                        height: 0%;
                         background: linear-gradient(180deg, #3E475E -4.1%, #262B3B 81.1%);
                         position: absolute;
                         right: 0;
+                        @include transition;
 
                         &:before {
                             width: 110px;
-                            height: 100%;
+                            height: -0;
                             background-color: rgba(255, 255, 255, 0.03);
                             top: -290px;
                             left: -110px;
@@ -69,7 +90,7 @@
                         }
                         &:after {
                             width: 120px;
-                            height: 100%;
+                            height: -0;
                             background-color: $primary-color;
                             top: 0;
                             right: 0;
@@ -97,24 +118,28 @@
                     height: 530px;
                     transform: skewX(-40deg);
                     position: absolute;
+                    transition: all 2s ease-out;
                     &:before {
                             content: "";
                             width: 90px;
-                            height: 190px;
+                            height: 0;
                             background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
                             position: absolute;
                             bottom: 0;
                             left: 150px;
                             opacity: 0.1;
+                            transition: all 2s ease-out;
+                            
                         }
                     &:after {
                             content: "";
                             width: 128px;
-                            height: 190px;
+                            height: 0;
                             background-color: $primary-color;
                             position: absolute;
                             bottom: 0;
                             left: -128px;
+                            transition: all 2s ease-out;
                         }
                 }
                 //padding: 80px 0 135px;

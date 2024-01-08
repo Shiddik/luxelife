@@ -5295,6 +5295,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   transform: unset;
   z-index: 3;
 }
+.slider-area.style-6 .single-slider-wrapper.slick-active .single-slider .slider-overlay .slider-linebar {
+  height: 100%;
+  transition: all 1s ease-out;
+}
+.slider-area.style-6 .single-slider-wrapper.slick-active .single-slider .slider-overlay .slider-linebar:before, .slider-area.style-6 .single-slider-wrapper.slick-active .single-slider .slider-overlay .slider-linebar:after {
+  height: 100%;
+}
+.slider-area.style-6 .single-slider-wrapper.slick-active .single-slider .slider-bottom-overlay:before {
+  height: 190px;
+  transition: all 2s ease-out;
+}
+.slider-area.style-6 .single-slider-wrapper.slick-active .single-slider .slider-bottom-overlay:after {
+  height: 190px;
+  transition: all 2s ease-out;
+}
 .slider-area.style-6 .single-slider-wrapper .single-slider {
   padding-top: 80px;
   padding-bottom: 120px;
@@ -5308,14 +5323,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-6 .single-slider-wrapper .single-slider .slider-overlay .slider-linebar {
   width: 230px;
-  height: 100%;
+  height: 0%;
   background: linear-gradient(180deg, #3E475E -4.1%, #262B3B 81.1%);
   position: absolute;
   right: 0;
+  transition: all 0.5s ease-out;
 }
 .slider-area.style-6 .single-slider-wrapper .single-slider .slider-overlay .slider-linebar:before {
   width: 110px;
-  height: 100%;
+  height: 0;
   background-color: rgba(255, 255, 255, 0.03);
   top: -290px;
   left: -110px;
@@ -5324,7 +5340,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-6 .single-slider-wrapper .single-slider .slider-overlay .slider-linebar:after {
   width: 120px;
-  height: 100%;
+  height: 0;
   background-color: #D9A14C;
   top: 0;
   right: 0;
@@ -5350,25 +5366,28 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 530px;
   transform: skewX(-40deg);
   position: absolute;
+  transition: all 2s ease-out;
 }
 .slider-area.style-6 .single-slider-wrapper .single-slider .slider-bottom-overlay:before {
   content: "";
   width: 90px;
-  height: 190px;
+  height: 0;
   background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   bottom: 0;
   left: 150px;
   opacity: 0.1;
+  transition: all 2s ease-out;
 }
 .slider-area.style-6 .single-slider-wrapper .single-slider .slider-bottom-overlay:after {
   content: "";
   width: 128px;
-  height: 190px;
+  height: 0;
   background-color: #D9A14C;
   position: absolute;
   bottom: 0;
   left: -128px;
+  transition: all 2s ease-out;
 }
 .slider-area.style-6 .single-slider-wrapper .slider-content-wrapper {
   margin: 0;
