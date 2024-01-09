@@ -11,6 +11,9 @@
             align-items: center;
             justify-content: space-between;
             padding: 50px 0;
+            @include xs {
+                padding: 40px 0 ;
+            }
 
             &:hover{
                 .content-wrapper{
@@ -27,11 +30,49 @@
                     }
                 }
             }
+            &.odd {
+                border-right: 1px solid $text-color;
+                margin-right: -12px;
+                padding-right: 54px;
+                @include md {
+                    border-right: none;
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+                @include sm {
+                    border-right: none;
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+            }
+            &.even {
+                padding-left: 30px;
+                @include sm {
+                    padding-left: 0;
+                }
+                @include md {
+                    padding-left: 0;
+                }
+            }
 
             .content-wrapper{
                 display: flex;
-                align-items: center;
-                gap: 60px;
+                gap: 48px;
+
+                @include lg {
+                    align-items: center;
+                }
+                @include md {
+                    gap: 70px;
+                    align-items: center;
+                }
+                @include sm {
+                    gap: 70px;
+                    align-items: center;
+                }
+                @include xs {
+                    gap: 40px;
+                }
 
                 .counter-number{
                     font-family: $heading-font;
@@ -41,6 +82,12 @@
                     color: $black;
                     -webkit-text-stroke: 1px $primary-color;
                     @include transition;
+                    @include lg {
+                        font-size: 60px;
+                    }
+                    @include sm {
+                        font-size: 60px;
+                    }
                 }
                 .title{
                     font-family: $heading-font;
@@ -49,6 +96,19 @@
                     line-height: 41px;
                     text-transform: capitalize;
                     color: $white;
+                    margin-top: 12px;
+                    @include lg {
+                        font-size: 26px;
+                        margin-top: 0;
+                    }
+                    @include md {
+                        font-size: 26px;
+                        margin-top: 0;
+                    }
+                    @include sm {
+                        font-size: 26px;
+                        margin-top: 0;
+                    }
                 }
             }
             .icon{
@@ -60,6 +120,15 @@
                     justify-items: end;
                     transform: rotate(0deg);
                     @include transition;
+                    @include lg {
+                        font-size: 26px;
+                    }
+                    @include md {
+                        font-size: 26px;
+                    }
+                    @include sm {
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -113,6 +182,17 @@
                     @include transition;
                 }
             }
+        }
+    }
+}
+
+.about-us-area {
+    &.style-5 {
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 80px 0;
         }
     }
 }
