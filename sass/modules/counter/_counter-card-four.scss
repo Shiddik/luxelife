@@ -10,6 +10,9 @@
 
             .number{
                 -webkit-text-stroke: 1px $white;
+                @include lg{
+                    font-size: 56px;
+                }
             }
             .title{
                 color: $white;

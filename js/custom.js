@@ -438,7 +438,7 @@
         Testimonial Slider
         ============================*/
         $("#testimonial_style_five").slick({
-            slidesToShow: 2,
+            slidesToShow: 3,
             infinite: true,
             autoplay: true,
             draggable: true,
@@ -447,11 +447,10 @@
             loop: true,
             dots: false,
             speed: 1500,
-            variableWidth: true,
-            // centerMode: true,
+            variableWidth: false,
             rtl: false,
             responsive: [{
-                    breakpoint: 1200,
+                    breakpoint: 1400,
                     settings: {
                         slidesToShow: 2,
                     },
@@ -459,7 +458,7 @@
                 {
                     breakpoint: 992,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
                 {
