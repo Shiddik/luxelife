@@ -1,4 +1,15 @@
 // About Us
+.about-us-area{
+    &.style-6{
+        @include md{
+            padding: 100px 0;
+        }
+        @include sm{
+            padding: 80px 0;
+        }
+
+    }
+}
 .about-info-card{
     &.style-6{
         .section-title{
@@ -8,11 +19,14 @@
         }
         .list-item-wrapper{
             gap: 20px;
+
             @include sm{
                 gap: 15px;
             }
+
             .list-item{
                 gap: 10px;
+
                 .text{
                     font-family: $heading-font;
                     font-size: 18px;
@@ -30,6 +44,7 @@
     &.style-6{
         padding: 206px 0;
         margin: 0 100px;
+
         @include xl{
             margin: 0;
             @include transition;
@@ -52,6 +67,13 @@
 // Feature Area
 .feature-area{
     &.style-6{
+        @include md{
+            padding-top: 100px;
+        }
+        @include sm{
+            padding-top: 80px;
+        }
+
         .info-card{
             &.style-2{
                 border: none;
@@ -98,12 +120,23 @@
 // portfolio-section
 .portfolio-section{
     &.style-6{
+        @include md{
+            padding: 100px 0;
+        }
+        @include sm{
+            padding: 80px 0;
+        }
+
         .section-title{
+            margin-bottom: 60px;
+
             @include sm{
                 flex-direction: column;
                 align-items: start;
                 gap: 40px;
+                margin-bottom: 40px;
             }
+
             .sec-content{
                 .title{
                     @include lg{
@@ -151,6 +184,13 @@
         padding-bottom: 190px;
         position: relative;
         z-index: 5;
+
+        @include md{
+            padding: 100px 0 170px;
+        }
+        @include sm{
+            padding: 80px 0 150px;
+        }
     }
 }
 
@@ -168,6 +208,13 @@
 // Project Area
 .project-area{
     &.style-3{
+        @include md{
+            padding-top: 100px 0;
+        }
+        @include sm{
+            padding-top: 80px 0;
+        }
+
         .project-card-slider{
             .row{
                 margin: 0 80px;
@@ -181,6 +228,19 @@
                     margin: 0 40px;
                 }
             }
+        }
+    }
+}
+
+
+// latest-posts-area
+.latest-posts-area{
+    &.style-6{
+        @include md{
+            padding: 100px 0;
+        }
+        @include sm{
+            padding: 80px 0;
         }
     }
 }

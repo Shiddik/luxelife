@@ -7732,7 +7732,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #23262D;
   align-items: start;
   gap: 50px;
-  width: 630px;
   margin: 0 15px;
 }
 .testimonial-card.style-5 .user-info-wrapper {
@@ -14232,6 +14231,17 @@ ul.children {
   height: 268px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-us-area.style-6 {
+    padding: 100px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-us-area.style-6 {
+    padding: 80px 0;
+  }
+}
+
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .about-info-card.style-6 .section-title {
     gap: 0px;
@@ -14285,6 +14295,16 @@ ul.children {
   background: none;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .feature-area.style-6 {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .feature-area.style-6 {
+    padding-top: 80px;
+  }
+}
 .feature-area.style-6 .info-card.style-2 {
   border: none;
   border-bottom: 1px solid #282B33;
@@ -14319,11 +14339,25 @@ ul.children {
   margin-left: 12px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-section.style-6 {
+    padding: 100px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-section.style-6 {
+    padding: 80px 0;
+  }
+}
+.portfolio-section.style-6 .section-title {
+  margin-bottom: 60px;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-section.style-6 .section-title {
     flex-direction: column;
     align-items: start;
     gap: 40px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -14373,6 +14407,16 @@ ul.children {
   position: relative;
   z-index: 5;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-slider-area.style-6 {
+    padding: 100px 0 170px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-area.style-6 {
+    padding: 80px 0 150px;
+  }
+}
 
 .counter-up-area.style-6 {
   margin-top: -90px;
@@ -14382,6 +14426,16 @@ ul.children {
   z-index: 10;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-area.style-3 {
+    padding-top: 100px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-area.style-3 {
+    padding-top: 80px 0;
+  }
+}
 .project-area.style-3 .project-card-slider .row {
   margin: 0 80px;
 }
@@ -14398,6 +14452,17 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .project-area.style-3 .project-card-slider .row {
     margin: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .latest-posts-area.style-6 {
+    padding: 100px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .latest-posts-area.style-6 {
+    padding: 80px 0;
   }
 }
 
