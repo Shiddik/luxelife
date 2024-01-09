@@ -12,15 +12,41 @@
         .image{
             width: 100%;
             height: 323px;
+            @include lg{
+                height: 260px;
+            }
         }
         .content{
             gap: 20px;
             border: none;
             border-bottom: 1px solid #282B33;
             @include transition;
+
+            @include xl{
+                padding: 35px;
+            }
+            @include lg{
+                padding: 20px;
+            }
+            @include md{
+                padding: 30px;
+            }
             
             .post-meta{
+                @include lg{
+                    flex-wrap: nowrap;
+                    gap: 20px;
+                }
+                @include md{
+                    flex-wrap: nowrap;
+                    gap: 20px;
+                }
+
                 .single-post-meta{
+                    @include lg{
+                        gap: 5px;
+                    }
+
                     i{
                         color: #FF9205;
                     }
