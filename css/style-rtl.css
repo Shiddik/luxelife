@@ -14220,6 +14220,7 @@ ul.children {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-section.style-1 .hero-content {
     padding: 120px 50px;
+    display: block;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -14356,12 +14357,10 @@ ul.children {
   height: 54px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-}
-.hero-section.style-1 .hero-content .hero-content-bottom .trusted-clients img.img-1, .hero-section.style-1 .hero-content .hero-content-bottom .trusted-clients img.img-2 {
   margin-right: -15px;
 }
-.hero-section.style-1 .hero-content .hero-content-bottom .trusted-clients img.img-3 {
-  margin-right: -20px;
+.hero-section.style-1 .hero-content .hero-content-bottom .trusted-clients img:first-child {
+  margin-right: 0;
 }
 .hero-section.style-1 .hero-content .hero-content-bottom .member-count {
   margin-right: 18px;
