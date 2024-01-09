@@ -181,7 +181,7 @@
       padding: 59px 0 46px 52px;
 
       @include sm {
-        padding: 60px 8px;
+        padding: 50px 8px;
       }
 
       @include md {
@@ -203,6 +203,10 @@
         line-height: 30px;
         color: #000000;
         margin-bottom: 30px;
+
+        @include sm {
+          margin-bottom: 20px;
+        }
       }
 
       .nav-tab {
@@ -279,6 +283,7 @@
           @include sm {
             width: auto;
             margin-right: 8px;
+            height: 380px;
           }
 
           img {
@@ -362,6 +367,11 @@
     .section-title {
       margin-bottom: 54px;
 
+      @include sm {
+        margin-bottom: 30px;
+        gap: 0;
+      }
+
       .sec-desc {
         margin-bottom: 5px;
         margin-right: 10px;
@@ -374,7 +384,10 @@
 .counter-up-area {
   &.style-1 {
     margin: 0 72px;
-    margin-top: 2px;
+
+    @include md {
+      padding: 40px;
+    }
 
     @include sm {
       margin: 0 20px;
@@ -385,7 +398,12 @@
       grid-template-columns: repeat(4, 1fr);
       padding: 0 107px;
       height: 100%;
-
+      @include xl {
+        padding: 0;
+      }
+      @include lg {
+        padding: 0;
+      }
       @include md {
         grid-template-columns: repeat(2, 1fr);
         padding: 40px;
@@ -422,6 +440,7 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+    overflow: hidden;
 
     @include md {
       padding: 100px 0;
@@ -477,6 +496,9 @@
 
     .section-title {
       margin-bottom: 60px;
+      @include sm {
+        gap: 0;
+      }
 
       .slider-nav-btn-wrapper {
         a {
@@ -505,5 +527,24 @@
 
   .slick-list.draggable {
     margin: 0 -15px;
+  }
+}
+.contact-form-area {
+  &.style-1 {
+    @include sm {
+      padding-top: 0;
+      padding-bottom: 80px;
+
+      .sub-title {
+        margin-bottom: 0;
+      }
+    }
+    @include md {
+      padding-top: 0;
+      padding-bottom: 100px;
+      .sub-title {
+        margin-bottom: 0;
+      }
+    }
   }
 }
