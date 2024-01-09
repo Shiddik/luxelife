@@ -4966,7 +4966,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   .slider-area.style-2 .slider-wrapper .slick-dots {
     flex-direction: row;
     top: unset;
-    bottom: -24px;
+    bottom: -17px;
     transform: translate(-100%, 100%);
     right: 120px;
   }
@@ -4975,7 +4975,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   .slider-area.style-2 .slider-wrapper .slick-dots {
     flex-direction: row;
     top: unset;
-    bottom: -24px;
+    bottom: -17px;
     transform: translate(-100%, 100%);
     right: 136px;
   }
@@ -5091,11 +5091,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .slider-area.style-3 {
   padding: 0;
-  margin-top: -120px;
-  z-index: -1;
+  background-color: #23262D;
 }
 .slider-area.style-3 .single-slider {
-  padding-top: 216px;
+  padding-top: 100px;
   padding-bottom: 150px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -5105,7 +5104,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area.style-3 .single-slider {
-    padding-top: 198px;
     padding-bottom: 20px;
     height: auto;
   }
@@ -5118,7 +5116,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-3 .single-slider {
-    padding-top: 200px;
     padding-bottom: 20px;
   }
 }
@@ -5138,12 +5135,36 @@ body.admin-bar .header-menu-area.sticky_menu {
   z-index: 1;
   background-color: transparent;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area.style-3 .slider-bg {
+    right: -30px;
+  }
+}
+.slider-area.style-3 .slider-bg:before {
+  content: "";
+  background-color: #23262D;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  display: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-3 .slider-bg:before {
+    display: block;
+  }
+}
 .slider-area.style-3 .slider-bg img {
   padding: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-3 .slider-bg img {
+    display: none;
+  }
 }
 .slider-area.style-3 .slider-wrapper .slick-dots {
   display: none;
